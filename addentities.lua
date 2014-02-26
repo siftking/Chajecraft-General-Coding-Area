@@ -150,8 +150,9 @@ AddCustomShipment("M67 Grenade", "models/Items/grenadeAmmo.mdl", "fas2_m67", 200
 AddCustomShipment("M79 Grenade Launcher", "models/Items/BoxFlares.mdl", "fas2_m79", 20000, 1, false, 0, false, {TEAM_BMDEALER})
 
 // HOW TO ADD CUSTOM SHIPMENTS - Guide by Jensen ;P
-// AddCustomShipment("Name of shipment", "Model (copy & paste from Q)", "weapon class (Q > Weapons > Right click on wep > copy to clipboard)", <price>, <amountpershipment>, false, 0, false, {TEAM_GUN})
-
+// AddCustomShipment("Name of shipment", "model class", "weapon class", <price>, <amountpershipment>, false, 0, false, {TEAM_GUN})
+// To get a weapon class: Q Menu > Weapons > "category of wep, in this case FA:S" > right click wep > copy name to clipboard
+// To get a model class: Q Menu > Props > ... > Right click on wep model > copy to clipboard
 AddEntity("Bandages", {
 	ent = "fas2_ammo_bandages",
 	model = "models/Items/BoxMRounds.mdl",
