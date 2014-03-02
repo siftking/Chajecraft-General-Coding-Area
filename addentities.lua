@@ -1,3 +1,4 @@
+// Gun Dealer
 AddCustomShipment("Acr", "models/weapons/w_masada_acr.mdl", "m9k_acr", 4000, 10, false, 0, false, {TEAM_GUN})
 AddCustomShipment("Acr Single", "models/weapons/w_masada_acr.mdl", "m9k_acr", 500, 1, false, 0, false, {TEAM_GUN})
 AddCustomShipment("AMD 65", "models/weapons/w_amd_65.mdl", "m9k_amd65", 5000, 10, false, 123, false, {TEAM_GUN})
@@ -146,8 +147,50 @@ AddCustomShipment("STEN", "models/weapons/w_sten.mdl", "m9k_sten", 4000, 10, fal
 AddCustomShipment("STEN Single", "models/weapons/w_sten.mdl", "m9k_sten", 450, 1, false, 0, false, {TEAM_GUN})
 AddCustomShipment("TEC 9", "models/weapons/w_intratec_tec9.mdl", "m9k_tec9", 3250, 10, false, 0, false, {TEAM_GUN})
 AddCustomShipment("TEC 9 Single", "models/weapons/w_intratec_tec9.mdl", "m9k_tec9", 350, 1, false, 0, false, {TEAM_GUN})
+
+// Adv. Gun Dealer, Thanks Ice_Dragon
+AddCustomShipment("AK-12", "models/weapons/world/rifles/ak12.mdl", "fas2_ak12", 1, 10, false, 0, false, {TEAM_ADVGUN})
+AddCustomShipment("AK-47", "models/weapons/w_rif_ak47.mdl", "fas2_ak47", 1, 10, false, 0, false, {TEAM_ADVGUN})
+AddCustomShipment("AK-74", "models/weapons/w_rif_ak47.mdl", "fas2_ak74", 1, 10, false, 0, false, {TEAM_ADVGUN})
+AddCustomShipment("AN-92", "models/weapons/world/rifles/an94.mdl", "fas2_an94", 1, 10, false, 0, false, {TEAM_ADVGUN})
+AddCustomShipment("FAMAS F1", "models/weapons/w_rif_famas.mdl", "fas2_famas", 1, 10, false, 0, false, {TEAM_ADVGUN})
+AddCustomShipment("G36C", "models/weapons/w_hk_g3.mdl", "fas2_g36c", 1, 10, false, 0, false, {TEAM_ADVGUN})
+AddCustomShipment("Glock-20", "models/weapons/w_pist_glock18.mdl", "fas2_glock20", 1, 10, false, 0, false, {TEAM_ADVGUN})
+AddCustomShipment("IMI Desert Eagle", "models/weapons/w_pist_deagle.mdl", "fas2_deagle", 1, 10, false, 0, false, {TEAM_ADVGUN})
+AddCustomShipment("IMI Galil", "models/weapons/w_rif_galil.mdl", "fas2_galil", 1, 10, false, 0, false, {TEAM_ADVGUN})
+AddCustomShipment("IMI Uzi", "models/weapons/w_uzi_imi.mdl", "fas2_uzi", 1, 10, false, 0, false, {TEAM_ADVGUN})
+AddCustomShipment("KS-23", "models/weapons/world/shotguns/ks23.mdl", "fas2_ks23", 1, 10, false, 0, false, {TEAM_ADVGUN})
+AddCustomShipment("M14", "models/weapons/world/rifles/sks.mdl", "fas2_m14", 1, 10, false, 0, false, {TEAM_ADVGUN})
+AddCustomShipment("M1911", "models/weapons/w_pist_p228.mdl", "fas2_m1911", 1, 10, false, 0, false, {TEAM_ADVGUN})
+AddCustomShipment("M21", "models/weapons/w_snip_awp.mdl", "fas2_m21", 1, 10, false, 0, false, {TEAM_ADVGUN})
+AddCustomShipment("M24", "models/weapons/w_snip_scout.mdl", "fas2_m24", 1, 10, false, 0, false, {TEAM_ADVGUN})
+AddCustomShipment("M3 Super 90", "models/weapons/w_shot_m3super90.mdl", "fas2_m3s90", 1, 10, false, 0, false, {TEAM_ADVGUN})
+AddCustomShipment("M24", "models/weapons/w_snip_scout.mdl", "fas2_m24", 1, 10, false, 0, false, {TEAM_ADVGUN})
+AddCustomShipment("M4A1", "models/weapons/w_rif_m4a1.mdl", "fas2_m4a1", 1, 10, false, 0, false, {TEAM_ADVGUN})
+AddCustomShipment("M82", "models/weapons/w_snip_sg550.mdl", "fas2_m82", 1, 10, false, 0, false, {TEAM_ADVGUN})
+AddCustomShipment("MP5A5", "models/weapons/w_smg_mp5.mdl", "fas2_mp5a5", 1, 10, false, 0, false, {TEAM_ADVGUN})
+AddCustomShipment("MP5K", "models/weapons/w_smg_mp5.mdl", "fas2_mp5k", 1, 10, false, 0, false, {TEAM_ADVGUN})
+AddCustomShipment("MP5SD6", "models/weapons/w_smg_mp5.mdl", "fas2_mp5sd6", 1, 10, false, 0, false, {TEAM_ADVGUN})
+AddCustomShipment("OT-s33 Pernach", "models/weapons/world/pistols/ots33.mdl", "fas2_ots33", 1, 10, false, 0, false, {TEAM_ADVGUN})
+AddCustomShipment("P226", "models/weapons/w_pist_p228.mdl", "fas2_p226", 1, 10, false, 0, false, {TEAM_ADVGUN})
+AddCustomShipment("PP-19 Bizon", "models/weapons/w_pp19_bizon.mdl", "fas2_pp19", 1, 10, false, 0, false, {TEAM_ADVGUN})
+AddCustomShipment("Raging Bull", "models/weapons/w_357.mdl", "fas2_ragingbull", 1, 10, false, 0, false, {TEAM_ADVGUN})
+AddCustomShipment("Remington 870", "models/weapons/world/shotguns/ks23.mdl", "fas2_rem870", 1, 10, false, 0, false, {TEAM_ADVGUN})
+AddCustomShipment("RPK-47", "models/weapons/w_rif_ak47.mdl", "fas2_rpk", 1, 10, false, 0, false, {TEAM_ADVGUN})
+AddCustomShipment("Sako RK-95", "models/weapons/world/rifles/rk95.mdl", "fas2_rk95", 1, 10, false, 0, false, {TEAM_ADVGUN})
+AddCustomShipment("SG 550", "models/weapons/w_snip_sg550.mdl", "fas2_sg550", 1, 10, false, 0, false, {TEAM_ADVGUN})
+AddCustomShipment("SG 552", "models/weapons/w_rif_sg552.mdl", "fas2_sg552", 1, 10, false, 0, false, {TEAM_ADVGUN})
+AddCustomShipment("SKS", "models/weapons/world/rifles/sks.mdl", "fas2_sks", 1, 10, false, 0, false, {TEAM_ADVGUN})
+AddCustomShipment("SR-25", "models/weapons/w_snip_g3sg1.mdl", "fas2_sr25", 1, 10, false, 0, false, {TEAM_ADVGUN})
+AddCustomShipment("SR-25", "models/weapons/w_shot_xm1014.mdl", "fas2_sr25", 1, 10, false, 0, false, {TEAM_ADVGUN})
+
+
+// Black Market Dealer, Thanks Ice_Dragon
 AddCustomShipment("M67 Grenade", "models/Items/grenadeAmmo.mdl", "fas2_m67", 2000, 5, false, 0, false, {TEAM_BMDEALER})
 AddCustomShipment("M79 Grenade Launcher", "models/Items/BoxFlares.mdl", "fas2_m79", 20000, 1, false, 0, false, {TEAM_BMDEALER})
+AddCustomShipment("Machete", "models/weapons/w_crowbar.mdl", "fas2_machete", 20000, 1, false, 0, false, {TEAM_BMDEALER})
+
+
 
 // HOW TO ADD CUSTOM SHIPMENTS - Guide by Jensen ;P
 // AddCustomShipment("Name of shipment", "model class", "weapon class", <price>, <amountpershipment>, false, 0, false, {TEAM_GUN})
