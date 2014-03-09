@@ -58,6 +58,7 @@ AddCustomShipment("AK-74", "models/weapons/w_rif_ak47.mdl", "fas2_ak74", 3200, 1
 AddCustomShipment("AN-92", "models/weapons/world/rifles/an94.mdl", "fas2_an94", 3250, 10, false, 0, false, {TEAM_ADVGUN})
 AddCustomShipment("FAMAS F1", "models/weapons/w_rif_famas.mdl", "fas2_famas", 2650, 10, false, 0, false, {TEAM_ADVGUN})
 AddCustomShipment("G36C", "models/weapons/w_hk_g3.mdl", "fas2_g36c", 2250, 10, false, 0, false, {TEAM_ADVGUN})
+AddCustomShipment("G3A3", "models/weapons/w_hk_g3.mdl", "fas2_g3", 3800, 10, false, 0, false, {TEAM_ADVGUN})
 AddCustomShipment("Glock-20", "models/weapons/w_pist_glock18.mdl", "fas2_glock20", 1570, 10, false, 0, false, {TEAM_ADVGUN})
 AddCustomShipment("IMI Desert Eagle", "models/weapons/w_pist_deagle.mdl", "fas2_deagle", 1650, 10, false, 0, false, {TEAM_ADVGUN})
 AddCustomShipment("IMI Galil", "models/weapons/w_rif_galil.mdl", "fas2_galil", 3200, 10, false, 0, false, {TEAM_ADVGUN})
