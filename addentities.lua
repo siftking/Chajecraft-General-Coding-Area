@@ -50,7 +50,7 @@ AddCustomShipment("KRISS Vector", "models/weapons/w_kriss_vector.mdl", "m9k_vect
 AddCustomShipment("HK USC", "models/weapons/w_hk_usc.mdl", "m9k_usc", 3500, 10, false, 0, false, {TEAM_GUN})
 AddCustomShipment("STEN", "models/weapons/w_sten.mdl", "m9k_sten", 4000, 10, false, 0, false, {TEAM_GUN})
 AddCustomShipment("TEC 9", "models/weapons/w_intratec_tec9.mdl", "m9k_tec9", 3250, 10, false, 0, false, {TEAM_GUN})
-	
+
 // Adv. Gun Dealer
 AddCustomShipment("AK-12", "models/weapons/world/rifles/ak12.mdl", "fas2_ak12", 2250, 10, false, 0, false, {TEAM_ADVGUN})
 AddCustomShipment("AK-47", "models/weapons/w_rif_ak47.mdl", "fas2_ak47", 3200, 10, false, 0, false, {TEAM_ADVGUN})
@@ -88,8 +88,9 @@ AddCustomShipment("SR-25", "models/weapons/w_snip_g3sg1.mdl", "fas2_sr25", 5500,
 
 // Black Market Dealer
 AddCustomShipment("M67 Grenade", "models/Items/grenadeAmmo.mdl", "fas2_m67", 6000, 5, false, 0, false, {TEAM_BMDEALER})
-AddCustomShipment("M79 Grenade Launcher", "models/Items/BoxFlares.mdl", "fas2_m79", 20000, 1, false, 0, false, {TEAM_BMDEALER})
-AddCustomShipment("Machete", "models/weapons/w_crowbar.mdl", "fas2_machete", 2000, 1, false, 0, false, {TEAM_BMDEALER})
+AddCustomShipment("M79 Grenade Launcher", "models/Items/BoxFlares.mdl", "fas2_m79", 150000, 10, false, 0, false, {TEAM_BMDEALER})
+AddCustomShipment("Machete", "models/weapons/w_crowbar.mdl", "fas2_machete", 2000, 5, false, 0, false, {TEAM_BMDEALER})
+AddCustomShipment("Knife", "models/weapons/w_crowbar.mdl", "fas2_dv2", 1000, 5, false, 0, false, {TEAM_BMDEALER})
 
 
 
@@ -353,5 +354,3 @@ AddEntity("40MM HE Turret (Grenade)", {
 })
 
 AddCustomVehicle("Jeep", "models/buggy.mdl", 200, {TEAM_ENGINEER})
--- ADD CUSTOM SHIPMENTS HERE(next line):
-
