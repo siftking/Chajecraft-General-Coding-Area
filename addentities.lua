@@ -66,7 +66,7 @@ AddCustomShipment("KS-23", "models/weapons/world/shotguns/ks23.mdl", "fas2_ks23"
 AddCustomShipment("M14", "models/weapons/world/rifles/sks.mdl", "fas2_m14", 3400, 10, false, 0, false, {TEAM_ADVGUN})
 AddCustomShipment("M1911", "models/weapons/w_pist_p228.mdl", "fas2_m1911", 1200, 10, false, 0, false, {TEAM_ADVGUN})
 AddCustomShipment("M21", "models/weapons/w_snip_awp.mdl", "fas2_m21", 5500, 10, false, 0, false, {TEAM_ADVGUN})
-AddCustomShipment("M24", "models/weapons/w_snip_scout.mdl", "fas2_m24", 5400, 10, false, 0, false, {TEAM_ADVGUN})
+AddCustomShipment("M24", "models/weapons/w_snip_awp.mdl", "fas2_m24", 5400, 10, false, 0, false, {TEAM_ADVGUN})
 AddCustomShipment("M3 Super 90", "models/weapons/w_shot_m3super90.mdl", "fas2_m3s90", 4200, 10, false, 0, false, {TEAM_ADVGUN})
 AddCustomShipment("M4A1", "models/weapons/w_rif_m4a1.mdl", "fas2_m4a1", 3250, 10, false, 0, false, {TEAM_ADVGUN})
 AddCustomShipment("M82", "models/weapons/w_snip_sg550.mdl", "fas2_m82", 5700, 10, false, 0, false, {TEAM_ADVGUN})
@@ -88,9 +88,9 @@ AddCustomShipment("SR-25", "models/weapons/w_snip_g3sg1.mdl", "fas2_sr25", 5500,
 
 // Black Market Dealer
 AddCustomShipment("M67 Grenade", "models/Items/grenadeAmmo.mdl", "fas2_m67", 6000, 5, false, 0, false, {TEAM_BMDEALER})
-AddCustomShipment("M79 Grenade Launcher", "models/Items/BoxFlares.mdl", "fas2_m79", 150000, 10, false, 0, false, {TEAM_BMDEALER})
+AddCustomShipment("M79 Grenade Launcher", "models/weapons/w_eq_defuser.mdl", "fas2_m79", 150000, 10, false, 0, false, {TEAM_BMDEALER})
 AddCustomShipment("Machete", "models/weapons/w_crowbar.mdl", "fas2_machete", 2000, 5, false, 0, false, {TEAM_BMDEALER})
-AddCustomShipment("Knife", "models/weapons/w_crowbar.mdl", "fas2_dv2", 1000, 5, false, 0, false, {TEAM_BMDEALER})
+AddCustomShipment("Knife", "models/weapons/w_knife_t.mdl", "fas2_dv2", 1000, 5, false, 0, false, {TEAM_BMDEALER})
 
 
 
