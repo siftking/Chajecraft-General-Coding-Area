@@ -277,14 +277,6 @@ AddEntity("Silver Money Printer", {
 	cmd = "/smp",
 })
 
-AddEntity("Upgradeable Money Printer", {
-	ent = "upgrade_money_printer",
-	model = "models/props_c17/consolebox01a.mdl",
-	price = 5000,
-	max = 2,
-	cmd = "/upgmp",
-})
-
 AddEntity("Diamond Money Printer", {
 	ent = "diamond_money_printer",
 	model = "models/props_lab/servers.mdl",
@@ -294,22 +286,6 @@ AddEntity("Diamond Money Printer", {
 	customCheck = function(ply)
     return ply:GetUserGroup() == "donator" or ply:IsAdmin()
     end
-})
-
-AddEntity("Basic Generator", {
-        ent = "generator_basic",
-        model = "models/props_c17/TrapPropeller_Engine.mdl",
-        price = 750,
-        max = 5,
-        cmd = "/buybasicgenerator"
-})
-
-AddEntity("Cooling Plate", {
-        ent = "upgrade_coolingplate",
-        model = "models/hunter/blocks/cube025x025x025.mdl",
-        price = 1200, -- (Printer+Cooler=Money Farm)Change this number to change the price of the Cooler in-game.
-        max = 5,
-        cmd = "/buyupgradecoolingplate"
 })
 
 AddEntity("Copper Money Printer", {
