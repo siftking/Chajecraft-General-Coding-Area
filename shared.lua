@@ -374,7 +374,7 @@ TEAM_SWAT = AddExtraTeam("Military Infantry", {
 		warrant for his/her arrest.
 		Type /wanted <name> to alert the public to this criminal
 		Type /jailpos to set the Jail Position]],
-	weapons = {"arrest_stick", "unarrest_stick", "m9k_usp", "stunstick", "door_ram", "weaponchecker", "fas2_ak12"},
+	weapons = {"arrest_stick", "unarrest_stick", "fas2_glock20", "stunstick", "door_ram", "weaponchecker", "fas2_mp5sd6"},
 	command = "swat",
 	max = 4,
 	salary = 60,
@@ -508,7 +508,7 @@ TEAM_ENGINEER = AddExtraTeam("Engineer", {
 	description = [[A Technician, an engineer they call him.
 	    He builds crazy stuff like robots and cores.
 		This is THE ENGINEER!]],
-	weapons = {"weapon_crowbar", "weapon_laserpistol2"},
+	weapons = {"weapon_crowbar"},
 	command = "engineer",
 	max = 3,
 	salary = 60,
@@ -618,113 +618,4 @@ TEAM_ADVGUN = AddExtraTeam("Adv. Gun Dealer", {
 		/Buyshipment <name> to Buy a  weapon shipment
 		/Buygunlab to Buy a gunlab that spawns P228 pistols]],
 	weapons = {"fas2_ammobox"},
-	command = "advgundealer",
-	max = 2,
-	salary = 45,
-	admin = 0,
-	vote = false,
-	hasLicense = false,
-	mayorCanSetSalary = true
-})
-
-//Assassin
-TEAM_ASSASSIN = AddExtraTeam("Assassin", {
-	color = Color(0, 10, 0, 255),
-	model = "models/nikout/dishonored/assassin1.mdl",
-	description = [[This class is a born assassin, brought up by a master
-	            assassin, that Master Assassin hes name was Daud,
-				You are hes follower.
-				
-				- If a Master Assassin is on, you HAVE to listen to his orders.
-				<donator only>]],
-	weapons = {"weapon_crossbow", "blink_swep", "climb_swep2", "fas2_dv2", "vortigaunt_beam"},
-	command = "Assassin",
-	max = 5,
-	salary = 160,
-	admin = 0,
-	vote = false,
-	hasLicense = false,
-	candemote = true,
-	Assassin = true,
-	mayorCanSetSalary = false,
-	customCheck = function(ply)
-    return ply:GetUserGroup() == "donator" or ply:IsAdmin()
-    end    
-})
-
-/*
---------------------------------------------------------
-HOW TO MAKE A DOOR GROUP
---------------------------------------------------------
-AddDoorGroup("NAME OF THE GROUP HERE, you see this when looking at a door", Team1, Team2, team3, team4, etc.)
-
-WARNING: THE DOOR GROUPS HAVE TO BE UNDER THE TEAMS IN SHARED.LUA. IF THEY ARE NOT, IT MIGHT MUCK UP!
-
-
-The default door groups, can also be used as examples:
-*/
-AddDoorGroup("Goverment only", TEAM_CHIEF, TEAM_POLICE, TEAM_MAYOR, TEAM_SWAT, TEAM_SWATLEADER, TEAM_ADMIN, TEAM_SWATMEDIC, TEAM_SWATSNIPER)
-AddDoorGroup("Gundealer only", TEAM_GUN, TEAM_ADMIN)
-AddDoorGroup("Outlanders only", TEAM_ASSASSIN, TEAM_NINJA, TEAM_VIPNINJA)
-
-
-/*
---------------------------------------------------------
-HOW TO MAKE AN AGENDA
---------------------------------------------------------
-AddAgenda(Title of the agenda, Manager (who edits it), Listeners (the ones who just see and follow the agenda))
-
-WARNING: THE AGENDAS HAVE TO BE UNDER THE TEAMS IN SHARED.LUA. IF THEY ARE NOT, IT MIGHT MUCK UP!
-
-The default agenda's, can also be used as examples:
-*/
-AddAgenda("Gangster's agenda", TEAM_MOB, {TEAM_GANG})
-AddAgenda("Survivor Protection Team's Agenda", TEAM_MAYOR, {TEAM_CHIEF, TEAM_POLICE, TEAM_ADMIN})
-AddAgenda("Military Agenda", TEAM_SWATLEADER, {TEAM_SWATMEDIC, TEAM_SWATSNIPER, TEAM_SWATEXPLOSIVE, TEAM_SWAT})
-AddAgenda("Assassins Agenda", TEAM_ASSASSIN, {TEAM_NINJA, TEAM_VIPNINJA})
-
-/*
----------------------------------------------------------------------------
-HOW TO MAKE A GROUP CHAT
----------------------------------------------------------------------------
-Pick one!
-GAMEMODE:AddGroupChat(List of team variables separated by comma)
-
-or
-
-GAMEMODE:AddGroupChat(a function with ply as argument that returns whether a random player is in one chat group)
-This one is for people who know how to script Lua.
-
-*/
-GM:AddGroupChat(function(ply) return ply:IsCP() end)
-GM:AddGroupChat(TEAM_MOB, TEAM_GANG, TEAM_ADMIN)
-GM:AddGroupChat(TEAM_POLICE, TEAM_CHIEF, TEAM_SWAT, TEAM_SWATLEADER, TEAM_SWATMEDIC, TEAM_SWATSNIPER, TEAM_ADMIN)
-GM:AddGroupChat(TEAM_ASSASSIN, TEAM_NINJA, TEAM_VIPNINJA)
-
-/*---------------------------------------------------------------------------
-Define which team joining players spawn into and what team you change to if demoted
----------------------------------------------------------------------------*/
-GM.DefaultTeam = TEAM_CITIZEN
-
-/*---------------------------------------------------------------------------
-Define which teams belong to civil protection
-Civil protection can set warrants, make people wanted and do some other police related things
----------------------------------------------------------------------------*/
-GM.CivilProtection = {
-	[TEAM_POLICE] = true,
-	[TEAM_CHIEF] = true,
-	[TEAM_MAYOR] = true,
-	[TEAM_SWAT] = true,
-	[TEAM_SWATLEADER] = true,
-	[TEAM_SWATMEDIC] = true,
-	[TEAM_SWATSNIPER] = true,
-        [TEAM_SWATEXPLOSIVE] = true,
-	[TEAM_ADMIN] = true
-}
-
-/*---------------------------------------------------------------------------
-Enable hitman goodies on this team
----------------------------------------------------------------------------*/
-DarkRP.addHitmanTeam(TEAM_HITMAN)
-DarkRP.addHitmanTeam(TEAM_ASSASSIN)
-
+	command = "advgun
