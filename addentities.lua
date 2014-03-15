@@ -261,7 +261,7 @@ AddEntity("APC Tank", {
 AddEntity("APC Tank", {
 	ent = "prop_vehicle_zapc",
 	model = "models/combine_apc.mdl",
-	price = 2000,
+	price = 15000,
 	max = 50,
 	cmd = "/apccc",
 	allowed = TEAM_ENGINEER
