@@ -94,6 +94,8 @@ AddCustomShipment("Machete", "models/weapons/w_crowbar.mdl", "fas2_machete", 200
 AddCustomShipment("Knife", "models/weapons/w_knife_t.mdl", "fas2_dv2", 1000, 5, false, 0, false, {TEAM_BMDEALER})
 
 
+// Engineer
+AddCustomShipment("Discharge Laser Pistol", "models/weapons/w_pistol.mdl", "weapon_laserpistol2", 1000, 1, false, 0, false, {TEAM_ENGINEER})
 
 // HOW TO ADD CUSTOM SHIPMENTS - Guide by Jensen ;P
 // AddCustomShipment("Name of shipment", "model class", "weapon class", <price>, <amountpershipment>, false, 0, false, {TEAM_GUN})
@@ -316,15 +318,6 @@ AddEntity("Copper Money Printer", {
 	price = 750,
 	max = 2,
 	cmd = "/copperprinter",
-})
-
-AddEntity("[PART] M203", {
-	ent = "upgr_m203",
-	model = "models/props_c17/SuitCase001a.mdl",
-	price = 1000,
-	max = 1,
-	cmd = "/m203",
-	allowed = TEAM_ADVGUN
 })
 
 AddEntity("7.62x39mm Turret (Machine-Gun)", {
