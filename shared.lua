@@ -597,7 +597,7 @@ TEAM_ADVGUN = AddExtraTeam("Adv. Gun Dealer", {
 		/Buyshipment <name> to Buy a  weapon shipment
 		/Buygunlab to Buy a gunlab that spawns P228 pistols]],
 	weapons = {"fas2_ammobox"},
-	command = "advgun
+	command = "advgun",
 	max = 2,
 	salary = 45,
 	admin = 0,
