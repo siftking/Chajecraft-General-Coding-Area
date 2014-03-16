@@ -52,6 +52,9 @@ AddCustomShipment("STEN", "models/weapons/w_sten.mdl", "m9k_sten", 4000, 10, fal
 AddCustomShipment("TEC 9", "models/weapons/w_intratec_tec9.mdl", "m9k_tec9", 3250, 10, false, 0, false, {TEAM_GUN})
 
 // Adv. Gun Dealer
+AddCustomShipment("M24", "models/weapons/w_snip_awp.mdl", "fas2_m24", 5400, 10, false, 0, false, {TEAM_ADVGUN})
+AddCustomShipment("Raging Bull", "models/weapons/w_357.mdl", "fas2_ragingbull", 1700, 10, false, 0, false, {TEAM_ADVGUN})
+AddCustomShipment("Remington 870", "models/weapons/world/shotguns/ks23.mdl", "fas2_rem870", 4000, 10, false, 0, false, {TEAM_ADVGUN})
 AddCustomShipment("AK-12", "models/weapons/world/rifles/ak12.mdl", "fas2_ak12", 2250, 10, false, 0, false, {TEAM_ADVGUN})
 AddCustomShipment("AK-47", "models/weapons/w_rif_ak47.mdl", "fas2_ak47", 3200, 10, false, 0, false, {TEAM_ADVGUN})
 AddCustomShipment("AK-74", "models/weapons/w_rif_ak47.mdl", "fas2_ak74", 3200, 10, false, 0, false, {TEAM_ADVGUN})
@@ -67,7 +70,7 @@ AddCustomShipment("KS-23", "models/weapons/world/shotguns/ks23.mdl", "fas2_ks23"
 AddCustomShipment("M14", "models/weapons/world/rifles/sks.mdl", "fas2_m14", 3400, 10, false, 0, false, {TEAM_ADVGUN})
 AddCustomShipment("M1911", "models/weapons/w_pist_p228.mdl", "fas2_m1911", 1200, 10, false, 0, false, {TEAM_ADVGUN})
 AddCustomShipment("M21", "models/weapons/w_snip_awp.mdl", "fas2_m21", 5500, 10, false, 0, false, {TEAM_ADVGUN})
-AddCustomShipment("M24", "models/weapons/w_snip_awp.mdl", "fas2_m24", 5400, 10, false, 0, false, {TEAM_ADVGUN})
+
 AddCustomShipment("M3 Super 90", "models/weapons/w_shot_m3super90.mdl", "fas2_m3s90", 4200, 10, false, 0, false, {TEAM_ADVGUN})
 AddCustomShipment("M4A1", "models/weapons/w_rif_m4a1.mdl", "fas2_m4a1", 3250, 10, false, 0, false, {TEAM_ADVGUN})
 AddCustomShipment("M82", "models/weapons/w_snip_sg550.mdl", "fas2_m82", 5700, 10, false, 0, false, {TEAM_ADVGUN})
@@ -77,8 +80,8 @@ AddCustomShipment("MP5SD6", "models/weapons/w_smg_mp5.mdl", "fas2_mp5sd6", 2650,
 AddCustomShipment("OT-s33 Pernach", "models/weapons/world/pistols/ots33.mdl", "fas2_ots33", 1570, 10, false, 0, false, {TEAM_ADVGUN})
 AddCustomShipment("P226", "models/weapons/w_pist_p228.mdl", "fas2_p226", 1400, 10, false, 0, false, {TEAM_ADVGUN})
 AddCustomShipment("PP-19 Bizon", "models/weapons/w_pp19_bizon.mdl", "fas2_pp19", 2650, 10, false, 0, false, {TEAM_ADVGUN})
-AddCustomShipment("Raging Bull", "models/weapons/w_357.mdl", "fas2_ragingbull", 1700, 10, false, 0, false, {TEAM_ADVGUN})
-AddCustomShipment("Remington 870", "models/weapons/world/shotguns/ks23.mdl", "fas2_rem870", 4000, 10, false, 0, false, {TEAM_ADVGUN})
+
+
 AddCustomShipment("RPK-47", "models/weapons/w_rif_ak47.mdl", "fas2_rpk", 3400, 10, false, 0, false, {TEAM_ADVGUN})
 AddCustomShipment("Sako RK-95", "models/weapons/world/rifles/rk95.mdl", "fas2_rk95", 2850, 10, false, 0, false, {TEAM_ADVGUN})
 AddCustomShipment("SG 550", "models/weapons/w_snip_sg550.mdl", "fas2_sg550", 2850, 10, false, 0, false, {TEAM_ADVGUN})
