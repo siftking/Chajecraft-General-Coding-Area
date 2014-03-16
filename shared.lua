@@ -47,7 +47,7 @@ TEAM_POLICE = AddExtraTeam("Survival Protection", {
 		Type /wanted <name> to alert the public to this criminal
 		OR go to tab and warrant someone by clicking the warrant button
 		!!You also hunt down the Runners!!]],
-	weapons = {"arrest_stick", "unarrest_stick", "m9k_colt1911", "stunstick", "door_ram", "weaponchecker"},
+	weapons = {"arrest_stick", "unarrest_stick", "m9k_colt1911", "m9k_mossberg590", "stunstick", "door_ram", "weaponchecker"},
 	command = "cp",
 	max = 6,
 	salary = 65,
@@ -173,7 +173,7 @@ TEAM_CHIEF = AddExtraTeam("Survival Protection Chief", {
 		Type /wanted <name> to alert the public to this criminal
 		Type /jailpos to set the Jail Position
 		!!You also hunt down the Runners!!]],
-	weapons = {"arrest_stick", "unarrest_stick", "m9k_deagle", "stunstick", "door_ram", "weaponchecker"},
+	weapons = {"arrest_stick", "unarrest_stick", "m9k_coltpython", "stunstick", "door_ram", "weaponchecker"},
 	command = "chief",
 	max = 1,
 	salary = 75,
@@ -232,7 +232,7 @@ TEAM_HOBO = AddExtraTeam("Hobo", {
 	description = [[The lowest member of society. All people see you laugh.
 		You have no home.
 		Beg for your food and money
-		Sing for everyone who passes to get money
+		Sing for everyone who passes to get money(micspam)
 		Make your own wooden home somewhere in a corner or
 		outside someone else's door]],
 	weapons = {"weapon_bugbait"},
@@ -262,27 +262,6 @@ TEAM_SECRETSERVICE = AddExtraTeam("Secret Service", {
 	mayorCanSetSalary = true
 })
 
-//V.I.P Ninja
-TEAM_VIPNINJA = AddExtraTeam("V.I.P Ninja", {
-	color = Color(0, 10, 0, 255),
-	model = "models/player/corvo.mdl",
-	description = [[This class was a poor fighter when he was young,
-	    but then he found hes master.]],
-	weapons = {"weapon_crossbow", "spiderman's_swep", "fas2_dv2"},
-	command = "vipninja",
-	max = 50,
-	salary = 120,
-	admin = 0,
-	vote = false,
-	hasLicense = true,
-	candemote = false,
-	vipNinja = true,
-	mayorCanSetSalary = false,
-    customCheck = function(ply)
-    return ply:GetUserGroup() == "donator" or ply:IsAdmin()
-    end
-})
-
 //Ninja
 TEAM_NINJA = AddExtraTeam("Ninja", {
 	color = Color(0, 10, 0, 255),
@@ -306,7 +285,7 @@ TEAM_ADMIN = AddExtraTeam("Admin", {
 	color = Color(38, 255, 0, 153),
 	model = "models/nikout/dishonored/assassin1.mdl",
 	description = [[simple, an admin.]],
-	weapons = {"glv_glaive", "weapon_nautilus", "fas2_dv2"},
+	weapons = {"weapon_nautilus", "fas2_dv2"},
 	command = "admin",
 	max = 64,
 	salary = 500,
@@ -345,7 +324,7 @@ TEAM_HITMAN = AddExtraTeam("Hitman", {
 	color = Color(84, 34, 94, 255),
 	model = "models/player/guerilla.mdl",
 	description = [[A hitman gets payed to kill people.]],
-	weapons = {"m9k_sig_p229r", "weapon_real_cs_knife"},
+	weapons = {"m9k_sig_p229r", "weapon_real_cs_knife", "m9k_intervention"},
 	command = "hitman",
 	max = 1,
 	salary = 60,
@@ -434,7 +413,7 @@ TEAM_SWATMEDIC = AddExtraTeam("Military Medic", {
 		Type /wanted <name> to alert the public to this criminal
 		Type /jailpos to set the Jail Position
 		!!You also hunt down the Runners!!]],
-	weapons = {"m9k_m4a1", "arrest_stick", "unarrest_stick", "m9k_deagle", "stunstick", "door_ram", "weaponchecker", "fas2_ifak"},
+	weapons = {"m9k_tar21", "arrest_stick", "unarrest_stick", "m9k_sig_p229r", "stunstick", "door_ram", "weaponchecker", "fas2_ifak"},
 	command = "swatmedic",
 	max = 100,
 	salary = 100,
@@ -663,7 +642,7 @@ WARNING: THE DOOR GROUPS HAVE TO BE UNDER THE TEAMS IN SHARED.LUA. IF THEY ARE N
 
 The default door groups, can also be used as examples:
 */
-AddDoorGroup("Goverment only", TEAM_CHIEF, TEAM_POLICE, TEAM_MAYOR, TEAM_SWAT, TEAM_SWATLEADER, TEAM_ADMIN, TEAM_SWATMEDIC, TEAM_SWATSNIPER)
+AddDoorGroup("Goverment only", TEAM_CHIEF, TEAM_POLICE, TEAM_MAYOR, TEAM_SWAT, TEAM_SWATLEADER, TEAM_ADMIN, TEAM_SWATMEDIC, TEAM_SWATSNIPER, TEAM_SECRETSERVICE, TEAM_SWATEXPLOSIVE)
 AddDoorGroup("Gundealer only", TEAM_GUN, TEAM_ADMIN)
 AddDoorGroup("Outlanders only", TEAM_ASSASSIN, TEAM_NINJA, TEAM_VIPNINJA)
 
