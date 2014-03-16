@@ -92,6 +92,8 @@ AddCustomShipment("M67 Grenade", "models/Items/grenadeAmmo.mdl", "fas2_m67", 600
 AddCustomShipment("M79 Grenade Launcher", "models/weapons/w_eq_defuser.mdl", "fas2_m79", 150000, 10, false, 0, false, {TEAM_BMDEALER})
 AddCustomShipment("Machete", "models/weapons/w_crowbar.mdl", "fas2_machete", 2000, 5, false, 0, false, {TEAM_BMDEALER})
 AddCustomShipment("Knife", "models/weapons/w_knife_t.mdl", "fas2_dv2", 1000, 5, false, 0, false, {TEAM_BMDEALER})
+AddCustomShipment("Lockpick", "models/weapons/w_crowbar.mdl", "lockpick", 2500, 5, false, 0, false, {TEAM_BMDEALER})
+AddCustomShipment("Keypad Cracker", "models/weapons/w_c4.mdl", "keypad_cracker", 2500, 5, false, 0, false, {TEAM_BMDEALER})
 
 
 // Engineer
@@ -169,40 +171,6 @@ AddEntity("Constant Money Printer", {
 	price = 1000,
 	max = 2,
 	cmd = "/buymoneyprinter"
-})
-
-AddEntity("Jetpack", {
-	ent = "jetpack_pickup",
-	model = "models/props_c17/TrapPropeller_Engine.mdl",
-	price = 1000,
-	max = 40,
-	cmd = "/jetpack",
-	allowed = {TEAM_ENGINEER, TEAM_ADMIN},
-	customCheck = function(ply)
-    return ply:GetUserGroup() == "donator" or ply:IsAdmin()
-    end
-})
-
-AddEntity("Propeller Engine", {
-	ent = "propellerengine",
-	model = "models/props_c17/TrapPropeller_Engine.mdl",
-	price = 4000,
-	max = 40,
-	cmd = "/propellerengine",
-	allowed = {TEAM_ENGINEER, TEAM_ADMIN},
-	customCheck = function(ply)
-    return ply:GetUserGroup() == "donator" or ply:IsAdmin()
-    end
-})
-
-AddEntity("Heat", {
-	ent = "heat",
-	model = "",
-	price = 0,
-	max = 999999,
-	cmd = "/buyheat",
-	amount = 50,
-	allowed = {TEAM_ADMIN}
 })
 
 AddEntity("Constant Ruby Money Printer", {
