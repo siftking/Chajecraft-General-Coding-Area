@@ -1,4 +1,4 @@
-ZombieRP-shit
+ZombieRP
 =============
 
-ZombieRP shit
+ZombieRP
