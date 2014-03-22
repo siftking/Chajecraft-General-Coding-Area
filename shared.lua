@@ -47,7 +47,7 @@ TEAM_POLICE = AddExtraTeam("Survival Protection", {
 		Type /wanted <name> to alert the public to this criminal
 		OR go to tab and warrant someone by clicking the warrant button
 		!!You also hunt down the Runners!!]],
-	weapons = {"arrest_stick", "unarrest_stick", "m9k_colt1911", "m9k_mossberg590", "stunstick", "door_ram", "weaponchecker"},
+	weapons = {"arrest_stick", "unarrest_stick", "m9k_colt1911", "stunstick", "door_ram", "weaponchecker"},
 	command = "cp",
 	max = 6,
 	salary = 65,
@@ -173,7 +173,7 @@ TEAM_CHIEF = AddExtraTeam("Survival Protection Chief", {
 		Type /wanted <name> to alert the public to this criminal
 		Type /jailpos to set the Jail Position
 		!!You also hunt down the Runners!!]],
-	weapons = {"arrest_stick", "unarrest_stick", "m9k_coltpython", "stunstick", "door_ram", "weaponchecker"},
+	weapons = {"arrest_stick", "unarrest_stick", "m9k_coltpython", "m9k_mossberg590", "stunstick", "door_ram", "weaponchecker"},
 	command = "chief",
 	max = 1,
 	salary = 75,
@@ -324,7 +324,7 @@ TEAM_HITMAN = AddExtraTeam("Hitman", {
 	color = Color(84, 34, 94, 255),
 	model = "models/player/guerilla.mdl",
 	description = [[A hitman gets payed to kill people.]],
-	weapons = {"m9k_sig_p229r", "weapon_real_cs_knife", "m9k_intervention"},
+	weapons = {"m9k_sig_p229r", "fas2_dv2", "m9k_intervention"},
 	command = "hitman",
 	max = 1,
 	salary = 60,
@@ -465,7 +465,7 @@ TEAM_SWATEXPLOSIVE = AddExtraTeam("Military Explosives Expert", {
 		Type /wanted <name> to alert the public to this criminal
 		Type /jailpos to set the Jail Position
 		!!You also hunt down the Runners!!]],
-	weapons = {"arrest_stick", "unarrest_stick", "m9k_colt1911", "stunstick", "weaponchecker", "m9k_bizonp19", "weapon_slam"},
+	weapons = {"arrest_stick", "unarrest_stick", "fas2_m1911", "stunstick", "weaponchecker", "fas2_m4a1", "weapon_slam"},
 	command = "swatexplosive",
 	max = 5,
 	salary = 120,
