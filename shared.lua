@@ -442,7 +442,7 @@ TEAM_SWATSNIPER = AddExtraTeam("Military Sniper", {
 		Type /wanted <name> to alert the public to this criminal
 		Type /jailpos to set the Jail Position
 		!!You also hunt down the Runners!!]],
-	weapons = {"arrest_stick", "unarrest_stick", "weapon_cs_deserteagle", "stunstick", "door_ram", "weaponchecker", "fas2_m24"},
+	weapons = {"arrest_stick", "unarrest_stick", "fas2_deagle", "stunstick", "door_ram", "weaponchecker", "fas2_m24"},
 	command = "swatsniper",
 	max = 5,
 	salary = 100,
@@ -465,7 +465,7 @@ TEAM_SWATEXPLOSIVE = AddExtraTeam("Military Explosives Expert", {
 		Type /wanted <name> to alert the public to this criminal
 		Type /jailpos to set the Jail Position
 		!!You also hunt down the Runners!!]],
-	weapons = {"arrest_stick", "unarrest_stick", "fas2_m1911", "stunstick", "weaponchecker", "fas2_m4a1", "weapon_slam"},
+	weapons = {"arrest_stick", "unarrest_stick", "fas2_ragingbull", "stunstick", "weaponchecker", "m9k_bizonp19", "weapon_slam"},
 	command = "swatexplosive",
 	max = 5,
 	salary = 120,
