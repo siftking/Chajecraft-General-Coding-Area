@@ -195,7 +195,7 @@ TEAM_CHIEF = AddExtraTeam("Survival Protection Chief", {
 	}
 })
 
-TEAM_MAYOR = AddExtraTeam("Mayor", {
+TEAM_MAYOR = AddExtraTeam("Governor", {
 	color = Color(150, 20, 20, 255),
 	model = "models/player/breen.mdl",
 	description = [[The Mayor of the city creates laws to serve the greater good
@@ -281,12 +281,29 @@ TEAM_NINJA = AddExtraTeam("Ninja", {
 })
 
 //Admin
-TEAM_ADMIN = AddExtraTeam("Admin", {
+TEAM_ADMIN = AddExtraTeam("Admin on Duty", {
 	color = Color(38, 255, 0, 153),
 	model = "models/nikout/dishonored/assassin1.mdl",
-	description = [[simple, an admin.]],
+	description = [[Don't rp as this job.]],
 	weapons = {"weapon_nautilus", "fas2_dv2"},
 	command = "admin",
+	max = 64,
+	salary = 500,
+	admin = 1,
+	vote = false,
+	hasLicense = true,
+	candemote = true,
+	Admin = true,
+	mayorCanSetSalary = false
+})
+
+//Mod
+TEAM_ADMIN = AddExtraTeam("Mod on duty", {
+	color = Color(38, 255, 0, 153),
+	model = "models/nikout/dishonored/assassin1.mdl",
+	description = [[Don't rp as this job.]],
+	weapons = {"weapon_nautilus", "fas2_dv2"},
+	command = "mod",
 	max = 64,
 	salary = 500,
 	admin = 1,
@@ -413,7 +430,7 @@ TEAM_SWATMEDIC = AddExtraTeam("Military Medic", {
 		Type /wanted <name> to alert the public to this criminal
 		Type /jailpos to set the Jail Position
 		!!You also hunt down the Runners!!]],
-	weapons = {"m9k_tar21", "arrest_stick", "unarrest_stick", "m9k_sig_p229r", "stunstick", "door_ram", "weaponchecker", "fas2_ifak"},
+	weapons = {"fas2_g3", "arrest_stick", "unarrest_stick", "fas2_p226", "stunstick", "door_ram", "weaponchecker", "fas2_ifak"},
 	command = "swatmedic",
 	max = 100,
 	salary = 100,
@@ -465,7 +482,7 @@ TEAM_SWATEXPLOSIVE = AddExtraTeam("Military Explosives Expert", {
 		Type /wanted <name> to alert the public to this criminal
 		Type /jailpos to set the Jail Position
 		!!You also hunt down the Runners!!]],
-	weapons = {"arrest_stick", "unarrest_stick", "fas2_ragingbull", "stunstick", "weaponchecker", "m9k_bizonp19", "weapon_slam"},
+	weapons = {"arrest_stick", "unarrest_stick", "fas2_ragingbull", "stunstick", "weaponchecker", "fas2_pp19", "weapon_slam"},
 	command = "swatexplosive",
 	max = 5,
 	salary = 120,
@@ -559,7 +576,7 @@ TEAM_BMDEALER = AddExtraTeam("Black Market Dealer", {
 TEAM_THIEF = AddExtraTeam("Thief", {
 	color = Color(25, 25, 25, 255),
 	model = "models/player/arctic.mdl",
-	description = [[Why are you reading this, HE IS A THIEF. what am i supposed to say about him?]],
+	description = [[Steal, mug people is your priority]],
 	weapons = {"lockpick", "keypad_cracker"},
 	command = "thief",
 	max = 3,
@@ -573,7 +590,10 @@ TEAM_THIEF = AddExtraTeam("Thief", {
 TEAM_PROTHIEF = AddExtraTeam("Professional Thief", {
 	color = Color(25, 25, 25, 255),
 	model = "models/player/arctic.mdl",
-	description = [[Why are you reading this, HE IS A THIEF. what am i supposed to say about him? <Donator Only>]],
+	description = [[Leaned from the best
+		However, your professional skills are illegal
+		You are AOS as this job
+		<Donator Only>]],
 	weapons = {"pro_lockpick", "prokeypad_cracker"},
 	command = "prothief",
 	max = 4,
@@ -587,14 +607,12 @@ TEAM_PROTHIEF = AddExtraTeam("Professional Thief", {
     end    
 })
 
-TEAM_ADVGUN = AddExtraTeam("Adv. Gun Dealer", {
+TEAM_ADVGUN = AddExtraTeam("Military Arms Dealer", {
 	color = Color(255, 140, 0, 255),
 	model = "models/player/monk.mdl",
 	description = [[A gun dealer is the only person who can sell guns to other
 		people.
-		However, make sure you aren't caught selling guns that are illegal to
-		the public.
-		/Buyshipment <name> to Buy a  weapon shipment
+		/Buyshipment <name> to Buy a weapon shipment
 		/Buygunlab to Buy a gunlab that spawns P228 pistols]],
 	weapons = {"fas2_ammobox"},
 	command = "advgun",
@@ -610,11 +628,8 @@ TEAM_ADVGUN = AddExtraTeam("Adv. Gun Dealer", {
 TEAM_ASSASSIN = AddExtraTeam("Assassin", {
 	color = Color(0, 10, 0, 255),
 	model = "models/nikout/dishonored/assassin1.mdl",
-	description = [[This class is a born assassin, brought up by a master
-	            assassin, that Master Assassin hes name was Daud,
-				You are hes follower.
-				
-				- If a Master Assassin is on, you HAVE to listen to his orders.
+	description = [[Assassinate for money,
+		Stealth skills are required.
 				<donator only>]],
 	weapons = {"weapon_crossbow", "blink_swep", "climb_swep2", "fas2_dv2", "vortigaunt_beam"},
 	command = "Assassin",
