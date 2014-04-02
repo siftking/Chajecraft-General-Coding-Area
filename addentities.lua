@@ -93,6 +93,7 @@ AddCustomShipment("SR-25", "models/weapons/w_snip_g3sg1.mdl", "fas2_sr25", 5500,
 // Black Market Dealer
 AddCustomShipment("M67 Grenade", "models/Items/grenadeAmmo.mdl", "fas2_m67", 6000, 5, false, 0, false, {TEAM_BMDEALER})
 AddCustomShipment("M79 Grenade Launcher", "models/weapons/w_eq_defuser.mdl", "fas2_m79", 150000, 10, false, 0, false, {TEAM_BMDEALER})
+AddCustomShipment("Anti-Titan Weapon", "models/weapons/w_c4.mdl", "m9k_m202", 500000, 5, false, 0, false, {TEAM_BMDEALER})	
 AddCustomShipment("Machete", "models/weapons/w_crowbar.mdl", "fas2_machete", 2000, 5, false, 0, false, {TEAM_BMDEALER})
 AddCustomShipment("Knife", "models/weapons/w_knife_t.mdl", "fas2_dv2", 1000, 5, false, 0, false, {TEAM_BMDEALER})
 AddCustomShipment("Lockpick", "models/weapons/w_crowbar.mdl", "lockpick", 2500, 5, false, 0, false, {TEAM_BMDEALER})
@@ -292,6 +293,15 @@ AddEntity("40MM HE Turret (Grenade)", {
 	max = 50,
 	cmd = "/machinegrenade",
 	allowed = TEAM_ENGINEER
+})
+
+AddEntity("Titan", {
+	ent = "sent_combinemech",
+	model = "models/Items/item_item_crate_dynamic.mdl",
+	price = 10000,
+	max = 50,
+	cmd = "/titanfall",
+	allowed = TEAM_STEAMPILOT
 })
 
 AddCustomVehicle("Jeep", "models/buggy.mdl", 200, {TEAM_ENGINEER})
