@@ -228,15 +228,34 @@ TEAM_MAYOR = AddExtraTeam("Governor", {
 
 TEAM_HOBO = AddExtraTeam("Hobo", {
 	color = Color(80, 45, 0, 255),
-	model = "models/player/corpse1.mdl",
+	model = "models/Humans/Charple01.mdl",
 	description = [[The lowest member of society. All people see you laugh.
-		You have no home.
 		Beg for your food and money
 		Sing for everyone who passes to get money(micspam)
 		Make your own wooden home somewhere in a corner or
 		outside someone else's door]],
 	weapons = {"weapon_bugbait"},
 	command = "hobo",
+	max = 5,
+	salary = 0,
+	admin = 0,
+	vote = false,
+	hasLicense = false,
+	candemote = false,
+	hobo = true,
+	mayorCanSetSalary = false
+})
+
+TEAM_HOBOLORD = AddExtraTeam("Hobolord", {
+	color = Color(80, 45, 0, 255),
+	model = "models/player/corpse1.mdl",
+	description = [[The lowest member of society. All people see you laugh.
+		Beg for your food and money
+		Sing for everyone who passes to get money(micspam)
+		Make your own wooden home somewhere in a corner or
+		outside someone else's door]],
+	weapons = {"weapon_bugbait", "fas2_dv2"},
+	command = "hobolord",
 	max = 5,
 	salary = 0,
 	admin = 0,
@@ -630,7 +649,7 @@ TEAM_ASSASSIN = AddExtraTeam("Assassin", {
 	model = "models/nikout/dishonored/assassin1.mdl",
 	description = [[Assassinate for money,
 		Stealth skills are required.
-				<donator only>]],
+		<donator only>]],
 	weapons = {"weapon_crossbow", "blink_swep", "climb_swep2", "fas2_dv2", "vortigaunt_beam"},
 	command = "Assassin",
 	max = 5,
@@ -642,6 +661,29 @@ TEAM_ASSASSIN = AddExtraTeam("Assassin", {
 	Assassin = true,
 	mayorCanSetSalary = false,
 	customCheck = function(ply)
+    return ply:GetUserGroup() == "donator" or ply:IsAdmin()
+    end    
+})
+
+TEAM_STEAMPILOT = AddExtraTeam("Steampunk Pilot", {
+	color = Color(19, 81, 124, 255),
+	model = "models/Combine_Super_Soldier.mdl",
+	description = [[A Futuristic Soldier, that came to
+		make justice to this, strange, mad world.
+		You are some kind of a cop but you aren't
+		suppose to team with them.
+		---Donator Only---]],
+	weapons = {"arrest_stick", "unarrest_stick", "fas2_ragingbull", "fas2_m14", "stunstick", "door_ram"},
+	command = "steampilot",
+	max = 3,
+	salary = 120,
+	admin = 0,
+	vote = false,
+	hasLicense = true,
+	candemote = true,
+	police = true,
+	mayorCanSetSalary = false,
+    customCheck = function(ply)
     return ply:GetUserGroup() == "donator" or ply:IsAdmin()
     end    
 })
