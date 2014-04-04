@@ -25,12 +25,47 @@ TEAM_CITIZEN = AddExtraTeam("Survivor", {
 	weapons = {},
 	command = "Survivor",
 	max = 0,
-	salary = 45,
+	salary = 0,
 	admin = 0,
 	vote = false,
 	hasLicense = false,
 	candemote = false,
 	mayorCanSetSalary = true
+})
+
+TEAM_SCAVENGER = AddExtraTeam("Scavenger", {
+	color = Color(221, 151, 151),
+	model = {
+		"models/player/Group01/Female_01.mdl",
+		"models/player/Group01/Female_02.mdl",
+		"models/player/Group01/Female_03.mdl",
+		"models/player/Group01/Female_04.mdl",
+		"models/player/Group01/Female_06.mdl",
+		"models/player/group01/male_01.mdl",
+		"models/player/Group01/Male_02.mdl",
+		"models/player/Group01/male_03.mdl",
+		"models/player/Group01/Male_04.mdl",
+		"models/player/Group01/Male_05.mdl",
+		"models/player/Group01/Male_06.mdl",
+		"models/player/Group01/Male_07.mdl",
+		"models/player/Group01/Male_08.mdl",
+		"models/player/Group01/Male_09.mdl"
+	},
+	description = [[You wander around the wasteland, your like
+		a normal survivor, but you get some guns to survive.]],
+	weapons = {"fas2_m1911", "fas2_m14"},
+	command = "scavenger",
+	max = 3,
+	salary = 1,
+	admin = 0,
+	vote = false,
+	hasLicense = false,
+	candemote = false,
+	scavenger = true,
+	mayorCanSetSalary = true
+	customCheck = function(ply)
+    return ply:GetUserGroup() == "Member" or "donator" or ply:IsAdmin()
+    end    
 })
 
 TEAM_POLICE = AddExtraTeam("Survival Protection", {
@@ -121,13 +156,11 @@ TEAM_MOB = AddExtraTeam("Bandit Leader", {
 	}
 })
 
-TEAM_GUN = AddExtraTeam("Gun Dealer", {
+TEAM_GUN = AddExtraTeam("Wandering Merchant", {
 	color = Color(255, 140, 0, 255),
 	model = "models/player/monk.mdl",
-	description = [[A gun dealer is the only person who can sell guns to other
+	description = [[A Wandering Merchant is the person who can sell guns to other
 		people.
-		However, make sure you aren't caught selling guns that are illegal to
-		the public.
 		/Buyshipment <name> to Buy a  weapon shipment
 		/Buygunlab to Buy a gunlab that spawns P228 pistols]],
 	weapons = {},
@@ -198,7 +231,7 @@ TEAM_CHIEF = AddExtraTeam("Survival Protection Chief", {
 TEAM_MAYOR = AddExtraTeam("Governor", {
 	color = Color(150, 20, 20, 255),
 	model = "models/player/breen.mdl",
-	description = [[The Mayor of the city creates laws to serve the greater good
+	description = [[The Governor of the city creates laws to serve the greater good
 	of the people.
 	If you are the mayor you may create and accept warrants.
 	Type /wanted <name>  to warrant a player
@@ -279,6 +312,24 @@ TEAM_NINJA = AddExtraTeam("Ninja", {
 	mayorCanSetSalary = false
 })
 
+//Infected
+TEAM_ASSASSIN = AddExtraTeam("Infected", {
+	color = Color((255, 0, 0),
+	model = "models/Zombie/Classic.mdl",
+	description = [[Youre a zombie, as human calls them
+		You can kill humans and humans can kill you.]],
+	weapons = {"fas2_dv2"},
+	command = "infected",
+	max = 5,
+	salary = 0,
+	admin = 0,
+	vote = false,
+	hasLicense = false,
+	candemote = true,
+	Infected = true,
+	mayorCanSetSalary = false,
+})
+
 //Admin
 TEAM_ADMIN = AddExtraTeam("Admin on Duty", {
 	color = Color(38, 255, 0, 153),
@@ -309,7 +360,7 @@ TEAM_ADMIN = AddExtraTeam("Mod on duty", {
 	vote = false,
 	hasLicense = true,
 	candemote = true,
-	Admin = true,
+	Mod = true,
 	mayorCanSetSalary = false
 })
 
@@ -646,14 +697,14 @@ TEAM_ASSASSIN = AddExtraTeam("Assassin", {
 })
 
 TEAM_STEAMPILOT = AddExtraTeam("Steampunk Pilot", {
-	color = Color(19, 81, 124, 255),
-	model = "models/Combine_Super_Soldier.mdl",
+	color = Color(0, 168, 184),
+	model = "models/combine_super_soldier.mdl",
 	description = [[A Futuristic Soldier, that came to
 		make justice to this, strange, mad world.
 		You are some kind of a cop but you aren't
 		suppose to team with them.
 		---Donator Only---]],
-	weapons = {"arrest_stick", "unarrest_stick", "fas2_ragingbull", "fas2_m14", "stunstick", "door_ram"},
+	weapons = {"arrest_stick", "unarrest_stick", "weapon_357", "weapon_ar2", "stunstick", "door_ram"},
 	command = "steampilot",
 	max = 3,
 	salary = 120,
@@ -661,6 +712,7 @@ TEAM_STEAMPILOT = AddExtraTeam("Steampunk Pilot", {
 	vote = false,
 	hasLicense = true,
 	candemote = true,
+	SteamPilot = true,
 	police = true,
 	mayorCanSetSalary = false,
     customCheck = function(ply)
