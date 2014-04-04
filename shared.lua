@@ -228,7 +228,7 @@ TEAM_MAYOR = AddExtraTeam("Governor", {
 
 TEAM_HOBO = AddExtraTeam("Hobo", {
 	color = Color(80, 45, 0, 255),
-	model = "models/Humans/Charple01.mdl",
+	model = "models/player/corpse1.mdl",
 	description = [[The lowest member of society. All people see you laugh.
 		Beg for your food and money
 		Sing for everyone who passes to get money(micspam)
@@ -236,26 +236,6 @@ TEAM_HOBO = AddExtraTeam("Hobo", {
 		outside someone else's door]],
 	weapons = {"weapon_bugbait"},
 	command = "hobo",
-	max = 5,
-	salary = 0,
-	admin = 0,
-	vote = false,
-	hasLicense = false,
-	candemote = false,
-	hobo = true,
-	mayorCanSetSalary = false
-})
-
-TEAM_HOBOLORD = AddExtraTeam("Hobolord", {
-	color = Color(80, 45, 0, 255),
-	model = "models/player/corpse1.mdl",
-	description = [[The lowest member of society. All people see you laugh.
-		Beg for your food and money
-		Sing for everyone who passes to get money(micspam)
-		Make your own wooden home somewhere in a corner or
-		outside someone else's door]],
-	weapons = {"weapon_bugbait", "fas2_dv2"},
-	command = "hobolord",
 	max = 5,
 	salary = 0,
 	admin = 0,
