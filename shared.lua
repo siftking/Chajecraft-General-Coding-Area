@@ -156,10 +156,10 @@ TEAM_MOB = AddExtraTeam("Bandit Leader", {
 	}
 })
 
-TEAM_GUN = AddExtraTeam("Wandering Merchant", {
+TEAM_GUN = AddExtraTeam("Gundealer", {
 	color = Color(255, 140, 0, 255),
 	model = "models/player/monk.mdl",
-	description = [[A Wandering Merchant is the person who can sell guns to other
+	description = [[A gundealer is the person who can sell guns to other
 		people.
 		/Buyshipment <name> to Buy a  weapon shipment
 		/Buygunlab to Buy a gunlab that spawns P228 pistols]],
@@ -360,7 +360,7 @@ TEAM_ADMIN = AddExtraTeam("Mod on duty", {
 	vote = false,
 	hasLicense = true,
 	candemote = true,
-	Mod = true,
+	Admin = true,
 	mayorCanSetSalary = false
 })
 
