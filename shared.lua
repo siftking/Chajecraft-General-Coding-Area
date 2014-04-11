@@ -720,6 +720,22 @@ TEAM_STEAMPILOT = AddExtraTeam("Steampunk Pilot", {
     end    
 })
 
+TEAM_RUSSIANGUN = AddExtraTeam("Russian Arms Dealer", {
+	color = Color(255, 140, 0, 255),
+	model = "models/player/monk.mdl",
+	description = [[A Russian arms dealer is the person who can sell guns to other
+			people.
+			/Buyshipment <name> to Buy a  weapon shipment]],
+	weapons = {},
+	command = "russiangundealer",
+	max = 2,
+	salary = 45,
+	admin = 0,
+	vote = false,
+	hasLicense = false,
+	mayorCanSetSalary = true
+})
+
 /*
 --------------------------------------------------------
 HOW TO MAKE A DOOR GROUP
