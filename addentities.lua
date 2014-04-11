@@ -89,6 +89,12 @@ AddCustomShipment("SG 552", "models/weapons/w_rif_sg552.mdl", "fas2_sg552", 2850
 AddCustomShipment("SKS", "models/weapons/world/rifles/sks.mdl", "fas2_sks", 5600, 10, false, 0, false, {TEAM_ADVGUN})
 AddCustomShipment("SR-25", "models/weapons/w_snip_g3sg1.mdl", "fas2_sr25", 5500, 10, false, 0, false, {TEAM_ADVGUN})
 
+//Russian Gun Dealer
+AddCustomShipment("Mosin Nagant", "models/weapons/w_grub_mosin.mdl", "grub_ro_mosin", 5000, 10, false, 0, false, {TEAM_RUSSIANGUN})
+AddCustomShipment("Mosin Nagant Scoped", "models/weapons/w_grub_mosinnagant_sniper1.mdl", "grub_ro_mosin_sniper", 6500, 10, false, 0, false, {TEAM_RUSSIANGUN})
+AddCustomShipment("Mosin Nagant Bayonet", "models/weapons/w_grub_mosin_bayonet.mdl", "grub_ro_mosin_bayonet", 6500, 10, false, 0, false, {TEAM_RUSSIANGUN})
+AddCustomShipment("PPSH-41", "models/weapons/w_grub_ppsh_stick.mdl", "grub_ro_ppsh_stick", 4500, 10, false, 0, false, {TEAM_RUSSIANGUN})
+AddCustomShipment("PTRS 1941", "models/weapons/w_grub_ptrs.mdl", "grub_ro_ptrs", 8000, 10, false, 0, false, {TEAM_RUSSIANGUN})
 
 // Black Market Dealer
 AddCustomShipment("M67 Grenade", "models/Items/grenadeAmmo.mdl", "fas2_m67", 6000, 5, false, 0, false, {TEAM_BMDEALER})
