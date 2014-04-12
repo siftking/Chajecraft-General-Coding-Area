@@ -312,24 +312,6 @@ TEAM_NINJA = AddExtraTeam("Ninja", {
 	mayorCanSetSalary = false
 })
 
-//Infected
-TEAM_ASSASSIN = AddExtraTeam("Infected", {
-	color = Color((255, 0, 0),
-	model = "models/Zombie/Classic.mdl",
-	description = [[Youre a zombie, as human calls them
-		You can kill humans and humans can kill you.]],
-	weapons = {"fas2_dv2"},
-	command = "infected",
-	max = 5,
-	salary = 0,
-	admin = 0,
-	vote = false,
-	hasLicense = false,
-	candemote = true,
-	Infected = true,
-	mayorCanSetSalary = false,
-})
-
 //Admin
 TEAM_ADMIN = AddExtraTeam("Admin on Duty", {
 	color = Color(38, 255, 0, 153),
