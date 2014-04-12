@@ -62,7 +62,7 @@ TEAM_SCAVENGER = AddExtraTeam("Scavenger", {
 	hasLicense = false,
 	candemote = false,
 	scavenger = true,
-	mayorCanSetSalary = true
+	mayorCanSetSalary = true,
 	customCheck = function(ply)
     return ply:GetUserGroup() == "Member" or "donator" or ply:IsAdmin()
     end    
