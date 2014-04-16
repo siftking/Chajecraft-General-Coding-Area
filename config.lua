@@ -4,7 +4,7 @@ Set to true or false
 */
 
 -- voice3D - Enable/disable 3DVoice is enabled
-GM.Config.voice3D						= true
+GM.Config.voice3D					= true
 -- adminnpcs - Whether or not NPCs should be admin only.
 GM.Config.adminnpcs 					= true
 -- AdminsCopWeapons - Enable/disable admins spawning with cop weapons
@@ -20,15 +20,15 @@ GM.Config.allowrpnames 					= true
 -- allowsprays - Enable/disable the use of sprays on the server.
 GM.Config.allowsprays 					= true
 -- allowvehicleowning - Enable/disable whether people can own vehicles.
-GM.Config.allowvehicleowning 			= true
+GM.Config.allowvehicleowning 				= true
 -- allowvnocollide - Enable/disable the ability to no-collide a vehicle (for security).
 GM.Config.allowvnocollide 				= false
 -- alltalk - Enable for global chat, disable for local chat.
-GM.Config.alltalk 						= false
+GM.Config.alltalk 					= false
 -- autovehiclelock - Enable/Disable automatic locking of a vehicle when a player exits it.
 GM.Config.autovehiclelock 				= false
 -- babygod - people spawn godded (prevent spawn killing)
-GM.Config.babygod 						= true
+GM.Config.babygod 					= true
 -- canforcedooropen - whether players can force an unownable door open with lockpick or battering ram or w/e
 GM.Config.canforcedooropen				= true
 -- chatsounds - sounds are played when some things are said in chat
@@ -44,7 +44,7 @@ GM.Config.copscanunweld 				= false
 -- cpcanarrestcp - Allow/Disallow CPs to arrest other CPs.
 GM.Config.cpcanarrestcp 				= true
 -- customjobs - Enable/disable the /job command (personalized job names).
-GM.Config.customjobs 					= true
+GM.Config.customjobs 					= false
 -- customspawns - Enable/disable whether custom spawns should be used.
 GM.Config.customspawns 					= true
 -- deathblack - Whether or not a player sees black on death.
@@ -52,7 +52,7 @@ GM.Config.deathblack 					= false
 -- showdeaths - Display kill information in the upper right corner of everyone's screen.
 GM.Config.showdeaths 					= false
 -- deathpov - Enable/disable whether people see their death in first person view
-GM.Config.deathpov 						= true
+GM.Config.deathpov 					= true
 -- decalcleaner - Enable/Disable clearing ever players decals.
 GM.Config.decalcleaner 					= false
 -- doorwarrants - Enable/disable Warrant requirement to enter property.
@@ -102,7 +102,7 @@ GM.Config.noguns 						= false
 -- norespawn - Enable/Disable that people don't have to respawn when they change job.
 GM.Config.norespawn 					= false
 -- npcarrest - Enable/disable arresting npc's
-GM.Config.npcarrest 					= true
+GM.Config.npcarrest 					= false
 -- ooc - Whether or not OOC tags are enabled.
 GM.Config.ooc 							= true
 -- propertytax - Enable/disable property tax.
@@ -118,7 +118,7 @@ GM.Config.respawninjail 				= true
 -- restrictallteams - Enable/disable Players can only be citizen until an admin allows them.
 GM.Config.restrictallteams 				= false
 -- restrictbuypistol - Enabling this feature makes /buy available only to Gun Dealers.
-GM.Config.restrictbuypistol 			= false
+GM.Config.restrictbuypistol 				= false
 -- restrictdrop - Enable/disable restricting the weapons players can drop. Setting this to true disallows weapons from shipments from being dropped
 GM.Config.restrictdrop 					= false
 -- strictsuicide - Whether or not players should spawn where they suicided
@@ -148,27 +148,27 @@ GM.Config.arrestspeed					= 120
 -- babygodtime - How long the babygod lasts
 GM.Config.babygodtime					= 5
 -- deathfee - the amount of money someone drops when dead.
-GM.Config.deathfee						= 20
+GM.Config.deathfee					= 20
 -- decaltimer - Sets the time to clear clientside decals. (seconds)
 GM.Config.decaltimer					= 120
 -- demotetime - Number of seconds before a player can rejoin a team after demotion from that team.
 GM.Config.demotetime					= 120
 -- doorcost - Sets the cost of a door.
-GM.Config.doorcost						= 30
+GM.Config.doorcost					= 30
 -- entremovedelay - how long to wait before removing a bought entity after disconnect.
 GM.Config.entremovedelay				= 0
 -- healthcost - Sets the cost of health.
 GM.Config.healthcost					= 60
 -- jailtimer - Sets the jailtimer. (in seconds)
-GM.Config.jailtimer						= 120
+GM.Config.jailtimer					= 120
 -- maxcopsalary - Sets the max salary that the Mayor can give to a CP.
 GM.Config.maxcopsalary					= 100
 -- maxdoors - Sets the max amount of doors one can own.
-GM.Config.maxdoors						= 20
+GM.Config.maxdoors					= 20
 -- maxdrugs - Sets max drugs.
-GM.Config.maxdrugs						= 200
+GM.Config.maxdrugs					= 200
 -- maxfoods - Sets the max food cartons per Microwave owner.
-GM.Config.maxfoods						= 200
+GM.Config.maxfoods					= 200
 -- maxlawboards - The maximum number of law boards the mayor can place.
 GM.Config.maxlawboards					= 2
 -- maxletters - Sets max letters.
@@ -192,21 +192,21 @@ GM.Config.normalsalary					= 45
 -- npckillpay - Sets the money given for each NPC kill.
 GM.Config.npckillpay					= 20
 -- paydelay - Sets how long it takes before people get salary
-GM.Config.paydelay						= 160
+GM.Config.paydelay					= 160
 -- pocketitems - Sets the amount of objects the pocket can carry
 GM.Config.pocketitems					= 10
 -- pricecap - The maximum price of items (using /price)
-GM.Config.pricecap						= 500
+GM.Config.pricecap					= 500
 -- pricemin - The minimum price of items (using /price)
-GM.Config.pricemin						= 50
+GM.Config.pricemin					= 50
 -- propcost - How much prop spawning should cost. (prop paying must be enabled for this to have an effect)
-GM.Config.propcost						= 10
+GM.Config.propcost					= 10
 -- quakechance - Chance of an earthquake happening.
 GM.Config.quakechance					= 4000
 -- respawntime - Minimum amount of seconds a player has to wait before respawning.
 GM.Config.respawntime					= 4
 -- runspeed - Sets the max running speed.
-GM.Config.runspeed						= 240
+GM.Config.runspeed					= 240
 -- runspeed - Sets the max running speed for CP teams
 GM.Config.runspeedcp					= 255
 -- searchtime - Number of seconds for which a search warrant is valid.
@@ -230,7 +230,7 @@ GM.Config.wallettaxtime					= 600
 -- wantedtime - Number of seconds for which a player is wanted for.
 GM.Config.wantedtime					= 120
 -- walkspeed - Sets the max walking speed.
-GM.Config.walkspeed						= 160
+GM.Config.walkspeed					= 160
 
 /*---------------------------------------------------------------------------
 Other settings
@@ -276,7 +276,25 @@ GM.Config.DisallowDrop = {
         ["vorti_heal_noammo"] = true,
         ["vorti_heal"] = true,
         ["vortigaunt_beam"] = true,
-        ["vortigaunt_beam_noammo"] = true
+        ["vortigaunt_beam_noammo"] = true,
+        ["fas2_ifak"] = true,
+        ["weapon_fishing_rod"] = true,
+        ["prokeypad_cracker"] = true,
+        ["pro_lockpick"] = true,
+        ["weapon_lasermgun"] = true,
+        ["weapon_laserrifle1"] = true,
+        ["m9k_minigun"] = true,
+        ["m9k_davy_crockett"] = true,
+        ["m9k_fists"] = true,
+        ["blink_swep"] = true,
+        ["m9k_orbital_strike"] = true,
+        ["fas2_ammobox"] = true,
+        ["weapon_nautilus"] = true,
+        ["admin_lockpick"] = true,
+        ["keypad_cracker"] = true,
+        ["m9k_damascus"] = true,
+        ["m9k_knife"] = true,
+        ["m9k_machete"] = true
 }
 
 GM.Config.DefaultWeapons = {
