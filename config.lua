@@ -294,6 +294,21 @@ GM.Config.DisallowDrop = {
         ["keypad_cracker"] = true,
         ["m9k_damascus"] = true,
         ["m9k_knife"] = true,
+        ["weapon_bugbait"] = true,
+        ["weapon_crossbow"] = true,
+        ["fas2_m67"] = true,
+        ["fas2_m79"] = true,
+        ["m9k_m202"] = true,
+        ["m9k_m61_frag"] = true,
+        ["m9k_ied_detonator"] = true,
+        ["m9k_m79gl"] = true,
+        ["m9k_matador"] = true,
+        ["m9k_milkormgl"] = true,
+        ["m9k_nerve_gas"] = true,
+        ["m9k_proxy_mine"] = true,
+        ["m9k_rpg7"] = true,
+        ["m9k_sticky_grenade"] = true,
+        ["m9k_suicide_bomb"] = true,
         ["m9k_machete"] = true
 }
 
