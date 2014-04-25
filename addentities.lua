@@ -70,7 +70,6 @@ AddCustomShipment("KS-23", "models/weapons/world/shotguns/ks23.mdl", "fas2_ks23"
 AddCustomShipment("M14", "models/weapons/world/rifles/sks.mdl", "fas2_m14", 3400, 10, false, 0, false, {TEAM_ADVGUN})
 AddCustomShipment("M1911", "models/weapons/w_pist_p228.mdl", "fas2_m1911", 1200, 10, false, 0, false, {TEAM_ADVGUN})
 AddCustomShipment("M21", "models/weapons/w_snip_awp.mdl", "fas2_m21", 5500, 10, false, 0, false, {TEAM_ADVGUN})
-
 AddCustomShipment("M3 Super 90", "models/weapons/w_shot_m3super90.mdl", "fas2_m3s90", 4200, 10, false, 0, false, {TEAM_ADVGUN})
 AddCustomShipment("M4A1", "models/weapons/w_rif_m4a1.mdl", "fas2_m4a1", 3250, 10, false, 0, false, {TEAM_ADVGUN})
 AddCustomShipment("M82", "models/weapons/w_snip_sg550.mdl", "fas2_m82", 5700, 10, false, 0, false, {TEAM_ADVGUN})
@@ -80,8 +79,6 @@ AddCustomShipment("MP5SD6", "models/weapons/w_smg_mp5.mdl", "fas2_mp5sd6", 2650,
 AddCustomShipment("OT-s33 Pernach", "models/weapons/world/pistols/ots33.mdl", "fas2_ots33", 1570, 10, false, 0, false, {TEAM_ADVGUN})
 AddCustomShipment("P226", "models/weapons/w_pist_p228.mdl", "fas2_p226", 1400, 10, false, 0, false, {TEAM_ADVGUN})
 AddCustomShipment("PP-19 Bizon", "models/weapons/w_pp19_bizon.mdl", "fas2_pp19", 2650, 10, false, 0, false, {TEAM_ADVGUN})
-
-
 AddCustomShipment("RPK-47", "models/weapons/w_rif_ak47.mdl", "fas2_rpk", 3400, 10, false, 0, false, {TEAM_ADVGUN})
 AddCustomShipment("Sako RK-95", "models/weapons/world/rifles/rk95.mdl", "fas2_rk95", 2850, 10, false, 0, false, {TEAM_ADVGUN})
 AddCustomShipment("SG 550", "models/weapons/w_snip_sg550.mdl", "fas2_sg550", 2850, 10, false, 0, false, {TEAM_ADVGUN})
@@ -117,7 +114,7 @@ AddEntity("Bandages", {
 	ent = "fas2_ammo_bandages",
 	model = "models/Items/BoxMRounds.mdl",
 	price = 90,
-	max = 2,
+	max = 9000,
 	cmd = "/buybandage",
 	allowed = {TEAM_MEDIC, TEAM_SWATMEDIC}
 })
@@ -126,7 +123,7 @@ AddEntity("Universal Ammo Kit", {
 	ent = "fas2_ammokit",
 	model = "models/Items/BoxMRounds.mdl",
 	price = 300,
-	max = 2,
+	max = 100,
 	cmd = "/buyammobox"
 })
 
@@ -134,7 +131,7 @@ AddEntity("Quickcloths", {
 	ent = "fas2_ammo_quikclots",
 	model = "models/Items/BoxMRounds.mdl",
 	price = 120,
-	max = 2,
+	max = 9000,
 	cmd = "/buycloths",
 	allowed = {TEAM_MEDIC, TEAM_SWATMEDIC}
 })
@@ -143,7 +140,7 @@ AddEntity("Hemostats", {
 	ent = "fas2_ammo_hemostats",
 	model = "models/Items/BoxMRounds.mdl",
 	price = 150,
-	max = 2,
+	max = 9000,
 	cmd = "/buyhemo",
 	allowed = {TEAM_MEDIC, TEAM_SWATMEDIC}
 })
@@ -152,7 +149,7 @@ AddEntity("Medical Supplies Package", {
 	ent = "fas2_ammo_medical",
 	model = "models/Items/item_item_crate_dynamic.mdl",
 	price = 350,
-	max = 2,
+	max = 9000,
 	cmd = "/buymedicsupplies",
 	allowed = {TEAM_MEDIC, TEAM_SWATMEDIC}
 })
@@ -170,7 +167,7 @@ AddEntity("Drug lab", {
 	ent = "drug_lab",
 	model = "models/props_lab/crematorcase.mdl",
 	price = 400,
-	max = 3,
+	max = 5,
 	cmd = "/buydruglab",
 	allowed = {TEAM_GANG, TEAM_MOB, TEAM_ADMIN}
 })
@@ -179,7 +176,7 @@ AddEntity("Constant Money Printer", {
 	ent = "normal_money_printer",
 	model = "models/props_lab/reciever01a.mdl",
 	price = 1000,
-	max = 2,
+	max = 5,
 	cmd = "/buymoneyprinter"
 })
 
@@ -251,7 +248,7 @@ AddEntity("Silver Money Printer", {
 	ent = "silver_money_printer",
 	model = "models/props_c17/consolebox03a.mdl",
 	price = 2000,
-	max = 2,
+	max = 5,
 	cmd = "/smp",
 })
 
@@ -270,7 +267,7 @@ AddEntity("Copper Money Printer", {
 	ent = "copper_money_printer",
 	model = "models/props_c17/consolebox05a.mdl",
 	price = 750,
-	max = 2,
+	max = 5,
 	cmd = "/copperprinter",
 })
 
