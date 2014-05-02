@@ -123,7 +123,7 @@ AddEntity("Universal Ammo Kit", {
 	ent = "fas2_ammokit",
 	model = "models/Items/BoxMRounds.mdl",
 	price = 300,
-	max = 100,
+	max = 90000,
 	cmd = "/buyammobox"
 })
 
