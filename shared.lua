@@ -299,7 +299,7 @@ TEAM_NINJA = AddExtraTeam("Ninja", {
 	color = Color(0, 10, 0, 255),
 	model = "models/nikout/dishonored/assassin1.mdl",
 	description = [[This class was a poor fighter when he was young,
-	    but then he found hes master.]],
+	    but then he found hes master. Your job is to protect the people from the zombies with your parkour skill.]],
 	weapons = {"weapon_crossbow", "climb_swep2", "fas2_dv2"},
 	command = "ninja",
 	max = 2,
