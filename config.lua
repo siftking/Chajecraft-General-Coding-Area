@@ -210,7 +210,7 @@ GM.Config.runspeed					= 240
 -- runspeed - Sets the max running speed for CP teams
 GM.Config.runspeedcp					= 255
 -- searchtime - Number of seconds for which a search warrant is valid.
-GM.Config.searchtime					= 30
+GM.Config.searchtime					= 300
 -- ShipmentSpawnTime - Antispam time between spawning shipments.
 GM.Config.ShipmentSpamTime				= 3
 -- shipmenttime - The number of seconds it takes for a shipment to spawn.
