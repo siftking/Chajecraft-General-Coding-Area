@@ -1,0 +1,71 @@
+﻿
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+# On branch master
+# Changes to be committed:
+#   (use "git reset HEAD <file>..." to unstage)
+#
+#	new file:   DerpInv/drpshared.lua
+#	new file:   ZombieRP/addentities.lua
+#	new file:   ZombieRP/config.lua
+#	new file:   ZombieRP/entities/money_black_printer/cl_init.lua
+#	new file:   ZombieRP/entities/money_black_printer/init.lua
+#	new file:   ZombieRP/entities/money_black_printer/shared.lua
+#	new file:   ZombieRP/entities/money_coal_printer/cl_init.lua
+#	new file:   ZombieRP/entities/money_coal_printer/init.lua
+#	new file:   ZombieRP/entities/money_coal_printer/shared.lua
+#	new file:   ZombieRP/entities/money_coolant_cell/cl_init.lua
+#	new file:   ZombieRP/entities/money_coolant_cell/init.lua
+#	new file:   ZombieRP/entities/money_coolant_cell/shared.lua
+#	new file:   ZombieRP/entities/money_diamond_printer/cl_init.lua
+#	new file:   ZombieRP/entities/money_diamond_printer/init.lua
+#	new file:   ZombieRP/entities/money_diamond_printer/shared.lua
+#	new file:   ZombieRP/entities/money_emerald_printer/cl_init.lua
+#	new file:   ZombieRP/entities/money_emerald_printer/init.lua
+#	new file:   ZombieRP/entities/money_emerald_printer/shared.lua
+#	new file:   ZombieRP/entities/money_normal_printer/cl_init.lua
+#	new file:   ZombieRP/entities/money_normal_printer/init.lua
+#	new file:   ZombieRP/entities/money_normal_printer/shared.lua
+#	new file:   ZombieRP/entities/money_pearl_printer/cl_init.lua
+#	new file:   ZombieRP/entities/money_pearl_printer/init.lua
+#	new file:   ZombieRP/entities/money_pearl_printer/shared.lua
+#	new file:   ZombieRP/entities/money_platinum_printer/cl_init.lua
+#	new file:   ZombieRP/entities/money_platinum_printer/init.lua
+#	new file:   ZombieRP/entities/money_platinum_printer/shared.lua
+#	new file:   ZombieRP/entities/money_printer_upgrade/cl_init.lua
+#	new file:   ZombieRP/entities/money_printer_upgrade/init.lua
+#	new file:   ZombieRP/entities/money_printer_upgrade/shared.lua
+#	new file:   ZombieRP/entities/money_ruby_printer/cl_init.lua
+#	new file:   ZombieRP/entities/money_ruby_printer/init.lua
+#	new file:   ZombieRP/entities/money_ruby_printer/shared.lua
+#	new file:   ZombieRP/entities/money_sapphire_printer/cl_init.lua
+#	new file:   ZombieRP/entities/money_sapphire_printer/init.lua
+#	new file:   ZombieRP/entities/money_sapphire_printer/shared.lua
+#	new file:   ZombieRP/entities/money_white_printer/cl_init.lua
+#	new file:   ZombieRP/entities/money_white_printer/init.lua
+#	new file:   ZombieRP/entities/money_white_printer/shared.lua
+#	new file:   ZombieRP/rules.html
+#	new file:   ZombieRP/shared.lua
+#
+# Changes not staged for commit:
+#   (use "git add/rm <file>..." to update what will be committed)
+#   (use "git checkout -- <file>..." to discard changes in working directory)
+#
+#	deleted:    addentities.lua
+#	deleted:    config.lua
+#	deleted:    drpshared.lua
+#	deleted:    entities/generator_basic/cl_init.lua
+#	deleted:    entities/generator_basic/init.lua
+#	deleted:    entities/generator_basic/shared.lua
+#	deleted:    entities/upgrade_coolingplate/cl_init.lua
+#	deleted:    entities/upgrade_coolingplate/init.lua
+#	deleted:    entities/upgrade_coolingplate/shared.lua
+#	deleted:    entities/upgrade_money_printer/addupgrades.lua
+#	deleted:    entities/upgrade_money_printer/cl_init.lua
+#	deleted:    entities/upgrade_money_printer/init.lua
+#	deleted:    entities/upgrade_money_printer/language.lua
+#	deleted:    entities/upgrade_money_printer/shared.lua
+#	deleted:    rules.html
+#	deleted:    shared.lua
+#
+

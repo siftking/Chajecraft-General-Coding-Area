@@ -110,6 +110,101 @@ AddCustomShipment("Discharge Laser Pistol", "models/weapons/w_pistol.mdl", "weap
 // AddCustomShipment("Name of shipment", "model class", "weapon class", <price>, <amountpershipment>, false, 0, false, {TEAM_GUN})
 // To get a weapon class: Q Menu > Weapons > "category of wep, in this case FA:S" > right click wep > copy name to clipboard
 // To get a model class: Q Menu > Props > ... > Right click on wep model > copy to clipboard
+	
+AddEntity("Normal Printer", {
+	ent = "money_normal_printer",
+	model = "models/props_lab/reciever01a.mdl",
+	price = 1999,
+	max = 2,
+	cmd = "/BuyNormalPrinter"
+})
+	
+AddEntity("Coal Money Printer", {
+	ent = "money_coal_printer",
+	model = "models/props_lab/reciever01a.mdl",
+	price = 4999,
+	max = 2,
+	cmd = "/BuyCoalPrinter"
+})
+
+AddEntity("Ruby Money Printer", {
+	ent = "money_ruby_printer",
+	model = "models/props_lab/reciever01a.mdl",
+	price = 9999,
+	max = 2,
+	cmd = "/BuyRubyPrinter"
+})
+
+AddEntity("Sapphire Money Printer", {
+	ent = "money_sapphire_printer",
+	model = "models/props_lab/reciever01a.mdl",
+	price = 24999,
+	max = 2,
+	cmd = "/BuySapphirePrinter"
+})
+
+AddEntity("Emerald Money Printer", {
+	ent = "money_emerald_printer",
+	model = "models/props_lab/reciever01a.mdl",
+	price = 34999,
+	max = 2,
+	cmd = "/BuyEmeraldPrinter"
+})
+
+AddEntity("Diamond Money Printer", {
+	ent = "money_diamond_printer",
+	model = "models/props_lab/reciever01a.mdl",
+	price = 49999,
+	max = 2,
+	cmd = "/BuyDiamondPrinter"
+})
+
+AddEntity("Pearl Money Printer", {
+	ent = "money_pearl_printer",
+	model = "models/props_lab/reciever01a.mdl",
+	price = 74999,
+	max = 2,
+	cmd = "/BuyPearlPrinter"
+})
+
+AddEntity("Platinum Money Printer", {
+	ent = "money_platinum_printer",
+	model = "models/props_lab/reciever01a.mdl",
+	price = 99999,
+	max = 2,
+	cmd = "/BuyPlatinumPrinter"
+})
+
+AddEntity("Black Money Printer", {
+	ent = "money_black_printer",
+	model = "models/props_lab/reciever01a.mdl",
+	price = 199999,
+	max = 2,
+	cmd = "/BuyBlackPrinter"
+})
+
+AddEntity("White Money Printer", {
+	ent = "money_coldhearted_printer",
+	model = "models/props_lab/reciever01a.mdl",
+	price = 349999,
+	max = 2,
+	cmd = "/BuyWhitePrinter"
+})
+
+AddEntity("Coolant Cell", {
+	ent = "money_coolant_cell",
+	model = "models/items/battery.mdl",
+	price = 799,
+	cmd = "/Buycool"
+})
+
+AddEntity("Printer Upgrade", {
+	ent = "money_printer_upgrade",
+	model = "models/items/battery.mdl",
+	price = 799,
+	cmd = "/Buyupdrageprinter"
+})
+
 AddEntity("Bandages", {
 	ent = "fas2_ammo_bandages",
 	model = "models/Items/BoxMRounds.mdl",
@@ -172,48 +267,6 @@ AddEntity("Drug lab", {
 	allowed = {TEAM_GANG, TEAM_MOB, TEAM_ADMIN}
 })
 
-AddEntity("Constant Money Printer", {
-	ent = "normal_money_printer",
-	model = "models/props_lab/reciever01a.mdl",
-	price = 1000,
-	max = 5,
-	cmd = "/buymoneyprinter"
-})
-
-AddEntity("Constant Ruby Money Printer", {
-	ent = "ruby_money_printer",
-	model = "models/props_lab/reciever01a.mdl",
-	price = 7000,
-	max = 2,
-	cmd = "/buyrubymoneyprinter",
-    customCheck = function(ply)
-    return ply:GetUserGroup() == "donator" or ply:IsAdmin()
-    end
-})
-
-AddEntity("Constant Golden Money Printer", {
-	ent = "gold_money_printer",
-	model = "models/props_lab/reciever01a.mdl",
-	price = 10000,
-	max = 2,
-	cmd = "/buygoldenmoneyprinter",
-    customCheck = function(ply)
-    return ply:GetUserGroup() == "donator" or ply:IsAdmin()
-    end
-
-})
-
-AddEntity("Constant Nuclear Money Printer", {
-	ent = "nuclear_money_printer",
-	model = "models/props_lab/reciever01a.mdl",
-	price = 20000,
-	max = 2,
-	cmd = "/buynukemoneyprinter",
-    customCheck = function(ply)
-    return ply:GetUserGroup() == "donator" or ply:IsAdmin()
-    end
-})
-
 AddEntity("Gun lab", {
 	ent = "gunlab",
 	model = "models/props_c17/TrapPropeller_Engine.mdl",
@@ -242,33 +295,6 @@ AddEntity("APC Tank", {
 	max = 50,
 	cmd = "/apccc",
 	allowed = TEAM_ENGINEER
-})
-
-AddEntity("Silver Money Printer", {
-	ent = "silver_money_printer",
-	model = "models/props_c17/consolebox03a.mdl",
-	price = 2000,
-	max = 5,
-	cmd = "/smp",
-})
-
-AddEntity("Diamond Money Printer", {
-	ent = "diamond_money_printer",
-	model = "models/props_lab/servers.mdl",
-	price = 100000,
-	max = 4,
-	cmd = "/diamondmp",
-	customCheck = function(ply)
-    return ply:GetUserGroup() == "donator" or ply:IsAdmin()
-    end
-})
-
-AddEntity("Copper Money Printer", {
-	ent = "copper_money_printer",
-	model = "models/props_c17/consolebox05a.mdl",
-	price = 750,
-	max = 5,
-	cmd = "/copperprinter",
 })
 
 AddEntity("7.62x39mm Turret (Machine-Gun)", {
