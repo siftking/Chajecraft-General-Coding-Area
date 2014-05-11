@@ -25,7 +25,7 @@ TEAM_CITIZEN = AddExtraTeam("Survivor", {
 	weapons = {},
 	command = "Survivor",
 	max = 0,
-	salary = 0,
+	salary = 45,
 	admin = 0,
 	vote = false,
 	hasLicense = false,
@@ -321,7 +321,7 @@ TEAM_ADMIN = AddExtraTeam("Admin on Duty", {
 	weapons = {"weapon_nautilus", "fas2_dv2"},
 	command = "admin",
 	max = 64,
-	salary = 500,
+	salary = 45,
 	admin = 1,
 	vote = false,
 	hasLicense = true,
@@ -331,14 +331,14 @@ TEAM_ADMIN = AddExtraTeam("Admin on Duty", {
 })
 
 //Mod
-TEAM_ADMIN = AddExtraTeam("Mod on duty", {
+TEAM_ADMIN = AddExtraTeam("Mod on Duty", {
 	color = Color(38, 255, 0, 153),
 	model = "models/nikout/dishonored/assassin1.mdl",
 	description = [[Don't rp as this job.]],
 	weapons = {"weapon_nautilus", "fas2_dv2"},
 	command = "mod",
 	max = 64,
-	salary = 500,
+	salary = 45,
 	admin = 1,
 	vote = false,
 	hasLicense = true,
