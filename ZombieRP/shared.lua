@@ -300,7 +300,7 @@ TEAM_NINJA = AddExtraTeam("Ninja", {
 	model = "models/nikout/dishonored/assassin1.mdl",
 	description = [[This class was a poor fighter when he was young,
 	    but then he found hes master. Your job is to protect the people from harm by other people and the zombies with your parkour skill and crossbow.
-	    	Your not a bad guy who raid or steal, you comes from the shadow and helps anyone in need.]],
+	    	You are not a bad guy who raid or steal, you come from the shadow and helps anyone who is in danger.]],
 	weapons = {"weapon_crossbow", "climb_swep2", "fas2_dv2"},
 	command = "ninja",
 	max = 2,
