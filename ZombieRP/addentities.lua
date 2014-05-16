@@ -184,7 +184,7 @@ AddEntity("Black Money Printer", {
 })
 
 AddEntity("White Money Printer", {
-	ent = "money_coldhearted_printer",
+	ent = "money_white_printer",
 	model = "models/props_lab/reciever01a.mdl",
 	price = 349999,
 	max = 2,
