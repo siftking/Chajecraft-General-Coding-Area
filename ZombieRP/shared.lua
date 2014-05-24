@@ -25,7 +25,7 @@ TEAM_CITIZEN = AddExtraTeam("Survivor", {
 	weapons = {},
 	command = "Survivor",
 	max = 0,
-	salary = 0,
+	salary = 45,
 	admin = 0,
 	vote = false,
 	hasLicense = false,
@@ -300,7 +300,7 @@ TEAM_NINJA = AddExtraTeam("Ninja", {
 	model = "models/nikout/dishonored/assassin1.mdl",
 	description = [[This class was a poor fighter when he was young,
 	    but then he found hes master. Your job is to protect the people from harm by other people and the zombies with your parkour skill and crossbow.
-	    	Your not a bad guy who raid or steal, you comes from the shadow and helps anyone in need.]],
+	    	You are not a bad guy who raid or steal, you come from the shadow and helps anyone who is in danger.]],
 	weapons = {"weapon_crossbow", "climb_swep2", "fas2_dv2"},
 	command = "ninja",
 	max = 2,
@@ -321,7 +321,7 @@ TEAM_ADMIN = AddExtraTeam("Admin on Duty", {
 	weapons = {"weapon_nautilus", "fas2_dv2", "stunstick", "arrest_stick", "unarrest_stick"},
 	command = "admin",
 	max = 64,
-	salary = 500,
+	salary = 45,
 	admin = 1,
 	vote = false,
 	hasLicense = true,
@@ -331,14 +331,14 @@ TEAM_ADMIN = AddExtraTeam("Admin on Duty", {
 })
 
 //Mod
-TEAM_ADMIN = AddExtraTeam("Mod on duty", {
+TEAM_ADMIN = AddExtraTeam("Mod on Duty", {
 	color = Color(38, 255, 0, 153),
 	model = "models/nikout/dishonored/assassin1.mdl",
 	description = [[Don't rp as this job.]],
 	weapons = {"weapon_nautilus", "fas2_dv2", "stunstick", "arrest_stick", "unarrest_stick"},
 	command = "mod",
 	max = 64,
-	salary = 500,
+	salary = 45,
 	admin = 1,
 	vote = false,
 	hasLicense = true,
