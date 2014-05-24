@@ -44,7 +44,7 @@ GM.Config.copscanunweld 				= false
 -- cpcanarrestcp - Allow/Disallow CPs to arrest other CPs.
 GM.Config.cpcanarrestcp 				= true
 -- customjobs - Enable/disable the /job command (personalized job names).
-GM.Config.customjobs 					= true
+GM.Config.customjobs 					= false
 -- customspawns - Enable/disable whether custom spawns should be used.
 GM.Config.customspawns 					= true
 -- deathblack - Whether or not a player sees black on death.
