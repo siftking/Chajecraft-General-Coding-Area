@@ -719,6 +719,29 @@ TEAM_RUSSIANGUN = AddExtraTeam("Russian Arms Dealer", {
 	mayorCanSetSalary = true
 })
 
+TEAM_SWATHACKER = AddExtraTeam("Military Hacker", {
+	color = Color(19, 81, 124, 255),
+	model = "models/player/swat.mdl",
+	description = [[The Military is a very special team.
+	    As Hacking Master you're the person that supports raids with a keypad cracker!!!
+		Type /wanted <name> to alert the public to this criminal
+		Type /jailpos to set the Jail Position
+		!!You also hunt down the Runners!!]],
+	weapons = {"arrest_stick", "unarrest_stick", "fas2_ragingbull", "stunstick", "weaponchecker", "prokeypad_cracker"},
+	command = "swathacker",
+	max = 5,
+	salary = 100,
+	admin = 0,
+	vote = false,
+	hasLicense = true,
+	candemote = true,
+	police = true,
+	mayorCanSetSalary = false,
+    customCheck = function(ply)
+    return ply:GetUserGroup() == "donator" or ply:IsAdmin()
+    end    
+})
+    
 /*
 --------------------------------------------------------
 HOW TO MAKE A DOOR GROUP
@@ -765,7 +788,7 @@ This one is for people who know how to script Lua.
 */
 GM:AddGroupChat(function(ply) return ply:IsCP() end)
 GM:AddGroupChat(TEAM_MOB, TEAM_GANG, TEAM_ADMIN)
-GM:AddGroupChat(TEAM_POLICE, TEAM_CHIEF, TEAM_SWAT, TEAM_SWATLEADER, TEAM_SWATMEDIC, TEAM_SWATSNIPER, TEAM_ADMIN)
+GM:AddGroupChat(TEAM_POLICE, TEAM_CHIEF, TEAM_SWAT, TEAM_SWATLEADER, TEAM_SWATMEDIC, TEAM_SWATSNIPER, TEAM_ADMIN, TEAM_SWATHACKER
 GM:AddGroupChat(TEAM_ASSASSIN, TEAM_NINJA, TEAM_VIPNINJA)
 
 /*---------------------------------------------------------------------------
