@@ -640,7 +640,7 @@ TEAM_PROTHIEF = AddExtraTeam("Professional Thief", {
     end    
 })
 
-TEAM_ADVGUN = AddExtraTeam("Military Arms Dealer", {
+TEAM_ADVGUN = AddExtraTeam("Adv. Arms Dealer", {
 	color = Color(255, 140, 0, 255),
 	model = "models/player/monk.mdl",
 	description = [[A gun dealer is the only person who can sell guns to other
@@ -701,22 +701,6 @@ TEAM_STEAMPILOT = AddExtraTeam("Steampunk Pilot", {
     customCheck = function(ply)
     return ply:GetUserGroup() == "donator" or ply:IsAdmin()
     end    
-})
-
-TEAM_RUSSIANGUN = AddExtraTeam("Russian Arms Dealer", {
-	color = Color(255, 140, 0, 255),
-	model = "models/player/monk.mdl",
-	description = [[A Russian arms dealer is the person who can sell guns to other
-			people.
-			/Buyshipment <name> to Buy a  weapon shipment]],
-	weapons = {},
-	command = "russiangundealer",
-	max = 2,
-	salary = 45,
-	admin = 0,
-	vote = false,
-	hasLicense = false,
-	mayorCanSetSalary = true
 })
 
 TEAM_SWATHACKER = AddExtraTeam("Military Hacker", {
