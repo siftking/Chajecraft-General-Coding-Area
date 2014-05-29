@@ -317,6 +317,9 @@ GM.Config.DisallowDrop = {
         ["m9k_mossberg590"] = true,
         ["m9k_mp40"] = true,
         ["m9k_mp9"] = true,
+        ["dual_weapons"] = true,
+        ["weapon_357"] = true,
+        ["weapon_ar2"] = true,
         ["fas2_m4a1"] = true
 }
 
