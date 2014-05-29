@@ -778,7 +778,7 @@ This one is for people who know how to script Lua.
 */
 GM:AddGroupChat(function(ply) return ply:IsCP() end)
 GM:AddGroupChat(TEAM_MOB, TEAM_GANG, TEAM_ADMIN)
-GM:AddGroupChat(TEAM_POLICE, TEAM_CHIEF, TEAM_SWAT, TEAM_SWATLEADER, TEAM_SWATMEDIC, TEAM_SWATSNIPER, TEAM_ADMIN, TEAM_SWATHACKER
+GM:AddGroupChat(TEAM_POLICE, TEAM_CHIEF, TEAM_SWAT, TEAM_SWATLEADER, TEAM_SWATMEDIC, TEAM_SWATSNIPER, TEAM_ADMIN, TEAM_SWATHACKER)
 GM:AddGroupChat(TEAM_ASSASSIN, TEAM_NINJA, TEAM_VIPNINJA)
 
 /*---------------------------------------------------------------------------
