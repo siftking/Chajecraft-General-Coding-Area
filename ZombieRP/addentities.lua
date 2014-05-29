@@ -48,7 +48,7 @@ AddCustomShipment("STEN", "models/weapons/w_sten.mdl", "m9k_sten", 4000, 10, fal
 AddCustomShipment("TEC 9", "models/weapons/w_intratec_tec9.mdl", "m9k_tec9", 3250, 10, false, 0, false, {TEAM_GUN})
 
 // Adv. Gun Dealer
-AddCustomShipment("Raging Bull", "models/weapons/w_357.mdl", "fas2_ragingbull", 1700, 10, false, 0, false, {TEAM_ADVGUN})
+AddCustomShipment("Magnum", "models/weapons/w_357.mdl", "fas2_ragingbull", 1700, 10, false, 0, false, {TEAM_ADVGUN})
 AddCustomShipment("Remington 870", "models/weapons/world/shotguns/ks23.mdl", "fas2_rem870", 4000, 10, false, 0, false, {TEAM_ADVGUN})
 AddCustomShipment("AK-12", "models/weapons/world/rifles/ak12.mdl", "fas2_ak12", 2250, 10, false, 0, false, {TEAM_ADVGUN})
 AddCustomShipment("AK-47", "models/weapons/w_rif_ak47.mdl", "fas2_ak47", 3200, 10, false, 0, false, {TEAM_ADVGUN})
