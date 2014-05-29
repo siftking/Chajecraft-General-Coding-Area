@@ -64,7 +64,7 @@ TEAM_SCAVENGER = AddExtraTeam("Scavenger", {
 	scavenger = true,
 	mayorCanSetSalary = true,
 	customCheck = function(ply)
-    return ply:GetUserGroup() == "Member" or "donator" or ply:IsAdmin()
+    return ply:GetUserGroup() == "Member" or ply:GetUserGroup() == "donator" or ply:IsAdmin()
     end    
 })
 
@@ -320,23 +320,6 @@ TEAM_ADMIN = AddExtraTeam("Admin on Duty", {
 	description = [[Don't rp as this job.]],
 	weapons = {"weapon_nautilus", "fas2_dv2", "stunstick", "arrest_stick", "unarrest_stick"},
 	command = "admin",
-	max = 64,
-	salary = 45,
-	admin = 1,
-	vote = false,
-	hasLicense = true,
-	candemote = true,
-	Admin = true,
-	mayorCanSetSalary = false
-})
-
-//Mod
-TEAM_ADMIN = AddExtraTeam("Mod on Duty", {
-	color = Color(38, 255, 0, 153),
-	model = "models/nikout/dishonored/assassin1.mdl",
-	description = [[Don't rp as this job.]],
-	weapons = {"weapon_nautilus", "fas2_dv2", "stunstick", "arrest_stick", "unarrest_stick"},
-	command = "mod",
 	max = 64,
 	salary = 45,
 	admin = 1,
@@ -722,6 +705,29 @@ TEAM_SWATHACKER = AddExtraTeam("Military Hacker", {
 	police = true,
 	mayorCanSetSalary = false,
     customCheck = function(ply)
+    return ply:GetUserGroup() == "donator" or ply:IsAdmin()
+    end    
+})
+
+TEAM_QUICKSHOT = AddExtraTeam("Quickshot", {
+	color = Color(221, 151, 151),
+	model = {
+		"models/player/leet.mdl"},
+	description = [[After years of travelling you
+	have finally found civilization in this Zombie Apocalypse.
+	With your great dual wielding skills and loads of weapons.
+	You have decided to protect these people]],
+	weapons = {"dual_weapons"},
+	command = "quickshot",
+	max = 4,
+	salary = 30,
+	admin = 0,
+	vote = false,
+	hasLicense = true,
+	candemote = false,
+	quickshot = true,
+	mayorCanSetSalary = false,
+	customCheck = function(ply)
     return ply:GetUserGroup() == "donator" or ply:IsAdmin()
     end    
 })
