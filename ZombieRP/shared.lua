@@ -53,7 +53,7 @@ TEAM_SCAVENGER = AddExtraTeam("Scavenger", {
 	},
 	description = [[You wander around the wasteland, your like
 		a normal survivor, but you get some guns to survive.]],
-	weapons = {"fas2_m1911", "fas2_m14"},
+	weapons = {"m9k_colt191", "fas2_m24"},
 	command = "scavenger",
 	max = 3,
 	salary = 1,
@@ -140,7 +140,7 @@ TEAM_MOB = AddExtraTeam("Bandit Leader", {
 		organization.
 		He has the ability to break into houses by using a lockpick.
 		The Bandit Leader also can unarrest you.]],
-	weapons = {"lockpick", "unarrest_stick", "m9k_luger", "m9k_thompson"},
+	weapons = {"lockpick", "unarrest_stick", "m9k_luger", "m9k_mp40"},
 	command = "mobboss",
 	max = 1,
 	salary = 60,
@@ -206,7 +206,7 @@ TEAM_CHIEF = AddExtraTeam("Survival Protection Chief", {
 		Type /wanted <name> to alert the public to this criminal
 		Type /jailpos to set the Jail Position
 		!!You also hunt down the Runners!!]],
-	weapons = {"arrest_stick", "unarrest_stick", "m9k_coltpython", "m9k_mossberg590", "stunstick", "door_ram", "weaponchecker"},
+	weapons = {"arrest_stick", "unarrest_stick", "m9k_colt191", "m9k_mossberg590", "stunstick", "door_ram", "weaponchecker"},
 	command = "chief",
 	max = 1,
 	salary = 75,
@@ -240,7 +240,7 @@ TEAM_MAYOR = AddExtraTeam("Governor", {
 	Everyone must be inside during a lockdown.
 	The cops patrol the area
 	/unlockdown to end a lockdown]],
-	weapons = {"m9k_hk45"},
+	weapons = {"m9k_colt191"},
 	command = "mayor",
 	max = 1,
 	salary = 85,
@@ -284,7 +284,7 @@ TEAM_SECRETSERVICE = AddExtraTeam("Secret Service", {
 	color = Color(15, 255, 111, 255),
 	model = "models/player/barney.mdl",
 	description = [[Your a secret service, protect mayor at all costs.]],
-	weapons = {"arrest_stick", "m9k_mp7", "m9k_usp"},
+	weapons = {"arrest_stick", "m9k_colt191", "m9k_mp9"},
 	command = "secretservice",
 	max = 2,
 	salary = 100,
@@ -340,7 +340,7 @@ TEAM_RUNNER = AddExtraTeam("Runner", {
 		
 		SKILL:
 		Parkour]],
-	weapons = {"m9k_sig_p229r", "climb_swep2"},
+	weapons = {"m9k_luger", "climb_swep2"},
 	command = "parkour",
 	max = 3,
 	salary = 40,
@@ -357,7 +357,7 @@ TEAM_HITMAN = AddExtraTeam("Hitman", {
 	color = Color(84, 34, 94, 255),
 	model = "models/player/guerilla.mdl",
 	description = [[A hitman gets payed to kill people.]],
-	weapons = {"m9k_sig_p229r", "fas2_dv2", "m9k_intervention"},
+	weapons = {"m9k_luger", "fas2_dv2", "m9k_intervention"},
 	command = "hitman",
 	max = 1,
 	salary = 60,
@@ -386,7 +386,7 @@ TEAM_SWAT = AddExtraTeam("Military Infantry", {
 		warrant for his/her arrest.
 		Type /wanted <name> to alert the public to this criminal
 		Type /jailpos to set the Jail Position]],
-	weapons = {"arrest_stick", "unarrest_stick", "fas2_glock20", "stunstick", "door_ram", "weaponchecker", "fas2_mp5sd6"},
+	weapons = {"arrest_stick", "unarrest_stick", "m9k_colt1911", "stunstick", "door_ram", "weaponchecker", "fas2_m4a1"},
 	command = "swat",
 	max = 4,
 	salary = 60,
@@ -415,7 +415,7 @@ TEAM_SWATLEADER = AddExtraTeam("Military Commander", {
 		warrant for his/her arrest.
 		Type /wanted <name> to alert the public to this criminal
 		Type /jailpos to set the Jail Position]],
-	weapons = {"fas2_deagle", "arrest_stick", "unarrest_stick", "stunstick", "door_ram", "weaponchecker", "fas2_rem870", "fas2_ak12"},
+	weapons = {"m9k_colt1911", "arrest_stick", "unarrest_stick", "stunstick", "door_ram", "weaponchecker", "m9k_mossberg590", "fas2_m4a1"},
 	command = "swatleader",
 	max = 1,
 	salary = 100,
@@ -446,7 +446,7 @@ TEAM_SWATMEDIC = AddExtraTeam("Military Medic", {
 		Type /wanted <name> to alert the public to this criminal
 		Type /jailpos to set the Jail Position
 		!!You also hunt down the Runners!!]],
-	weapons = {"fas2_g3", "arrest_stick", "unarrest_stick", "fas2_p226", "stunstick", "door_ram", "weaponchecker", "fas2_ifak"},
+	weapons = {"m9k_colt1911", "arrest_stick", "unarrest_stick", "fas2_m4a1", "stunstick", "door_ram", "weaponchecker", "fas2_ifak"},
 	command = "swatmedic",
 	max = 100,
 	salary = 100,
@@ -475,7 +475,7 @@ TEAM_SWATSNIPER = AddExtraTeam("Military Sniper", {
 		Type /wanted <name> to alert the public to this criminal
 		Type /jailpos to set the Jail Position
 		!!You also hunt down the Runners!!]],
-	weapons = {"arrest_stick", "unarrest_stick", "fas2_deagle", "stunstick", "door_ram", "weaponchecker", "fas2_m24"},
+	weapons = {"arrest_stick", "unarrest_stick", "m9k_colt1911", "stunstick", "door_ram", "weaponchecker", "fas2_m24"},
 	command = "swatsniper",
 	max = 5,
 	salary = 100,
@@ -498,7 +498,7 @@ TEAM_SWATEXPLOSIVE = AddExtraTeam("Military Explosives Expert", {
 		Type /wanted <name> to alert the public to this criminal
 		Type /jailpos to set the Jail Position
 		!!You also hunt down the Runners!!]],
-	weapons = {"arrest_stick", "unarrest_stick", "fas2_ragingbull", "stunstick", "weaponchecker", "fas2_pp19", "weapon_slam"},
+	weapons = {"arrest_stick", "unarrest_stick", "m9k_colt1911", "stunstick", "weaponchecker", "m9k_mossberg590", "weapon_slam"},
 	command = "swatexplosive",
 	max = 5,
 	salary = 120,
@@ -557,7 +557,7 @@ TEAM_PGUARD = AddExtraTeam("Personal Guard", {
 	    Do not abuse this job.
 		If they hire you as their personal guard, you NEED to protect them.
 		If you don't, that's breaking the rules, goodluck!]],
-	weapons = {"m9k_m92beretta"},
+	weapons = {"m9k_colt1911"},
 	command = "pguard",
 	max = 2,
 	salary = 40,
@@ -694,7 +694,7 @@ TEAM_SWATHACKER = AddExtraTeam("Military Hacker", {
 		Type /wanted <name> to alert the public to this criminal
 		Type /jailpos to set the Jail Position
 		!!You also hunt down the Runners!!]],
-	weapons = {"arrest_stick", "unarrest_stick", "fas2_ragingbull", "stunstick", "weaponchecker", "prokeypad_cracker"},
+	weapons = {"arrest_stick", "unarrest_stick", "m9k_colt1911", "m9k_mossberg590", "stunstick", "weaponchecker", "prokeypad_cracker"},
 	command = "swathacker",
 	max = 5,
 	salary = 100,
