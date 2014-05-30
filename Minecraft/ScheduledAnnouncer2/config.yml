@@ -25,12 +25,15 @@ announcement:
     prefix: '&c[Announcement] '
 
     # The time of one interval in seconds.
-    interval: 100
+    interval: 120
 
     # List of messages to announce. You could use color codes by using & + hex chars too. 
     messages:
-    - 'Check out our website at &1http://thebounddevs.tk/'
-    - 'Like us on Facebook! &1https://www.facebook.com/Chajecraft'
-    - 'Donate at &1http://thebounddevs.tk/'
-    - 'Subscribe to &1https://www.youtube.com/user/jensenvg'
-    
+    - 'Check out our website at &fhttp://thebounddevs.tk/'
+    - 'To create a faction type /f create'
+    - 'Like us on Facebook! &fhttps://www.facebook.com/Chajecraft'
+    - 'To join a mobarena type /ma join'
+    - 'Donate at &fhttp://thebounddevs.tk/'
+    - 'Visit the shops! type /spawn'
+    - 'Subscribe to &fhttps://www.youtube.com/user/jensenvg'
+    - 'Play minigames! type /spawn'
