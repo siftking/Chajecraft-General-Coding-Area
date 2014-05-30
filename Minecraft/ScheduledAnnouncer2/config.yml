@@ -29,8 +29,8 @@ announcement:
 
     # List of messages to announce. You could use color codes by using & + hex chars too. 
     messages:
-    - 'This is the first default announcement!'
-    - 'Use /announce help to get info how to config this plugin.'
-    - 'You can also configure this plugin with its config.yml too!'
-    - 'To add another announcement below this, just add a new line with no tabs and quotes'
+    - 'Check out our website at &1http://thebounddevs.tk/'
+    - 'Like us on Facebook! &1https://www.facebook.com/Chajecraft'
+    - 'Donate at &1http://thebounddevs.tk/'
+    - 'Subscribe to &1https://www.youtube.com/user/jensenvg'
     
