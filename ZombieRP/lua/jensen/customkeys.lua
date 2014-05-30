@@ -6,5 +6,5 @@
 // Keys can be found here: http://wiki.garrysmod.com/page/Enums/KEY
 
 hook.Add("PlayerKeyPress","BindMenu",function(pl,key)
-  if key == KEY_LALT and if key == IN_ATTACK then LocalPlayer():RunConsoleCommand( "say", "/drop" ) end
+  if key == KEY_LALT and if key == IN_ATTACK then LocalPlayer():RunConsoleCommand( "say", "/drop" ) end // This is for weapon dropping.
 end)
