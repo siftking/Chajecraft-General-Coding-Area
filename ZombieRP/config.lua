@@ -309,7 +309,18 @@ GM.Config.DisallowDrop = {
         ["m9k_rpg7"] = true,
         ["m9k_sticky_grenade"] = true,
         ["m9k_suicide_bomb"] = true,
-        ["m9k_machete"] = true
+        ["m9k_machete"] = true,
+        ["m9k_luger"] = true,
+        ["m9k_colt1911"] = true,
+        ["m9k_intervention"] = true,
+        ["fas2_m24"] = true,
+        ["m9k_mossberg590"] = true,
+        ["m9k_mp40"] = true,
+        ["m9k_mp9"] = true,
+        ["dual_weapons"] = true,
+        ["weapon_357"] = true,
+        ["weapon_ar2"] = true,
+        ["fas2_m4a1"] = true
 }
 
 GM.Config.DefaultWeapons = {
