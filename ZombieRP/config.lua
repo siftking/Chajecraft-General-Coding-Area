@@ -328,7 +328,6 @@ GM.Config.DefaultWeapons = {
 	"weapon_physcannon",
 	"gmod_camera",
 	"gmod_tool",
-	"pocket",
 	"weapon_physgun",
 	"flashlight",
         "weapon_fists"
