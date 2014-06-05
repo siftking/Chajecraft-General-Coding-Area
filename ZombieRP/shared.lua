@@ -175,10 +175,11 @@ model = {
 "models/player/Group03/Male_09.mdl"},
 description = [[A bandit with medical skills.
 A bandit generally works for the Bandit Leader who runs the crime family.
-The Bandit Leader sets your agenda and you follow it or you might be punished.
-<Donator Only>]],
+The Bandit Leader sets your agenda and you follow it or you might be punished.]],
 weapons = {"m9k_luger", "fas2_ifak"},
 command = "gangstermed",
+AddAgenda("Gangster's agenda", TEAM_MOB, {TEAM_GANG, TEAM_GANGMED})
+GM:AddGroupChat(TEAM_MOB, TEAM_GANG, TEAM_GANGMED, TEAM_ADMIN)
 max = 2,
 salary = 80,
 admin = 0,
