@@ -156,6 +156,40 @@ TEAM_MOB = AddExtraTeam("Bandit Leader", {
 	}
 })
 
+TEAM_GANGMED = AddExtraTeam("Bandit Medic", {
+color = Color(75, 75, 75, 255),
+model = {
+"models/player/Group03/Female_01.mdl",
+"models/player/Group03/Female_02.mdl",
+"models/player/Group03/Female_03.mdl",
+"models/player/Group03/Female_04.mdl",
+"models/player/Group03/Female_06.mdl",
+"models/player/group03/male_01.mdl",
+"models/player/Group03/Male_02.mdl",
+"models/player/Group03/male_03.mdl",
+"models/player/Group03/Male_04.mdl",
+"models/player/Group03/Male_05.mdl",
+"models/player/Group03/Male_06.mdl",
+"models/player/Group03/Male_07.mdl",
+"models/player/Group03/Male_08.mdl",
+"models/player/Group03/Male_09.mdl"},
+description = [[A bandit with medical skills.
+A bandit generally works for the Bandit Leader who runs the crime family.
+The Bandit Leader sets your agenda and you follow it or you might be punished.
+<Donator Only>]],
+weapons = {"m9k_luger", "fas2_ifak"},
+command = "gangstermed",
+max = 2,
+salary = 80,
+admin = 0,
+vote = false,
+hasLicense = false,
+mayorCanSetSalary = false
+    customCheck = function(ply)
+    return ply:GetUserGroup() == "donator" or ply:IsAdmin()
+    end  
+})
+
 TEAM_GUN = AddExtraTeam("Gundealer", {
 	color = Color(255, 140, 0, 255),
 	model = "models/player/monk.mdl",
