@@ -127,7 +127,11 @@ AddEntity("Sapphire Money Printer", {
 	model = "models/props_lab/reciever01a.mdl",
 	price = 24999,
 	max = 2,
-	cmd = "/BuySapphirePrinter"
+	cmd = "/BuySapphirePrinter",
+	customCheck = function(ply)
+    return ply:GetUserGroup() == "donator" or ply:IsAdmin()
+    end
+})
 })
 
 AddEntity("Emerald Money Printer", {
@@ -135,7 +139,10 @@ AddEntity("Emerald Money Printer", {
 	model = "models/props_lab/reciever01a.mdl",
 	price = 34999,
 	max = 2,
-	cmd = "/BuyEmeraldPrinter"
+	cmd = "/BuyEmeraldPrinter",
+	customCheck = function(ply)
+    return ply:GetUserGroup() == "donator" or ply:IsAdmin()
+    end
 })
 
 AddEntity("Diamond Money Printer", {
@@ -143,7 +150,10 @@ AddEntity("Diamond Money Printer", {
 	model = "models/props_lab/reciever01a.mdl",
 	price = 49999,
 	max = 2,
-	cmd = "/BuyDiamondPrinter"
+	cmd = "/BuyDiamondPrinter",
+	customCheck = function(ply)
+    return ply:GetUserGroup() == "donator" or ply:IsAdmin()
+    end
 })
 
 AddEntity("Pearl Money Printer", {
@@ -151,7 +161,10 @@ AddEntity("Pearl Money Printer", {
 	model = "models/props_lab/reciever01a.mdl",
 	price = 74999,
 	max = 2,
-	cmd = "/BuyPearlPrinter"
+	cmd = "/BuyPearlPrinter",
+	customCheck = function(ply)
+    return ply:GetUserGroup() == "donator" or ply:IsAdmin()
+    end
 })
 
 AddEntity("Platinum Money Printer", {
@@ -159,7 +172,10 @@ AddEntity("Platinum Money Printer", {
 	model = "models/props_lab/reciever01a.mdl",
 	price = 99999,
 	max = 2,
-	cmd = "/BuyPlatinumPrinter"
+	cmd = "/BuyPlatinumPrinter",
+	customCheck = function(ply)
+    return ply:GetUserGroup() == "donator" or ply:IsAdmin()
+    end
 })
 
 AddEntity("Black Money Printer", {
@@ -167,15 +183,10 @@ AddEntity("Black Money Printer", {
 	model = "models/props_lab/reciever01a.mdl",
 	price = 199999,
 	max = 2,
-	cmd = "/BuyBlackPrinter"
-})
-
-AddEntity("White Money Printer", {
-	ent = "money_white_printer",
-	model = "models/props_lab/reciever01a.mdl",
-	price = 349999,
-	max = 2,
-	cmd = "/BuyWhitePrinter"
+	cmd = "/BuyBlackPrinter",
+	customCheck = function(ply)
+    return ply:GetUserGroup() == "donator" or ply:IsAdmin()
+    end
 })
 
 AddEntity("Coolant Cell", {
@@ -271,7 +282,7 @@ AddEntity("APC Tank", {
 	cmd = "/apcc",
 	allowed = {TEAM_SWATLEADER, TEAM_SWAT, TEAM_SWATMEDIC, TEAM_SWATSNIPER, TEAM_SWATEXPLOSIVE},
 	customCheck = function(ply)
-    return ply:GetUserGroup() == "Member" or "donator" or ply:IsAdmin()
+    return ply:GetUserGroup() == "Member" or ply:GetUserGroup() == "donator" or ply:IsAdmin()
     end
 })
 
