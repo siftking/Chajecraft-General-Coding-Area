@@ -193,12 +193,14 @@ AddEntity("Coolant Cell", {
 	ent = "money_coolant_cell",
 	model = "models/items/battery.mdl",
 	price = 799,
+	max = 9000,
 	cmd = "/Buycool"
 })
 
 AddEntity("Printer Upgrade", {
 	ent = "money_printer_upgrade",
 	model = "models/items/battery.mdl",
+	max = 9000,
 	price = 799,
 	cmd = "/Buyupdrageprinter"
 })
