@@ -44,7 +44,7 @@ function ENT:OnTakeDamage(dmg)
 	self.damage = (self.damage or 500) - math.ceil(dmg:GetDamage())
 	self:SetNWInt("PrintB",self.damage)
 	if self.damage <= 0 then
-		self:SetNWInt("PrintB", 0)
+		self:SetNWInt("PrintB",0)
 		local rnd = math.random(1, 10)
 		if rnd < 6 then
 			self:BurstIntoFlames()
