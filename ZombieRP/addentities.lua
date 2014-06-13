@@ -14,7 +14,7 @@ AddCustomShipment("Python", "models/weapons/w_colt_python.mdl", "m9k_coltpython"
 AddCustomShipment("Raging Bull", "models/weapons/w_hk45c.mdl", "m9k_ragingbull", 3000, 10, false, 0, false, {TEAM_GUN})
 AddCustomShipment("S&W 500", "models/weapons/w_sw_model_500.mdl", "m9k_model500", 2750, 10, false, 0, false, {TEAM_GUN})
 AddCustomShipment("M29 Satan", "models/weapons/w_m29_satan.mdl", "m9k_m29satan", 3000, 10, false, 0, false, {TEAM_GUN})
-AddCustomShipment("Baretta", "models/weapons/w_beretta_m92.mdl", "m9k_m92baretta", 1400, 10, false, 0, false, {TEAM_GUN})
+AddCustomShipment("M92 Baretta", "models/weapons/w_beretta_m92.mdl", "m9k_m92beretta", 1400, 10, false, 0, false, {TEAM_GUN})
 AddCustomShipment("S&W Model 3 Russian", "models/weapons/w_model_3_rus.mdl", "m9k_model3russian", 3000, 10, false, 0, false, {TEAM_GUN})
 AddCustomShipment("S&W 627", "models/weapons/w_sw_model_627.mdl", "m9k_model627", 3000, 10, false, 0, false, {TEAM_GUN})
 AddCustomShipment("1887 Winchester", "models/weapons/w_winchester_1887.mdl", "m9k_1887winchester", 4000, 10, false, 123, false, {TEAM_GUN})
