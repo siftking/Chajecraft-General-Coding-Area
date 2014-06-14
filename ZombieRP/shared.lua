@@ -513,6 +513,29 @@ TEAM_SWATEXPLOSIVE = AddExtraTeam("Military Explosives Expert", {
     end    
 })
 
+TEAM_SWATHACKER = AddExtraTeam("Military Hacker", {
+	color = Color(19, 81, 124, 255),
+	model = "models/player/swat.mdl",
+	description = [[The Military is a very special team.
+	    As Hacking Master you're the person that supports raids with a keypad cracker!!!
+		Type /wanted <name> to alert the public to this criminal
+		Type /jailpos to set the Jail Position
+		!!You also hunt down the Runners!!]],
+	weapons = {"arrest_stick", "unarrest_stick", "m9k_colt1911", "m9k_mossberg590", "stunstick", "weaponchecker", "prokeypad_cracker"},
+	command = "swathacker",
+	max = 5,
+	salary = 100,
+	admin = 0,
+	vote = false,
+	hasLicense = true,
+	candemote = true,
+	police = true,
+	mayorCanSetSalary = false,
+    customCheck = function(ply)
+    return ply:GetUserGroup() == "donator" or ply:IsAdmin()
+    end    
+})
+
 //Engineer
 TEAM_ENGINEER = AddExtraTeam("Engineer", {
 	color = Color(255, 144, 0, 176),
@@ -686,30 +709,7 @@ TEAM_STEAMPILOT = AddExtraTeam("Steampunk Pilot", {
     end    
 })
 
-TEAM_SWATHACKER = AddExtraTeam("Military Hacker", {
-	color = Color(19, 81, 124, 255),
-	model = "models/player/swat.mdl",
-	description = [[The Military is a very special team.
-	    As Hacking Master you're the person that supports raids with a keypad cracker!!!
-		Type /wanted <name> to alert the public to this criminal
-		Type /jailpos to set the Jail Position
-		!!You also hunt down the Runners!!]],
-	weapons = {"arrest_stick", "unarrest_stick", "m9k_colt1911", "m9k_mossberg590", "stunstick", "weaponchecker", "prokeypad_cracker"},
-	command = "swathacker",
-	max = 5,
-	salary = 100,
-	admin = 0,
-	vote = false,
-	hasLicense = true,
-	candemote = true,
-	police = true,
-	mayorCanSetSalary = false,
-    customCheck = function(ply)
-    return ply:GetUserGroup() == "donator" or ply:IsAdmin()
-    end    
-})
-
-TEAM_QUICKSHOT = AddExtraTeam("Quickshot", {
+TEAM_VIGILANTE = AddExtraTeam("Vigilante", {
 	color = Color(221, 151, 151),
 	model = {
 		"models/player/leet.mdl"},
@@ -719,7 +719,7 @@ TEAM_QUICKSHOT = AddExtraTeam("Quickshot", {
 	You have decided to protect these people]],
 	weapons = {"dual_weapons"},
 	command = "quickshot",
-	max = 4,
+	max = 1,
 	salary = 30,
 	admin = 0,
 	vote = false,
@@ -731,7 +731,7 @@ TEAM_QUICKSHOT = AddExtraTeam("Quickshot", {
     return ply:GetUserGroup() == "donator" or ply:IsAdmin()
     end    
 })
-    
+
 /*
 --------------------------------------------------------
 HOW TO MAKE A DOOR GROUP
