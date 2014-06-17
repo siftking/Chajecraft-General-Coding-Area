@@ -536,6 +536,28 @@ TEAM_SWATHACKER = AddExtraTeam("Military Hacker", {
     end    
 })
 
+TEAM_SWATJUGGER = AddExtraTeam("Military Juggernaut", {
+	color = Color(19, 81, 124, 255),
+	model = "models/Combine_Super_Soldier.mdl",
+	description = [[The Military is a very special team.
+	    The Military Juggernaut is the toughest of the Military.
+	    He has a riot shield that makes him tough in front, but vunerable in sides and back.
+		Type /wanted <name> to alert the public to this criminal
+		Type /jailpos to set the Jail Position
+		!!You also hunt down the Runners!!]],
+	weapons = {"arrest_stick", "unarrest_stick", "m9k_colt1911", "m9k_mp5sd", "riotshield", "stunstick", "weaponchecker", "prokeypad_cracker"},
+	command = "swatjugger",
+	max = 5,
+	salary = 100,
+	admin = 0,
+	vote = false,
+	hasLicense = true,
+	candemote = true,
+	police = true,
+	mayorCanSetSalary = false,
+    customCheck = function(ply)
+    return ply:GetUserGroup() == "donator" or ply:IsAdmin()
+})
 //Engineer
 TEAM_ENGINEER = AddExtraTeam("Engineer", {
 	color = Color(255, 144, 0, 176),
