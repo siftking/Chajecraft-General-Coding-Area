@@ -320,7 +320,10 @@ GM.Config.DisallowDrop = {
         ["dual_weapons"] = true,
         ["weapon_357"] = true,
         ["weapon_ar2"] = true,
-        ["fas2_m4a1"] = true
+        ["fas2_m4a1"] = true,
+        ["weapon_hack_phone"] = true,
+        ["weapon_lasersmg"] = true,
+        ["weapon_laserrpg"] = true
 }
 
 GM.Config.DefaultWeapons = {
