@@ -521,7 +521,7 @@ TEAM_SWATHACKER = AddExtraTeam("Military Hacker", {
 		Type /wanted <name> to alert the public to this criminal
 		Type /jailpos to set the Jail Position
 		!!You also hunt down the Runners!!]],
-	weapons = {"arrest_stick", "unarrest_stick", "m9k_colt1911", "m9k_mossberg590", "stunstick", "weaponchecker", "weapon_hack_phone"},
+	weapons = {"arrest_stick", "unarrest_stick", "m9k_colt1911", "fas2_m4a1", "stunstick", "weaponchecker", "weapon_hack_phone"},
 	command = "swathacker",
 	max = 5,
 	salary = 100,
@@ -545,7 +545,7 @@ TEAM_SWATJUGGER = AddExtraTeam("Military Juggernaut", {
 		Type /wanted <name> to alert the public to this criminal
 		Type /jailpos to set the Jail Position
 		!!You also hunt down the Runners!!]],
-	weapons = {"arrest_stick", "unarrest_stick", "m9k_colt1911", "m9k_mp5sd", "riotshield", "stunstick", "weaponchecker", "prokeypad_cracker"},
+	weapons = {"arrest_stick", "unarrest_stick", "m9k_colt1911", "fas2_m4a1", "riotshield", "stunstick", "weaponchecker"},
 	command = "swatjugger",
 	max = 5,
 	salary = 100,
@@ -712,7 +712,7 @@ TEAM_ASSASSIN = AddExtraTeam("Assassin", {
 
 TEAM_STEAMPILOT = AddExtraTeam("Steampunk Pilot", {
 	color = Color(0, 168, 184),
-	model = "models/combine_super_soldier.mdl",
+	model = "models/player/combine_super_soldier.mdl",
 	description = [[A Futuristic Soldier, that came to
 		make justice to this, strange, mad world.
 		You are some kind of a cop but you aren't
