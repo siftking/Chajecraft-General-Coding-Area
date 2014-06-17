@@ -555,9 +555,12 @@ TEAM_SWATJUGGER = AddExtraTeam("Military Juggernaut", {
 	candemote = true,
 	police = true,
 	mayorCanSetSalary = false,
-    customCheck = function(ply)
+	customCheck = function(ply)
     return ply:GetUserGroup() == "donator" or ply:IsAdmin()
+    end    
+
 })
+
 //Engineer
 TEAM_ENGINEER = AddExtraTeam("Engineer", {
 	color = Color(255, 144, 0, 176),
