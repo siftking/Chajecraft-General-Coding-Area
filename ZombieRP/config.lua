@@ -323,7 +323,9 @@ GM.Config.DisallowDrop = {
         ["fas2_m4a1"] = true,
         ["weapon_hack_phone"] = true,
         ["weapon_lasersmg"] = true,
-        ["weapon_laserrpg"] = true
+        ["weapon_laserrpg"] = true,
+        ["riotshield"] = true,
+        ["handcuffs"] = true
 }
 
 GM.Config.DefaultWeapons = {
