@@ -742,7 +742,7 @@ TEAM_VIGILANTE = AddExtraTeam("Vigilante", {
 	have finally found civilization in this Zombie Apocalypse.
 	With your great dual wielding skills and loads of weapons.
 	You have decided to protect these people]],
-	weapons = {"dual_weapons"},
+	weapons = {"dual_weapons", "weapon_hack_phone"},
 	command = "quickshot",
 	max = 1,
 	salary = 30,
@@ -832,4 +832,3 @@ Enable hitman goodies on this team
 ---------------------------------------------------------------------------*/
 DarkRP.addHitmanTeam(TEAM_HITMAN)
 DarkRP.addHitmanTeam(TEAM_ASSASSIN)
-
