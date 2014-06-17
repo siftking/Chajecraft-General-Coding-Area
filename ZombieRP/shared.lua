@@ -521,7 +521,7 @@ TEAM_SWATHACKER = AddExtraTeam("Military Hacker", {
 		Type /wanted <name> to alert the public to this criminal
 		Type /jailpos to set the Jail Position
 		!!You also hunt down the Runners!!]],
-	weapons = {"arrest_stick", "unarrest_stick", "m9k_colt1911", "m9k_mossberg590", "stunstick", "weaponchecker", "prokeypad_cracker"},
+	weapons = {"arrest_stick", "unarrest_stick", "m9k_colt1911", "m9k_mossberg590", "stunstick", "weaponchecker", "weapon_hack_phone"},
 	command = "swathacker",
 	max = 5,
 	salary = 100,
