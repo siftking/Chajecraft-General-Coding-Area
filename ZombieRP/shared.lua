@@ -82,7 +82,7 @@ TEAM_POLICE = AddExtraTeam("Survival Protection", {
 		Type /wanted <name> to alert the public to this criminal
 		OR go to tab and warrant someone by clicking the warrant button
 		!!You also hunt down the Runners!!]],
-	weapons = {"arrest_stick", "unarrest_stick", "m9k_colt1911", "stunstick", "door_ram", "weaponchecker"},
+	weapons = {"arrest_stick", "unarrest_stick", "m9k_colt1911", "stunstick", "door_ram", "weaponchecker", "handcuffs"},
 	command = "cp",
 	max = 6,
 	salary = 65,
@@ -206,7 +206,7 @@ TEAM_CHIEF = AddExtraTeam("Survival Protection Chief", {
 		Type /wanted <name> to alert the public to this criminal
 		Type /jailpos to set the Jail Position
 		!!You also hunt down the Runners!!]],
-	weapons = {"arrest_stick", "unarrest_stick", "m9k_colt191", "m9k_mossberg590", "stunstick", "door_ram", "weaponchecker"},
+	weapons = {"arrest_stick", "unarrest_stick", "m9k_colt191", "m9k_mossberg590", "stunstick", "door_ram", "weaponchecker", "handcuffs"},
 	command = "chief",
 	max = 1,
 	salary = 75,
@@ -318,7 +318,7 @@ TEAM_ADMIN = AddExtraTeam("Admin on Duty", {
 	color = Color(38, 255, 0, 153),
 	model = "models/nikout/dishonored/assassin1.mdl",
 	description = [[Don't rp as this job.]],
-	weapons = {"weapon_nautilus", "fas2_dv2", "stunstick", "arrest_stick", "unarrest_stick"},
+	weapons = {"weapon_nautilus", "fas2_dv2", "stunstick", "arrest_stick", "unarrest_stick", "handcuffs"},
 	command = "admin",
 	max = 64,
 	salary = 45,
@@ -386,7 +386,7 @@ TEAM_SWAT = AddExtraTeam("Military Infantry", {
 		warrant for his/her arrest.
 		Type /wanted <name> to alert the public to this criminal
 		Type /jailpos to set the Jail Position]],
-	weapons = {"arrest_stick", "unarrest_stick", "m9k_colt1911", "stunstick", "door_ram", "weaponchecker", "fas2_m4a1"},
+	weapons = {"arrest_stick", "unarrest_stick", "m9k_colt1911", "stunstick", "door_ram", "weaponchecker", "fas2_m4a1", "handcuffs"},
 	command = "swat",
 	max = 4,
 	salary = 60,
@@ -415,7 +415,7 @@ TEAM_SWATLEADER = AddExtraTeam("Military Commander", {
 		warrant for his/her arrest.
 		Type /wanted <name> to alert the public to this criminal
 		Type /jailpos to set the Jail Position]],
-	weapons = {"m9k_colt1911", "arrest_stick", "unarrest_stick", "stunstick", "door_ram", "weaponchecker", "m9k_mossberg590", "fas2_m4a1"},
+	weapons = {"m9k_colt1911", "arrest_stick", "unarrest_stick", "stunstick", "door_ram", "weaponchecker", "m9k_mossberg590", "fas2_m4a1", "handcuffs"},
 	command = "swatleader",
 	max = 1,
 	salary = 100,
@@ -446,7 +446,7 @@ TEAM_SWATMEDIC = AddExtraTeam("Military Medic", {
 		Type /wanted <name> to alert the public to this criminal
 		Type /jailpos to set the Jail Position
 		!!You also hunt down the Runners!!]],
-	weapons = {"m9k_colt1911", "arrest_stick", "unarrest_stick", "fas2_m4a1", "stunstick", "door_ram", "weaponchecker", "fas2_ifak"},
+	weapons = {"m9k_colt1911", "arrest_stick", "unarrest_stick", "fas2_m4a1", "stunstick", "door_ram", "weaponchecker", "fas2_ifak", "handcuffs"},
 	command = "swatmedic",
 	max = 100,
 	salary = 100,
@@ -475,7 +475,7 @@ TEAM_SWATSNIPER = AddExtraTeam("Military Sniper", {
 		Type /wanted <name> to alert the public to this criminal
 		Type /jailpos to set the Jail Position
 		!!You also hunt down the Runners!!]],
-	weapons = {"arrest_stick", "unarrest_stick", "m9k_colt1911", "stunstick", "door_ram", "weaponchecker", "fas2_m24"},
+	weapons = {"arrest_stick", "unarrest_stick", "m9k_colt1911", "stunstick", "door_ram", "weaponchecker", "fas2_m24", "handcuffs"},
 	command = "swatsniper",
 	max = 5,
 	salary = 100,
@@ -498,7 +498,7 @@ TEAM_SWATEXPLOSIVE = AddExtraTeam("Military Explosives Expert", {
 		Type /wanted <name> to alert the public to this criminal
 		Type /jailpos to set the Jail Position
 		!!You also hunt down the Runners!!]],
-	weapons = {"arrest_stick", "unarrest_stick", "m9k_colt1911", "stunstick", "weaponchecker", "m9k_mossberg590", "weapon_slam"},
+	weapons = {"arrest_stick", "unarrest_stick", "m9k_colt1911", "stunstick", "weaponchecker", "m9k_mossberg590", "weapon_slam", "handcuffs"},
 	command = "swatexplosive",
 	max = 5,
 	salary = 120,
@@ -521,7 +521,7 @@ TEAM_SWATHACKER = AddExtraTeam("Military Hacker", {
 		Type /wanted <name> to alert the public to this criminal
 		Type /jailpos to set the Jail Position
 		!!You also hunt down the Runners!!]],
-	weapons = {"arrest_stick", "unarrest_stick", "m9k_colt1911", "fas2_m4a1", "stunstick", "weaponchecker", "weapon_hack_phone"},
+	weapons = {"arrest_stick", "unarrest_stick", "m9k_colt1911", "fas2_m4a1", "stunstick", "weaponchecker", "weapon_hack_phone", "handcuffs"},
 	command = "swathacker",
 	max = 5,
 	salary = 100,
@@ -538,14 +538,14 @@ TEAM_SWATHACKER = AddExtraTeam("Military Hacker", {
 
 TEAM_SWATJUGGER = AddExtraTeam("Military Juggernaut", {
 	color = Color(19, 81, 124, 255),
-	model = "models/Combine_Super_Soldier.mdl",
+	model = "models/player/combine_super_soldier.mdl",
 	description = [[The Military is a very special team.
 	    The Military Juggernaut is the toughest of the Military.
 	    He has a riot shield that makes him tough in front, but vunerable in sides and back.
 		Type /wanted <name> to alert the public to this criminal
 		Type /jailpos to set the Jail Position
 		!!You also hunt down the Runners!!]],
-	weapons = {"arrest_stick", "unarrest_stick", "m9k_colt1911", "fas2_m4a1", "riotshield", "stunstick", "weaponchecker"},
+	weapons = {"arrest_stick", "unarrest_stick", "m9k_colt1911", "fas2_m4a1", "riotshield", "stunstick", "weaponchecker", "handcuffs"},
 	command = "swatjugger",
 	max = 5,
 	salary = 100,
@@ -718,7 +718,7 @@ TEAM_STEAMPILOT = AddExtraTeam("Steampunk Pilot", {
 		You are some kind of a cop but you aren't
 		suppose to team with them.
 		---Donator Only---]],
-	weapons = {"arrest_stick", "unarrest_stick", "weapon_357", "weapon_ar2", "stunstick", "door_ram"},
+	weapons = {"arrest_stick", "unarrest_stick", "weapon_357", "weapon_ar2", "stunstick", "door_ram", "handcuffs"},
 	command = "steampilot",
 	max = 3,
 	salary = 120,
@@ -768,9 +768,9 @@ WARNING: THE DOOR GROUPS HAVE TO BE UNDER THE TEAMS IN SHARED.LUA. IF THEY ARE N
 
 The default door groups, can also be used as examples:
 */
-AddDoorGroup("Goverment only", TEAM_CHIEF, TEAM_POLICE, TEAM_MAYOR, TEAM_SWAT, TEAM_SWATLEADER, TEAM_ADMIN, TEAM_SWATMEDIC, TEAM_SWATSNIPER, TEAM_SECRETSERVICE, TEAM_SWATEXPLOSIVE)
+AddDoorGroup("Goverment only", TEAM_CHIEF, TEAM_POLICE, TEAM_MAYOR, TEAM_SWAT, TEAM_SWATLEADER, TEAM_ADMIN, TEAM_SWATMEDIC, TEAM_SWATSNIPER, TEAM_SECRETSERVICE, TEAM_SWATEXPLOSIVE, TEAM_SWATHACKER, TEAM_SWATJUGGER)
 AddDoorGroup("Gundealer only", TEAM_GUN, TEAM_ADMIN)
-AddDoorGroup("Outlanders only", TEAM_ASSASSIN, TEAM_NINJA, TEAM_VIPNINJA)
+AddDoorGroup("Outlanders only", TEAM_ASSASSIN, TEAM_NINJA, TEAM_VIPNINJA, TEAM_ADMIN)
 
 
 /*
@@ -785,7 +785,7 @@ The default agenda's, can also be used as examples:
 */
 AddAgenda("Gangster's agenda", TEAM_MOB, {TEAM_GANG})
 AddAgenda("Survivor Protection Team's Agenda", TEAM_MAYOR, {TEAM_CHIEF, TEAM_POLICE, TEAM_ADMIN})
-AddAgenda("Military Agenda", TEAM_SWATLEADER, {TEAM_SWATMEDIC, TEAM_SWATSNIPER, TEAM_SWATEXPLOSIVE, TEAM_SWAT})
+AddAgenda("Military Agenda", TEAM_SWATLEADER, {TEAM_SWATMEDIC, TEAM_SWATSNIPER, TEAM_SWATEXPLOSIVE, TEAM_SWAT, TEAM_SWATHACKER, TEAM_SWATJUGGER})
 AddAgenda("Assassins Agenda", TEAM_ASSASSIN, {TEAM_NINJA, TEAM_VIPNINJA})
 
 /*
@@ -803,7 +803,7 @@ This one is for people who know how to script Lua.
 */
 GM:AddGroupChat(function(ply) return ply:IsCP() end)
 GM:AddGroupChat(TEAM_MOB, TEAM_GANG, TEAM_ADMIN)
-GM:AddGroupChat(TEAM_POLICE, TEAM_CHIEF, TEAM_SWAT, TEAM_SWATLEADER, TEAM_SWATMEDIC, TEAM_SWATSNIPER, TEAM_ADMIN, TEAM_SWATHACKER)
+GM:AddGroupChat(TEAM_POLICE, TEAM_CHIEF, TEAM_SWAT, TEAM_SWATLEADER, TEAM_SWATMEDIC, TEAM_SWATSNIPER, TEAM_ADMIN, TEAM_SWATHACKER, TEAM_SWATHACKER, TEAM_SWATJUGGER)
 GM:AddGroupChat(TEAM_ASSASSIN, TEAM_NINJA, TEAM_VIPNINJA)
 
 /*---------------------------------------------------------------------------
@@ -824,6 +824,8 @@ GM.CivilProtection = {
 	[TEAM_SWATMEDIC] = true,
 	[TEAM_SWATSNIPER] = true,
         [TEAM_SWATEXPLOSIVE] = true,
+        [TEAM_SWATHACKER] = true,
+        [TEAM_SWATJUGGER] = true,
 	[TEAM_ADMIN] = true
 }
 
