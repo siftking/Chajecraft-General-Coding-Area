@@ -18,7 +18,6 @@ AddCustomShipment("M92 Baretta", "models/weapons/w_beretta_m92.mdl", "m9k_m92ber
 AddCustomShipment("S&W Model 3 Russian", "models/weapons/w_model_3_rus.mdl", "m9k_model3russian", 3000, 10, false, 0, false, {TEAM_GUN})
 AddCustomShipment("S&W 627", "models/weapons/w_sw_model_627.mdl", "m9k_model627", 3000, 10, false, 0, false, {TEAM_GUN})
 AddCustomShipment("1887 Winchester", "models/weapons/w_winchester_1887.mdl", "m9k_1887winchester", 4000, 10, false, 123, false, {TEAM_GUN})
-AddCustomShipment("Double Barrel", "models/weapons/w_double_barrel_shotgun.mdl", "m9k_dbarrel", 2000, 10, false, 123, false, {TEAM_GUN})
 AddCustomShipment("Jack Hammer", "models/weapons/w_pancor_jackhammer.mdl", "m9k_jackhammer", 8000, 10, false, 123, false, {TEAM_GUN})
 AddCustomShipment("Benelli M3", "models/weapons/w_benelli_m3.mdl", "m9k_m3", 4500, 10, false, 123, false, {TEAM_GUN})
 AddCustomShipment("Ithaca M37", "models/weapons/w_ithaca_m37.mdl", "m9k_ithacam37", 3000, 10, false, 123, false, {TEAM_GUN})
