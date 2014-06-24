@@ -336,40 +336,33 @@ AddEntity("Titan", {
 AddCustomVehicle("Jeep", "models/buggy.mdl", 200, {TEAM_ENGINEER})
 
 // Pistol Ammo Types
-
-AddAmmoType("fas2_ammo_10x25", "10x25MM Ammo", "models/Items/BoxMRounds.mdl", 37, 30)
-AddAmmoType("fas2_ammo_45acp", ".45 ACP Ammo", "models/Items/BoxMRounds.mdl", 37, 30)
-AddAmmoType("fas2_ammo_357sig", ".357 SIG Ammo", "models/Items/BoxMRounds.mdl", 37, 30)
-AddAmmoType("fas2_ammo_9x18", "9x18MM Ammo", "models/Items/BoxMRounds.mdl", 37, 30)
+AddAmmoType("fas2_ammo_10x25", "10x25MM Ammo", "models/Items/BoxSRounds.mdl", 37, 30)
+AddAmmoType("fas2_ammo_45acp", ".45 ACP Ammo", "models/Items/BoxSRounds.mdl", 37, 30)
+AddAmmoType("fas2_ammo_357sig", ".357 SIG Ammo", "models/Items/BoxSRounds.mdl", 37, 30)
+AddAmmoType("fas2_ammo_9x18", "9x18MM Ammo", "models/Items/BoxSRounds.mdl", 37, 30)
 
 // Heavy Pistol Ammo Types
-
-AddAmmoType("fas2_ammo_50ae", ".50 AE Ammo", "models/Items/BoxMRounds.mdl", 50, 28)
-AddAmmoType("fas2_ammo_454casull", ".454 Casull Ammo", "models/Items/BoxMRounds.mdl", 50, 28)
+AddAmmoType("fas2_ammo_50ae", ".50 AE Ammo", "models/Items/357ammo.mdl", 50, 28)
+AddAmmoType("fas2_ammo_454casull", ".454 Casull Ammo", "models/Items/357ammo.mdl", 50, 28)
 
 // Submachine Gun Ammo Tpyes
-
 AddAmmoType("fas2_ammo_9x19", "9x19MM Ammo", "models/Items/BoxMRounds.mdl", 80, 40)
 AddAmmoType("fas2_ammo_380acp", ".380 ACP Ammo", "models/Items/BoxMRounds.mdl", 120, 60)
 
 // Assault Ammo Types
-
-AddAmmoType("fas2_ammo_545x39", "5.45x39MM Ammo", "models/Items/BoxMRounds.mdl", 160, 60)
-AddAmmoType("fas2_ammo_762x39", "7.62x39MM Ammo", "models/Items/BoxMRounds.mdl", 160, 60)
-AddAmmoType("fas2_ammo_556x45", "5.56x45MM Ammo", "models/Items/BoxMRounds.mdl", 160, 60)
+AddAmmoType("fas2_ammo_545x39", "5.45x39MM Ammo", "models/Items/combine_rifle_cartridge01.mdl", 160, 60)
+AddAmmoType("fas2_ammo_762x39", "7.62x39MM Ammo", "models/Items/combine_rifle_cartridge01.mdl", 160, 60)
+AddAmmoType("fas2_ammo_556x45", "5.56x45MM Ammo", "models/Items/combine_rifle_cartridge01.mdl", 160, 60)
 
 // Shotgun Ammo Types
-
-AddAmmoType("fas2_ammo_12gauge", "12 Guage Ammo", "models/Items/BoxMRounds.mdl", 180, 32)
+AddAmmoType("fas2_ammo_12gauge", "12 Guage Ammo", "models/Items/BoxBuckshot.mdl", 180, 32)
 
 // Shotgun With Slug Ammo Type
-AddAmmoType("fas2_ammo_23x75", "23x75 Ammo", "models/Items/BoxMRounds.mdl", 180, 20)
+AddAmmoType("fas2_ammo_23x75", "23x75 Ammo", "models/Items/BoxBuckshot.mdl", 180, 20)
 
 // Sniper Rifle Ammo Types
-
 AddAmmoType("fas2_ammo_762x51", "7.62x51MM Ammo", "models/Items/BoxMRounds.mdl", 200, 40)
 AddAmmoType("fas2_ammo_50bmg", ".50 BMG Ammo", "models/Items/BoxMRounds.mdl", 200, 40)
 
 // Explosive Ammo Types
-
 AddAmmoType("fas2_ammo_m67", ".50 BMG Ammo", "models/Items/BoxMRounds.mdl", 240, 12)
