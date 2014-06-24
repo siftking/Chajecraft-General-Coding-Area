@@ -228,7 +228,7 @@ GM.Config.wallettaxmin					= 1
 -- wallettaxtime - Time in seconds between taxing players. Requires server restart.
 GM.Config.wallettaxtime					= 600
 -- wantedtime - Number of seconds for which a player is wanted for.
-GM.Config.wantedtime					= 120
+GM.Config.wantedtime					= 300
 -- walkspeed - Sets the max walking speed.
 GM.Config.walkspeed					= 160
 
