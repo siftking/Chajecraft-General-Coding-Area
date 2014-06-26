@@ -131,7 +131,6 @@ AddEntity("Sapphire Money Printer", {
     return ply:GetUserGroup() == "donator" or ply:IsAdmin()
     end
 })
-})
 
 AddEntity("Emerald Money Printer", {
 	ent = "money_emerald_printer",
