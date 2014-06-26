@@ -330,6 +330,25 @@ TEAM_ADMIN = AddExtraTeam("Admin on Duty", {
 	mayorCanSetSalary = false
 })
 
+//Moderator
+TEAM_MOD = AddExtraTeam("Moderator on Duty", {
+	color = Color(38, 255, 0, 153),
+	model = "models/nikout/dishonored/assassin1.mdl",
+	description = [[Don't rp as this job.]],
+	weapons = {"weapon_nautilus", "fas2_dv2", "stunstick", "arrest_stick", "unarrest_stick", "handcuffs"},
+	command = "mod",
+	max = 64,
+	salary = 45,
+	admin = 0,
+	vote = false,
+	hasLicense = true,
+	candemote = true,
+	mayorCanSetSalary = false,
+	customCheck = function(ply)
+    return ply:GetUserGroup() == "Moderator"
+    end 
+})
+
 //Faith
 TEAM_RUNNER = AddExtraTeam("Runner", {
 	color = Color(255, 0, 0, 255),
@@ -768,9 +787,9 @@ WARNING: THE DOOR GROUPS HAVE TO BE UNDER THE TEAMS IN SHARED.LUA. IF THEY ARE N
 
 The default door groups, can also be used as examples:
 */
-AddDoorGroup("Goverment only", TEAM_CHIEF, TEAM_POLICE, TEAM_MAYOR, TEAM_SWAT, TEAM_SWATLEADER, TEAM_ADMIN, TEAM_SWATMEDIC, TEAM_SWATSNIPER, TEAM_SECRETSERVICE, TEAM_SWATEXPLOSIVE, TEAM_SWATHACKER, TEAM_SWATJUGGER)
-AddDoorGroup("Gundealer only", TEAM_GUN, TEAM_ADMIN)
-AddDoorGroup("Outlanders only", TEAM_ASSASSIN, TEAM_NINJA, TEAM_VIPNINJA, TEAM_ADMIN)
+AddDoorGroup("Goverment only", TEAM_CHIEF, TEAM_POLICE, TEAM_MAYOR, TEAM_SWAT, TEAM_SWATLEADER, TEAM_ADMIN, TEAM_MOD, TEAM_SWATMEDIC, TEAM_SWATSNIPER, TEAM_SECRETSERVICE, TEAM_SWATEXPLOSIVE, TEAM_SWATHACKER, TEAM_SWATJUGGER)
+AddDoorGroup("Gundealer only", TEAM_GUN, TEAM_ADMIN, TEAM_MOD)
+AddDoorGroup("Outlanders only", TEAM_ASSASSIN, TEAM_NINJA, TEAM_VIPNINJA, TEAM_ADMIN, TEAM_MOD)
 
 
 /*
@@ -784,7 +803,7 @@ WARNING: THE AGENDAS HAVE TO BE UNDER THE TEAMS IN SHARED.LUA. IF THEY ARE NOT, 
 The default agenda's, can also be used as examples:
 */
 AddAgenda("Gangster's agenda", TEAM_MOB, {TEAM_GANG})
-AddAgenda("Survivor Protection Team's Agenda", TEAM_MAYOR, {TEAM_CHIEF, TEAM_POLICE, TEAM_ADMIN})
+AddAgenda("Survivor Protection Team's Agenda", TEAM_MAYOR, {TEAM_CHIEF, TEAM_POLICE, TEAM_ADMIN, TEAM_MOD})
 AddAgenda("Military Agenda", TEAM_SWATLEADER, {TEAM_SWATMEDIC, TEAM_SWATSNIPER, TEAM_SWATEXPLOSIVE, TEAM_SWAT, TEAM_SWATHACKER, TEAM_SWATJUGGER})
 AddAgenda("Assassins Agenda", TEAM_ASSASSIN, {TEAM_NINJA, TEAM_VIPNINJA})
 
@@ -826,6 +845,7 @@ GM.CivilProtection = {
         [TEAM_SWATEXPLOSIVE] = true,
         [TEAM_SWATHACKER] = true,
         [TEAM_SWATJUGGER] = true,
+        [TEAM_MOD] = true,
 	[TEAM_ADMIN] = true
 }
 
