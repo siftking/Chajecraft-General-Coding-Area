@@ -714,7 +714,7 @@ TEAM_ASSASSIN = AddExtraTeam("Assassin", {
 	description = [[Assassinate for money,
 		Stealth skills are required.
 		<donator only>]],
-	weapons = {"weapon_crossbow", "blink_swep", "climb_swep2", "fas2_dv2", "vortigaunt_beam"},
+	weapons = {"weapon_crossbow", "blink_swep", "climb_swep2", "fas2_machete", "vortigaunt_beam"},
 	command = "Assassin",
 	max = 5,
 	salary = 160,
