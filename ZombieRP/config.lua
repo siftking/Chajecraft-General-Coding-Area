@@ -325,7 +325,8 @@ GM.Config.DisallowDrop = {
         ["weapon_lasersmg"] = true,
         ["weapon_laserrpg"] = true,
         ["riotshield"] = true,
-        ["handcuffs"] = true
+        ["handcuffs"] = true,
+        ["weapon_hpmstick"] = true
 }
 
 GM.Config.DefaultWeapons = {
