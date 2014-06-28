@@ -7,7 +7,8 @@ Over here we are coding a few projects:
      * DerpInv
      * Shipments
      * Jobs
-     * Etc.
+     * Drones
+     * Etc. Configuration
 - Minecraft Server (Mostly yml)
      * Plugin Configurations
 - VortiMagic Addon for Garry's Mod (LUA)
