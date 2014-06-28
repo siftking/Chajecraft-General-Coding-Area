@@ -159,6 +159,13 @@ function ENT:Think()
 	end
 	
 	if self.damage < 0 then
+		local vPoint = self:GetPos()
+		local effectdata = EffectData()
+		effectdata:SetStart(vPoint)
+		effectdata:SetOrigin(vPoint)
+		effectdata:SetScale(1)
+		util.Effect("Explosion", effectdata)
+		GAMEMODE:Notify(self:Getowning_ent(), 1, 4, "Your money printer has exploded!")
 		self:Remove()
 	end
 	
