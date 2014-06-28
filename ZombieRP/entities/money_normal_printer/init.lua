@@ -157,7 +157,11 @@ function ENT:Think()
 		self:Remove()
 		return
 	end
-
+	
+	if self.damage < 0 then
+		self:Remove()
+	end
+	
 	if not self.sparking then return end
 
 	local effectdata = EffectData()
