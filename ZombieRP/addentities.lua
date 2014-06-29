@@ -102,7 +102,7 @@ AddEntity("Normal Printer", {
 	model = "models/props_lab/reciever01a.mdl",
 	price = 1999,
 	max = 2,
-	cmd = "/BuyNormalPrinter"
+	cmd = "/buynormalprinter"
 })
 	
 AddEntity("Coal Money Printer", {
@@ -110,7 +110,7 @@ AddEntity("Coal Money Printer", {
 	model = "models/props_lab/reciever01a.mdl",
 	price = 4999,
 	max = 2,
-	cmd = "/BuyCoalPrinter"
+	cmd = "/buycoalprinter"
 })
 
 AddEntity("Ruby Money Printer", {
@@ -118,7 +118,7 @@ AddEntity("Ruby Money Printer", {
 	model = "models/props_lab/reciever01a.mdl",
 	price = 9999,
 	max = 2,
-	cmd = "/BuyRubyPrinter"
+	cmd = "/buyrubyprinter"
 })
 
 AddEntity("Sapphire Money Printer", {
@@ -126,7 +126,7 @@ AddEntity("Sapphire Money Printer", {
 	model = "models/props_lab/reciever01a.mdl",
 	price = 24999,
 	max = 2,
-	cmd = "/BuySapphirePrinter",
+	cmd = "/buysapphireprinter",
 	customCheck = function(ply)
     return ply:GetUserGroup() == "donator" or ply:IsAdmin()
     end
@@ -137,7 +137,7 @@ AddEntity("Emerald Money Printer", {
 	model = "models/props_lab/reciever01a.mdl",
 	price = 34999,
 	max = 2,
-	cmd = "/BuyEmeraldPrinter",
+	cmd = "/buyemeraldprinter",
 	customCheck = function(ply)
     return ply:GetUserGroup() == "donator" or ply:IsAdmin()
     end
@@ -148,7 +148,7 @@ AddEntity("Diamond Money Printer", {
 	model = "models/props_lab/reciever01a.mdl",
 	price = 49999,
 	max = 2,
-	cmd = "/BuyDiamondPrinter",
+	cmd = "/buydiamondprinter",
 	customCheck = function(ply)
     return ply:GetUserGroup() == "donator" or ply:IsAdmin()
     end
@@ -159,7 +159,7 @@ AddEntity("Pearl Money Printer", {
 	model = "models/props_lab/reciever01a.mdl",
 	price = 74999,
 	max = 2,
-	cmd = "/BuyPearlPrinter",
+	cmd = "/buypearlprinter",
 	customCheck = function(ply)
     return ply:GetUserGroup() == "donator" or ply:IsAdmin()
     end
@@ -170,7 +170,7 @@ AddEntity("Platinum Money Printer", {
 	model = "models/props_lab/reciever01a.mdl",
 	price = 99999,
 	max = 2,
-	cmd = "/BuyPlatinumPrinter",
+	cmd = "/buyplatinumprinter",
 	customCheck = function(ply)
     return ply:GetUserGroup() == "donator" or ply:IsAdmin()
     end
@@ -181,7 +181,7 @@ AddEntity("Black Money Printer", {
 	model = "models/props_lab/reciever01a.mdl",
 	price = 199999,
 	max = 2,
-	cmd = "/BuyBlackPrinter",
+	cmd = "/buyblackprinter",
 	customCheck = function(ply)
     return ply:GetUserGroup() == "donator" or ply:IsAdmin()
     end
@@ -192,7 +192,7 @@ AddEntity("Coolant Cell", {
 	model = "models/items/battery.mdl",
 	price = 799,
 	max = 9000,
-	cmd = "/Buycool"
+	cmd = "/buycool"
 })
 
 AddEntity("Printer Upgrade", {
@@ -200,7 +200,7 @@ AddEntity("Printer Upgrade", {
 	model = "models/items/battery.mdl",
 	max = 9000,
 	price = 799,
-	cmd = "/Buyupdrageprinter"
+	cmd = "/buyupdrageprinter"
 })
 
 AddEntity("Bandages", {
