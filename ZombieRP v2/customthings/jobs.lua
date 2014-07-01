@@ -52,17 +52,7 @@ TEAM_CITIZEN = DarkRP.createJob("Survivor", {
 	medic = false,
 	cook = false,
 	hobo = false,
-
-    CanPlayerSuicide = function(ply) return false end,
-	PlayerCanPickupWeapon = function(ply, weapon) return true end,
-	PlayerDeath = function(ply, weapon, killer) end,
-	PlayerSelectSpawn = function(ply, spawn) end,
-	PlayerSpawn = function(ply) end,
-	PlayerSpawnProp = function(ply, model) end,
-	ShowSpare1 = function(ply) end,
-	ShowSpare2 = function(ply) end,
-	buttonColor = Color(20, 150, 20, 255), -- The color of the button in the F4 menu
-	label = "Survivor", -- Optional: the text on the button in the F4 menu
+	label = "Survivor" -- Optional: the text on the button in the F4 menu
 })
 
 TEAM_SCAVENGER = DarkRP.createJob("Scavenger", {
@@ -100,17 +90,6 @@ TEAM_SCAVENGER = DarkRP.createJob("Scavenger", {
 	cook = false,
 	hobo = false,
 	scavenger = true,
-
-    CanPlayerSuicide = function(ply) return false end,
-	PlayerCanPickupWeapon = function(ply, weapon) return true end,
-	PlayerDeath = function(ply, weapon, killer) end,
-	PlayerSelectSpawn = function(ply, spawn) end,
-	PlayerSpawn = function(ply) end,
-	PlayerSpawnProp = function(ply, model) end,
-	ShowSpare1 = function(ply) end,
-	ShowSpare2 = function(ply) end,
-	buttonColor = Color(221, 151, 151), -- The color of the button in the F4 menu
-	label = "Scavenger", -- Optional: the text on the button in the F4 menu
 	customCheck = function(ply)
     return ply:GetUserGroup() == "Member" or ply:GetUserGroup() == "donator" or ply:IsAdmin()
     end    
@@ -139,25 +118,8 @@ TEAM_POLICE = DarkRP.createJob("Survival Protection", {
 	hasLicense = true,
 	mayorCanSetSalary = true,
 	candemote = true,
-	mayor = false,
-	chief = false,
-	medic = false,
-	cook = false,
-	hobo = false,
+	cp = true,
 	police = true,
-
-    CanPlayerSuicide = function(ply) return false end,
-	PlayerCanPickupWeapon = function(ply, weapon) return true end,
-	PlayerDeath = function(ply, weapon, killer) end,
-	PlayerSelectSpawn = function(ply, spawn) end,
-	PlayerSpawn = function(ply) end,
-	PlayerSpawnProp = function(ply, model) end,
-	RequiresVote = function(ply, job) for k,v in pairs(player.GetAll()) do if IsValid(v) and v:IsAdmin() then return false end end return true end, -- People need to make a vote when there is no admin around
-	ShowSpare1 = function(ply) end,
-	ShowSpare2 = function(ply) end,
-	buttonColor = Color(221, 151, 151), -- The color of the button in the F4 menu
-	label = "Survival Protection", -- Optional: the text on the button in the F4 menu
-	customCheck = function(ply)
 	help = {
 		"Please don't abuse your job",
 		"Hunt down the runners arrest them!",
@@ -199,23 +161,7 @@ TEAM_GANG = DarkRP.createJob("Bandit", {
 	vote = false,
 	hasLicense = false,
 	mayorCanSetSalary = false,
-	candemote = true,
-    mayor = false,
-    chief = false,
-    medic = false,
-    cook = false,
-    hobo = false,
-	
-	CanPlayerSuicide = function(ply) return false end,
-	PlayerCanPickupWeapon = function(ply, weapon) return true end,
-	PlayerDeath = function(ply, weapon, killer) end,
-	PlayerSelectSpawn = function(ply, spawn) end,
-	PlayerSpawn = function(ply) end,
-	PlayerSpawnProp = function(ply, model) end,
-	ShowSpare1 = function(ply) end,
-	ShowSpare2 = function(ply) end,
-	buttonColor = Color(75, 75, 75, 255), -- The color of the button in the F4 menu
-	label = "Bandit", -- Optional: the text on the button in the F4 menu
+	candemote = true
 })
 
 TEAM_MOB = DarkRP.createJob("Bandit Leader", {
@@ -236,22 +182,6 @@ TEAM_MOB = DarkRP.createJob("Bandit Leader", {
 	hasLicense = false,
 	mayorCanSetSalary = false,
 	candemote = true,
-    mayor = false,
-    chief = false,
-    medic = false,
-    cook = false,
-    hobo = false,
-	
-	CanPlayerSuicide = function(ply) return false end,
-	PlayerCanPickupWeapon = function(ply, weapon) return true end,
-	PlayerDeath = function(ply, weapon, killer) end,
-	PlayerSelectSpawn = function(ply, spawn) end,
-	PlayerSpawn = function(ply) end,
-	PlayerSpawnProp = function(ply, model) end,
-	ShowSpare1 = function(ply) end,
-	ShowSpare2 = function(ply) end,
-	buttonColor = Color(25, 25, 25, 255), -- The color of the button in the F4 menu
-	label = "Bandit Leader", -- Optional: the text on the button in the F4 menu
 	help = {
 		"As the Bandit Leader, you decide what you want the other Bandits to do.",
 		"You get an Unarrest Stick which you can use to break people out of jail.",
@@ -274,23 +204,7 @@ TEAM_GUN = DarkRP.createJob("Gundealer", {
 	vote = false,
 	hasLicense = false,
 	mayorCanSetSalary = true,
-	candemote = true,
-    mayor = false,
-    chief = false,
-    medic = false,
-    cook = false,
-    hobo = false,
-	
-	CanPlayerSuicide = function(ply) return false end,
-	PlayerCanPickupWeapon = function(ply, weapon) return true end,
-	PlayerDeath = function(ply, weapon, killer) end,
-	PlayerSelectSpawn = function(ply, spawn) end,
-	PlayerSpawn = function(ply) end,
-	PlayerSpawnProp = function(ply, model) end,
-	ShowSpare1 = function(ply) end,
-	ShowSpare2 = function(ply) end,
-	buttonColor = Color(255, 140, 0, 255), -- The color of the button in the F4 menu
-	label = "Gundealer", -- Optional: the text on the button in the F4 menu
+	candemote = true
 })
 
 TEAM_MEDIC = DarkRP.createJob("Medic", {
@@ -310,23 +224,7 @@ TEAM_MEDIC = DarkRP.createJob("Medic", {
 	vote = false,
 	hasLicense = false,
 	mayorCanSetSalary = true,
-	candemote = true,
-    mayor = false,
-    chief = false,
-    medic = true,
-    cook = false,
-    hobo = false,
-	
-	CanPlayerSuicide = function(ply) return false end,
-	PlayerCanPickupWeapon = function(ply, weapon) return true end,
-	PlayerDeath = function(ply, weapon, killer) end,
-	PlayerSelectSpawn = function(ply, spawn) end,
-	PlayerSpawn = function(ply) end,
-	PlayerSpawnProp = function(ply, model) end,
-	ShowSpare1 = function(ply) end,
-	ShowSpare2 = function(ply) end,
-	buttonColor = Color(47, 79, 79, 255), -- The color of the button in the F4 menu
-	label = "Medic", -- Optional: the text on the button in the F4 menu
+	candemote = true
 })
 
 TEAM_CHIEF = DarkRP.createJob("Survival Protection Chief", {
@@ -352,22 +250,7 @@ TEAM_CHIEF = DarkRP.createJob("Survival Protection Chief", {
 	hasLicense = true,
 	mayorCanSetSalary = true,
 	candemote = true,
-    mayor = false,
-    chief = true,
-    medic = false,
-    cook = false,
-    hobo = false,
-	
-	CanPlayerSuicide = function(ply) return false end,
-	PlayerCanPickupWeapon = function(ply, weapon) return true end,
-	PlayerDeath = function(ply, weapon, killer) end,
-	PlayerSelectSpawn = function(ply, spawn) end,
-	PlayerSpawn = function(ply) end,
-	PlayerSpawnProp = function(ply, model) end,
-	ShowSpare1 = function(ply) end,
-	ShowSpare2 = function(ply) end,
-	buttonColor = Color(20, 20, 255, 255), -- The color of the button in the F4 menu
-	label = "Survival Protection Chief", -- Optional: the text on the button in the F4 menu
+	chief = true,
 	help = {
 		"Please don't abuse your job",
 		"Hunt down the runners and arrest them!",
@@ -402,23 +285,7 @@ TEAM_MAYOR = DarkRP.createJob("Governor", {
 	hasLicense = false,
 	mayorCanSetSalary = false,
 	candemote = true,
-    mayor = true,
-    chief = false,
-    medic = false,
-    cook = false,
-    hobo = false,
-	
-	CanPlayerSuicide = function(ply) return false end,
-	PlayerCanPickupWeapon = function(ply, weapon) return true end,
-	PlayerDeath = function(ply, weapon, killer) end,
-	PlayerSelectSpawn = function(ply, spawn) end,
-	PlayerSpawn = function(ply) end,
-	PlayerSpawnProp = function(ply, model) end,
-	RequiresVote = function(ply, job) for k,v in pairs(player.GetAll()) do if IsValid(v) and v:IsAdmin() then return false end end return true end, -- People need to make a vote when there is no admin around
-	ShowSpare1 = function(ply) end,
-	ShowSpare2 = function(ply) end,
-	buttonColor = Color(150, 20, 20, 255), -- The color of the button in the F4 menu
-	label = "Governor", -- Optional: the text on the button in the F4 menu
+    	mayor = true,
 	help = {
 		"Type /warrant [Nick|SteamID|Status ID] to set a search warrant for a player.",
 		"Type /wanted [Nick|SteamID|Status ID] to alert everyone to a wanted suspect.",
@@ -446,23 +313,7 @@ TEAM_HOBO = DarkRP.createJob("Hobo", {
 	vote = false,
 	hasLicense = false,
 	mayorCanSetSalary = false,
-	candemote = false,
-    mayor = false,
-    chief = false,
-    medic = false,
-    cook = false,
-    hobo = true,
-	
-	CanPlayerSuicide = function(ply) return true end,
-	PlayerCanPickupWeapon = function(ply, weapon) return false end,
-	PlayerDeath = function(ply, weapon, killer) end,
-	PlayerSelectSpawn = function(ply, spawn) end,
-	PlayerSpawn = function(ply) end,
-	PlayerSpawnProp = function(ply, model) end,
-	ShowSpare1 = function(ply) end,
-	ShowSpare2 = function(ply) end,
-	buttonColor = Color(80, 45, 0, 255), -- The color of the button in the F4 menu
-	label = "Hobo", -- Optional: the text on the button in the F4 menu
+	candemote = false
 })
 
 //Secret Service
@@ -474,28 +325,12 @@ TEAM_SECRETSERVICE = DarkRP.createJob("Secret Service", {
 	command = "secretservice",
 	max = 2,
 	salary = 45,
+	cp = true,
 	admin = 0,
 	vote = true,
 	hasLicense = true,
 	mayorCanSetSalary = true,
-	candemote = true,
-    mayor = false,
-    chief = false,
-    medic = false,
-    cook = false,
-    hobo = false,
-	
-	CanPlayerSuicide = function(ply) return false end,
-	PlayerCanPickupWeapon = function(ply, weapon) return true end,
-	PlayerDeath = function(ply, weapon, killer) end,
-	PlayerSelectSpawn = function(ply, spawn) end,
-	PlayerSpawn = function(ply) end,
-	PlayerSpawnProp = function(ply, model) end,
-	RequiresVote = function(ply, job) for k,v in pairs(player.GetAll()) do if IsValid(v) and v:IsAdmin() then return false end end return true end, -- People need to make a vote when there is no admin around
-	ShowSpare1 = function(ply) end,
-	ShowSpare2 = function(ply) end,
-	buttonColor = Color(15, 255, 111, 255), -- The color of the button in the F4 menu
-	label = "Secret Service", -- Optional: the text on the button in the F4 menu
+	candemote = true
 })
 
 //Ninja
@@ -514,24 +349,7 @@ TEAM_NINJA = DarkRP.createJob("Ninja", {
 	hasLicense = false,
 	mayorCanSetSalary = false,
 	candemote = true,
-    mayor = false,
-    chief = false,
-    medic = false,
-    cook = false,
-    hobo = false,
-	ninja = true,
-	
-	CanPlayerSuicide = function(ply) return false end,
-	PlayerCanPickupWeapon = function(ply, weapon) return true end,
-	PlayerDeath = function(ply, weapon, killer) end,
-	PlayerSelectSpawn = function(ply, spawn) end,
-	PlayerSpawn = function(ply) end,
-	PlayerSpawnProp = function(ply, model) end,
-	RequiresVote = function(ply, job) for k,v in pairs(player.GetAll()) do if IsValid(v) and v:IsAdmin() then return false end end return true end, -- People need to make a vote when there is no admin around
-	ShowSpare1 = function(ply) end,
-	ShowSpare2 = function(ply) end,
-	buttonColor = Color(0, 10, 0, 255), -- The color of the button in the F4 menu
-	label = "Ninja", -- Optional: the text on the button in the F4 menu
+	ninja = true
 })
 
 //Admin
@@ -544,28 +362,11 @@ TEAM_ADMIN = DarkRP.createJob("Admin on Duty", {
 	max = 64,
 	salary = 45,
 	admin = 1,
+	cp = true,
 	vote = false,
 	hasLicense = false,
 	mayorCanSetSalary = false,
-	candemote = false,
-    mayor = false,
-    chief = false,
-    medic = false,
-    cook = false,
-    hobo = false,
-	Admin = true,
-	
-	CanPlayerSuicide = function(ply) return false end,
-	PlayerCanPickupWeapon = function(ply, weapon) return true end,
-	PlayerDeath = function(ply, weapon, killer) end,
-	PlayerSelectSpawn = function(ply, spawn) end,
-	PlayerSpawn = function(ply) end,
-	PlayerSpawnProp = function(ply, model) end,
-	ShowSpare1 = function(ply) end,
-	ShowSpare2 = function(ply) end,
-	buttonColor = Color(38, 255, 0, 153), -- The color of the button in the F4 menu
-	label = "Admin on Duty", -- Optional: the text on the button in the F4 menu
-})
+	candemote = false
 
 //Faith
 TEAM_RUNNER = DarkRP.createJob("Runner", {
@@ -586,23 +387,7 @@ TEAM_RUNNER = DarkRP.createJob("Runner", {
 	hasLicense = false,
 	mayorCanSetSalary = false,
 	candemote = true,
-    mayor = false,
-    chief = false,
-    medic = false,
-    cook = false,
-    hobo = false,
-	Runner = true,
-	
-	CanPlayerSuicide = function(ply) return false end,
-	PlayerCanPickupWeapon = function(ply, weapon) return true end,
-	PlayerDeath = function(ply, weapon, killer) end,
-	PlayerSelectSpawn = function(ply, spawn) end,
-	PlayerSpawn = function(ply) end,
-	PlayerSpawnProp = function(ply, model) end,
-	ShowSpare1 = function(ply) end,
-	ShowSpare2 = function(ply) end,
-	buttonColor = Color(255, 0, 0, 255), -- The color of the button in the F4 menu
-	label = "Runner", -- Optional: the text on the button in the F4 menu
+	Runner = true
 })
 
 //Hitman
@@ -619,24 +404,7 @@ TEAM_HITMAN = DarkRP.createJob("Hitman", {
 	hasLicense = false,
 	mayorCanSetSalary = false,
 	candemote = true,
-    mayor = false,
-    chief = false,
-    medic = false,
-    cook = false,
-    hobo = false,
 	hitman = true,
-	
-	CanPlayerSuicide = function(ply) return false end,
-	PlayerCanPickupWeapon = function(ply, weapon) return true end,
-	PlayerDeath = function(ply, weapon, killer) end,
-	PlayerSelectSpawn = function(ply, spawn) end,
-	PlayerSpawn = function(ply) end,
-	PlayerSpawnProp = function(ply, model) end,
-	RequiresVote = function(ply, job) for k,v in pairs(player.GetAll()) do if IsValid(v) and v:IsAdmin() then return false end end return true end, -- People need to make a vote when there is no admin around
-	ShowSpare1 = function(ply) end,
-	ShowSpare2 = function(ply) end,
-	buttonColor = Color(84, 34, 94, 255), -- The color of the button in the F4 menu
-	label = "Hitman", -- Optional: the text on the button in the F4 menu
 	help = {
 		"Do NOT abuse this job",
 		"You only kill people when you're payed for it"
@@ -665,24 +433,8 @@ TEAM_SWAT = DarkRP.createJob("Military Infantry", {
 	hasLicense = true,
 	mayorCanSetSalary = true,
 	candemote = true,
-    mayor = false,
-    chief = false,
-    medic = false,
-    cook = false,
-    hobo = false,
+	cp = true,
 	SWAT = true,
-	
-	CanPlayerSuicide = function(ply) return false end,
-	PlayerCanPickupWeapon = function(ply, weapon) return true end,
-	PlayerDeath = function(ply, weapon, killer) end,
-	PlayerSelectSpawn = function(ply, spawn) end,
-	PlayerSpawn = function(ply) end,
-	PlayerSpawnProp = function(ply, model) end,
-	RequiresVote = function(ply, job) for k,v in pairs(player.GetAll()) do if IsValid(v) and v:IsAdmin() then return false end end return true end, -- People need to make a vote when there is no admin around
-	ShowSpare1 = function(ply) end,
-	ShowSpare2 = function(ply) end,
-	buttonColor = Color(22, 121, 191, 255), -- The color of the button in the F4 menu
-	label = "Military Infantry", -- Optional: the text on the button in the F4 menu
 	customCheck = function(ply)
     return ply:GetUserGroup() != "user"
     end
@@ -709,27 +461,12 @@ TEAM_SWATLEADER = DarkRP.createJob("Military Commander", {
 	admin = 0,
 	NeedToChangeFrom = TEAM_SWAT,
 	vote = true,
+	cp = true,
 	hasLicense = true,
 	mayorCanSetSalary = true,
 	candemote = true,
-    mayor = false,
-    chief = true,
-    medic = false,
-    cook = false,
-    hobo = false,
+ 	chief = true,
 	SWATLEADER = true,
-	
-	CanPlayerSuicide = function(ply) return false end,
-	PlayerCanPickupWeapon = function(ply, weapon) return true end,
-	PlayerDeath = function(ply, weapon, killer) end,
-	PlayerSelectSpawn = function(ply, spawn) end,
-	PlayerSpawn = function(ply) end,
-	PlayerSpawnProp = function(ply, model) end,
-	RequiresVote = function(ply, job) for k,v in pairs(player.GetAll()) do if IsValid(v) and v:IsAdmin() then return false end end return true end, -- People need to make a vote when there is no admin around
-	ShowSpare1 = function(ply) end,
-	ShowSpare2 = function(ply) end,
-	buttonColor = Color(19, 81, 124, 255), -- The color of the button in the F4 menu
-	label = "Military Commander", -- Optional: the text on the button in the F4 menu
     customCheck = function(ply)
     return ply:GetUserGroup() == "Member" or "donator" or ply:IsAdmin()
     end    
@@ -755,27 +492,13 @@ TEAM_SWATMEDIC = DarkRP.createJob("Military Medic", {
 	max = 100,
 	salary = 55,
 	admin = 0,
+	cp = true,
 	vote = false,
 	hasLicense = true,
 	mayorCanSetSalary = true,
 	candemote = true,
-    mayor = false,
-    chief = false,
-    medic = true,
-    cook = false,
-    hobo = false,
+	medic = true,
 	police = true,
-	
-	CanPlayerSuicide = function(ply) return false end,
-	PlayerCanPickupWeapon = function(ply, weapon) return true end,
-	PlayerDeath = function(ply, weapon, killer) end,
-	PlayerSelectSpawn = function(ply, spawn) end,
-	PlayerSpawn = function(ply) end,
-	PlayerSpawnProp = function(ply, model) end,
-	ShowSpare1 = function(ply) end,
-	ShowSpare2 = function(ply) end,
-	buttonColor = Color(19, 81, 124, 255), -- The color of the button in the F4 menu
-	label = "Military Medic", -- Optional: the text on the button in the F4 menu
     customCheck = function(ply)
     return ply:GetUserGroup() == "donator" or ply:IsAdmin()
     end    
@@ -801,26 +524,11 @@ TEAM_SWATSNIPER = DarkRP.createJob("Military Sniper", {
 	salary = 50,
 	admin = 0,
 	vote = false,
+	cp = true,
 	hasLicense = true,
 	mayorCanSetSalary = true,
 	candemote = true,
-    mayor = false,
-    chief = false,
-    medic = false,
-    cook = false,
-    hobo = false,
 	police = true,
-	
-	CanPlayerSuicide = function(ply) return false end,
-	PlayerCanPickupWeapon = function(ply, weapon) return true end,
-	PlayerDeath = function(ply, weapon, killer) end,
-	PlayerSelectSpawn = function(ply, spawn) end,
-	PlayerSpawn = function(ply) end,
-	PlayerSpawnProp = function(ply, model) end,
-	ShowSpare1 = function(ply) end,
-	ShowSpare2 = function(ply) end,
-	buttonColor = Color(19, 81, 124, 255), -- The color of the button in the F4 menu
-	label = "Military Sniper", -- Optional: the text on the button in the F4 menu
     customCheck = function(ply)
     return ply:GetUserGroup() == "donator" or ply:IsAdmin()
     end    
@@ -839,27 +547,13 @@ TEAM_SWATEXPLOSIVE = DarkRP.createJob("Military Explosives Expert", {
 	max = 5,
 	salary = 50,
 	admin = 0,
+	cp = true,
+	police = true,
 	vote = false,
 	hasLicense = true,
 	mayorCanSetSalary = true,
 	candemote = true,
-    mayor = false,
-    chief = false,
-    medic = false,
-    cook = false,
-    hobo = false,
 	police = true,
-	
-	CanPlayerSuicide = function(ply) return false end,
-	PlayerCanPickupWeapon = function(ply, weapon) return true end,
-	PlayerDeath = function(ply, weapon, killer) end,
-	PlayerSelectSpawn = function(ply, spawn) end,
-	PlayerSpawn = function(ply) end,
-	PlayerSpawnProp = function(ply, model) end,
-	ShowSpare1 = function(ply) end,
-	ShowSpare2 = function(ply) end,
-	buttonColor = Color(19, 81, 124, 255), -- The color of the button in the F4 menu
-	label = "Military Explosives Expert", -- Optional: the text on the button in the F4 menu
     customCheck = function(ply)
     return ply:GetUserGroup() == "donator" or ply:IsAdmin()
     end    
@@ -882,23 +576,8 @@ TEAM_SWATHACKER = DarkRP.createJob("Military Hacker", {
 	hasLicense = true,
 	mayorCanSetSalary = true,
 	candemote = true,
-    mayor = false,
-    chief = false,
-    medic = false,
-    cook = false,
-    hobo = false,
+	cp = true,
 	police = true,
-	
-	CanPlayerSuicide = function(ply) return false end,
-	PlayerCanPickupWeapon = function(ply, weapon) return true end,
-	PlayerDeath = function(ply, weapon, killer) end,
-	PlayerSelectSpawn = function(ply, spawn) end,
-	PlayerSpawn = function(ply) end,
-	PlayerSpawnProp = function(ply, model) end,
-	ShowSpare1 = function(ply) end,
-	ShowSpare2 = function(ply) end,
-	buttonColor = Color(19, 81, 124, 255), -- The color of the button in the F4 menu
-	label = "Military Hacker", -- Optional: the text on the button in the F4 menu
     customCheck = function(ply)
     return ply:GetUserGroup() == "donator" or ply:IsAdmin()
     end    
@@ -922,23 +601,8 @@ TEAM_SWATJUGGER = DarkRP.createJob("Military Juggernaut", {
 	hasLicense = true,
 	mayorCanSetSalary = true,
 	candemote = true,
-    mayor = false,
-    chief = false,
-    medic = false,
-    cook = false,
-    hobo = false,
+	cp = true,
 	police = true,
-	
-	CanPlayerSuicide = function(ply) return false end,
-	PlayerCanPickupWeapon = function(ply, weapon) return true end,
-	PlayerDeath = function(ply, weapon, killer) end,
-	PlayerSelectSpawn = function(ply, spawn) end,
-	PlayerSpawn = function(ply) end,
-	PlayerSpawnProp = function(ply, model) end,
-	ShowSpare1 = function(ply) end,
-	ShowSpare2 = function(ply) end,
-	buttonColor = Color(19, 81, 124, 255), -- The color of the button in the F4 menu
-	label = "Military Juggernaut", -- Optional: the text on the button in the F4 menu
 	customCheck = function(ply)
     return ply:GetUserGroup() == "donator" or ply:IsAdmin()
     end    
@@ -960,24 +624,7 @@ TEAM_ENGINEER = DarkRP.createJob("Engineer", {
 	vote = false,
 	hasLicense = false,
 	mayorCanSetSalary = true,
-	candemote = true,
-    mayor = false,
-    chief = false,
-    medic = false,
-    cook = false,
-    hobo = false,
-	engineer = true,
-	
-	CanPlayerSuicide = function(ply) return false end,
-	PlayerCanPickupWeapon = function(ply, weapon) return true end,
-	PlayerDeath = function(ply, weapon, killer) end,
-	PlayerSelectSpawn = function(ply, spawn) end,
-	PlayerSpawn = function(ply) end,
-	PlayerSpawnProp = function(ply, model) end,
-	ShowSpare1 = function(ply) end,
-	ShowSpare2 = function(ply) end,
-	buttonColor = Color(255, 144, 0, 176), -- The color of the button in the F4 menu
-	label = "Engineer", -- Optional: the text on the button in the F4 menu
+	candemote = true
 })
 
 //Fisher
@@ -999,18 +646,7 @@ TEAM_ENGINEER = DarkRP.createJob("Engineer", {
 //	medic = false,
 //	cook = false,
 //	hobo = false,
-//	fisher = true,
-	
-//	CanPlayerSuicide = function(ply) return false end,
-//	PlayerCanPickupWeapon = function(ply, weapon) return true end,
-//	PlayerDeath = function(ply, weapon, killer) end,
-//	PlayerSelectSpawn = function(ply, spawn) end,
-//	PlayerSpawn = function(ply) end,
-//	PlayerSpawnProp = function(ply, model) end,
-//	ShowSpare1 = function(ply) end,
-//	ShowSpare2 = function(ply) end,
-//	buttonColor = Color(255, 255, 0, 255), -- The color of the button in the F4 menu
-//	label = "Fisher", -- Optional: the text on the button in the F4 menu
+//	fisher = true
 //})
 
 //Guard
@@ -1030,24 +666,7 @@ TEAM_PGUARD = DarkRP.createJob("Personal Guard", {
 	hasLicense = true,
 	mayorCanSetSalary = true,
 	candemote = true,
-    mayor = false,
-    chief = false,
-    medic = false,
-    cook = false,
-    hobo = false,
-	Guard = true,
-	
-	CanPlayerSuicide = function(ply) return false end,
-	PlayerCanPickupWeapon = function(ply, weapon) return true end,
-	PlayerDeath = function(ply, weapon, killer) end,
-	PlayerSelectSpawn = function(ply, spawn) end,
-	PlayerSpawn = function(ply) end,
-	PlayerSpawnProp = function(ply, model) end,
-	RequiresVote = function(ply, job) for k,v in pairs(player.GetAll()) do if IsValid(v) and v:IsAdmin() then return false end end return true end, -- People need to make a vote when there is no admin around
-	ShowSpare1 = function(ply) end,
-	ShowSpare2 = function(ply) end,
-	buttonColor = Color(27, 209, 48, 120), -- The color of the button in the F4 menu
-	label = "Personal Guard", -- Optional: the text on the button in the F4 menu
+	Guard = true
 })
 
 //Black Market Dealer
@@ -1066,23 +685,7 @@ TEAM_BMDEALER = DarkRP.createJob("Black Market Dealer", {
 	hasLicense = false,
 	mayorCanSetSalary = false,
 	candemote = true,
-    mayor = false,
-    chief = false,
-    medic = false,
-    cook = false,
-    hobo = false,
-	BMD = true,
-	
-	CanPlayerSuicide = function(ply) return false end,
-	PlayerCanPickupWeapon = function(ply, weapon) return true end,
-	PlayerDeath = function(ply, weapon, killer) end,
-	PlayerSelectSpawn = function(ply, spawn) end,
-	PlayerSpawn = function(ply) end,
-	PlayerSpawnProp = function(ply, model) end,
-	ShowSpare1 = function(ply) end,
-	ShowSpare2 = function(ply) end,
-	buttonColor = Color(0, 0, 0, 255), -- The color of the button in the F4 menu
-	label = "Black Market Dealer", -- Optional: the text on the button in the F4 menu
+	BMD = true
 })
 
 //Thief
@@ -1099,23 +702,7 @@ TEAM_THIEF = DarkRP.createJob("Thief", {
 	hasLicense = false,
 	mayorCanSetSalary = false,
 	candemote = true,
-    mayor = false,
-    chief = false,
-    medic = false,
-    cook = false,
-    hobo = false,
-	thief = true,
-	
-	CanPlayerSuicide = function(ply) return false end,
-	PlayerCanPickupWeapon = function(ply, weapon) return true end,
-	PlayerDeath = function(ply, weapon, killer) end,
-	PlayerSelectSpawn = function(ply, spawn) end,
-	PlayerSpawn = function(ply) end,
-	PlayerSpawnProp = function(ply, model) end,
-	ShowSpare1 = function(ply) end,
-	ShowSpare2 = function(ply) end,
-	buttonColor = Color(25, 25, 25, 255), -- The color of the button in the F4 menu
-	label = "Thief", -- Optional: the text on the button in the F4 menu
+	thief = true
 })
 
 TEAM_PROTHIEF = DarkRP.createJob("Professional Thief", {
@@ -1134,23 +721,7 @@ TEAM_PROTHIEF = DarkRP.createJob("Professional Thief", {
 	hasLicense = false,
 	mayorCanSetSalary = false,
 	candemote = true,
-    mayor = false,
-    chief = false,
-    medic = false,
-    cook = false,
-    hobo = false,
 	thief = true,
-	
-	CanPlayerSuicide = function(ply) return false end,
-	PlayerCanPickupWeapon = function(ply, weapon) return true end,
-	PlayerDeath = function(ply, weapon, killer) end,
-	PlayerSelectSpawn = function(ply, spawn) end,
-	PlayerSpawn = function(ply) end,
-	PlayerSpawnProp = function(ply, model) end,
-	ShowSpare1 = function(ply) end,
-	ShowSpare2 = function(ply) end,
-	buttonColor = Color(25, 25, 25, 255), -- The color of the button in the F4 menu
-	label = "Professional Thief", -- Optional: the text on the button in the F4 menu
 	customCheck = function(ply)
     return ply:GetUserGroup() == "donator" or ply:IsAdmin()
     end    
@@ -1171,23 +742,7 @@ TEAM_ADVGUN = DarkRP.createJob("Adv. Arms Dealer", {
 	vote = false,
 	hasLicense = false,
 	mayorCanSetSalary = true,
-	candemote = true,
-    mayor = false,
-    chief = false,
-    medic = false,
-    cook = false,
-    hobo = false,
-	
-	CanPlayerSuicide = function(ply) return false end,
-	PlayerCanPickupWeapon = function(ply, weapon) return true end,
-	PlayerDeath = function(ply, weapon, killer) end,
-	PlayerSelectSpawn = function(ply, spawn) end,
-	PlayerSpawn = function(ply) end,
-	PlayerSpawnProp = function(ply, model) end,
-	ShowSpare1 = function(ply) end,
-	ShowSpare2 = function(ply) end,
-	buttonColor = Color(255, 140, 0, 255), -- The color of the button in the F4 menu
-	label = "Adv. Arms Dealer", -- Optional: the text on the button in the F4 menu
+	candemote = true
 })
 
 //Assassin
@@ -1206,23 +761,7 @@ TEAM_ASSASSIN = DarkRP.createJob("Assassin", {
 	hasLicense = false,
 	mayorCanSetSalary = false,
 	candemote = true,
-    mayor = false,
-    chief = false,
-    medic = false,
-    cook = false,
-    hobo = false,
 	assassin = true,
-	
-	CanPlayerSuicide = function(ply) return false end,
-	PlayerCanPickupWeapon = function(ply, weapon) return true end,
-	PlayerDeath = function(ply, weapon, killer) end,
-	PlayerSelectSpawn = function(ply, spawn) end,
-	PlayerSpawn = function(ply) end,
-	PlayerSpawnProp = function(ply, model) end,
-	ShowSpare1 = function(ply) end,
-	ShowSpare2 = function(ply) end,
-	buttonColor = Color(0, 10, 0, 255), -- The color of the button in the F4 menu
-	label = "Assassin", -- Optional: the text on the button in the F4 menu
 	customCheck = function(ply)
     return ply:GetUserGroup() == "donator" or ply:IsAdmin()
     end    
@@ -1245,25 +784,7 @@ TEAM_STEAMPILOT = DarkRP.createJob("Steampunk Pilot", {
 	hasLicense = true,
 	mayorCanSetSalary = true,
 	candemote = true,
-    mayor = false,
-    chief = false,
-    medic = false,
-    cook = false,
-    hobo = false,
 	steampilot = true,
-	police = true,	
-	
-	CanPlayerSuicide = function(ply) return false end,
-	PlayerCanPickupWeapon = function(ply, weapon) return true end,
-	PlayerDeath = function(ply, weapon, killer) end,
-	PlayerSelectSpawn = function(ply, spawn) end,
-	PlayerSpawn = function(ply) end,
-	PlayerSpawnProp = function(ply, model) end,
-	RequiresVote = function(ply, job) for k,v in pairs(player.GetAll()) do if IsValid(v) and v:IsAdmin() then return false end end return true end, -- People need to make a vote when there is no admin around
-	ShowSpare1 = function(ply) end,
-	ShowSpare2 = function(ply) end,
-	buttonColor = Color(0, 168, 184, 255), -- The color of the button in the F4 menu
-	label = "Steampunk Pilot", -- Optional: the text on the button in the F4 menu
     customCheck = function(ply)
     return ply:GetUserGroup() == "donator" or ply:IsAdmin()
     end    
@@ -1271,8 +792,7 @@ TEAM_STEAMPILOT = DarkRP.createJob("Steampunk Pilot", {
 
 TEAM_VIGILANTE = DarkRP.createJob("Vigilante", {
 	color = Color(221, 151, 151, 255),
-	model = {
-		"models/player/leet.mdl"},
+	model = {"models/player/leet.mdl"},
 	description = [[After years of travelling you
 	have finally found civilization in this Zombie Apocalypse.
 	With your great dual wielding skills and loads of weapons.
@@ -1286,23 +806,7 @@ TEAM_VIGILANTE = DarkRP.createJob("Vigilante", {
 	hasLicense = false,
 	mayorCanSetSalary = true,
 	candemote = true,
-    mayor = false,
-    chief = false,
-    medic = false,
-    cook = false,
-    hobo = false,
 	quickshot = true,
-	
-	CanPlayerSuicide = function(ply) return false end,
-	PlayerCanPickupWeapon = function(ply, weapon) return true end,
-	PlayerDeath = function(ply, weapon, killer) end,
-	PlayerSelectSpawn = function(ply, spawn) end,
-	PlayerSpawn = function(ply) end,
-	PlayerSpawnProp = function(ply, model) end,
-	ShowSpare1 = function(ply) end,
-	ShowSpare2 = function(ply) end,
-	buttonColor = Color(221, 151, 151, 255), -- The color of the button in the F4 menu
-	label = "Vigilante", -- Optional: the text on the button in the F4 menu
 	customCheck = function(ply)
     return ply:GetUserGroup() == "donator" or ply:IsAdmin()
     end    
