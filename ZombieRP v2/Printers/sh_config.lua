@@ -97,7 +97,7 @@ rPrint.RegisterPrinterType( "VIP", {
 //	PowerConsumptionRate = 1 \M/ <whatevernumber, this is math>,
 //	PowerConsumptionRateCooler = 1 \M/ <whatevernumber, this is math>,
 //	HeatRate = 1 \M/ <enter number here, this is math>,
-//	PrinterHealth = <enterhealth here>
+// 	CoolRate = 1 \M/ <enter number here, this is math>
 //}, "<enterclassname>" )
 
 
@@ -143,5 +143,9 @@ rPrint.RegisterPrinterType( "Quantum", {
 	Color = Color( 255, 255, 255 ), 
 	RechargeCost = 1650, 
 	CoolerCost = 2050,
-	PrinterHealth = 1250
+	PrinterHealth = 1250,
+	PowerConsumptionRate = 1 / 2,
+	PowerConsumptionRateCooler = 1 / 3,
+	HeatRate = 1,
+	CoolRate = 1 * 1.75
 }, "rprint_quantum" )
