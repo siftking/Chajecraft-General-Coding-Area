@@ -57,22 +57,8 @@ TEAM_CITIZEN = DarkRP.createJob("Survivor", {
 
 TEAM_SCAVENGER = DarkRP.createJob("Scavenger", {
 	color = Color(221, 151, 151),
-	model = {
-		"models/player/Group01/Female_01.mdl",
-		"models/player/Group01/Female_02.mdl",
-		"models/player/Group01/Female_03.mdl",
-		"models/player/Group01/Female_04.mdl",
-		"models/player/Group01/Female_06.mdl",
-		"models/player/group01/male_01.mdl",
-		"models/player/Group01/Male_02.mdl",
-		"models/player/Group01/male_03.mdl",
-		"models/player/Group01/Male_04.mdl",
-		"models/player/Group01/Male_05.mdl",
-		"models/player/Group01/Male_06.mdl",
-		"models/player/Group01/Male_07.mdl",
-		"models/player/Group01/Male_08.mdl",
-		"models/player/Group01/Male_09.mdl"
-	},
+	model = {"models/player/lara_croft.mdl",
+		"models/player/scavenger/scavenger.mdl"},
 	description = [[You wander around the wasteland, your like
 		a normal survivor, but you get some guns to survive.]],
 	weapons = {"m9k_colt191", "fas2_m24"},
@@ -371,7 +357,7 @@ TEAM_ADMIN = DarkRP.createJob("Admin on Duty", {
 //Faith
 TEAM_RUNNER = DarkRP.createJob("Runner", {
 	color = Color(255, 0, 0, 255),
-	model = "models/player/alyx.mdl",
+	model = "models/player/lara_croft.mdl",
 	description = [[A parkour master since she was born, 
 	    skilled in climbing and parkouring.
 		She is also hunted down by the police and S.W.A.T.
@@ -414,7 +400,15 @@ TEAM_HITMAN = DarkRP.createJob("Hitman", {
 //S.W.A.T
 TEAM_SWAT = DarkRP.createJob("Military Infantry", {
 	color = Color(22, 121, 191, 255),
-	model = "models/player/swat.mdl",
+	model = "models/player/rusty/natguard/male_01.mdl",
+		"models/player/rusty/natguard/male_02.mdl",
+		"models/player/rusty/natguard/male_03.mdl",
+		"models/player/rusty/natguard/male_04.mdl",
+		"models/player/rusty/natguard/male_05.mdl",
+		"models/player/rusty/natguard/male_06.mdl",
+		"models/player/rusty/natguard/male_07.mdl",
+		"models/player/rusty/natguard/male_08.mdl",
+		"models/player/rusty/natguard/male_09.mdl"},
 	description = [[The Militairy is a very special team.
 		Coordinate the S.P.T force to enforce law in the city.
 		Hit people them with arrest baton to put them in jail.
@@ -443,7 +437,15 @@ TEAM_SWAT = DarkRP.createJob("Military Infantry", {
 //S.W.A.T Leader
 TEAM_SWATLEADER = DarkRP.createJob("Military Commander", {
 	color = Color(19, 81, 124, 255),
-	model = "models/player/riot.mdl",
+	model = "models/player/rusty/natguard/male_01.mdl",
+		"models/player/rusty/natguard/male_02.mdl",
+		"models/player/rusty/natguard/male_03.mdl",
+		"models/player/rusty/natguard/male_04.mdl",
+		"models/player/rusty/natguard/male_05.mdl",
+		"models/player/rusty/natguard/male_06.mdl",
+		"models/player/rusty/natguard/male_07.mdl",
+		"models/player/rusty/natguard/male_08.mdl",
+		"models/player/rusty/natguard/male_09.mdl"},
 	description = [[The Military is a very special team.
 	    As Commander you're the leader of the team.
 		Coordinate the S.P.T force to enforce law in the city.
@@ -475,7 +477,15 @@ TEAM_SWATLEADER = DarkRP.createJob("Military Commander", {
 //S.W.A.T-Medic
 TEAM_SWATMEDIC = DarkRP.createJob("Military Medic", {
 	color = Color(19, 81, 124, 255),
-	model = "models/player/gasmask.mdl",
+	model = "models/player/rusty/natguard/male_01.mdl",
+		"models/player/rusty/natguard/male_02.mdl",
+		"models/player/rusty/natguard/male_03.mdl",
+		"models/player/rusty/natguard/male_04.mdl",
+		"models/player/rusty/natguard/male_05.mdl",
+		"models/player/rusty/natguard/male_06.mdl",
+		"models/player/rusty/natguard/male_07.mdl",
+		"models/player/rusty/natguard/male_08.mdl",
+		"models/player/rusty/natguard/male_09.mdl"},
 	description = [[The Military Team is a very special team.
 	    As the medic you heal your teammates and wounded people.
 		Coordinate the S.P.T force to enforce law in the city.
@@ -506,7 +516,15 @@ TEAM_SWATMEDIC = DarkRP.createJob("Military Medic", {
 
 TEAM_SWATSNIPER = DarkRP.createJob("Military Sniper", {
 	color = Color(19, 81, 124, 255),
-	model = "models/player/urban.mdl",
+	model = "models/player/rusty/natguard/male_01.mdl",
+		"models/player/rusty/natguard/male_02.mdl",
+		"models/player/rusty/natguard/male_03.mdl",
+		"models/player/rusty/natguard/male_04.mdl",
+		"models/player/rusty/natguard/male_05.mdl",
+		"models/player/rusty/natguard/male_06.mdl",
+		"models/player/rusty/natguard/male_07.mdl",
+		"models/player/rusty/natguard/male_08.mdl",
+		"models/player/rusty/natguard/male_09.mdl"},
 	description = [[The Military is a very special team.
 	    As the sniper you snipe the people down who are wanted.
 		Coordinate the S.P.T force to enforce law in the city.
@@ -536,7 +554,15 @@ TEAM_SWATSNIPER = DarkRP.createJob("Military Sniper", {
 
 TEAM_SWATEXPLOSIVE = DarkRP.createJob("Military Explosives Expert", {
 	color = Color(19, 81, 124, 255),
-	model = "models/player/swat.mdl",
+	model = "models/player/rusty/natguard/male_01.mdl",
+		"models/player/rusty/natguard/male_02.mdl",
+		"models/player/rusty/natguard/male_03.mdl",
+		"models/player/rusty/natguard/male_04.mdl",
+		"models/player/rusty/natguard/male_05.mdl",
+		"models/player/rusty/natguard/male_06.mdl",
+		"models/player/rusty/natguard/male_07.mdl",
+		"models/player/rusty/natguard/male_08.mdl",
+		"models/player/rusty/natguard/male_09.mdl"},
 	description = [[The Military is a very special team.
 	    As Explosive Master your the person that helps raids with explosions.
 		Type /wanted <name> to alert the public to this criminal
@@ -561,9 +587,17 @@ TEAM_SWATEXPLOSIVE = DarkRP.createJob("Military Explosives Expert", {
 
 TEAM_SWATHACKER = DarkRP.createJob("Military Hacker", {
 	color = Color(19, 81, 124, 255),
-	model = "models/player/swat.mdl",
+	model = "models/player/rusty/natguard/male_01.mdl",
+		"models/player/rusty/natguard/male_02.mdl",
+		"models/player/rusty/natguard/male_03.mdl",
+		"models/player/rusty/natguard/male_04.mdl",
+		"models/player/rusty/natguard/male_05.mdl",
+		"models/player/rusty/natguard/male_06.mdl",
+		"models/player/rusty/natguard/male_07.mdl",
+		"models/player/rusty/natguard/male_08.mdl",
+		"models/player/rusty/natguard/male_09.mdl"},
 	description = [[The Military is a very special team.
-	    As Hacking Master you're the person that supports raids with a keypad cracker!!!
+	    As Hacking Master you're the person that supports raids with your hacking abilities
 		Type /wanted <name> to alert the public to this criminal
 		Type /jailpos to set the Jail Position
 		!!You also hunt down the Runners!!]],
@@ -585,7 +619,15 @@ TEAM_SWATHACKER = DarkRP.createJob("Military Hacker", {
 
 TEAM_SWATJUGGER = DarkRP.createJob("Military Juggernaut", {
 	color = Color(19, 81, 124, 255),
-	model = "models/player/combine_super_soldier.mdl",
+	model = "models/player/rusty/natguard/male_01.mdl",
+		"models/player/rusty/natguard/male_02.mdl",
+		"models/player/rusty/natguard/male_03.mdl",
+		"models/player/rusty/natguard/male_04.mdl",
+		"models/player/rusty/natguard/male_05.mdl",
+		"models/player/rusty/natguard/male_06.mdl",
+		"models/player/rusty/natguard/male_07.mdl",
+		"models/player/rusty/natguard/male_08.mdl",
+		"models/player/rusty/natguard/male_09.mdl"},
 	description = [[The Military is a very special team.
 	    The Military Juggernaut is the toughest of the Military.
 	    He has a riot shield that makes him tough in front, but vunerable in sides and back.
@@ -769,7 +811,8 @@ TEAM_ASSASSIN = DarkRP.createJob("Assassin", {
 
 TEAM_STEAMPILOT = DarkRP.createJob("Steampunk Pilot", {
 	color = Color(0, 168, 184, 255),
-	model = "models/player/combine_super_soldier.mdl",
+	model = "models/combinepilot/combinepilot.mdl",
+		"models/combine_sniper.mdl"},
 	description = [[A Futuristic Soldier, that came to
 		make justice to this, strange, mad world.
 		You are some kind of a cop but you aren't
