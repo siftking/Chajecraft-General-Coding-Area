@@ -401,15 +401,8 @@ TEAM_HITMAN = DarkRP.createJob("Hitman", {
 //S.W.A.T
 TEAM_SWAT = DarkRP.createJob("Military Infantry", {
 	color = Color(22, 121, 191, 255),
-	model = {"models/player/rusty/natguard/male_01.mdl",
-		"models/player/rusty/natguard/male_02.mdl",
-		"models/player/rusty/natguard/male_03.mdl",
-		"models/player/rusty/natguard/male_04.mdl",
-		"models/player/rusty/natguard/male_05.mdl",
-		"models/player/rusty/natguard/male_06.mdl",
-		"models/player/rusty/natguard/male_07.mdl",
-		"models/player/rusty/natguard/male_08.mdl",
-		"models/player/rusty/natguard/male_09.mdl"},
+	model = {"models/steinman/bf4/us_01.mdl",
+		"models/steinman/bf4/ru_04.mdl"},
 	description = [[The Militairy is a very special team.
 		Coordinate the S.P.T force to enforce law in the city.
 		Hit people them with arrest baton to put them in jail.
@@ -438,15 +431,8 @@ TEAM_SWAT = DarkRP.createJob("Military Infantry", {
 //S.W.A.T Leader
 TEAM_SWATLEADER = DarkRP.createJob("Military Commander", {
 	color = Color(19, 81, 124, 255),
-	model = {"models/player/rusty/natguard/male_01.mdl",
-		"models/player/rusty/natguard/male_02.mdl",
-		"models/player/rusty/natguard/male_03.mdl",
-		"models/player/rusty/natguard/male_04.mdl",
-		"models/player/rusty/natguard/male_05.mdl",
-		"models/player/rusty/natguard/male_06.mdl",
-		"models/player/rusty/natguard/male_07.mdl",
-		"models/player/rusty/natguard/male_08.mdl",
-		"models/player/rusty/natguard/male_09.mdl"},
+	model = {"models/steinman/bf4/us_01.mdl",
+		"models/steinman/bf4/ru_04.mdl"},
 	description = [[The Military is a very special team.
 	    As Commander you're the leader of the team.
 		Coordinate the S.P.T force to enforce law in the city.
@@ -478,15 +464,8 @@ TEAM_SWATLEADER = DarkRP.createJob("Military Commander", {
 //S.W.A.T-Medic
 TEAM_SWATMEDIC = DarkRP.createJob("Military Medic", {
 	color = Color(19, 81, 124, 255),
-	model = {"models/player/rusty/natguard/male_01.mdl",
-		"models/player/rusty/natguard/male_02.mdl",
-		"models/player/rusty/natguard/male_03.mdl",
-		"models/player/rusty/natguard/male_04.mdl",
-		"models/player/rusty/natguard/male_05.mdl",
-		"models/player/rusty/natguard/male_06.mdl",
-		"models/player/rusty/natguard/male_07.mdl",
-		"models/player/rusty/natguard/male_08.mdl",
-		"models/player/rusty/natguard/male_09.mdl"},
+	model = {"models/steinman/bf4/us_01.mdl",
+		"models/steinman/bf4/ru_04.mdl"},
 	description = [[The Military Team is a very special team.
 	    As the medic you heal your teammates and wounded people.
 		Coordinate the S.P.T force to enforce law in the city.
@@ -517,15 +496,8 @@ TEAM_SWATMEDIC = DarkRP.createJob("Military Medic", {
 
 TEAM_SWATSNIPER = DarkRP.createJob("Military Sniper", {
 	color = Color(19, 81, 124, 255),
-	model = {"models/player/rusty/natguard/male_01.mdl",
-		"models/player/rusty/natguard/male_02.mdl",
-		"models/player/rusty/natguard/male_03.mdl",
-		"models/player/rusty/natguard/male_04.mdl",
-		"models/player/rusty/natguard/male_05.mdl",
-		"models/player/rusty/natguard/male_06.mdl",
-		"models/player/rusty/natguard/male_07.mdl",
-		"models/player/rusty/natguard/male_08.mdl",
-		"models/player/rusty/natguard/male_09.mdl"},
+	model = {"models/steinman/bf4/us_03.mdl",
+		"models/steinman/bf4/ru_03.mdl"},
 	description = [[The Military is a very special team.
 	    As the sniper you snipe the people down who are wanted.
 		Coordinate the S.P.T force to enforce law in the city.
@@ -555,15 +527,8 @@ TEAM_SWATSNIPER = DarkRP.createJob("Military Sniper", {
 
 TEAM_SWATEXPLOSIVE = DarkRP.createJob("Military Explosives Expert", {
 	color = Color(19, 81, 124, 255),
-	model = {"models/player/rusty/natguard/male_01.mdl",
-		"models/player/rusty/natguard/male_02.mdl",
-		"models/player/rusty/natguard/male_03.mdl",
-		"models/player/rusty/natguard/male_04.mdl",
-		"models/player/rusty/natguard/male_05.mdl",
-		"models/player/rusty/natguard/male_06.mdl",
-		"models/player/rusty/natguard/male_07.mdl",
-		"models/player/rusty/natguard/male_08.mdl",
-		"models/player/rusty/natguard/male_09.mdl"},
+	model = {"models/steinman/bf4/us_04.mdl",
+		"models/steinman/bf4/ru_01.mdl"},
 	description = [[The Military is a very special team.
 	    As Explosive Master your the person that helps raids with explosions.
 		Type /wanted <name> to alert the public to this criminal
@@ -588,15 +553,8 @@ TEAM_SWATEXPLOSIVE = DarkRP.createJob("Military Explosives Expert", {
 
 TEAM_SWATHACKER = DarkRP.createJob("Military Hacker", {
 	color = Color(19, 81, 124, 255),
-	model = {"models/player/rusty/natguard/male_01.mdl",
-		"models/player/rusty/natguard/male_02.mdl",
-		"models/player/rusty/natguard/male_03.mdl",
-		"models/player/rusty/natguard/male_04.mdl",
-		"models/player/rusty/natguard/male_05.mdl",
-		"models/player/rusty/natguard/male_06.mdl",
-		"models/player/rusty/natguard/male_07.mdl",
-		"models/player/rusty/natguard/male_08.mdl",
-		"models/player/rusty/natguard/male_09.mdl"},
+	model = {"models/steinman/bf4/us_01.mdl",
+		"models/steinman/bf4/ru_04.mdl"},
 	description = [[The Military is a very special team.
 	    As Hacking Master you're the person that supports raids with your hacking abilities
 		Type /wanted <name> to alert the public to this criminal
@@ -618,17 +576,10 @@ TEAM_SWATHACKER = DarkRP.createJob("Military Hacker", {
     end    
 })
 
-TEAM_SWATJUGGER = DarkRP.createJob("Military Juggernaut", {
+TEAM_SWATSUPPORT = DarkRP.createJob("Military Support", {
 	color = Color(19, 81, 124, 255),
-	model = {"models/player/rusty/natguard/male_01.mdl",
-		"models/player/rusty/natguard/male_02.mdl",
-		"models/player/rusty/natguard/male_03.mdl",
-		"models/player/rusty/natguard/male_04.mdl",
-		"models/player/rusty/natguard/male_05.mdl",
-		"models/player/rusty/natguard/male_06.mdl",
-		"models/player/rusty/natguard/male_07.mdl",
-		"models/player/rusty/natguard/male_08.mdl",
-		"models/player/rusty/natguard/male_09.mdl"},
+	model = {"models/steinman/bf4/us_04.mdl",
+		"models/steinman/bf4/ru_01.mdl"},
 	description = [[The Military is a very special team.
 	    The Military Juggernaut is the toughest of the Military.
 	    He has a riot shield that makes him tough in front, but vunerable in sides and back.
