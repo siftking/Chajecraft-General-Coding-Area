@@ -353,7 +353,7 @@ TEAM_ADMIN = DarkRP.createJob("Admin on Duty", {
 	hasLicense = false,
 	mayorCanSetSalary = false,
 	candemote = false
-
+)}
 //Faith
 TEAM_RUNNER = DarkRP.createJob("Runner", {
 	color = Color(255, 0, 0, 255),
