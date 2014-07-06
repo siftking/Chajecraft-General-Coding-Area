@@ -125,8 +125,17 @@ rPrint.RegisterPrinterType( "Gold", {
 rPrint.RegisterPrinterType( "Platinum", {
 	PrintRate = 35, 
 	DestroyPayout = 1750, 
-	Color = Color( 255, 255, 135, 255 ), 
+	Color = Color( 203, 204, 255 ), 
 	RechargeCost = 750, 
 	CoolerCost = 1100,
 	PrinterHealth = 750
 }, "rprint_platinum" )
+
+rPrint.RegisterPrinterType( "Quantum", {
+	PrintRate = 55, 
+	DestroyPayout = 2510, 
+	Color = Color( 255, 255, 255 ), 
+	RechargeCost = 1650, 
+	CoolerCost = 2050,
+	PrinterHealth = 1250
+}, "rprint_quantum" )
