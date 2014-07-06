@@ -13,110 +13,44 @@ https://github.com/FPtje/DarkRP/blob/master/gamemode/config/addentities.lua#L111
 
 Add entities under the following line:
 ---------------------------------------------------------------------------*/
-AddEntity("Normal Printer", {
-	ent = "money_normal_printer",
-	model = "models/props_lab/reciever01a.mdl",
-	price = 1999,
-	max = 2,
-	cmd = "/buynormalprinter"
-})
-	
-AddEntity("Coal Money Printer", {
-	ent = "money_coal_printer",
-	model = "models/props_lab/reciever01a.mdl",
-	price = 4999,
-	max = 2,
-	cmd = "/buycoalprinter"
+AddEntity("Bronze Printer", {
+	ent = "rprint_bronzeprinter",
+	model = "models/props_c17/consolebox01a.mdl",
+	price = 1000,
+	max = 3,
+	cmd = "/buybronzeprint"
 })
 
-AddEntity("Ruby Money Printer", {
-	ent = "money_ruby_printer",
-	model = "models/props_lab/reciever01a.mdl",
-	price = 9999,
+AddEntity("Silver Printer", {
+	ent = "rprint_silverprinter",
+	model = "models/props_c17/consolebox01a.mdl",
+	price = 3250,
 	max = 2,
-	cmd = "/buyrubyprinter"
+	cmd = "/buysilverprint"
 })
 
-AddEntity("Sapphire Money Printer", {
-	ent = "money_sapphire_printer",
-	model = "models/props_lab/reciever01a.mdl",
-	price = 24999,
+AddEntity("Gold Printer", {
+	ent = "rprint_goldprinter",
+	model = "models/props_c17/consolebox01a.mdl",
+	price = 6500,
 	max = 2,
-	cmd = "/buysapphireprinter",
-	customCheck = function(ply)
-    return ply:GetUserGroup() == "donator" or ply:IsAdmin()
-    end
+	cmd = "/buygoldprint"
 })
 
-AddEntity("Emerald Money Printer", {
-	ent = "money_emerald_printer",
-	model = "models/props_lab/reciever01a.mdl",
-	price = 34999,
-	max = 2,
-	cmd = "/buyemeraldprinter",
-	customCheck = function(ply)
-    return ply:GetUserGroup() == "donator" or ply:IsAdmin()
-    end
+AddEntity("Platinum Printer", {
+	ent = "rprint_platinum",
+	model = "models/props_c17/consolebox01a.mdl",
+	price = 9750,
+	max = 1,
+	cmd = "/buyplatinumprint"
 })
 
-AddEntity("Diamond Money Printer", {
-	ent = "money_diamond_printer",
-	model = "models/props_lab/reciever01a.mdl",
-	price = 49999,
-	max = 2,
-	cmd = "/buydiamondprinter",
-	customCheck = function(ply)
-    return ply:GetUserGroup() == "donator" or ply:IsAdmin()
-    end
-})
-
-AddEntity("Pearl Money Printer", {
-	ent = "money_pearl_printer",
-	model = "models/props_lab/reciever01a.mdl",
-	price = 74999,
-	max = 2,
-	cmd = "/buypearlprinter",
-	customCheck = function(ply)
-    return ply:GetUserGroup() == "donator" or ply:IsAdmin()
-    end
-})
-
-AddEntity("Platinum Money Printer", {
-	ent = "money_platinum_printer",
-	model = "models/props_lab/reciever01a.mdl",
-	price = 99999,
-	max = 2,
-	cmd = "/buyplatinumprinter",
-	customCheck = function(ply)
-    return ply:GetUserGroup() == "donator" or ply:IsAdmin()
-    end
-})
-
-AddEntity("Black Money Printer", {
-	ent = "money_black_printer",
-	model = "models/props_lab/reciever01a.mdl",
-	price = 199999,
-	max = 2,
-	cmd = "/buyblackprinter",
-	customCheck = function(ply)
-    return ply:GetUserGroup() == "donator" or ply:IsAdmin()
-    end
-})
-
-AddEntity("Coolant Cell", {
-	ent = "money_coolant_cell",
-	model = "models/items/battery.mdl",
-	price = 799,
-	max = 9000,
-	cmd = "/buycool"
-})
-
-AddEntity("Printer Upgrade", {
-	ent = "money_printer_upgrade",
-	model = "models/items/battery.mdl",
-	max = 9000,
-	price = 799,
-	cmd = "/buyupdrageprinter"
+AddEntity("Quantum Printer", {
+	ent = "rprint_quantum",
+	model = "models/props_c17/consolebox01a.mdl",
+	price = 16500,
+	max = 1,
+	cmd = "/buyquantumprint"
 })
 
 AddEntity("Bandages", {
