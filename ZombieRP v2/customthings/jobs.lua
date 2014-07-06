@@ -353,7 +353,8 @@ TEAM_ADMIN = DarkRP.createJob("Admin on Duty", {
 	hasLicense = false,
 	mayorCanSetSalary = false,
 	candemote = false
-)}
+})
+
 //Faith
 TEAM_RUNNER = DarkRP.createJob("Runner", {
 	color = Color(255, 0, 0, 255),
@@ -400,7 +401,7 @@ TEAM_HITMAN = DarkRP.createJob("Hitman", {
 //S.W.A.T
 TEAM_SWAT = DarkRP.createJob("Military Infantry", {
 	color = Color(22, 121, 191, 255),
-	model = "models/player/rusty/natguard/male_01.mdl",
+	model = {"models/player/rusty/natguard/male_01.mdl",
 		"models/player/rusty/natguard/male_02.mdl",
 		"models/player/rusty/natguard/male_03.mdl",
 		"models/player/rusty/natguard/male_04.mdl",
@@ -437,7 +438,7 @@ TEAM_SWAT = DarkRP.createJob("Military Infantry", {
 //S.W.A.T Leader
 TEAM_SWATLEADER = DarkRP.createJob("Military Commander", {
 	color = Color(19, 81, 124, 255),
-	model = "models/player/rusty/natguard/male_01.mdl",
+	model = {"models/player/rusty/natguard/male_01.mdl",
 		"models/player/rusty/natguard/male_02.mdl",
 		"models/player/rusty/natguard/male_03.mdl",
 		"models/player/rusty/natguard/male_04.mdl",
@@ -477,7 +478,7 @@ TEAM_SWATLEADER = DarkRP.createJob("Military Commander", {
 //S.W.A.T-Medic
 TEAM_SWATMEDIC = DarkRP.createJob("Military Medic", {
 	color = Color(19, 81, 124, 255),
-	model = "models/player/rusty/natguard/male_01.mdl",
+	model = {"models/player/rusty/natguard/male_01.mdl",
 		"models/player/rusty/natguard/male_02.mdl",
 		"models/player/rusty/natguard/male_03.mdl",
 		"models/player/rusty/natguard/male_04.mdl",
@@ -516,7 +517,7 @@ TEAM_SWATMEDIC = DarkRP.createJob("Military Medic", {
 
 TEAM_SWATSNIPER = DarkRP.createJob("Military Sniper", {
 	color = Color(19, 81, 124, 255),
-	model = "models/player/rusty/natguard/male_01.mdl",
+	model = {"models/player/rusty/natguard/male_01.mdl",
 		"models/player/rusty/natguard/male_02.mdl",
 		"models/player/rusty/natguard/male_03.mdl",
 		"models/player/rusty/natguard/male_04.mdl",
@@ -554,7 +555,7 @@ TEAM_SWATSNIPER = DarkRP.createJob("Military Sniper", {
 
 TEAM_SWATEXPLOSIVE = DarkRP.createJob("Military Explosives Expert", {
 	color = Color(19, 81, 124, 255),
-	model = "models/player/rusty/natguard/male_01.mdl",
+	model = {"models/player/rusty/natguard/male_01.mdl",
 		"models/player/rusty/natguard/male_02.mdl",
 		"models/player/rusty/natguard/male_03.mdl",
 		"models/player/rusty/natguard/male_04.mdl",
@@ -587,7 +588,7 @@ TEAM_SWATEXPLOSIVE = DarkRP.createJob("Military Explosives Expert", {
 
 TEAM_SWATHACKER = DarkRP.createJob("Military Hacker", {
 	color = Color(19, 81, 124, 255),
-	model = "models/player/rusty/natguard/male_01.mdl",
+	model = {"models/player/rusty/natguard/male_01.mdl",
 		"models/player/rusty/natguard/male_02.mdl",
 		"models/player/rusty/natguard/male_03.mdl",
 		"models/player/rusty/natguard/male_04.mdl",
@@ -619,7 +620,7 @@ TEAM_SWATHACKER = DarkRP.createJob("Military Hacker", {
 
 TEAM_SWATJUGGER = DarkRP.createJob("Military Juggernaut", {
 	color = Color(19, 81, 124, 255),
-	model = "models/player/rusty/natguard/male_01.mdl",
+	model = {"models/player/rusty/natguard/male_01.mdl",
 		"models/player/rusty/natguard/male_02.mdl",
 		"models/player/rusty/natguard/male_03.mdl",
 		"models/player/rusty/natguard/male_04.mdl",
@@ -811,7 +812,7 @@ TEAM_ASSASSIN = DarkRP.createJob("Assassin", {
 
 TEAM_STEAMPILOT = DarkRP.createJob("Steampunk Pilot", {
 	color = Color(0, 168, 184, 255),
-	model = "models/combinepilot/combinepilot.mdl",
+	model = {"models/combinepilot/combinepilot.mdl",
 		"models/combine_sniper.mdl"},
 	description = [[A Futuristic Soldier, that came to
 		make justice to this, strange, mad world.
