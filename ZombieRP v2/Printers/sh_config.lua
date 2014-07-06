@@ -84,14 +84,20 @@ rPrint.RegisterPrinterType( "VIP", {
 
 ]]
 
-// here you can add new printers, pretty simple, ain't it?
-// rPrint.RegisterPrinterType( "Bronze", {
+// here you can add new printers, pretty simple, ain't it? 
+// For where I put \M/ you can do either * or /, this represents math.
+//
+// rPrint.RegisterPrinterType( "<EnterPrinterNameHere>", {
 //	PrintRate = <PrintRate/s>, 
 //	DestroyPayout = <Howmuchyougetfordestroying>, 
 //	Color = Color( Red, Green, Blue, Alpha Transparency ), 
 //	RechargeCost = <enterhowmuchrechargecosts>, 
 //	CoolerCost = <enterhowmuchcoolercosts>,
-//	PrinterHealth = <enterprinterhealth>
+//	PrinterHealth = <enterprinterhealth>,
+//	PowerConsumptionRate = 1 \M/ <whatevernumber, this is math>,
+//	PowerConsumptionRateCooler = 1 \M/ <whatevernumber, this is math>,
+//	HeatRate = 1 \M/ <enter number here, this is math>,
+//	PrinterHealth = <enterhealth here>
 //}, "<enterclassname>" )
 
 
