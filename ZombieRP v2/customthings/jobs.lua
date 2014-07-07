@@ -412,7 +412,7 @@ TEAM_SWAT = DarkRP.createJob("Military Infantry", {
 		warrant for his/her arrest.
 		Type /wanted <name> to alert the public to this criminal
 		Type /jailpos to set the Jail Position]],
-	weapons = {"arrest_stick", "unarrest_stick", "m9k_colt1911", "stunstick", "door_ram", "weaponchecker", "fas2_m4a1", "handcuffs"},
+	weapons = {"arrest_stick", "unarrest_stick", "fas2_m1911", "stunstick", "door_ram", "weaponchecker", "fas2_m4a1", "handcuffs"},
 	command = "swat",
 	max = 4,
 	salary = 35,
@@ -443,7 +443,7 @@ TEAM_SWATLEADER = DarkRP.createJob("Military Commander", {
 		warrant for his/her arrest.
 		Type /wanted <name> to alert the public to this criminal
 		Type /jailpos to set the Jail Position]],
-	weapons = {"m9k_colt1911", "arrest_stick", "unarrest_stick", "stunstick", "door_ram", "weaponchecker", "m9k_mossberg590", "fas2_m4a1", "handcuffs"},
+	weapons = {"fas2_deagle", "arrest_stick", "unarrest_stick", "stunstick", "door_ram", "weaponchecker", "fas2_rem870", "fas2_m4a1", "handcuffs"},
 	command = "swatleader",
 	max = 1,
 	salary = 55,
@@ -494,12 +494,12 @@ TEAM_SWATMEDIC = DarkRP.createJob("Military Medic", {
     end    
 })
 
-TEAM_SWATSNIPER = DarkRP.createJob("Military Sniper", {
+TEAM_SWATSNIPER = DarkRP.createJob("Military Recon", {
 	color = Color(19, 81, 124, 255),
 	model = {"models/steinman/bf4/us_03.mdl",
 		"models/steinman/bf4/ru_03.mdl"},
 	description = [[The Military is a very special team.
-	    As the sniper you snipe the people down who are wanted.
+	    As the recon you snipe the people down who are wanted.
 		Coordinate the S.P.T force to enforce law in the city.
 		Hit people with arrest baton to put them in jail.
 		Bash them with a stunstick and they might learn better than to
@@ -510,7 +510,7 @@ TEAM_SWATSNIPER = DarkRP.createJob("Military Sniper", {
 		Type /jailpos to set the Jail Position
 		!!You also hunt down the Runners!!]],
 	weapons = {"arrest_stick", "unarrest_stick", "m9k_colt1911", "stunstick", "door_ram", "weaponchecker", "fas2_m24", "handcuffs"},
-	command = "swatsniper",
+	command = "swatrecon",
 	max = 5,
 	salary = 50,
 	admin = 0,
@@ -525,17 +525,17 @@ TEAM_SWATSNIPER = DarkRP.createJob("Military Sniper", {
     end    
 })
 
-TEAM_SWATEXPLOSIVE = DarkRP.createJob("Military Explosives Expert", {
+TEAM_SWATEXPLOSIVE = DarkRP.createJob("Military Engineer", {
 	color = Color(19, 81, 124, 255),
-	model = {"models/steinman/bf4/us_04.mdl",
-		"models/steinman/bf4/ru_01.mdl"},
+	model = {"models/steinman/bf4/us_02.mdl",
+		"models/steinman/bf4/ru_02.mdl"},
 	description = [[The Military is a very special team.
-	    As Explosive Master your the person that helps raids with explosions.
+	    As an engineer your the person that helps raids with explosions.
 		Type /wanted <name> to alert the public to this criminal
 		Type /jailpos to set the Jail Position
 		!!You also hunt down the Runners!!]],
-	weapons = {"arrest_stick", "unarrest_stick", "m9k_colt1911", "stunstick", "weaponchecker", "m9k_mossberg590", "m9k_matador", "weapon_slam", "handcuffs"},
-	command = "swatexplosive",
+	weapons = {"arrest_stick", "unarrest_stick", "m9k_hk45", "stunstick", "weaponchecker", "fas2_g36c", "weapon_slam", "m9k_rpg7", "handcuffs"},
+	command = "swatengi",
 	max = 5,
 	salary = 50,
 	admin = 0,
@@ -560,7 +560,7 @@ TEAM_SWATHACKER = DarkRP.createJob("Military Hacker", {
 		Type /wanted <name> to alert the public to this criminal
 		Type /jailpos to set the Jail Position
 		!!You also hunt down the Runners!!]],
-	weapons = {"arrest_stick", "unarrest_stick", "m9k_colt1911", "fas2_m4a1", "stunstick", "weaponchecker", "weapon_hack_phone", "handcuffs"},
+	weapons = {"arrest_stick", "unarrest_stick", "m9k_hk45", "stunstick", "weaponchecker", "weapon_hack_phone", "handcuffs"},
 	command = "swathacker",
 	max = 5,
 	salary = 50,
@@ -581,13 +581,13 @@ TEAM_SWATSUPPORT = DarkRP.createJob("Military Support", {
 	model = {"models/steinman/bf4/us_04.mdl",
 		"models/steinman/bf4/ru_01.mdl"},
 	description = [[The Military is a very special team.
-	    The Military Juggernaut is the toughest of the Military.
+	    The Military Support you stay back and lay cover fire.
 	    He has a riot shield that makes him tough in front, but vunerable in sides and back.
 		Type /wanted <name> to alert the public to this criminal
 		Type /jailpos to set the Jail Position
 		!!You also hunt down the Runners!!]],
-	weapons = {"arrest_stick", "unarrest_stick", "m9k_colt1911", "fas2_m4a1", "riotshield", "stunstick", "weaponchecker", "handcuffs"},
-	command = "swatjugger",
+	weapons = {"arrest_stick", "unarrest_stick", "m9k_deagle", "m9k_m249lmg", "riotshield", "stunstick", "weaponchecker", "handcuffs"},
+	command = "swatsupport",
 	max = 5,
 	salary = 100,
 	admin = 0,
