@@ -84,30 +84,15 @@ rPrint.RegisterPrinterType( "VIP", {
 
 ]]
 
-// here you can add new printers, pretty simple, ain't it? 
-// For where I put \M/ you can do either * or /, this represents math.
-//
-// rPrint.RegisterPrinterType( "<EnterPrinterNameHere>", {
-//	PrintRate = <PrintRate/s>, 
-//	DestroyPayout = <Howmuchyougetfordestroying>, 
-//	Color = Color( Red, Green, Blue, Alpha Transparency ), 
-//	RechargeCost = <enterhowmuchrechargecosts>, 
-//	CoolerCost = <enterhowmuchcoolercosts>,
-//	PrinterHealth = <enterprinterhealth>,
-//	PowerConsumptionRate = 1 \M/ <whatevernumber, this is math>,
-//	PowerConsumptionRateCooler = 1 \M/ <whatevernumber, this is math>,
-//	HeatRate = 1 \M/ <enter number here, this is math>,
-// 	CoolRate = 1 \M/ <enter number here, this is math>
-//}, "<enterclassname>" )
-
-
 rPrint.RegisterPrinterType( "Bronze", {
 	PrintRate = 10, 
 	DestroyPayout = 250, 
 	Color = Color( 205, 135, 65, 255 ), 
 	RechargeCost = 200, 
 	CoolerCost = 700,
-	PrinterHealth = 150
+	PrinterHealth = 150,
+	PowerConsumptionRate = 1 / 350,
+	PowerConsumptionRateCooler = 1 / 5
 }, "rprint_bronzeprinter" )
 
 rPrint.RegisterPrinterType( "Silver", {
@@ -116,7 +101,9 @@ rPrint.RegisterPrinterType( "Silver", {
 	Color = Color( 150, 150, 150, 255 ), 
 	RechargeCost = 300, 
 	CoolerCost = 800,
-	PrinterHealth = 350
+	PrinterHealth = 350,
+	PowerConsumptionRate = 1 / 60,
+	PowerConsumptionRateCooler = 1 / 5
 }, "rprint_silverprinter" )
 
 rPrint.RegisterPrinterType( "Gold", {
@@ -125,7 +112,9 @@ rPrint.RegisterPrinterType( "Gold", {
 	Color = Color( 255, 255, 135, 255 ), 
 	RechargeCost = 500, 
 	CoolerCost = 900,
-	PrinterHealth = 500
+	PrinterHealth = 500,
+	PowerConsumptionRate = 1 / 80,
+	PowerConsumptionRateCooler = 1 / 5
 }, "rprint_goldprinter" )
 
 rPrint.RegisterPrinterType( "Platinum", {
@@ -134,7 +123,9 @@ rPrint.RegisterPrinterType( "Platinum", {
 	Color = Color( 203, 204, 255 ), 
 	RechargeCost = 750, 
 	CoolerCost = 1100,
-	PrinterHealth = 750
+	PrinterHealth = 750,
+	PowerConsumptionRate = 1 / 120,
+	PowerConsumptionRateCooler = 1 / 5
 }, "rprint_platinum" )
 
 rPrint.RegisterPrinterType( "Quantum", {
@@ -144,8 +135,8 @@ rPrint.RegisterPrinterType( "Quantum", {
 	RechargeCost = 1650, 
 	CoolerCost = 2050,
 	PrinterHealth = 1250,
-	PowerConsumptionRate = 1 / 2,
-	PowerConsumptionRateCooler = 1 / 3,
+	PowerConsumptionRate = 1 / 350,
+	PowerConsumptionRateCooler = 1 / 5,
 	HeatRate = 1,
 	CoolRate = 1 * 1.75
 }, "rprint_quantum" )
