@@ -24,7 +24,7 @@ AddEntity("Bronze Printer", {
 AddEntity("Silver Printer", {
 	ent = "rprint_silverprinter",
 	model = "models/props_c17/consolebox01a.mdl",
-	price = 3250,
+	price = 3000,
 	max = 2,
 	cmd = "/buysilverprint"
 })
@@ -32,7 +32,7 @@ AddEntity("Silver Printer", {
 AddEntity("Gold Printer", {
 	ent = "rprint_goldprinter",
 	model = "models/props_c17/consolebox01a.mdl",
-	price = 6500,
+	price = 5000,
 	max = 2,
 	cmd = "/buygoldprint"
 })
@@ -40,7 +40,7 @@ AddEntity("Gold Printer", {
 AddEntity("Platinum Printer", {
 	ent = "rprint_platinum",
 	model = "models/props_c17/consolebox01a.mdl",
-	price = 9750,
+	price = 8750,
 	max = 1,
 	cmd = "/buyplatinumprint"
 })
@@ -48,7 +48,7 @@ AddEntity("Platinum Printer", {
 AddEntity("Quantum Printer", {
 	ent = "rprint_quantum",
 	model = "models/props_c17/consolebox01a.mdl",
-	price = 16500,
+	price = 15000,
 	max = 1,
 	cmd = "/buyquantumprint"
 })
