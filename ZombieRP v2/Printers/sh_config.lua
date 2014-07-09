@@ -85,58 +85,58 @@ rPrint.RegisterPrinterType( "VIP", {
 ]]
 
 rPrint.RegisterPrinterType( "Bronze", {
-	PrintRate = 10, 
+	PrintRate = 5, 
 	DestroyPayout = 250, 
 	Color = Color( 205, 135, 65, 255 ), 
-	RechargeCost = 200, 
-	CoolerCost = 700,
+	RechargeCost = 1000, 
+	CoolerCost = 200,
 	PrinterHealth = 150,
-	PowerConsumptionRate = 1 / 350,
-	PowerConsumptionRateCooler = 1 / 5
+	PowerConsumptionRate = 1 / 30,
+	PowerConsumptionRateCooler = 1 / 600
 }, "rprint_bronzeprinter" )
 
 rPrint.RegisterPrinterType( "Silver", {
-	PrintRate = 15, 
+	PrintRate = 10, 
 	DestroyPayout = 500, 
 	Color = Color( 150, 150, 150, 255 ), 
-	RechargeCost = 300, 
+	RechargeCost = 1900, 
 	CoolerCost = 800,
 	PrinterHealth = 350,
-	PowerConsumptionRate = 1 / 60,
-	PowerConsumptionRateCooler = 1 / 5
+	PowerConsumptionRate = 1 / 40,
+	PowerConsumptionRateCooler = 1 / 400
 }, "rprint_silverprinter" )
 
 rPrint.RegisterPrinterType( "Gold", {
-	PrintRate = 25, 
+	PrintRate = 15, 
 	DestroyPayout = 750, 
 	Color = Color( 255, 255, 135, 255 ), 
-	RechargeCost = 500, 
+	RechargeCost = 2800, 
 	CoolerCost = 900,
 	PrinterHealth = 500,
-	PowerConsumptionRate = 1 / 80,
-	PowerConsumptionRateCooler = 1 / 5
+	PowerConsumptionRate = 1 / 54,
+	PowerConsumptionRateCooler = 1 / 360
 }, "rprint_goldprinter" )
 
 rPrint.RegisterPrinterType( "Platinum", {
-	PrintRate = 35, 
+	PrintRate = 20, 
 	DestroyPayout = 1750, 
 	Color = Color( 203, 204, 255 ), 
-	RechargeCost = 750, 
+	RechargeCost = 2500, 
 	CoolerCost = 1100,
 	PrinterHealth = 750,
-	PowerConsumptionRate = 1 / 120,
-	PowerConsumptionRateCooler = 1 / 5
+	PowerConsumptionRate = 1 / 48,
+	PowerConsumptionRateCooler = 1 / 240
 }, "rprint_platinum" )
 
 rPrint.RegisterPrinterType( "Quantum", {
-	PrintRate = 55, 
+	PrintRate = 25, 
 	DestroyPayout = 2510, 
 	Color = Color( 255, 255, 255 ), 
-	RechargeCost = 1650, 
-	CoolerCost = 2050,
+	RechargeCost = 1400, 
+	CoolerCost = 1250,
 	PrinterHealth = 1250,
-	PowerConsumptionRate = 1 / 350,
-	PowerConsumptionRateCooler = 1 / 5,
-	HeatRate = 1,
-	CoolRate = 1 * 1.75
+	PowerConsumptionRate = 1 / 30,
+	PowerConsumptionRateCooler = 1 / 120,
+	HeatRate = 1 / 25,
+	CoolRate = 1 / 7
 }, "rprint_quantum" )
