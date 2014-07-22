@@ -24,7 +24,7 @@ AddEntity("Bronze Printer", {
 AddEntity("Silver Printer", {
 	ent = "rprint_silverprinter",
 	model = "models/props_c17/consolebox01a.mdl",
-	price = 3000,
+	price = 3250,
 	max = 2,
 	cmd = "/buysilverprint"
 })
@@ -32,7 +32,7 @@ AddEntity("Silver Printer", {
 AddEntity("Gold Printer", {
 	ent = "rprint_goldprinter",
 	model = "models/props_c17/consolebox01a.mdl",
-	price = 5000,
+	price = 6500,
 	max = 2,
 	cmd = "/buygoldprint"
 })
@@ -40,7 +40,7 @@ AddEntity("Gold Printer", {
 AddEntity("Platinum Printer", {
 	ent = "rprint_platinum",
 	model = "models/props_c17/consolebox01a.mdl",
-	price = 8750,
+	price = 9750,
 	max = 1,
 	cmd = "/buyplatinumprint"
 })
@@ -48,7 +48,7 @@ AddEntity("Platinum Printer", {
 AddEntity("Quantum Printer", {
 	ent = "rprint_quantum",
 	model = "models/props_c17/consolebox01a.mdl",
-	price = 15000,
+	price = 16500,
 	max = 1,
 	cmd = "/buyquantumprint"
 })
@@ -115,15 +115,6 @@ AddEntity("Drug lab", {
 	allowed = {TEAM_GANG, TEAM_MOB, TEAM_ADMIN}
 })
 
-AddEntity("Gun lab", {
-	ent = "gunlab",
-	model = "models/props_c17/TrapPropeller_Engine.mdl",
-	price = 500,
-	max = 1,
-	cmd = "/buygunlab",
-	allowed = TEAM_GUN
-})
-
 AddEntity("7.62x39mm Turret (Machine-Gun)", {
 	ent = "turret_bullets",
 	model = "models/reach/weapons/turret/hmg_fix.mdl",
@@ -149,4 +140,12 @@ AddEntity("40MM HE Turret (Grenade)", {
 	max = 50,
 	cmd = "/machinegrenade",
 	allowed = TEAM_ENGINEER
+})
+
+AddEntity("Fuel Can", {
+	ent = "weapon_scarrefuel",
+	model = "models/props_junk/gascan001a.mdl",
+	price = 650,
+	max = 50,
+	cmd = "/fuelcan"
 })
