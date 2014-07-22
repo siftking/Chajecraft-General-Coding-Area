@@ -475,7 +475,7 @@ TEAM_SWATMEDIC = DarkRP.createJob("Military Medic", {
 		!!You also hunt down the Runners!!]],
 	weapons = {"m9k_colt1911", "arrest_stick", "unarrest_stick", "fas2_m4a1", "stunstick", "door_ram", "weaponchecker", "fas2_ifak", "handcuffs"},
 	command = "swatmedic",
-	max = 100,
+	max = 3,
 	salary = 55,
 	admin = 0,
 	cp = true,
@@ -526,7 +526,7 @@ TEAM_SWATEXPLOSIVE = DarkRP.createJob("Military Explosives Expert", {
 		!!You also hunt down the Runners!!]],
 	weapons = {"arrest_stick", "unarrest_stick", "m9k_colt1911", "stunstick", "weaponchecker", "m9k_mossberg590", "m9k_matador", "weapon_slam", "handcuffs"},
 	command = "swatexplosive",
-	max = 5,
+	max = 2,
 	salary = 50,
 	admin = 0,
 	cp = true,
@@ -563,7 +563,7 @@ TEAM_SWATHACKER = DarkRP.createJob("Military Hacker", {
 
 TEAM_SWATSUPPORT = DarkRP.createJob("Military Juggernaut", {
 	color = Color(19, 81, 124, 255),
-	model = {"models/player/riot.mdl"},
+	model = {"models/steinman/bf4/ru_01.mdl"},
 	description = [[The Military is a very special team.
 	    The Military Juggernaut is the toughest of the Military.
 	    He has a riot shield that makes him tough in front, but vunerable in sides and back.
