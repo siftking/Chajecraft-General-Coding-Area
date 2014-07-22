@@ -72,7 +72,7 @@ GM.Config.dropmoneyondeath 				= true
 -- droppocketarrest - Enable/disable whether people drop the stuff in their pockets when they get arrested.
 GM.Config.droppocketarrest 				= false
 -- droppocketdeath - Enable/disable whether people drop the stuff in their pockets when they die.
-GM.Config.droppocketdeath 				= false
+GM.Config.droppocketdeath 				= true
 -- dropweapondeath - Enable/disable whether people drop their current weapon when they die.
 GM.Config.dropweapondeath 				= true
 -- Whether players can drop the weapons they spawn with
@@ -164,7 +164,7 @@ GM.Config.adminsents 					= 2
 -- adminvehicles - Whether or not vehicles should be admin only. 0 = everyone, 1 = admin or higher, 2 = superadmin or higher, 3 = rcon only
 GM.Config.adminvehicles 				= 2
 -- adminweapons - Who can spawn weapons: 0: admins only, 1: supadmins only, 2: no one
-GM.Config.adminweapons					= 1
+GM.Config.adminweapons					= 2
 -- arrestspeed - Sets the max arrest speed.
 GM.Config.arrestspeed					= 120
 -- babygodtime - How long the babygod lasts
@@ -284,7 +284,8 @@ GM.Config.DefaultPlayerGroups = {
 GM.Config.DisabledCustomModules = {
        ["hudreplacement"] = false,
        ["extraf4tab"] = false,
-	   ["hungermod"] = false
+	   ["hungermod"] = false,
+	   ["afk"] = true
 }
 
 -- The list of weapons that players are not allowed to drop. Items set to true are not allowed to be dropped
@@ -382,7 +383,8 @@ GM.Config.DefaultWeapons = {
 	"gmod_tool",
 	"weapon_physgun",
 	"flashlight",
-    "weapon_fists"
+    "weapon_fists",
+	"pocket"
 }
 
 -- The list of weapons admins spawn with, in addition to the default weapons, a job's weapons and GM.Config.AdminCopWeapons
@@ -478,6 +480,6 @@ GM.Config.hitCustomerCooldown = 240
 Hungermod module
 ---------------------------------------------------------------------------*/
 -- hungerspeed <Amount> - Set the rate at which players will become hungry (2 is the default)
-GM.Config.hungerspeed = 2
+GM.Config.hungerspeed = 0.5
 -- starverate <Amount> - How much health that is taken away every second the player is starving  (3 is the default)
 GM.Config.starverate = 3
