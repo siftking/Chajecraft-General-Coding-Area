@@ -12,7 +12,7 @@ GAMEMODE:AddAmmoType("smg1", "SMG Ammo", "models/Items/BoxMRounds.mdl", 80, 30)
 GAMEMODE:AddAmmoType("XBowBolt", "CrossBow Bolts", "models/Items/Crossbowrounds.mdl", 80, 15)
 
 -- Explosive Ammo
-GAMEMODE:AddAmmoType("RPG_Round", "Rocket Launcher Ammo", "models/Items/car_battery01.mdl", 180, 15)
+GAMEMODE:AddAmmoType("RPG_Round", "Rocket Launcher Ammo", "models/Items/car_battery01.mdl", 4000, 15)
 
 -- VortEnergy
 GAMEMODE:AddAmmoType("ammo_vortenergy", "Pack of VortEnergy", "models/Items/combine_rifle_ammo01.mdl", 60, 15)
