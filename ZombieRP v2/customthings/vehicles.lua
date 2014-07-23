@@ -15,41 +15,41 @@ DarkRP.createVehicle({
         name = "HL2 GAZ 24",
         model = "models/jessev92/vehicles/hl2_car4a_chassis.mdl",
         price = 1200,
-        allowed = {TEAM_ENGINEER, TEAM_STEAMPUNK},
+        allowed = {TEAM_ENGINEER},
 		label = "GAZ 24"
 })
 DarkRP.createVehicle({
         name = "HL2 Moskvitch 2140",
         model = "models/jessev92/vehicles/hl2_car3a_chassis.mdl",
         price = 1200,
-        allowed = {TEAM_ENGINEER, TEAM_STEAMPUNK},
+        allowed = {TEAM_ENGINEER},
 		label = "Moskvitch 2140"
 })
 DarkRP.createVehicle({
         name = "HL2 Trabant601",
         model = "models/jessev92/vehicles/hl2_car4a_chassis.mdl",
         price = 1200,
-        allowed = {TEAM_ENGINEER, TEAM_STEAMPUNK},
+        allowed = {TEAM_ENGINEER},
 		label = "Trabant 601"
 })
 DarkRP.createVehicle({
         name = "HL2 ZAZ 968",
         model = "models/jessev92/vehicles/hl2_car5a_chassis.mdl",
         price = 1200,
-        allowed = {TEAM_ENGINEER, TEAM_STEAMPUNK},
+        allowed = {TEAM_ENGINEER},
 		label = "ZAZ 968"
 })
 DarkRP.createVehicle({
         name = "HL2B Tank",
         model = "models/jessev92/hl2b/tank_chassis.mdl",
         price = 8000,
-        allowed = {TEAM_STEAMPUNK},
+        allowed = {TEAM_STEAMPILOT},
 		label = "Tank"
 })
 DarkRP.createVehicle({
         name = "RnL Willys MB",
         model = "models/jessev92/ww2_rl/sdkfz251_chassis.mdl",
         price = 4000,
-        allowed = {TEAM_SWAT, TEAM_SWATLEADER, TEAM_STEAMPUNK},
+        allowed = {TEAM_SWAT, TEAM_SWATLEADER, TEAM_STEAMPILOT},
 		label = "APC"
 })
