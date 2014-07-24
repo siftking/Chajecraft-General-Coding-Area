@@ -290,6 +290,9 @@ GM.Config.DisabledCustomModules = {
 
 -- The list of weapons that players are not allowed to drop. Items set to true are not allowed to be dropped
 GM.Config.DisallowDrop = {
+	["m9k_1897winchester"] = true
+	["fas2_m1911"] = true
+	["m9k_pkm"] = true,
 	["arrest_stick"] = true,
 	["door_ram"] = true,
 	["gmod_camera"] = true,
