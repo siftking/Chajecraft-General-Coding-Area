@@ -334,7 +334,7 @@ TEAM_NINJA = DarkRP.createJob("Ninja", {
 	hasLicense = false,
 	mayorCanSetSalary = false,
 	candemote = true,
-	ninja = true
+	ninja = true,
 	customCheck = function(ply)
     return ply:GetUserGroup() == "Trusted" or ply:GetUserGroup() == "Member" or ply:GetUserGroup() == "donator"
     end
