@@ -629,7 +629,7 @@ TEAM_BMDEALER = DarkRP.createJob("Black Market Dealer", {
 //Thief
 TEAM_THIEF = DarkRP.createJob("Thief", {
 	color = Color(25, 25, 25, 255),
-	model = "models/player/t_arctic.mdl",
+	model = "models/player/arctic.mdl",
 	description = [[Steal, mug people is your priority]],
 	weapons = {"lockpick", "keypad_cracker"},
 	command = "thief",
