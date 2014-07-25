@@ -160,11 +160,11 @@ Value settings
 -- adminnpcs - Whether or not NPCs should be admin only. 0 = everyone, 1 = admin or higher, 2 = superadmin or higher, 3 = rcon only
 GM.Config.adminnpcs 					= 3
 -- adminsents - Whether or not SENTs should be admin only. 0 = everyone, 1 = admin or higher, 2 = superadmin or higher, 3 = rcon only
-GM.Config.adminsents 					= 2
+GM.Config.adminsents 					= 1
 -- adminvehicles - Whether or not vehicles should be admin only. 0 = everyone, 1 = admin or higher, 2 = superadmin or higher, 3 = rcon only
-GM.Config.adminvehicles 				= 2
+GM.Config.adminvehicles 				= 1
 -- adminweapons - Who can spawn weapons: 0: admins only, 1: supadmins only, 2: no one
-GM.Config.adminweapons					= 2
+GM.Config.adminweapons					= 1
 -- arrestspeed - Sets the max arrest speed.
 GM.Config.arrestspeed					= 120
 -- babygodtime - How long the babygod lasts
