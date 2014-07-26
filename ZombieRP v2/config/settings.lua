@@ -160,9 +160,9 @@ Value settings
 -- adminnpcs - Whether or not NPCs should be admin only. 0 = everyone, 1 = admin or higher, 2 = superadmin or higher, 3 = rcon only
 GM.Config.adminnpcs 					= 3
 -- adminsents - Whether or not SENTs should be admin only. 0 = everyone, 1 = admin or higher, 2 = superadmin or higher, 3 = rcon only
-GM.Config.adminsents 					= 1
+GM.Config.adminsents 					= 2
 -- adminvehicles - Whether or not vehicles should be admin only. 0 = everyone, 1 = admin or higher, 2 = superadmin or higher, 3 = rcon only
-GM.Config.adminvehicles 				= 1
+GM.Config.adminvehicles 				= 2
 -- adminweapons - Who can spawn weapons: 0: admins only, 1: supadmins only, 2: no one
 GM.Config.adminweapons					= 1
 -- arrestspeed - Sets the max arrest speed.
@@ -227,9 +227,9 @@ GM.Config.respawntime					= 3
 -- changejobtime - Minimum amount of seconds a player has to wait before changing job.
 GM.Config.changejobtime					= 10
 -- runspeed - Sets the max running speed.
-GM.Config.runspeed						= 240
+GM.Config.runspeed						= 210
 -- runspeed - Sets the max running speed for CP teams
-GM.Config.runspeedcp					= 255
+GM.Config.runspeedcp					= 225
 -- searchtime - Number of seconds for which a search warrant is valid.
 GM.Config.searchtime					= 300
 -- ShipmentSpawnTime - Antispam time between spawning shipments.
@@ -251,7 +251,7 @@ GM.Config.wallettaxtime					= 600
 -- wantedtime - Number of seconds for which a player is wanted for.
 GM.Config.wantedtime					= 300
 -- walkspeed - Sets the max walking speed.
-GM.Config.walkspeed						= 160
+GM.Config.walkspeed						= 120
 -- falldamagedamper - The damper on realistic fall damage. Default is 15. Decrease this for more damage.
 GM.Config.falldamagedamper				= 15
 -- falldamageamount - The base damage taken from falling for static fall damage. Default is 10
@@ -282,16 +282,16 @@ GM.Config.DefaultPlayerGroups = {
 
 -- Custom modules in this addon that are disabled.
 GM.Config.DisabledCustomModules = {
-       ["hudreplacement"] = false,
-       ["extraf4tab"] = false,
-	   ["hungermod"] = false,
-	   ["afk"] = true
+	["hudreplacement"] = false,
+	["extraf4tab"] = false,
+	["hungermod"] = false,
+	["afk"] = true
 }
 
 -- The list of weapons that players are not allowed to drop. Items set to true are not allowed to be dropped
 GM.Config.DisallowDrop = {
-	["m9k_1897winchester"] = true
-	["fas2_m1911"] = true
+	["m9k_1897winchester"] = true,
+	["fas2_m1911"] = true,
 	["m9k_pkm"] = true,
 	["arrest_stick"] = true,
 	["door_ram"] = true,
@@ -300,8 +300,8 @@ GM.Config.DisallowDrop = {
 	["keys"] = true,
 	["lockpick"] = true,
 	["med_kit"] = true,
-        ["flashlight"] = true,
-        ["weapon_flashlight"] = true,
+	["flashlight"] = true,
+	["weapon_flashlight"] = true,
 	["pocket"] = true,
 	["stunstick"] = true,
 	["unarrest_stick"] = true,
@@ -322,61 +322,61 @@ GM.Config.DisallowDrop = {
 	["weapon_rape"] = true,
 	["fas2_dv2"] = true,
 	["fas2_machete"] = true,
-        ["fas2_mac11"] = true,
-        ["vorti_heal_noammo"] = true,
-        ["vorti_heal"] = true,
-        ["vortigaunt_beam"] = true,
-        ["vortigaunt_beam_noammo"] = true,
-        ["fas2_ifak"] = true,
-        ["weapon_fishing_rod"] = true,
-        ["prokeypad_cracker"] = true,
-        ["pro_lockpick"] = true,
-        ["weapon_lasermgun"] = true,
-        ["weapon_laserrifle1"] = true,
-        ["m9k_minigun"] = true,
-        ["m9k_davy_crockett"] = true,
-        ["m9k_fists"] = true,
-        ["blink_swep"] = true,
-        ["m9k_orbital_strike"] = true,
-        ["fas2_ammobox"] = true,
-        ["weapon_nautilus"] = true,
-        ["admin_lockpick"] = true,
-        ["keypad_cracker"] = true,
-        ["m9k_damascus"] = true,
-        ["m9k_knife"] = true,
-        ["weapon_bugbait"] = true,
-        ["weapon_crossbow"] = true,
-        ["fas2_m67"] = true,
-        ["fas2_m79"] = true,
-        ["m9k_m202"] = true,
-        ["m9k_m61_frag"] = true,
-        ["m9k_ied_detonator"] = true,
-        ["m9k_m79gl"] = true,
-        ["m9k_matador"] = true,
-        ["m9k_milkormgl"] = true,
-        ["m9k_nerve_gas"] = true,
-        ["m9k_proxy_mine"] = true,
-        ["m9k_rpg7"] = true,
-        ["m9k_sticky_grenade"] = true,
-        ["m9k_suicide_bomb"] = true,
-        ["m9k_machete"] = true,
-        ["m9k_luger"] = true,
-        ["m9k_colt1911"] = true,
-        ["m9k_intervention"] = true,
-        ["fas2_m24"] = true,
-        ["m9k_mossberg590"] = true,
-        ["m9k_mp40"] = true,
-        ["m9k_mp9"] = true,
-        ["dual_weapons"] = true,
-        ["weapon_357"] = true,
-        ["weapon_ar2"] = true,
-        ["fas2_m4a1"] = true,
-        ["weapon_hack_phone"] = true,
-        ["weapon_lasersmg"] = true,
-        ["weapon_laserrpg"] = true,
-        ["riotshield"] = true,
-        ["handcuffs"] = true,
-        ["weapon_hpmstick"] = true
+	["fas2_mac11"] = true,
+	["vorti_heal_noammo"] = true,
+	["vorti_heal"] = true,
+	["vortigaunt_beam"] = true,
+	["vortigaunt_beam_noammo"] = true,
+	["fas2_ifak"] = true,
+	["weapon_fishing_rod"] = true,
+	["prokeypad_cracker"] = true,
+	["pro_lockpick"] = true,
+	["weapon_lasermgun"] = true,
+	["weapon_laserrifle1"] = true,
+	["m9k_minigun"] = true,
+	["m9k_davy_crockett"] = true,
+	["m9k_fists"] = true,
+	["blink_swep"] = true,
+	["m9k_orbital_strike"] = true,
+	["fas2_ammobox"] = true,
+	["weapon_nautilus"] = true,
+	["admin_lockpick"] = true,
+	["keypad_cracker"] = true,
+	["m9k_damascus"] = true,
+	["m9k_knife"] = true,
+	["weapon_bugbait"] = true,
+	["weapon_crossbow"] = true,
+	["fas2_m67"] = true,
+	["fas2_m79"] = true,
+	["m9k_m202"] = true,
+	["m9k_m61_frag"] = true,
+	["m9k_ied_detonator"] = true,
+	["m9k_m79gl"] = true,
+	["m9k_matador"] = true,
+	["m9k_milkormgl"] = true,
+	["m9k_nerve_gas"] = true,
+	["m9k_proxy_mine"] = true,
+	["m9k_rpg7"] = true,
+	["m9k_sticky_grenade"] = true,
+	["m9k_suicide_bomb"] = true,
+	["m9k_machete"] = true,
+	["m9k_luger"] = true,
+	["m9k_colt1911"] = true,
+	["m9k_intervention"] = true,
+	["fas2_m24"] = true,
+	["m9k_mossberg590"] = true,
+	["m9k_mp40"] = true,
+	["m9k_mp9"] = true,
+	["dual_weapons"] = true,
+	["weapon_357"] = true,
+	["weapon_ar2"] = true,
+	["fas2_m4a1"] = true,
+	["weapon_hack_phone"] = true,
+	["weapon_lasersmg"] = true,
+	["weapon_laserrpg"] = true,
+	["riotshield"] = true,
+	["handcuffs"] = true,
+	["weapon_hpmstick"] = true
 }
 -- The list of weapons people spawn with
 GM.Config.DefaultWeapons = {
