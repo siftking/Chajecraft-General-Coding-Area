@@ -108,3 +108,11 @@ AddCustomShipment("Keypad Cracker", "models/weapons/w_c4.mdl", "keypad_cracker",
 
 // Engineer
 AddCustomShipment("Discharge Laser Pistol", "models/weapons/w_pistol.mdl", "weapon_laserpistol2", 1000, 1, false, 0, false, {TEAM_ENGINEER})
+
+// Medic
+AddCustomShipment("Armor Pack", "models/props_lab/reciever01b.mdl", "armor_pack", 5000, 5, false, 0, false, {TEAM_MEDIC})
+AddCustomShipment("Small armor Pack", "models/props_lab/tpplug.mdl", "armor_pack_small", 2500, 5, false, 0, false, {TEAM_MEDIC})
+AddCustomShipment("Tiny armor Pack", "models/props_lab/reciever01c.mdl", "armor_pack_tiny", 1000, 5, false, 0, false, {TEAM_MEDIC})
+AddCustomShipment("Health Pack", "models/props_c17/briefcase001a.mdl", "health_pack", 5000, 5, false, 0, false, {TEAM_MEDIC})
+AddCustomShipment("Small health Pack", "models/props_junk/cardboard_box004a.mdl", "health_pack_small", 2500, 5, false, 0, false, {TEAM_MEDIC})
+AddCustomShipment("Tiny health Pack", "models/props_lab/box01b.mdl", "health_pack_tiny", 1000, 5, false, 0, false, {TEAM_MEDIC})
