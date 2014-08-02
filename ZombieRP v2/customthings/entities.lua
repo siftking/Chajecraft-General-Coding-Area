@@ -18,7 +18,7 @@ AddEntity("Bronze Printer", {
 	model = "models/props_c17/consolebox01a.mdl",
 	price = 1000,
 	max = 3,
-	cmd = "/buybronzeprint"
+	cmd = "/buybronzeprint",
 	allowed = {TEAM_MEDIC, TEAM_COOK, TEAM_GUN, TEAM_CITIZEN, TEAM_SCAVENGER, TEAM_GANG, TEAM_MOB, TEAM_ADMIN, TEAM_RUNNER, TEAM_HITMAN, TEAM_ENGINEER, TEAM_PGUARD, TEAM_BMDEALER, TEAM_THIEF, TEAM_PROTHIEF, TEAM_ADVGUN, TEAM_ASSASSIN}
 })
 
@@ -27,7 +27,7 @@ AddEntity("Silver Printer", {
 	model = "models/props_c17/consolebox01a.mdl",
 	price = 3250,
 	max = 2,
-	cmd = "/buysilverprint"
+	cmd = "/buysilverprint",
 	allowed = {TEAM_MEDIC, TEAM_COOK, TEAM_GUN, TEAM_CITIZEN, TEAM_SCAVENGER, TEAM_GANG, TEAM_MOB, TEAM_ADMIN, TEAM_RUNNER, TEAM_HITMAN, TEAM_ENGINEER, TEAM_PGUARD, TEAM_BMDEALER, TEAM_THIEF, TEAM_PROTHIEF, TEAM_ADVGUN, TEAM_ASSASSIN}
 })
 
@@ -36,7 +36,7 @@ AddEntity("Gold Printer", {
 	model = "models/props_c17/consolebox01a.mdl",
 	price = 6500,
 	max = 2,
-	cmd = "/buygoldprint"
+	cmd = "/buygoldprint",
 	allowed = {TEAM_MEDIC, TEAM_COOK, TEAM_GUN, TEAM_CITIZEN, TEAM_SCAVENGER, TEAM_GANG, TEAM_MOB, TEAM_ADMIN, TEAM_RUNNER, TEAM_HITMAN, TEAM_ENGINEER, TEAM_PGUARD, TEAM_BMDEALER, TEAM_THIEF, TEAM_PROTHIEF, TEAM_ADVGUN, TEAM_ASSASSIN}
 })
 
@@ -45,7 +45,7 @@ AddEntity("Platinum Printer", {
 	model = "models/props_c17/consolebox01a.mdl",
 	price = 9750,
 	max = 1,
-	cmd = "/buyplatinumprint"
+	cmd = "/buyplatinumprint",
 	allowed = {TEAM_MEDIC, TEAM_COOK, TEAM_GUN, TEAM_CITIZEN, TEAM_SCAVENGER, TEAM_GANG, TEAM_MOB, TEAM_ADMIN, TEAM_RUNNER, TEAM_HITMAN, TEAM_ENGINEER, TEAM_PGUARD, TEAM_BMDEALER, TEAM_THIEF, TEAM_PROTHIEF, TEAM_ADVGUN, TEAM_ASSASSIN}
 })
 
@@ -54,7 +54,7 @@ AddEntity("Quantum Printer", {
 	model = "models/props_c17/consolebox01a.mdl",
 	price = 16500,
 	max = 1,
-	cmd = "/buyquantumprint"
+	cmd = "/buyquantumprint",
 	allowed = {TEAM_MEDIC, TEAM_COOK, TEAM_GUN, TEAM_CITIZEN, TEAM_SCAVENGER, TEAM_GANG, TEAM_MOB, TEAM_ADMIN, TEAM_RUNNER, TEAM_HITMAN, TEAM_ENGINEER, TEAM_PGUARD, TEAM_BMDEALER, TEAM_THIEF, TEAM_PROTHIEF, TEAM_ADVGUN, TEAM_ASSASSIN}
 })
 
