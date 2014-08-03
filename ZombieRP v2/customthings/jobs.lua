@@ -336,7 +336,7 @@ TEAM_NINJA = DarkRP.createJob("Ninja", {
 	candemote = true,
 	ninja = true,
 	customCheck = function(ply)
-    return ply:GetUserGroup() == "Trusted" or ply:GetUserGroup() == "Member" or ply:GetUserGroup() == "donator"
+    return ply:GetUserGroup() == "Trusted" or ply:GetUserGroup() == "Member" or ply:GetUserGroup() == "donator" or ply:IsAdmin()
     end
 })
 
@@ -416,7 +416,7 @@ TEAM_SWAT = DarkRP.createJob("Military Infantry", {
 	cp = true,
 	SWAT = true,
 	customCheck = function(ply)
-    return ply:GetUserGroup() == "Member" or ply:GetUserGroup() == "donator"
+    return ply:GetUserGroup() == "Member" or ply:GetUserGroup() == "donator" or ply:GetUserGroup() == "Trusted" or ply:IsAdmin()
     end
 })
 
@@ -441,7 +441,7 @@ TEAM_SWATLEADER = DarkRP.createJob("Military Commander", {
  	chief = true,
 	SWATLEADER = true,
 	customCheck = function(ply)
-    return ply:GetUserGroup() == "Member" or ply:GetUserGroup() == "donator"
+    return ply:GetUserGroup() == "Member" or ply:GetUserGroup() == "donator" or ply:GetUserGroup() == "Trusted" or ply:IsAdmin()
     end
 })
 
@@ -746,6 +746,25 @@ TEAM_VIGILANTE = DarkRP.createJob("Vigilante", {
 Define which team joining players spawn into and what team you change to if demoted
 ---------------------------------------------------------------------------*/
 GAMEMODE.DefaultTeam = TEAM_CITIZEN
+
+/*---------------------------------------------------------------------------
+Define which teams belong to civil protection
+Civil protection can set warrants, make people wanted and do some other police related things
+---------------------------------------------------------------------------*/
+GM.CivilProtection = {
+	[TEAM_POLICE] = true,
+	[TEAM_CHIEF] = true,
+	[TEAM_MAYOR] = true,
+	[TEAM_SWAT] = true,
+	[TEAM_SWATLEADER] = true,
+	[TEAM_SWATMEDIC] = true,
+	[TEAM_SWATSNIPER] = true,
+	[TEAM_SWATEXPLOSIVE] = true,
+	[TEAM_SWATHACKER] = true,
+	[TEAM_SWATSUPPORT] = true,
+	[TEAM_MOD] = true,
+	[TEAM_ADMIN] = true,
+}
 /*---------------------------------------------------------------------------
 Enable hitman goodies on this team
 ---------------------------------------------------------------------------*/
