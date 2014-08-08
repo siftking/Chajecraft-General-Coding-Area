@@ -9,10 +9,10 @@ Summonspace (STEAM_0:0:19368182) 24/06 to 24/08 | Donated 6€
 Dat Guy (STEAM_0:0:76397670) 26/06 to 20/08 | Donated 3$
 RedDragonClaw (STEAM_0:1:65282630) 26/06 to 26/07 | Donated 3$ <over>
 [TMW] Ackroyd (STEAM_0:1:52709548) 4/07 to 4/10 | Donated 5£
-VennonHD (STEAM_0:1:78108626) 6/07 to 6/08 | Donated 3£
-Sniperkings (STEAM_0:0:67643774) 6/07 to 6/08 | Donated 3$
-Wibi1244 (STEAM_0:0:76111594) 6/07 to 6/08 | Donated 3$
-Milano (STEAM_0:0:85934640) 8/07 to 8/09 | Donated 3€
+VennonHD (STEAM_0:1:78108626) 6/07 to 6/08 | Donated 3£ <over>
+Sniperkings (STEAM_0:0:67643774) 6/07 to 6/08 | Donated 3$ <over>
+Wibi1244 (STEAM_0:0:76111594) 6/07 to 6/08 | Donated 3$ <over>
+Milano (STEAM_0:0:85934640) 8/07 to 8/09 | Donated 3€ 
 NoPhatChicks (STEAM_0:0:89544420) 8/07 to 8/09 | Donated 3€ (Milano donated for him)
 The Pro (STEAM_0:0:15620064) Permanent | Donated €20
 Exim (STEAM_0:0:26979904) 14/07 to 14/08 | Donated 3£
@@ -36,4 +36,4 @@ Raid Master (STEAM_0:1:41356982) 29/07 to 29/08 | Donated 3$
 Jona Mormont (STEAM_0:0:47580604) 29/07 to 29/08 | Donated 3$
 Steven Normen (STEAM_0:0:60474317) 4/08 to 4/09 | Donated 3€
 [BC]BabyCreptile (STEAM_0:1:59951617) 06/08 to 06/09 | Donated 3$
-xStoeptegel (UNKNOWN) 08/08 to 08/09 | Donated 3$
+xStoeptegel (STEAM_0:1:53009045) 08/08 to 08/09 | Donated 3$
