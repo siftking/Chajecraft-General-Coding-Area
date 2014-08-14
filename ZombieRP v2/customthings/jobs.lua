@@ -138,8 +138,8 @@ TEAM_GANG = DarkRP.createJob("Bandit", {
 	description = [[The lowest person of crime.
 		A bandit generally works for the Bandit Leader who runs the crime family.
 		The Bandit Leader sets your agenda and you follow it or you might be punished.]],
-	weapons = {},
-	command = "gangster",
+	weapons = {"fas2_p226"},
+	command = "bandit",
 	max = 5,
 	salary = 20,
 	admin = 0,
@@ -473,7 +473,7 @@ TEAM_SWATSNIPER = DarkRP.createJob("Military Sniper", {
 	description = [[As the Military Sniper you provide support for your teammated from far away.
 		Follow the commands of the Military Commander or the Chief 
 		in case there is no Military Commander.]],
-	weapons = {"arrest_stick", "fas2_m1911", "fas2_m24"},
+	weapons = {"arrest_stick", "fas2_m1911", "fas2_sr25"},
 	command = "swatsniper",
 	max = 2,
 	salary = 50,
@@ -738,6 +738,68 @@ TEAM_VIGILANTE = DarkRP.createJob("Vigilante", {
 	mayorCanSetSalary = true,
 	candemote = true,
 	quickshot = true,
+	VIPOnly = true
+})
+
+TEAM_GANGHACKER = DarkRP.createJob("Bandit Hacker", {
+	color = Color(75, 75, 75, 255),
+	model = {
+		"models/player/Group03/Female_01.mdl",
+		"models/player/Group03/Female_02.mdl",
+		"models/player/Group03/Female_03.mdl",
+		"models/player/Group03/Female_04.mdl",
+		"models/player/Group03/Female_06.mdl",
+		"models/player/group03/male_01.mdl",
+		"models/player/Group03/Male_02.mdl",
+		"models/player/Group03/male_03.mdl",
+		"models/player/Group03/Male_04.mdl",
+		"models/player/Group03/Male_05.mdl",
+		"models/player/Group03/Male_06.mdl",
+		"models/player/Group03/Male_07.mdl",
+		"models/player/Group03/Male_08.mdl",
+		"models/player/Group03/Male_09.mdl"},
+	description = [[As a bandit hacker you work with other bandits and the bandit leader to raid and mug,
+		You are highly skilled with computers and can hack anykeypad!]],
+	weapons = {"fas2_p226", "keypad_cracker", "weapon_hack_phone"},
+	command = "bandithacker",
+	max = 2,
+	salary = 30,
+	admin = 0,	
+	vote = false,
+	hasLicense = true,
+	mayorCanSetSalary = false,
+	candemote = true,
+	VIPOnly = true
+})
+
+TEAM_GANGSNIPER = DarkRP.createJob("Bandit Sharpshooter", {
+	color = Color(75, 75, 75, 255),
+	model = {
+		"models/player/Group03/Female_01.mdl",
+		"models/player/Group03/Female_02.mdl",
+		"models/player/Group03/Female_03.mdl",
+		"models/player/Group03/Female_04.mdl",
+		"models/player/Group03/Female_06.mdl",
+		"models/player/group03/male_01.mdl",
+		"models/player/Group03/Male_02.mdl",
+		"models/player/Group03/male_03.mdl",
+		"models/player/Group03/Male_04.mdl",
+		"models/player/Group03/Male_05.mdl",
+		"models/player/Group03/Male_06.mdl",
+		"models/player/Group03/Male_07.mdl",
+		"models/player/Group03/Male_08.mdl",
+		"models/player/Group03/Male_09.mdl"},
+	description = [[As the bandit sharpshooter, you work with the bandit leader and other bandits,
+		providing cover from a distance and picking off targets]],
+	weapons = {"fas2_p226", "fas2_m24"},
+	command = "banditsniper",
+	max = 1,
+	salary = 45,
+	admin = 0,
+	vote = false,
+	hasLicense = false,
+	mayorCanSetSalary = false,
+	candemote = true,
 	VIPOnly = true
 })
 
