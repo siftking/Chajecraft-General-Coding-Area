@@ -140,3 +140,16 @@ rPrint.RegisterPrinterType( "Quantum", {
 	HeatRate = 1 / 25,
 	CoolRate = 1 / 7
 }, "rprint_quantum" )
+
+rPrint.RegisterPrinterType( "Eximiniate", {
+	PrintRate = 100, 
+	DestroyPayout = 5000, 
+	Color = Color( 255, 255, 255 ), 
+	RechargeCost = 2000, 
+	CoolerCost = 20,
+	PrinterHealth = 5000,
+	PowerConsumptionRate = 1 / 30,
+	PowerConsumptionRateCooler = 1 / 1000,
+	HeatRate = 1 / 50,
+	CoolRate = 1 / 2
+}, "rprint_eximiniate" )
