@@ -803,6 +803,35 @@ TEAM_GANGSNIPER = DarkRP.createJob("Bandit Sharpshooter", {
 	VIPOnly = true
 })
 
+TEAM_GANGMEDIC = DarkRP.createJob("Bandit Surgeon", {
+	color = Color(75, 75, 75, 255),
+	model = {
+		"models/player/Group03/Female_01.mdl",
+		"models/player/Group03/Female_02.mdl",
+		"models/player/Group03/Female_03.mdl",
+		"models/player/Group03/Female_04.mdl",
+		"models/player/Group03/Female_06.mdl",
+		"models/player/group03/male_01.mdl",
+		"models/player/Group03/Male_02.mdl",
+		"models/player/Group03/male_03.mdl",
+		"models/player/Group03/Male_04.mdl",
+		"models/player/Group03/Male_05.mdl",
+		"models/player/Group03/Male_06.mdl",
+		"models/player/Group03/Male_07.mdl",
+		"models/player/Group03/Male_08.mdl",
+		"models/player/Group03/Male_09.mdl"},
+	description = [Never passed out of medical school but you picked up enough to aid and heal other bandits!]],
+	weapons = {"fas2_p226","fas2_ifak"},
+	command = "banditmedic",
+	max = 1,
+	salary = 20,
+	admin = 0,
+	vote = false,
+	hasLicense = false,
+	mayorCanSetSalary = false,
+	candemote = true
+})
+
 
 /*---------------------------------------------------------------------------
 Define which team joining players spawn into and what team you change to if demoted
