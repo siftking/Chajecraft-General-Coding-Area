@@ -88,22 +88,22 @@ rPrint.RegisterPrinterType( "Bronze", {
 	PrintRate = 5, 
 	DestroyPayout = 250, 
 	Color = Color( 205, 135, 65, 255 ), 
-	RechargeCost = 1000, 
+	RechargeCost = 1500, 
 	CoolerCost = 200,
 	PrinterHealth = 150,
-	PowerConsumptionRate = 1 / 30,
-	PowerConsumptionRateCooler = 1 / 600
+	PowerConsumptionRate = 1 / 60,
+	PowerConsumptionRateCooler = 1 / 800
 }, "rprint_bronzeprinter" )
 
 rPrint.RegisterPrinterType( "Silver", {
 	PrintRate = 10, 
 	DestroyPayout = 500, 
 	Color = Color( 150, 150, 150, 255 ), 
-	RechargeCost = 1900, 
+	RechargeCost = 2500, 
 	CoolerCost = 800,
 	PrinterHealth = 350,
-	PowerConsumptionRate = 1 / 40,
-	PowerConsumptionRateCooler = 1 / 400
+	PowerConsumptionRate = 1 / 80,
+	PowerConsumptionRateCooler = 1 / 600
 }, "rprint_silverprinter" )
 
 rPrint.RegisterPrinterType( "Gold", {
@@ -113,30 +113,30 @@ rPrint.RegisterPrinterType( "Gold", {
 	RechargeCost = 2800, 
 	CoolerCost = 900,
 	PrinterHealth = 500,
-	PowerConsumptionRate = 1 / 54,
-	PowerConsumptionRateCooler = 1 / 360
+	PowerConsumptionRate = 1 / 100,
+	PowerConsumptionRateCooler = 1 / 400
 }, "rprint_goldprinter" )
 
 rPrint.RegisterPrinterType( "Platinum", {
 	PrintRate = 20, 
 	DestroyPayout = 1750, 
 	Color = Color( 203, 204, 255 ), 
-	RechargeCost = 2500, 
+	RechargeCost = 2200, 
 	CoolerCost = 1100,
 	PrinterHealth = 750,
-	PowerConsumptionRate = 1 / 48,
-	PowerConsumptionRateCooler = 1 / 240
+	PowerConsumptionRate = 1 / 80,
+	PowerConsumptionRateCooler = 1 / 300
 }, "rprint_platinum" )
 
 rPrint.RegisterPrinterType( "Quantum", {
 	PrintRate = 25, 
 	DestroyPayout = 2510, 
 	Color = Color( 255, 255, 255 ), 
-	RechargeCost = 1400, 
+	RechargeCost = 2500, 
 	CoolerCost = 1250,
 	PrinterHealth = 1250,
-	PowerConsumptionRate = 1 / 30,
-	PowerConsumptionRateCooler = 1 / 120,
+	PowerConsumptionRate = 1 / 80,
+	PowerConsumptionRateCooler = 1 / 200,
 	HeatRate = 1 / 25,
 	CoolRate = 1 / 7
 }, "rprint_quantum" )
