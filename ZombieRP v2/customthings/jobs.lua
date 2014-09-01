@@ -820,7 +820,7 @@ TEAM_GANGMEDIC = DarkRP.createJob("Bandit Surgeon", {
 		"models/player/Group03/Male_07.mdl",
 		"models/player/Group03/Male_08.mdl",
 		"models/player/Group03/Male_09.mdl"},
-	description = [Never passed out of medical school but you picked up enough to aid and heal other bandits!]],
+	description = [[Never passed out of medical school but you picked up enough to aid and heal other bandits!]],
 	weapons = {"fas2_p226","fas2_ifak"},
 	command = "banditmedic",
 	max = 1,
@@ -832,6 +832,21 @@ TEAM_GANGMEDIC = DarkRP.createJob("Bandit Surgeon", {
 	candemote = true
 })
 
+TEAM_ARMOR = DarkRP.createJob("Armor Merchant", {
+	color = Color(255, 140, 0, 255),
+	model = "models/player/hostage/hostage_01.mdl",
+	description = [[As an Armor Merchant you can sell protection vests and helmets to
+		people.]],
+	weapons = {},
+	command = "armormerchant",
+	max = 2,
+	salary = 20,
+	admin = 0,
+	vote = false,
+	hasLicense = false,
+	mayorCanSetSalary = true,
+	candemote = true
+})
 
 /*---------------------------------------------------------------------------
 Define which team joining players spawn into and what team you change to if demoted
