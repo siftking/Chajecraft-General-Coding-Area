@@ -343,7 +343,7 @@ TEAM_NINJA = DarkRP.createJob("Ninja", {
 //Admin
 TEAM_ADMIN = DarkRP.createJob("Admin on Duty", {
 	color = Color(38, 255, 0, 153),
-	model = "models/nikout/dishonored/assassin1.mdl",
+	model = "models/player/corvo.mdl",
 	description = [[Don't rp as this job.]],
 	weapons = {"weapon_nautilus", "fas2_dv2", "stunstick", "arrest_stick", "unarrest_stick", "handcuffs"},
 	command = "admin",
