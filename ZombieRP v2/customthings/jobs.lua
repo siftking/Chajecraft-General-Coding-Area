@@ -138,7 +138,7 @@ TEAM_GANG = DarkRP.createJob("Bandit", {
 	description = [[The lowest person of crime.
 		A bandit generally works for the Bandit Leader who runs the crime family.
 		The Bandit Leader sets your agenda and you follow it or you might be punished.]],
-	weapons = {"fas2_p226"},
+	weapons = {},
 	command = "bandit",
 	max = 5,
 	salary = 20,
