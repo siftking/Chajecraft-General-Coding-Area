@@ -19,7 +19,7 @@ AddEntity("Bronze Printer", {
 	price = 1000,
 	max = 3,
 	cmd = "/buybronzeprint",
-	allowed = {TEAM_MEDIC, TEAM_COOK, TEAM_GUN, TEAM_CITIZEN, TEAM_SCAVENGER, TEAM_GANG, TEAM_MOB, TEAM_ADMIN, TEAM_RUNNER, TEAM_HITMAN, TEAM_ENGINEER, TEAM_PGUARD, TEAM_BMDEALER, TEAM_THIEF, TEAM_PROTHIEF, TEAM_ADVGUN, TEAM_ASSASSIN}
+	allowed = {TEAM_GANGHACKER, TEAM_GANGSNIPER, TEAM_GANGMEDIC, TEAM_ARMOR, TEAM_MEDIC, TEAM_COOK, TEAM_GUN, TEAM_CITIZEN, TEAM_SCAVENGER, TEAM_GANG, TEAM_MOB, TEAM_ADMIN, TEAM_RUNNER, TEAM_HITMAN, TEAM_ENGINEER, TEAM_PGUARD, TEAM_BMDEALER, TEAM_THIEF, TEAM_PROTHIEF, TEAM_ADVGUN, TEAM_ASSASSIN}
 })
 
 AddEntity("Silver Printer", {
@@ -28,7 +28,7 @@ AddEntity("Silver Printer", {
 	price = 3250,
 	max = 2,
 	cmd = "/buysilverprint",
-	allowed = {TEAM_MEDIC, TEAM_COOK, TEAM_GUN, TEAM_CITIZEN, TEAM_SCAVENGER, TEAM_GANG, TEAM_MOB, TEAM_ADMIN, TEAM_RUNNER, TEAM_HITMAN, TEAM_ENGINEER, TEAM_PGUARD, TEAM_BMDEALER, TEAM_THIEF, TEAM_PROTHIEF, TEAM_ADVGUN, TEAM_ASSASSIN}
+	allowed = {TEAM_GANGHACKER, TEAM_GANGSNIPER, TEAM_GANGMEDIC, TEAM_ARMOR, TEAM_MEDIC, TEAM_COOK, TEAM_GUN, TEAM_CITIZEN, TEAM_SCAVENGER, TEAM_GANG, TEAM_MOB, TEAM_ADMIN, TEAM_RUNNER, TEAM_HITMAN, TEAM_ENGINEER, TEAM_PGUARD, TEAM_BMDEALER, TEAM_THIEF, TEAM_PROTHIEF, TEAM_ADVGUN, TEAM_ASSASSIN}
 })
 
 AddEntity("Gold Printer", {
@@ -37,7 +37,7 @@ AddEntity("Gold Printer", {
 	price = 6500,
 	max = 2,
 	cmd = "/buygoldprint",
-	allowed = {TEAM_MEDIC, TEAM_COOK, TEAM_GUN, TEAM_CITIZEN, TEAM_SCAVENGER, TEAM_GANG, TEAM_MOB, TEAM_ADMIN, TEAM_RUNNER, TEAM_HITMAN, TEAM_ENGINEER, TEAM_PGUARD, TEAM_BMDEALER, TEAM_THIEF, TEAM_PROTHIEF, TEAM_ADVGUN, TEAM_ASSASSIN}
+	allowed = {TEAM_GANGHACKER, TEAM_GANGSNIPER, TEAM_GANGMEDIC, TEAM_ARMOR, TEAM_MEDIC, TEAM_COOK, TEAM_GUN, TEAM_CITIZEN, TEAM_SCAVENGER, TEAM_GANG, TEAM_MOB, TEAM_ADMIN, TEAM_RUNNER, TEAM_HITMAN, TEAM_ENGINEER, TEAM_PGUARD, TEAM_BMDEALER, TEAM_THIEF, TEAM_PROTHIEF, TEAM_ADVGUN, TEAM_ASSASSIN}
 })
 
 AddEntity("Platinum Printer", {
@@ -46,7 +46,7 @@ AddEntity("Platinum Printer", {
 	price = 9750,
 	max = 1,
 	cmd = "/buyplatinumprint",
-	allowed = {TEAM_MEDIC, TEAM_COOK, TEAM_GUN, TEAM_CITIZEN, TEAM_SCAVENGER, TEAM_GANG, TEAM_MOB, TEAM_ADMIN, TEAM_RUNNER, TEAM_HITMAN, TEAM_ENGINEER, TEAM_PGUARD, TEAM_BMDEALER, TEAM_THIEF, TEAM_PROTHIEF, TEAM_ADVGUN, TEAM_ASSASSIN}
+	allowed = {TEAM_GANGHACKER, TEAM_GANGSNIPER, TEAM_GANGMEDIC, TEAM_ARMOR, TEAM_MEDIC, TEAM_COOK, TEAM_GUN, TEAM_CITIZEN, TEAM_SCAVENGER, TEAM_GANG, TEAM_MOB, TEAM_ADMIN, TEAM_RUNNER, TEAM_HITMAN, TEAM_ENGINEER, TEAM_PGUARD, TEAM_BMDEALER, TEAM_THIEF, TEAM_PROTHIEF, TEAM_ADVGUN, TEAM_ASSASSIN}
 })
 
 AddEntity("Quantum Printer", {
@@ -55,7 +55,7 @@ AddEntity("Quantum Printer", {
 	price = 16500,
 	max = 1,
 	cmd = "/buyquantumprint",
-	allowed = {TEAM_MEDIC, TEAM_COOK, TEAM_GUN, TEAM_CITIZEN, TEAM_SCAVENGER, TEAM_GANG, TEAM_MOB, TEAM_ADMIN, TEAM_RUNNER, TEAM_HITMAN, TEAM_ENGINEER, TEAM_PGUARD, TEAM_BMDEALER, TEAM_THIEF, TEAM_PROTHIEF, TEAM_ADVGUN, TEAM_ASSASSIN}
+	allowed = {TEAM_GANGHACKER, TEAM_GANGSNIPER, TEAM_GANGMEDIC, TEAM_ARMOR, TEAM_MEDIC, TEAM_COOK, TEAM_GUN, TEAM_CITIZEN, TEAM_SCAVENGER, TEAM_GANG, TEAM_MOB, TEAM_ADMIN, TEAM_RUNNER, TEAM_HITMAN, TEAM_ENGINEER, TEAM_PGUARD, TEAM_BMDEALER, TEAM_THIEF, TEAM_PROTHIEF, TEAM_ADVGUN, TEAM_ASSASSIN}
 })
 
 AddEntity("Bandages", {
@@ -64,7 +64,7 @@ AddEntity("Bandages", {
 	price = 90,
 	max = 9000,
 	cmd = "/buybandage",
-	allowed = {TEAM_MEDIC, TEAM_SWATMEDIC}
+	allowed = {TEAM_GANGMEDIC, TEAM_MEDIC, TEAM_SWATMEDIC}
 })
 
 AddEntity("Universal Ammo Kit", {
@@ -81,7 +81,7 @@ AddEntity("Quickcloths", {
 	price = 120,
 	max = 9000,
 	cmd = "/buycloths",
-	allowed = {TEAM_MEDIC, TEAM_SWATMEDIC}
+	allowed = {TEAM_GANGMEDIC, TEAM_MEDIC, TEAM_SWATMEDIC}
 })
 
 AddEntity("Hemostats", {
@@ -90,7 +90,7 @@ AddEntity("Hemostats", {
 	price = 150,
 	max = 9000,
 	cmd = "/buyhemo",
-	allowed = {TEAM_MEDIC, TEAM_SWATMEDIC}
+	allowed = {TEAM_GANGMEDIC, TEAM_MEDIC, TEAM_SWATMEDIC}
 })
 
 AddEntity("Medical Supplies Package", {
@@ -99,7 +99,7 @@ AddEntity("Medical Supplies Package", {
 	price = 350,
 	max = 9000,
 	cmd = "/buymedicsupplies",
-	allowed = {TEAM_MEDIC, TEAM_SWATMEDIC}
+	allowed = {TEAM_GANGMEDIC, TEAM_MEDIC, TEAM_SWATMEDIC}
 })
 
 AddEntity("Anti-Zombie Mine", {
@@ -153,4 +153,121 @@ AddEntity("Fuel Can", {
 	price = 650,
 	max = 50,
 	cmd = "/fuelcan"
+})
+
+AddEntity("Impact Helmet", {
+	ent = "ent_jack_bodyarmor_helm_im",
+	model = "models/Items/item_item_crate.mdl",
+	price = 1000,
+	max = 999,
+	cmd = "/helmetim",
+	allowed = TEAM_ARMOR
+})
+
+AddEntity("Kevlar Helmet", {
+	ent = "ent_jack_bodyarmor_helm_kr",
+	model = "models/Items/item_item_crate.mdl",
+	price = 1500,
+	max = 999,
+	cmd = "/helmetkr",
+	allowed = TEAM_ARMOR
+})
+
+AddEntity("Polyethylene Helmet", {
+	ent = "ent_jack_bodyarmor_helm_pe",
+	model = "models/Items/item_item_crate.mdl",
+	price = 1500,
+	max = 999,
+	cmd = "/helmetpe",
+	allowed = TEAM_ARMOR
+})
+
+AddEntity("Riot Helmet", {
+	ent = "ent_jack_bodyarmor_helm_ri",
+	model = "models/Items/item_item_crate.mdl",
+	price = 1500,
+	max = 999,
+	cmd = "/helmetri",
+	allowed = TEAM_ARMOR
+})
+
+AddEntity("Steel Helmet", {
+	ent = "ent_jack_bodyarmor_helm_st",
+	model = "models/Items/item_item_crate.mdl",
+	price = 1500,
+	max = 999,
+	cmd = "/helmetst",
+	allowed = TEAM_ARMOR
+})
+
+AddEntity("EOD Suit", {
+	ent = "ent_jack_suit_eod",
+	model = "models/Items/item_item_crate.mdl",
+	price = 16000,
+	max = 5,
+	cmd = "/eodsuit",
+	allowed = TEAM_ARMOR
+})
+
+AddEntity("Impact Vest", {
+	ent = "ent_jack_bodyarmor_vest_im",
+	model = "models/Items/item_item_crate.mdl",
+	price = 3000,
+	max = 999,
+	cmd = "/vestim",
+	allowed = TEAM_ARMOR
+})
+
+AddEntity("Kevlar Vest", {
+	ent = "ent_jack_bodyarmor_vest_ks",
+	model = "models/Items/item_item_crate.mdl",
+	price = 3000,
+	max = 999,
+	cmd = "/vestks",
+	allowed = TEAM_ARMOR
+})
+
+AddEntity("Soft Kevlar Vest", {
+	ent = "ent_jack_bodyarmor_vest_sk",
+	model = "models/Items/item_item_crate.mdl",
+	price = 3000,
+	max = 999,
+	cmd = "/vestsk",
+	allowed = TEAM_ARMOR
+})
+
+AddEntity("Stab Vest", {
+	ent = "ent_jack_bodyarmor_vest_sv",
+	model = "models/Items/item_item_crate.mdl",
+	price = 3000,
+	max = 999,
+	cmd = "/vestsv",
+	allowed = TEAM_ARMOR
+})
+
+AddEntity("Ballistic Vest", {
+	ent = "ent_jack_bodyarmor_vest_bn",
+	model = "models/Items/item_item_crate.mdl",
+	price = 3000,
+	max = 999,
+	cmd = "/vestbn",
+	allowed = TEAM_ARMOR
+})
+
+AddEntity("HAZMAT Suit", {
+	ent = "ent_jack_suit_hazmat",
+	model = "models/Items/item_item_crate.mdl",
+	price = 2000,
+	max = 10,
+	cmd = "/hazmatsuit",
+	allowed = TEAM_ARMOR
+})
+
+AddEntity("Fire Resistant Suit", {
+	ent = "ent_jack_suit_fire",
+	model = "models/Items/item_item_crate.mdl",
+	price = 2000,
+	max = 10,
+	cmd = "/firesuit",
+	allowed = TEAM_ARMOR
 })
