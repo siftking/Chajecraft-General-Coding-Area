@@ -842,7 +842,7 @@ GAMEMODE.DefaultTeam = TEAM_CITIZEN
 Define which teams belong to civil protection
 Civil protection can set warrants, make people wanted and do some other police related things
 ---------------------------------------------------------------------------*/
-GM.CivilProtection = {
+GAMEMODE.CivilProtection = {
 	[TEAM_POLICE] = true,
 	[TEAM_CHIEF] = true,
 	[TEAM_MAYOR] = true,
@@ -852,9 +852,7 @@ GM.CivilProtection = {
 	[TEAM_SWATSNIPER] = true,
 	[TEAM_SWATEXPLOSIVE] = true,
 	[TEAM_SWATHACKER] = true,
-	[TEAM_SWATSUPPORT] = true,
-	[TEAM_MOD] = true,
-	[TEAM_ADMIN] = true,
+	[TEAM_SWATSUPPORT] = true
 }
 /*---------------------------------------------------------------------------
 Enable hitman goodies on this team
