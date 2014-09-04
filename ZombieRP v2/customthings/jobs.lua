@@ -829,7 +829,8 @@ TEAM_GANGMEDIC = DarkRP.createJob("Bandit Surgeon", {
 	vote = false,
 	hasLicense = false,
 	mayorCanSetSalary = false,
-	candemote = true
+	candemote = true,
+	VIPOnly = true
 })
 
 TEAM_ARMOR = DarkRP.createJob("Armor Merchant", {
