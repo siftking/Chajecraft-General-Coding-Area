@@ -120,21 +120,7 @@ TEAM_POLICE = DarkRP.createJob("Survival Protection", {
 
 TEAM_GANG = DarkRP.createJob("Bandit", {
 	color = Color(75, 75, 75, 255),
-	model = {
-		"models/player/Group03/Female_01.mdl",
-		"models/player/Group03/Female_02.mdl",
-		"models/player/Group03/Female_03.mdl",
-		"models/player/Group03/Female_04.mdl",
-		"models/player/Group03/Female_06.mdl",
-		"models/player/group03/male_01.mdl",
-		"models/player/Group03/Male_02.mdl",
-		"models/player/Group03/male_03.mdl",
-		"models/player/Group03/Male_04.mdl",
-		"models/player/Group03/Male_05.mdl",
-		"models/player/Group03/Male_06.mdl",
-		"models/player/Group03/Male_07.mdl",
-		"models/player/Group03/Male_08.mdl",
-		"models/player/Group03/Male_09.mdl"},
+	model = "models/player/stalker/bandit_backpack.mdl",
 	description = [[The lowest person of crime.
 		A bandit generally works for the Bandit Leader who runs the crime family.
 		The Bandit Leader sets your agenda and you follow it or you might be punished.]],
@@ -151,13 +137,13 @@ TEAM_GANG = DarkRP.createJob("Bandit", {
 
 TEAM_MOB = DarkRP.createJob("Bandit Leader", {
 	color = Color(25, 25, 25, 255),
-	model = "models/player/gman_high.mdl",
+	model = "models/player/stalker/bandit_black.mdl",
 	description = [[The Bandit leader is the boss of the criminals in the wasteland.
 		With his power he coordinates the bandits and forms an efficient crime
 		organization.
 		He has the ability to break into houses by using a lockpick.
 		The Bandit Leader also can unarrest you.]],
-	weapons = {"lockpick", "unarrest_stick", "m9k_luger"},
+	weapons = {"lockpick", "unarrest_stick", "m9k_p228"},
 	command = "mobboss",
 	max = 1,
 	salary = 25,
@@ -518,7 +504,7 @@ TEAM_SWATHACKER = DarkRP.createJob("Military Hacker", {
 		in case there is no Military Commander.]],
 	weapons = {"arrest_stick", "fas2_m1911", "fas2_m4a1", "weapon_hack_phone"},
 	command = "swathacker",
-	max = 2,
+	max = 1,
 	salary = 50,
 	admin = 0,	
 	vote = false,
@@ -645,7 +631,7 @@ TEAM_THIEF = DarkRP.createJob("Thief", {
 
 TEAM_PROTHIEF = DarkRP.createJob("Professional Thief", {
 	color = Color(25, 25, 25, 255),
-	model = "models/player/arctic.mdl",
+	model = "models/player/phoenix.mdl",
 	description = [[Leaned from the best
 		However, your professional skills are illegal
 		You are AOS as this job
@@ -702,7 +688,7 @@ TEAM_ASSASSIN = DarkRP.createJob("Assassin", {
 })
 
 TEAM_STEAMPILOT = DarkRP.createJob("Military Tanker", {
-	color = Color(0, 168, 184, 255),
+	color = Color(19, 81, 124, 255),
 	model = {"models/steinman/bf4/us_03.mdl"},
 	description = [[As the Military Tanker you patrol the roads
 		and defend the military base with a tank.
@@ -743,21 +729,7 @@ TEAM_VIGILANTE = DarkRP.createJob("Vigilante", {
 
 TEAM_GANGHACKER = DarkRP.createJob("Bandit Hacker", {
 	color = Color(75, 75, 75, 255),
-	model = {
-		"models/player/Group03/Female_01.mdl",
-		"models/player/Group03/Female_02.mdl",
-		"models/player/Group03/Female_03.mdl",
-		"models/player/Group03/Female_04.mdl",
-		"models/player/Group03/Female_06.mdl",
-		"models/player/group03/male_01.mdl",
-		"models/player/Group03/Male_02.mdl",
-		"models/player/Group03/male_03.mdl",
-		"models/player/Group03/Male_04.mdl",
-		"models/player/Group03/Male_05.mdl",
-		"models/player/Group03/Male_06.mdl",
-		"models/player/Group03/Male_07.mdl",
-		"models/player/Group03/Male_08.mdl",
-		"models/player/Group03/Male_09.mdl"},
+	model = "models/player/stalker/military_spetsnaz_black.mdl",
 	description = [[As a bandit hacker you work with other bandits and the bandit leader to raid and mug,
 		You are highly skilled with computers and can hack anykeypad!]],
 	weapons = {"fas2_p226", "keypad_cracker", "weapon_hack_phone"},
@@ -774,25 +746,28 @@ TEAM_GANGHACKER = DarkRP.createJob("Bandit Hacker", {
 
 TEAM_GANGSNIPER = DarkRP.createJob("Bandit Sharpshooter", {
 	color = Color(75, 75, 75, 255),
-	model = {
-		"models/player/Group03/Female_01.mdl",
-		"models/player/Group03/Female_02.mdl",
-		"models/player/Group03/Female_03.mdl",
-		"models/player/Group03/Female_04.mdl",
-		"models/player/Group03/Female_06.mdl",
-		"models/player/group03/male_01.mdl",
-		"models/player/Group03/Male_02.mdl",
-		"models/player/Group03/male_03.mdl",
-		"models/player/Group03/Male_04.mdl",
-		"models/player/Group03/Male_05.mdl",
-		"models/player/Group03/Male_06.mdl",
-		"models/player/Group03/Male_07.mdl",
-		"models/player/Group03/Male_08.mdl",
-		"models/player/Group03/Male_09.mdl"},
+	model = "models/player/stalker/bandit_brown.mdl",
 	description = [[As the bandit sharpshooter, you work with the bandit leader and other bandits,
 		providing cover from a distance and picking off targets]],
-	weapons = {"fas2_p226", "fas2_m24"},
+	weapons = {"fas2_p226", "m9k_dragunov"},
 	command = "banditsniper",
+	max = 1,
+	salary = 45,
+	admin = 0,
+	vote = false,
+	hasLicense = false,
+	mayorCanSetSalary = false,
+	candemote = true,
+	VIPOnly = true
+})
+
+TEAM_GANGSUPPORT = DarkRP.createJob("Bandit Marauder", {
+	color = Color(75, 75, 75, 255),
+	model = "models/player/stalker/duty_exo.mdl",
+	description = [[As the bandit marauder, you work with the bandit leader and other bandits,
+		providing additional firesupport for your teammates]],
+	weapons = {"fas2_p226", "m9k_usas"},
+	command = "banditjugger",
 	max = 1,
 	salary = 45,
 	admin = 0,
@@ -805,25 +780,11 @@ TEAM_GANGSNIPER = DarkRP.createJob("Bandit Sharpshooter", {
 
 TEAM_GANGMEDIC = DarkRP.createJob("Bandit Surgeon", {
 	color = Color(75, 75, 75, 255),
-	model = {
-		"models/player/Group03/Female_01.mdl",
-		"models/player/Group03/Female_02.mdl",
-		"models/player/Group03/Female_03.mdl",
-		"models/player/Group03/Female_04.mdl",
-		"models/player/Group03/Female_06.mdl",
-		"models/player/group03/male_01.mdl",
-		"models/player/Group03/Male_02.mdl",
-		"models/player/Group03/male_03.mdl",
-		"models/player/Group03/Male_04.mdl",
-		"models/player/Group03/Male_05.mdl",
-		"models/player/Group03/Male_06.mdl",
-		"models/player/Group03/Male_07.mdl",
-		"models/player/Group03/Male_08.mdl",
-		"models/player/Group03/Male_09.mdl"},
+	model = "models/player/stalker/duty_vet.mdl",
 	description = [[Never passed out of medical school but you picked up enough to aid and heal other bandits!]],
 	weapons = {"fas2_p226","fas2_ifak"},
 	command = "banditmedic",
-	max = 1,
+	max = 2,
 	salary = 20,
 	admin = 0,
 	vote = false,
