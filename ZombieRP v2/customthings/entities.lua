@@ -200,15 +200,6 @@ AddEntity("Steel Helmet", {
 	allowed = TEAM_ARMOR
 })
 
-AddEntity("EOD Suit", {
-	ent = "ent_jack_suit_eod",
-	model = "models/Items/item_item_crate.mdl",
-	price = 16000,
-	max = 5,
-	cmd = "/eodsuit",
-	allowed = TEAM_ARMOR
-})
-
 AddEntity("Impact Vest", {
 	ent = "ent_jack_bodyarmor_vest_im",
 	model = "models/Items/item_item_crate.mdl",
