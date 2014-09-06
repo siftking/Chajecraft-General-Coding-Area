@@ -126,7 +126,7 @@ TEAM_GANG = DarkRP.createJob("Bandit", {
 		The Bandit Leader sets your agenda and you follow it or you might be punished.]],
 	weapons = {},
 	command = "bandit",
-	max = 5,
+	max = 2,
 	salary = 20,
 	admin = 0,
 	vote = false,
@@ -365,8 +365,7 @@ TEAM_RUNNER = DarkRP.createJob("Runner", {
 TEAM_HITMAN = DarkRP.createJob("Hitman", {
 	color = Color(84, 34, 94, 255),
 	model = "models/player/guerilla.mdl",
-	description = [[A hitman gets payed to kill people,
-		but be carefull, if you accept a hit you will become AOS!]],
+	description = [[A hitman gets payed to kill people]],
 	weapons = {"fas2_dv2"},
 	command = "hitman",
 	max = 1,
@@ -392,7 +391,7 @@ TEAM_SWAT = DarkRP.createJob("Military Infantry", {
 		to enforce law in the city if the situation gets hotter.]],
 	weapons = {"arrest_stick", "fas2_m1911", "fas2_m4a1"},
 	command = "swat",
-	max = 3,
+	max = 2,
 	salary = 35,
 	admin = 0,
 	vote = true,
@@ -751,7 +750,7 @@ TEAM_GANGSNIPER = DarkRP.createJob("Bandit Sharpshooter", {
 		providing cover from a distance and picking off targets]],
 	weapons = {"fas2_p226", "m9k_dragunov"},
 	command = "banditsniper",
-	max = 1,
+	max = 2,
 	salary = 45,
 	admin = 0,
 	vote = false,
@@ -796,7 +795,7 @@ TEAM_GANGMEDIC = DarkRP.createJob("Bandit Surgeon", {
 
 TEAM_ARMOR = DarkRP.createJob("Armor Merchant", {
 	color = Color(255, 140, 0, 255),
-	model = "models/player/hostage/hostage_01.mdl",
+	model = "models/player/odessa.mdl",
 	description = [[As an Armor Merchant you can sell protection vests and helmets to
 		people.]],
 	weapons = {},
