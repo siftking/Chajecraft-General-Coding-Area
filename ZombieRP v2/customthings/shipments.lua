@@ -102,8 +102,8 @@ AddCustomShipment("M79 Grenade Launcher", "models/weapons/w_eq_defuser.mdl", "fa
 AddCustomShipment("RPG-7", "models/weapons/w_rocket_launcher.mdl", "m9k_rpg7", 500000, 5, false, 0, false, {TEAM_BMDEALER})	
 AddCustomShipment("Machete", "models/weapons/w_crowbar.mdl", "fas2_machete", 2000, 5, false, 0, false, {TEAM_BMDEALER})
 AddCustomShipment("Knife", "models/weapons/w_knife_t.mdl", "fas2_dv2", 1000, 5, false, 0, false, {TEAM_BMDEALER})
-AddCustomShipment("Lockpick", "models/weapons/w_crowbar.mdl", "lockpick", 2500, 5, false, 0, false, {TEAM_BMDEALER})
-AddCustomShipment("Keypad Cracker", "models/weapons/w_c4.mdl", "keypad_cracker", 2500, 5, false, 0, false, {TEAM_BMDEALER})
+AddCustomShipment("Lockpick", "models/weapons/w_crowbar.mdl", "ent_lockpick", 1200, 10, false, 0, false, {TEAM_BMDEALER})
+AddCustomShipment("Keypad Cracker", "models/weapons/w_c4.mdl", "ekc", 2500, 5, false, 0, false, {TEAM_BMDEALER})
 
 
 // Engineer
