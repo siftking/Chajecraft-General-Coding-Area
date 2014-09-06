@@ -47,35 +47,35 @@ DarkRP.createVehicle({
 		label = "Tank"
 })
 DarkRP.createVehicle({
-        name = "BMS M1114",
+        name = "M1114",
         model = "models/jessev92/blackmesa/veh_hmmwv_chassis.mdl",
         price = 6000,
         allowed = {TEAM_SWAT, TEAM_SWATLEADER, TEAM_SWATSUPPORT, TEAM_SWATSNIPER, TEAM_SWATHACKER, TEAM_SWATEXPLOSIVE, TEAM_STEAMPILOT},
 		label = "M1114 HMMWV"
 })
 DarkRP.createVehicle({
-        name = "BMS Crown Vic",
+        name = "Crown Vic",
         model = "models/jessev92/blackmesa/veh_crownvic_chassis.mdl",
         price = 3000,
         allowed = {TEAM_ENGINEER},
 		label = "Crown Victoria"
 })
 DarkRP.createVehicle({
-        name = "BMS Pickup",
+        name = "Pickup",
         model = "models/jessev92/blackmesa/veh_pickup_chassis.mdl",
         price = 3000,
         allowed = {TEAM_ENGINEER},
 		label = "Pickup"
 })
 DarkRP.createVehicle({
-        name = "BMS Jeep",
+        name = "Jeep",
         model = "models/jessev92/blackmesa/veh_jeep_chassis.mdl",
         price = 5000,
         allowed = {TEAM_CHIEF},
 		label = "Police Jeep"
 })
 DarkRP.createVehicle({
-        name = "BMS M35",
+        name = "M35",
         model = "models/jessev92/blackmesa/veh_m35_chassis_bg.mdl",
         price = 6000,
         allowed = {TEAM_SWATLEADER},
@@ -131,7 +131,7 @@ DarkRP.createVehicle({
 		label = "Sanchez"
 })
 DarkRP.createVehicle({
-        name = "BMS LAV-25",
+        name = "LAV-25",
         model = "models/jessev92/blackmesa/veh_lav_chassis.mdl",
         price = 10000,
         allowed = {TEAM_STEAMPILOT},
