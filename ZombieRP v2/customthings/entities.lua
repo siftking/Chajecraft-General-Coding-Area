@@ -262,3 +262,11 @@ AddEntity("Fire Resistant Suit", {
 	cmd = "/firesuit",
 	allowed = TEAM_ARMOR
 })
+
+AddEntity("Lockpicks", {
+	ent = "ent_lockpick",
+	model = "models/Items/item_item_crate.mdl",
+	price = 120,
+	cmd = "/moarlockpick",
+	allowed = {TEAM_THIEF, TEAM_BMD, TEAM_PROTHIEF}
+})
