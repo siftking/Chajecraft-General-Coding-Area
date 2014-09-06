@@ -616,7 +616,7 @@ TEAM_THIEF = DarkRP.createJob("Thief", {
 	color = Color(25, 25, 25, 255),
 	model = "models/player/arctic.mdl",
 	description = [[Steal, mug people is your priority]],
-	weapons = {"lockpick", "keypad_cracker"},
+	weapons = {"ekc"},
 	command = "thief",
 	max = 2,
 	salary = 15,
@@ -635,7 +635,7 @@ TEAM_PROTHIEF = DarkRP.createJob("Professional Thief", {
 		However, your professional skills are illegal
 		You are AOS as this job
 		<Donator Only>]],
-	weapons = {"pro_lockpick", "prokeypad_cracker"},
+	weapons = {"ekc_pro"},
 	command = "prothief",
 	max = 3,
 	salary = 45,
