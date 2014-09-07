@@ -625,6 +625,7 @@ TEAM_THIEF = DarkRP.createJob("Thief", {
 	hasLicense = false,
 	mayorCanSetSalary = false,
 	candemote = true,
+	PlayerSpawn = function(ply) ply:SetLockpickCount(4) end,
 	thief = true
 })
 
@@ -645,6 +646,7 @@ TEAM_PROTHIEF = DarkRP.createJob("Professional Thief", {
 	mayorCanSetSalary = false,
 	candemote = true,
 	thief = true,
+	PlayerSpawn = function(ply) ply:SetLockpickCount(10) end,
 	VIPOnly = true
 })
 
@@ -774,6 +776,7 @@ TEAM_GANGSUPPORT = DarkRP.createJob("Bandit Marauder", {
 	hasLicense = false,
 	mayorCanSetSalary = false,
 	candemote = true,
+	PlayerSpawn = function(ply) ply:SetArmor(100) end,
 	VIPOnly = true
 })
 
