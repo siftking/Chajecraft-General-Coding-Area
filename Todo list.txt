@@ -1,4 +1,5 @@
 Here we put shit to do. This is also a place for bigger things like new servers.
 
 To-do list:
-- Finish TTT Server
+- Finish TTT Server and get it running.
+-Possibly a Keypad Hacking tool closely to the Skyrim like lockpick system we have.
