@@ -85,10 +85,6 @@ AddCustomShipment("Knife", "models/weapons/w_knife_t.mdl", "fas2_dv2", 1000, 5, 
 AddCustomShipment("Lockpick", "models/weapons/w_crowbar.mdl", "ent_lockpick", 1200, 10, false, 0, false, {TEAM_BMDEALER})
 AddCustomShipment("Keypad Cracker", "models/weapons/w_c4.mdl", "ekc", 2500, 5, false, 0, false, {TEAM_BMDEALER})
 
-
-// Engineer
-AddCustomShipment("Discharge Laser Pistol", "models/weapons/w_pistol.mdl", "weapon_laserpistol2", 1000, 1, false, 0, false, {TEAM_ENGINEER})
-
 // Medic
 AddCustomShipment("Armor Pack", "models/props_lab/reciever01b.mdl", "armor_pack", 5000, 5, false, 0, false, {TEAM_MEDIC})
 AddCustomShipment("Small armor Pack", "models/props_lab/tpplug.mdl", "armor_pack_small", 2500, 5, false, 0, false, {TEAM_MEDIC})
