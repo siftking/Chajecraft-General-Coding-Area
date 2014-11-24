@@ -21,20 +21,21 @@ Add jobs under the following line:
 TEAM_CITIZEN = DarkRP.createJob("Survivor", {
 	color = Color(20, 150, 20, 255),
 	model = {
-		"models/player/Group01/Female_01.mdl",
-		"models/player/Group01/Female_02.mdl",
-		"models/player/Group01/Female_03.mdl",
-		"models/player/Group01/Female_04.mdl",
-		"models/player/Group01/Female_06.mdl",
-		"models/player/group01/male_01.mdl",
-		"models/player/Group01/Male_02.mdl",
-		"models/player/Group01/male_03.mdl",
-		"models/player/Group01/Male_04.mdl",
-		"models/player/Group01/Male_05.mdl",
-		"models/player/Group01/Male_06.mdl",
-		"models/player/Group01/Male_07.mdl",
-		"models/player/Group01/Male_08.mdl",
-		"models/player/Group01/Male_09.mdl"
+		"models/player/group03/female_01.mdl",
+		"models/player/group03/female_02.mdl",
+		"models/player/group03/female_03.mdl",
+		"models/player/group03/female_04.mdl",
+		"models/player/group03/female_05.mdl",
+		"models/player/group03/female_06.mdl",
+		"models/player/group03/male_01.mdl",
+		"models/player/Group03/Male_02.mdl",
+		"models/player/Group03/male_03.mdl",
+		"models/player/Group03/Male_04.mdl",
+		"models/player/Group03/Male_05.mdl",
+		"models/player/Group03/Male_06.mdl",
+		"models/player/Group03/Male_07.mdl",
+		"models/player/Group03/Male_08.mdl",
+		"models/player/Group03/Male_09.mdl"
 	},
 	description = [[The survivor is the most basic level of society you can hold
 		besides being a hobo.
@@ -72,7 +73,7 @@ TEAM_ADMIN = DarkRP.createJob("Moderator on Duty", {
 	mayorCanSetSalary = false,
 	candemote = false,
 	customCheck = function(ply)
-    return ply:GetUserGroup() == "moderator"
+    return ply:GetUserGroup() == "Moderator"
     end
 })
 
@@ -161,10 +162,10 @@ TEAM_HOBO = DarkRP.createJob("Hobo", {
 	color = Color(80, 45, 0, 255),
 	model = "models/player/corpse1.mdl",
 	description = [[The lowest member of society. All people see you laugh.
-		Beg for your food and money, and if people refuse to do so
-		spam their face with bugbait!
-		Make your own wooden home somewhere in a corner or
-		outside someone else's door]],
+		    Beg for your food and money, and if people refuse to do so
+		    spam their face with bugbait!
+		    Make your own wooden home somewhere in a corner or
+		    outside someone else's door]],
 	weapons = {"weapon_bugbait"},
 	command = "hobo",
 	max = 3,
@@ -177,15 +178,15 @@ TEAM_HOBO = DarkRP.createJob("Hobo", {
 })
 
 //Medic
-TEAM_MEDIC = DarkRP.createJob("Medic", {
+TEAM_MEDIC = DarkRP.createJob("Doctor", {
 	color = Color(47, 79, 79, 255),
 	model = "models/player/kleiner.mdl",
 	description = [[With your medical knowledge,
-		you heal players to proper
-		health.
-		Without a medic, people cannot be healed.
-		Left click with the Medical Kit to heal other players.
-		Right click with the Medical Kit to heal yourself.]],
+		    you heal players to proper
+		    health.
+		    Without a medic, people cannot be healed.
+		    Left click with the Medical Kit to heal other players.
+		    Right click with the Medical Kit to heal yourself.]],
 	weapons = {"fas2_ifak"},
 	command = "medic",
 	max = 3,
@@ -432,7 +433,7 @@ TEAM_CHIEF = DarkRP.createJob("Survival Protection Chief", {
 		Type /wanted <name> to alert the public to this criminal
 		Type /jailpos to set the Jail Position
 		!!You also hunt down the Runners!!]],
-	weapons = {"arrest_stick", "unarrest_stick", "fas2_m1911", "m9k_mossberg590", "stunstick", "door_ram", "weaponchecker"},
+	weapons = {"arrest_stick", "unarrest_stick", "fas2_m1911", "fas2_m3s90", "stunstick", "door_ram", "weaponchecker"},
 	command = "chief",
 	max = 1,
 	salary = 75,
@@ -475,8 +476,9 @@ TEAM_SWAT = DarkRP.createJob("Military Infantry", {
 	candemote = true,
 	cp = true,
 	SWAT = true,
+	PlayerSpawn = function(ply) ply:SetArmor(25) end,
 	customCheck = function(ply)
-    return ply:GetUserGroup() == "Member" or ply:GetUserGroup() == "donator" or ply:GetUserGroup() == "VIP-trial" or ply:GetUserGroup() == "Trusted" or ply:IsAdmin()
+    return ply:GetUserGroup() == "Member" or ply:GetUserGroup() == "donator" or ply:GetUserGroup() == "VIP-trial" or ply:GetUserGroup() == "Trusted" or ply:IsAdmin() or ply:IsUserGroup('Moderator')
     end
 })
 
@@ -499,7 +501,8 @@ TEAM_SWATMEDIC = DarkRP.createJob("Military Medic", {
 	candemote = true,
 	medic = true,
 	police = true,
-    customCheck = function(ply) return ply:IsUserGroup("donator") or ply:IsAdmin() or ply:IsUserGroup("VIP-trial") end,
+	PlayerSpawn = function(ply) ply:SetArmor(25) end,
+    customCheck = function(ply) return ply:IsUserGroup("donator") or ply:IsAdmin() or ply:IsUserGroup("VIP-trial") or ply:IsUserGroup('Moderator') end,
     CustomCheckFailMsg = "You need to donate for this job!"
 })
 
@@ -521,7 +524,8 @@ TEAM_SWATSNIPER = DarkRP.createJob("Military Sniper", {
 	mayorCanSetSalary = true,
 	candemote = true,
 	police = true,
-    customCheck = function(ply) return ply:IsUserGroup("donator") or ply:IsAdmin() or ply:IsUserGroup("VIP-trial") end,
+	PlayerSpawn = function(ply) ply:SetArmor(25) end,
+    customCheck = function(ply) return ply:IsUserGroup("donator") or ply:IsAdmin() or ply:IsUserGroup("VIP-trial") or ply:IsUserGroup('Moderator') end,
     CustomCheckFailMsg = "You need to donate for this job!"
 })
 
@@ -544,7 +548,8 @@ TEAM_SWATHACKER = DarkRP.createJob("Military Hacker", {
 	candemote = true,
 	cp = true,
 	police = true,
-    customCheck = function(ply) return ply:IsUserGroup("donator") or ply:IsAdmin() or ply:IsUserGroup("VIP-trial") end,
+	PlayerSpawn = function(ply) ply:SetArmor(25) end,
+    customCheck = function(ply) return ply:IsUserGroup("donator") or ply:IsAdmin() or ply:IsUserGroup("VIP-trial") or ply:IsUserGroup('Moderator') end,
     CustomCheckFailMsg = "You need to donate for this job!"
 })
 
@@ -556,7 +561,7 @@ TEAM_SWATSUPPORT = DarkRP.createJob("Military Juggernaut", {
 		some heavy support and breach the enemy's defence lines.
 		Follow the commands of the Military Commander or the Chief 
 		in case there is no Military Commander.]],
-	weapons = {"arrest_stick", "fas2_m1911", "m9k_pkm", "door_ram"},
+	weapons = {"arrest_stick", "fas2_m1911", "swb_m249", "door_ram"},
 	command = "swatjugger",
 	max = 1,
 	salary = 100,
@@ -567,7 +572,7 @@ TEAM_SWATSUPPORT = DarkRP.createJob("Military Juggernaut", {
 	candemote = true,
 	cp = true,
 	police = true,
-    customCheck = function(ply) return ply:IsUserGroup("donator") or ply:IsAdmin() or ply:IsUserGroup("VIP-trial") end,
+    customCheck = function(ply) return ply:IsUserGroup("donator") or ply:IsAdmin() or ply:IsUserGroup("VIP-trial") or ply:IsUserGroup('Moderator') end,
     CustomCheckFailMsg = "You need to donate for this job!"
 })
 
@@ -579,7 +584,7 @@ TEAM_SWATEXPLOSIVE = DarkRP.createJob("Military Explosives Expert", {
 		anti-vehicle support for your team.
 		Follow the commands of the Military Commander or the Chief 
 		in case there is no Military Commander.]],
-	weapons = {"arrest_stick", "fas2_m1911", "m9k_matador", "weapon_slam"},
+	weapons = {"arrest_stick", "fas2_m1911", "weapon_slam"},
 	command = "swatexplosive",
 	max = 1,
 	salary = 50,
@@ -591,7 +596,8 @@ TEAM_SWATEXPLOSIVE = DarkRP.createJob("Military Explosives Expert", {
 	mayorCanSetSalary = true,
 	candemote = true,
 	police = true,
-    customCheck = function(ply) return ply:IsUserGroup("donator") or ply:IsAdmin() or ply:IsUserGroup("VIP-trial") end,
+	PlayerSpawn = function(ply) ply:SetArmor(25) end,
+    customCheck = function(ply) return ply:IsUserGroup("donator") or ply:IsAdmin() or ply:IsUserGroup("VIP-trial") or ply:IsUserGroup('Moderator') end,
     CustomCheckFailMsg = "You need to donate for this job!"
 })
 
@@ -613,7 +619,8 @@ TEAM_STEAMPILOT = DarkRP.createJob("Military Tanker", {
 	mayorCanSetSalary = true,
 	candemote = true,
 	steampilot = true,
-    customCheck = function(ply) return ply:IsUserGroup("donator") or ply:IsAdmin() or ply:IsUserGroup("VIP-trial") end,
+	PlayerSpawn = function(ply) ply:SetArmor(25) end,
+    customCheck = function(ply) return ply:IsUserGroup("donator") or ply:IsAdmin() or ply:IsUserGroup("VIP-trial") or ply:IsUserGroup('Moderator') end,
     CustomCheckFailMsg = "You need to donate for this job!"
 })
 
@@ -624,7 +631,7 @@ TEAM_SWATLEADER = DarkRP.createJob("Military Commander", {
 	description = [[As a Military Commander you're the leader of the team.
 		Coordinate the Military forces to enforce law in the city.
 		Follow the commands of the Chief.]],
-	weapons = {"fas2_m1911", "arrest_stick", "unarrest_stick", "m9k_mossberg590", "fas2_m4a1"},
+	weapons = {"fas2_m1911", "arrest_stick", "unarrest_stick", "fas2_m3s90", "fas2_m4a1"},
 	command = "swatleader",
 	max = 1,
 	salary = 55,
@@ -637,18 +644,19 @@ TEAM_SWATLEADER = DarkRP.createJob("Military Commander", {
 	candemote = true,
  	chief = true,
 	SWATLEADER = true,
+	PlayerSpawn = function(ply) ply:SetArmor(50) end,
 	customCheck = function(ply)
-    return ply:GetUserGroup() == "Member" or ply:GetUserGroup() == "donator" or ply:GetUserGroup() == "VIP-trial" or ply:GetUserGroup() == "Trusted" or ply:IsAdmin()
+    return ply:GetUserGroup() == "Member" or ply:GetUserGroup() == "donator" or ply:GetUserGroup() == "VIP-trial" or ply:GetUserGroup() == "Trusted" or ply:IsAdmin() or ply:IsUserGroup('Moderator')
     end
 })
 
 //Scavenger
-TEAM_SCAVENGER = DarkRP.createJob("Scavenger", {
+/*TEAM_SCAVENGER = DarkRP.createJob("Scavenger", {
 	color = Color(221, 151, 151),
 	model = {"models/player/scavenger/scavenger.mdl"},
 	description = [[You wander around the wasteland, your like
 		a normal survivor, but you get some guns to survive.]],
-	weapons = {"m9k_1897winchester"},
+	weapons = {"swb_famas"},
 	command = "scavenger",
 	max = 2,
 	salary = 15,
@@ -666,7 +674,7 @@ TEAM_SCAVENGER = DarkRP.createJob("Scavenger", {
 	customCheck = function(ply)
     return ply:GetUserGroup() == "Member" or ply:GetUserGroup() == "donator" or ply:GetUserGroup() == "VIP-trial" or ply:IsAdmin()
     end    
-})
+})*/
 
 //Vigilante
 TEAM_VIGILANTE = DarkRP.createJob("Vigilante", {
@@ -686,39 +694,20 @@ TEAM_VIGILANTE = DarkRP.createJob("Vigilante", {
 	mayorCanSetSalary = true,
 	candemote = true,
 	quickshot = true,
-    customCheck = function(ply) return ply:IsUserGroup("donator") or ply:IsAdmin() or ply:IsUserGroup("VIP-trial") end,
+    customCheck = function(ply) return ply:IsUserGroup("donator") or ply:IsAdmin() or ply:IsUserGroup("VIP-trial") or ply:IsUserGroup('Moderator') end,
     CustomCheckFailMsg = "You need to donate for this job!"
 })
 
-//Ninja
-TEAM_NINJA = DarkRP.createJob("Ninja", {
-	color = Color(0, 10, 0, 255),
-	model = "models/nikout/dishonored/assassin1.mdl",
-	description = [[As the Ninja you should protect innocent people from criminals
-		in case of mugging, stealing, raiding and carjacking.]],
-	weapons = {"weapon_crossbow", "climb_swep2", "fas2_dv2"},
-	command = "ninja",
-	max = 2,
-	salary = 25,
-	admin = 0,
-	vote = true,
-	hasLicense = false,
-	mayorCanSetSalary = false,
-	candemote = true,
-	ninja = true,
-	customCheck = function(ply)
-    return ply:GetUserGroup() == "Trusted" or ply:GetUserGroup() == "Member" or ply:GetUserGroup() == "VIP-trial" or ply:GetUserGroup() == "donator" or ply:IsAdmin()
-    end
-})
+
 
 //Assassin
 TEAM_ASSASSIN = DarkRP.createJob("Assassin", {
 	color = Color(0, 10, 0, 255),
-	model = "models/nikout/dishonored/assassin1.mdl",
+	model = "models/player/stalker/military_spetsnaz_green.mdl",
 	description = [[Assassinate for money,
 		Stealth skills are required.
 		<donator only>]],
-	weapons = {"weapon_crossbow", "blink_swep", "climb_swep2", "fas2_dv2", "vortigaunt_beam"},
+	weapons = {"fas2_m82", "blink_swep", "climb_swep2", "fas2_dv2"},
 	command = "Assassin",
 	max = 1,
 	salary = 45,
@@ -728,7 +717,7 @@ TEAM_ASSASSIN = DarkRP.createJob("Assassin", {
 	mayorCanSetSalary = false,
 	candemote = true,
 	assassin = true,
-    customCheck = function(ply) return ply:IsUserGroup("donator") or ply:IsAdmin() or ply:IsUserGroup("VIP-trial") end,
+    customCheck = function(ply) return ply:IsUserGroup("donator") or ply:IsAdmin() or ply:IsUserGroup("VIP-trial") or ply:IsUserGroup('Moderator') end,
     CustomCheckFailMsg = "You need to donate for this job!"
 })
 
@@ -748,10 +737,47 @@ TEAM_HITMAN = DarkRP.createJob("Bounty Hunter", {
 	candemote = true,
 	hitman = true,
 	customCheck = function(ply)
-    return ply:GetUserGroup() == "Trusted" or ply:GetUserGroup() == "Member" or ply:GetUserGroup() == "donator" or ply:GetUserGroup() == "VIP-trial" or ply:IsAdmin()
+    return ply:GetUserGroup() == "Trusted" or ply:GetUserGroup() == "Member" or ply:GetUserGroup() == "donator" or ply:GetUserGroup() == "VIP-trial" or ply:IsAdmin() or ply:IsUserGroup('Moderator')
     end
 })
 
+//Stalker
+TEAM_STALKER = DarkRP.createJob("Stalker", {
+	color = Color(0, 50, 0, 255),
+	model = {"models/player/stalker/loner_vet.mdl", "models/player/stalker/freedom_vet.mdl"},
+	description = [[Stalkers are the most experienced survivors in the area.]],
+	weapons = {"fas2_machete", "climb_swep2"},
+	command = "stalker",
+	max = 2,
+	salary = 15,
+	admin = 0,
+	vote = false,
+	hasLicense = false,
+	mayorCanSetSalary = false,
+	candemote = true,
+	customCheck = function(ply)
+    return ply:GetUserGroup() == "Trusted" or ply:GetUserGroup() == "Member" or ply:GetUserGroup() == "donator" or ply:GetUserGroup() == "VIP-trial" or ply:IsAdmin() or ply:IsUserGroup('Moderator')
+    end
+})
+
+//Stalker Veteran
+TEAM_STALKER = DarkRP.createJob("Stalker Veteran", {
+	color = Color(0, 50, 0, 255),
+	model = {"models/player/stalker/loner_exo.mdl", "models/player/stalker/freedom_exo.mdl"},
+	description = [[The most experienced Stalkers in the area.]],
+	weapons = {"fas2_machete", "climb_swep2", "fas2_rpk", "fas2_ragingbull"},
+	command = "stalkerveteran",
+	max = 2,
+	salary = 30,
+	admin = 0,
+	vote = false,
+	hasLicense = false,
+	mayorCanSetSalary = false,
+	candemote = true,
+	PlayerSpawn = function(ply) ply:SetArmor(50) end,
+	customCheck = function(ply) return ply:IsUserGroup("donator") or ply:IsAdmin() or ply:IsUserGroup("VIP-trial") or ply:IsUserGroup('Moderator') end,
+    CustomCheckFailMsg = "You need to donate for this job!"
+})
 //Faith
 TEAM_RUNNER = DarkRP.createJob("Runner", {
 	color = Color(255, 0, 0, 255),
@@ -774,7 +800,7 @@ TEAM_RUNNER = DarkRP.createJob("Runner", {
 TEAM_THIEF = DarkRP.createJob("Thief", {
 	color = Color(25, 25, 25, 255),
 	model = "models/player/arctic.mdl",
-	description = [[Steal, mug people is your priority]],
+	description = [[As a thief you can steal and mug people, you can also be hired by the Bandits.]],
 	weapons = {"lockpick", "keypad_cracker"},
 	command = "thief",
 	max = 2,
@@ -788,28 +814,6 @@ TEAM_THIEF = DarkRP.createJob("Thief", {
 	thief = true
 })
 
-//Professional Thief
-TEAM_PROTHIEF = DarkRP.createJob("Professional Thief", {
-	color = Color(25, 25, 25, 255),
-	model = "models/player/phoenix.mdl",
-	description = [[Leaned from the best
-		However, your professional skills are illegal
-		You are AOS as this job
-		<Donator Only>]],
-	weapons = {"lockpick", "keypad_cracker", "fas2_dv2"},
-	command = "prothief",
-	max = 3,
-	salary = 45,
-	admin = 0,
-	vote = false,
-	hasLicense = false,
-	mayorCanSetSalary = false,
-	candemote = true,
-	thief = true,
-	PlayerSpawn = function(ply) ply:SetLockpickCount(10) end,
-    customCheck = function(ply) return ply:IsUserGroup("donator") or ply:IsAdmin() or ply:IsUserGroup("VIP-trial") end,
-    CustomCheckFailMsg = "You need to donate for this job!"
-})
 
 //Bandit
 TEAM_GANG = DarkRP.createJob("Bandit", {
@@ -820,7 +824,7 @@ TEAM_GANG = DarkRP.createJob("Bandit", {
 		The Bandit Leader sets your agenda and you follow it or you might be punished.]],
 	weapons = {},
 	command = "bandit",
-	max = 2,
+	max = 4,
 	salary = 20,
 	admin = 0,
 	vote = false,
@@ -829,51 +833,14 @@ TEAM_GANG = DarkRP.createJob("Bandit", {
 	candemote = true
 })
 
-//Bandit Hacker
-TEAM_GANGHACKER = DarkRP.createJob("Bandit Hacker", {
-	color = Color(75, 75, 75, 255),
-	model = "models/player/stalker/military_spetsnaz_black.mdl",
-	description = [[As a bandit hacker you work with other bandits and the bandit leader to raid and mug,
-		You are highly skilled with computers and can hack anykeypad!]],
-	weapons = {"fas2_p226", "keypad_cracker", "weapon_hack_phone"},
-	command = "bandithacker",
-	max = 2,
-	salary = 30,
-	admin = 0,	
-	vote = false,
-	hasLicense = true,
-	mayorCanSetSalary = false,
-	candemote = true,
-    customCheck = function(ply) return ply:IsUserGroup("donator") or ply:IsAdmin() or ply:IsUserGroup("VIP-trial") end,
-    CustomCheckFailMsg = "You need to donate for this job!"
-})
-
 //Bandit Sharpshooter
 TEAM_GANGSNIPER = DarkRP.createJob("Bandit Sharpshooter", {
 	color = Color(75, 75, 75, 255),
 	model = "models/player/stalker/bandit_brown.mdl",
 	description = [[As the bandit sharpshooter, you work with the bandit leader and other bandits,
 		providing cover from a distance and picking off targets]],
-	weapons = {"fas2_p226", "m9k_dragunov"},
+	weapons = {"fas2_p226", "swb_awp"},
 	command = "banditsniper",
-	max = 2,
-	salary = 45,
-	admin = 0,
-	vote = false,
-	hasLicense = false,
-	mayorCanSetSalary = false,
-	candemote = true,
-    customCheck = function(ply) return ply:IsUserGroup("donator") or ply:IsAdmin() or ply:IsUserGroup("VIP-trial") end,
-    CustomCheckFailMsg = "You need to donate for this job!"
-})
-
-TEAM_GANGSUPPORT = DarkRP.createJob("Bandit Marauder", {
-	color = Color(75, 75, 75, 255),
-	model = "models/player/stalker/duty_exo.mdl",
-	description = [[As the bandit marauder, you work with the bandit leader and other bandits,
-		providing additional firesupport for your teammates]],
-	weapons = {"fas2_p226", "m9k_usas"},
-	command = "banditjugger",
 	max = 1,
 	salary = 45,
 	admin = 0,
@@ -881,26 +848,25 @@ TEAM_GANGSUPPORT = DarkRP.createJob("Bandit Marauder", {
 	hasLicense = false,
 	mayorCanSetSalary = false,
 	candemote = true,
-	PlayerSpawn = function(ply) ply:SetArmor(100) end,
-    customCheck = function(ply) return ply:IsUserGroup("donator") or ply:IsAdmin() or ply:IsUserGroup("VIP-trial") end,
+    customCheck = function(ply) return ply:IsUserGroup("donator") or ply:IsAdmin() or ply:IsUserGroup("VIP-trial") or ply:IsUserGroup('Moderator') end,
     CustomCheckFailMsg = "You need to donate for this job!"
 })
 
 //Bandit Surgeon
 TEAM_GANGMEDIC = DarkRP.createJob("Bandit Surgeon", {
 	color = Color(75, 75, 75, 255),
-	model = "models/player/stalker/duty_vet.mdl",
+	model = "models/player/phoenix.mdl",
 	description = [[Never passed out of medical school but you picked up enough to aid and heal other bandits!]],
 	weapons = {"fas2_p226","fas2_ifak"},
 	command = "banditmedic",
-	max = 2,
+	max = 1,
 	salary = 20,
 	admin = 0,
 	vote = false,
 	hasLicense = false,
 	mayorCanSetSalary = false,
 	candemote = true,
-    customCheck = function(ply) return ply:IsUserGroup("donator") or ply:IsAdmin() or ply:IsUserGroup("VIP-trial") end,
+    customCheck = function(ply) return ply:IsUserGroup("donator") or ply:IsAdmin() or ply:IsUserGroup("VIP-trial") or ply:IsUserGroup('Moderator') end,
     CustomCheckFailMsg = "You need to donate for this job!"
 })
 
@@ -913,7 +879,7 @@ TEAM_MOB = DarkRP.createJob("Bandit Leader", {
 		organization.
 		He has the ability to break into houses by using a lockpick.
 		The Bandit Leader also can unarrest you.]],
-	weapons = {"lockpick", "unarrest_stick", "m9k_p228"},
+	weapons = {"lockpick", "unarrest_stick", "swb_p228"},
 	command = "mobboss",
 	max = 1,
 	salary = 25,
@@ -930,6 +896,102 @@ TEAM_MOB = DarkRP.createJob("Bandit Leader", {
 	}
 })
 
+
+//Monolith Member
+TEAM_MONOLITH = DarkRP.createJob("Monolith", {
+	color = Color(145, 145, 145, 255),
+	model = "models/player/stalker/monolith_vet.mdl",
+	description = [[The most radical clan in the area, these nutheads have no "Morality" in their dictionary."]],
+	weapons = {"fas2_deagle","fas2_ifak", "fas2_g3"},
+	command = "monolith",
+	max = 3,
+	salary = 20,
+	admin = 0,
+	vote = false,
+	hasLicense = false,
+	mayorCanSetSalary = false,
+	candemote = true,
+	PlayerSpawn = function(ply) ply:SetArmor(25) end,
+    customCheck = function(ply) return ply:IsUserGroup("donator") or ply:IsAdmin() or ply:IsUserGroup("VIP-trial") or ply:IsUserGroup('Moderator') end,
+    CustomCheckFailMsg = "You need to donate for this job!"
+})
+
+//Monolith Leader
+TEAM_MONOLITHLEADER = DarkRP.createJob("Monolith Reverend", {
+	color = Color(145, 145, 145, 255),
+	model = "models/player/stalker/monolith_exo.mdl",
+	description = [[The preacher of the Monolith group.]],
+	weapons = {"lockpick", "keypad_cracker", "fas2_deagle", "fas2_ifak", "fas2_g3"},
+	command = "monolithleader",
+	max = 1,
+	salary = 30,
+	admin = 0,
+	vote = false,
+	hasLicense = false,
+	mayorCanSetSalary = false,
+	candemote = true,
+	PlayerSpawn = function(ply) ply:SetArmor(100) end,
+	customCheck = function(ply) return ply:IsUserGroup("donator") or ply:IsAdmin() or ply:IsUserGroup("VIP-trial") or ply:IsUserGroup('Moderator') end,
+    CustomCheckFailMsg = "You need to donate for this job!"
+})
+
+//Duty Member
+TEAM_DUTY = DarkRP.createJob("Duty", {
+	color = Color(75, 12, 12, 255),
+	model = "models/player/stalker/duty_vet.mdl",
+	description = [[Duty is the group that keeps peace in the area by supporting the Government and innocent survivors in case of Raids and other illegal actions that criminals organise]],
+	weapons = {"fas2_ots33", "fas2_dv2"},
+	command = "duty",
+	max = 3,
+	salary = 25,
+	admin = 0,
+	vote = true,
+	hasLicense = false,
+	mayorCanSetSalary = false,
+	candemote = true,
+	ninja = true,
+	customCheck = function(ply)
+    return ply:GetUserGroup() == "Member" or ply:GetUserGroup() == "VIP-trial" or ply:GetUserGroup() == "donator" or ply:IsAdmin() or ply:IsUserGroup('Moderator')
+    end
+})
+
+//Duty medic
+TEAM_DUTYMEDIC = DarkRP.createJob("Duty Medic", {
+	color = Color(75, 12, 12, 255),
+	model = "models/player/stalker/military_spetsnaz_black.mdl",
+	description = [[A Support unit for Duty group."]],
+	weapons = {"fas2_ots33", "fas2_ifak"},
+	command = "dutymedic",
+	max = 1,
+	salary = 20,
+	admin = 0,
+	vote = false,
+	hasLicense = false,
+	mayorCanSetSalary = false,
+	candemote = true,
+	PlayerSpawn = function(ply) ply:SetArmor(25) end,
+    customCheck = function(ply) return ply:IsUserGroup("donator") or ply:IsAdmin() or ply:IsUserGroup("VIP-trial") or ply:IsUserGroup('Moderator') end,
+    CustomCheckFailMsg = "You need to donate for this job!"
+})
+
+//Duty leader
+TEAM_DUTYLEADER = DarkRP.createJob("Duty Marshall", {
+	color = Color(75, 12, 12, 255),
+	model = "models/player/stalker/duty_exo.mdl",
+	description = [[The leader of the Duty group, you must command the Duty members and follow the orders of the Government.]],
+	weapons = {"keypad_cracker", "fas2_ots33", "fas2_pp19"},
+	command = "dutyleader",
+	max = 1,
+	salary = 30,
+	admin = 0,
+	vote = false,
+	hasLicense = false,
+	mayorCanSetSalary = false,
+	candemote = true,
+	PlayerSpawn = function(ply) ply:SetArmor(100) end,
+	customCheck = function(ply) return ply:IsUserGroup("donator") or ply:IsAdmin() or ply:IsUserGroup("VIP-trial") or ply:IsUserGroup('Moderator') end,
+    CustomCheckFailMsg = "You need to donate for this job!"
+})
 /*---------------------------------------------------------------------------
 Define which team joining players spawn into and what team you change to if demoted
 ---------------------------------------------------------------------------*/
