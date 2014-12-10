@@ -5,3 +5,4 @@ Write down here things that need to be done or fixed on the server.
 -Add items to the pocket/EZ-Inventory to be pocketable.
 -Assign craftmenu/skills to F buttons.
 -Add Fishing mod with the Job
+-Bind "ai_opencraftmenu" to one of the F keys
