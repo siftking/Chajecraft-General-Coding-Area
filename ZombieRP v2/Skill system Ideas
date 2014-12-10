@@ -4,6 +4,7 @@ ___Template____
 Skill Name:
 Skill Desctiption or Info:
 Skill type: on (spawn,hit,attacked,death,kill,tick)
+Skill Job: 
 Skill Effect Good/Bad sides:
 Short test of what the idea for the skill are or would be:
 
@@ -11,8 +12,10 @@ Short test of what the idea for the skill are or would be:
 Skill Name: Hard Skin
 Skill Desctiption or Info: You have learned to take more hits (Start with 10Armor)
 Skill type: On Spawn
+Skill Job: Survivors
 Skill Effect Good/Bad sides: Good side. Will give you a little chanse to survive a little longer.
 Short test of what the idea for the skill are or would be:
+My Idea where to give Survivors a little chanse in having a small procetion, won't do much but better than nothing.
 
 
 
