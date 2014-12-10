@@ -1,3 +1,18 @@
 Write down what you have in plan for a skill system with words, so we can talk about it when we have time for it.
 
+___Template____
 Skill Name:
+Skill Desctiption or Info:
+Skill type: on (spawn,hit,attacked,death,kill,tick)
+Skill Effect Good/Bad sides:
+Short test of what the idea for the skill are or would be:
+
+
+Skill Name: Hard Skin
+Skill Desctiption or Info: You have learned to take more hits (Start with 10Armor)
+Skill type: On Spawn
+Skill Effect Good/Bad sides: Good side. Will give you a little chanse to survive a little longer.
+Short test of what the idea for the skill are or would be:
+
+
+
