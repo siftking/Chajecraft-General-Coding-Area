@@ -1,8 +1,14 @@
 Write down here things that need to be done or fixed on the server.
 
--Work out the Skill system and adding it to the server for a test to see how effectly it is.
--Add crate system for the pocket/EZ-Inventory system.
+Done:
+- Add Admin Panel to website (http://chajecraft.net/astraya)
+
+Ongoing:
+-Work out the Skill system and adding it to the server for a test to see how effectly it is. - Jensen
+
+To-Do:
+-Add crate system for the pocket/EZ-Inventory system. - Signed by Jensen
 -Add items to the pocket/EZ-Inventory to be pocketable.
 -Assign craftmenu/skills to F buttons.
 -Add Fishing mod with the Job
--Add Admin Panel to the server
+
