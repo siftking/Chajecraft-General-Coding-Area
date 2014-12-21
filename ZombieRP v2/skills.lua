@@ -1,10 +1,3 @@
-// Positioning will be tested on SV.
-local function HPSkillzRegen( ply )
-  local health = ply:Health()
-  if !ply:Health(75) then
-    ply:SetHealth(health + 1)
-  end
-end
 SKILLTREE.Config = {}
 SKILLTREE.Config.Skills = {}
 SKILLTREE.Config.Types = {}
@@ -28,8 +21,8 @@ Type = "spawn",
 Desc = "You have learned to take more hits (Start with 10 Armor)",
 MaxRank = 1,
 parent = 1,
-x = 320,
-y = 80,
+x = 120,
+y = 200,
 func = function(ply) if ply:Armor() == 0 then ply:SetArmor(10) end end
 }
 
@@ -39,22 +32,37 @@ Type = "spawn",
 Desc = "You have bought new shoes to handle the movement through the rough terrain",
 MaxRank = 1,
 parent = 1,
-x = 320,
-y = 120,
+x = 520,
+y = 200,
 func = function(ply) if !ply:Team() == TEAM_SWATJUGGER then ply:SetWalkSpeed(122) ply:SetRunSpeed(223) end end
 }
 
 SKILLTREE.Config.Skills[4] = {
-Name = "Vital Mutation",
+Name = "Raider",
 Type = "spawn",
-Desc = [[Being in the wasteland alot has had a few side effects (+1 HP Per 20 Sec)
-    Applied Jobs: Stalker *, Monolith *, Runners, Duty *]],
+Desc = [[You seem to be equipped with gear to raid. (Lockpick on spawn for Monoliths & Bandits)]],
 MaxRank = 1,
 parent = 2,
-x = 320,
-y = 120,
-func = function(ply) if ply:Team() == TEAM_STALKER or ply:Team() == TEAM_RUNNER or ply:Team() == TEAM_DUTY or ply:Team() == TEAM_DUTYMEDIC or ply:Team() == TEAM_DUTYLEADER or ply:Team() == TEAM_MONOLITHLEADER then 
-  timer.Create( "HPSkillRegen", 20, 0, HPSkillzRegen) end end
+x = 120,
+y = 400,
+func = function(ply) if ply:Team() == TEAM_GANG or ply:Team() == TEAM_GANGSNIPER or ply:Team() == TEAM_GANGMEDIC or ply:Team() == TEAM_MOB or ply:Team() == TEAM_MONOLITH or ply:Team() == TEAM_MONOLITHLEADER then 
+  ply:Give("lockpick") end end
+}
+
+SKILLTREE.Config.Skills[5] = {
+Name = "Athlete",
+Type = "spawn",
+Desc = "Damn, where have you been training those legs? (+10% Jump Height)",
+MaxRank = 1,
+parent = 3,
+x = 520,
+y = 400,
+func = function(ply) 
+  local jump = ply:GetJumpPower()
+  local jumpmath = jump / 100 * 10
+  local newjump = jump + jumpmath
+  ply:SetJumpPower(newjump)
+  end
 }
 
 print("SkillTree Config Loaded")
