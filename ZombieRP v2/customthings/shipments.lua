@@ -101,3 +101,24 @@ AddCustomShipment("Tiny armor Pack", "models/props_lab/reciever01c.mdl", "armor_
 AddCustomShipment("Health Pack", "models/props_c17/briefcase001a.mdl", "health_pack", 5000, 5, false, 0, false, {TEAM_MEDIC})
 AddCustomShipment("Small health Pack", "models/props_junk/cardboard_box004a.mdl", "health_pack_small", 2500, 5, false, 0, false, {TEAM_MEDIC})
 AddCustomShipment("Tiny health Pack", "models/props_lab/box01b.mdl", "health_pack_tiny", 1000, 5, false, 0, false, {TEAM_MEDIC})
+
+// Customisable Weaponry NO JOB SET!
+AddCustomShipment("Usp", "models/weapons/w_pist_usp.mdl", "cw_g4p_usp40", 1800, 10, false, 0, false)
+AddCustomShipment("AK-74", "models/weapons/w_rif_ak47.mdl", "cw_ak74", 2800, 10, false, 0, false)
+AddCustomShipment("AN-94", "models/weapons/w_rif_ak47.mdl", "cw_g4p_an94", 2900, 10, false, 0, false)
+AddCustomShipment("AR-15", "models/weapons/w_rif_m4a1.mdl", "cw_ar15", 2800, 10, false, 0, false)
+AddCustomShipment("AWM", "models/weapons/w_rif_awp.mdl", "cw_g4p_awm", 5200, 10, false, 0, false)
+AddCustomShipment("Barret M98B", "models/weapons/w_rif_awp.mdl", "cw_g4p_m98b", 5400, 10, false, 0, false)
+AddCustomShipment("FN-FAL", "models/weapons/w_rif_galil.mdl", "cw_g4p_fn_fal", 3200, 10, false, 0, false)
+AddCustomShipment("FiveSeven", "models/weapons/w_pist_fiveseven.mdl", "cw_g4p_fiveseven", 1700, 10, false, 0, false)
+AddCustomShipment("Scar-H", "models/weapons/w_m4a1.mdl", "cw_scarh", 3200, 10, false, 0, false)
+AddCustomShipment("G2 Contender", "models/weapons/w_rif_awp.mdl", "cw_g4p_g2contender", 3600, 10, false, 0, false)
+AddCustomShipment("G3A3", "models/weapons/w_rif_ak47.mdl", "cw_g3a3", 3000, 10, false, 0, false)
+AddCustomShipment
+AddCustomShipment
+AddCustomShipment
+AddCustomShipment
+AddCustomShipment
+AddCustomShipment
+AddCustomShipment
+AddCustomShipment
