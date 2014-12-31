@@ -73,7 +73,7 @@ TEAM_ADMIN = DarkRP.createJob("Moderator on Duty", {
 	mayorCanSetSalary = false,
 	candemote = false,
 	customCheck = function(ply)
-    return ply:GetUserGroup() == "Moderator"
+    return ply:GetUserGroup() == "moderator"
     end
 })
 
@@ -584,7 +584,7 @@ TEAM_SWATEXPLOSIVE = DarkRP.createJob("Military Explosives Expert", {
 		anti-vehicle support for your team.
 		Follow the commands of the Military Commander or the Chief 
 		in case there is no Military Commander.]],
-	weapons = {"arrest_stick", "fas2_m1911", "weapon_slam"},
+	weapons = {"arrest_stick", "fas2_m1911", "weapon_slam", "rpg-7"},
 	command = "swatexplosive",
 	max = 1,
 	salary = 50,
@@ -761,7 +761,7 @@ TEAM_STALKER = DarkRP.createJob("Stalker", {
 })
 
 //Stalker Veteran
-TEAM_STALKER = DarkRP.createJob("Stalker Veteran", {
+TEAM_STALKERVET = DarkRP.createJob("Stalker Veteran", {
 	color = Color(0, 50, 0, 255),
 	model = {"models/player/stalker/loner_exo.mdl", "models/player/stalker/freedom_exo.mdl"},
 	description = [[The most experienced Stalkers in the area.]],
@@ -979,7 +979,7 @@ TEAM_DUTYLEADER = DarkRP.createJob("Duty Marshall", {
 	color = Color(75, 12, 12, 255),
 	model = "models/player/stalker/duty_exo.mdl",
 	description = [[The leader of the Duty group, you must command the Duty members and follow the orders of the Government.]],
-	weapons = {"keypad_cracker", "fas2_ots33", "fas2_pp19"},
+	weapons = {"keypad_cracker", "fas2_ots33", "fas2_ak74"},
 	command = "dutyleader",
 	max = 1,
 	salary = 30,
