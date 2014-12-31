@@ -465,7 +465,7 @@ TEAM_SWAT = DarkRP.createJob("Military Infantry", {
 		Follow the commands of the Military Commander or the Chief 
 		in case there is no Military Commander.
 		to enforce law in the city if the situation gets hotter.]],
-	weapons = {"arrest_stick", "fas2_m1911", "fas2_m4a1"},
+	weapons = {"arrest_stick", "fas2_m1911", "cw_g4p_m16a4"},
 	command = "swat",
 	max = 2,
 	salary = 35,
@@ -489,7 +489,7 @@ TEAM_SWATMEDIC = DarkRP.createJob("Military Medic", {
 	description = [[As the Military Medic you heal your teammates and wounded people.
 		Follow the commands of the Military Commander or the Chief 
 		in case there is no Military Commander.]],
-	weapons = {"fas2_m1911", "arrest_stick", "fas2_m4a1", "fas2_ifak"},
+	weapons = {"fas2_m1911", "arrest_stick", "cw_g4p_m16a4", "fas2_ifak"},
 	command = "swatmedic",
 	max = 2,
 	salary = 55,
@@ -513,7 +513,7 @@ TEAM_SWATSNIPER = DarkRP.createJob("Military Sniper", {
 	description = [[As the Military Sniper you provide support for your teammated from far away.
 		Follow the commands of the Military Commander or the Chief 
 		in case there is no Military Commander.]],
-	weapons = {"arrest_stick", "fas2_m1911", "fas2_sr25"},
+	weapons = {"arrest_stick", "fas2_m1911", "cw_g4p_awm"},
 	command = "swatsniper",
 	max = 2,
 	salary = 50,
@@ -537,7 +537,7 @@ TEAM_SWATHACKER = DarkRP.createJob("Military Hacker", {
 		security system during raids with your hacking abilities.
 		Follow the commands of the Military Commander or the Chief 
 		in case there is no Military Commander.]],
-	weapons = {"arrest_stick", "fas2_m1911", "fas2_m4a1", "weapon_hack_phone"},
+	weapons = {"arrest_stick", "fas2_m1911", "cw_g4p_m16a4", "weapon_hack_phone"},
 	command = "swathacker",
 	max = 1,
 	salary = 50,
@@ -584,7 +584,7 @@ TEAM_SWATEXPLOSIVE = DarkRP.createJob("Military Explosives Expert", {
 		anti-vehicle support for your team.
 		Follow the commands of the Military Commander or the Chief 
 		in case there is no Military Commander.]],
-	weapons = {"arrest_stick", "fas2_m1911", "weapon_slam", "rpg-7"},
+	weapons = {"arrest_stick", "fas2_m1911", "cw_m3super90", "rpg-7"},
 	command = "swatexplosive",
 	max = 1,
 	salary = 50,
@@ -631,7 +631,7 @@ TEAM_SWATLEADER = DarkRP.createJob("Military Commander", {
 	description = [[As a Military Commander you're the leader of the team.
 		Coordinate the Military forces to enforce law in the city.
 		Follow the commands of the Chief.]],
-	weapons = {"fas2_m1911", "arrest_stick", "unarrest_stick", "fas2_m3s90", "fas2_m4a1"},
+	weapons = {"fas2_m1911", "arrest_stick", "unarrest_stick", "cw_m3super90", "cw_g4p_m16a4"},
 	command = "swatleader",
 	max = 1,
 	salary = 55,
@@ -839,7 +839,7 @@ TEAM_GANGSNIPER = DarkRP.createJob("Bandit Sharpshooter", {
 	model = "models/player/stalker/bandit_brown.mdl",
 	description = [[As the bandit sharpshooter, you work with the bandit leader and other bandits,
 		providing cover from a distance and picking off targets]],
-	weapons = {"fas2_p226", "swb_awp"},
+	weapons = {"fas2_p226", "cw_g4p_g2contender"},
 	command = "banditsniper",
 	max = 1,
 	salary = 45,
@@ -879,7 +879,7 @@ TEAM_MOB = DarkRP.createJob("Bandit Leader", {
 		organization.
 		He has the ability to break into houses by using a lockpick.
 		The Bandit Leader also can unarrest you.]],
-	weapons = {"lockpick", "unarrest_stick", "swb_p228"},
+	weapons = {"lockpick", "unarrest_stick", "cw_g4p_mp412_rex"},
 	command = "mobboss",
 	max = 1,
 	salary = 25,
