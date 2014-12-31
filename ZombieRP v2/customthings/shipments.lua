@@ -101,3 +101,12 @@ AddCustomShipment("Tiny armor Pack", "models/props_lab/reciever01c.mdl", "armor_
 AddCustomShipment("Health Pack", "models/props_c17/briefcase001a.mdl", "health_pack", 5000, 5, false, 0, false, {TEAM_MEDIC})
 AddCustomShipment("Small health Pack", "models/props_junk/cardboard_box004a.mdl", "health_pack_small", 2500, 5, false, 0, false, {TEAM_MEDIC})
 AddCustomShipment("Tiny health Pack", "models/props_lab/box01b.mdl", "health_pack_tiny", 1000, 5, false, 0, false, {TEAM_MEDIC})
+ 
+// Customisable Weapony NO JOBS
+AddCustomShipment
+AddCustomShipment
+AddCustomShipment
+AddCustomShipment
+AddCustomShipment
+AddCustomShipment
+AddCustomShipment
