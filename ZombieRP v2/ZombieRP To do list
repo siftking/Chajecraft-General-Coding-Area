@@ -2,7 +2,8 @@ Write down here things that need to be done or fixed on the server.
 
 Done:
 - Add Admin Panel to website (http://chajecraft.net/astraya)
--Add crate system for the pocket/EZ-Inventory system. - Note: now stop fucking moaning c=
+- Add crate system for the pocket/EZ-Inventory system. - Note: now stop fucking moaning c=
+- Fix the pocket system, you can't over load a pocket by sending items to a friend and the pocket will go over the limit
 
 Ongoing:
 -Work out the Skill system and adding it to the server for a test to see how effectly it is. - Jensen
@@ -11,5 +12,5 @@ To-Do:
 -Add items to the pocket/EZ-Inventory to be pocketable.
 -Assign craftmenu/skills to F buttons.
 -Add Fishing mod with the Job
--Fix the pocket system, you can't over load a pocket by sending items to a friend and the pocket will go over the limit
 -Fix Admin Panel (http://chajecraft.net/astraya) and set the accesses so we can use it.
+-Fix the 2D3D text for the Crates.
