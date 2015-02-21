@@ -367,7 +367,7 @@ TEAM_SECRETSERVICE = DarkRP.createJob("Secret Service", {
 	color = Color(15, 255, 111, 255),
 	model = "models/player/barney.mdl",
 	description = [[You are a secret service, protect the Governor at all costs.]],
-	weapons = {"arrest_stick", "fas2_m1911", "weaponchecker", "stunstick"},
+	weapons = {"arrest_stick", "cw_g4p_glock17", "weaponchecker", "stunstick"},
 	command = "secretservice",
 	max = 2,
 	salary = 45,
@@ -394,7 +394,7 @@ TEAM_POLICE = DarkRP.createJob("Survival Protection", {
 		Type /wanted <name> to alert the public to this criminal
 		OR go to tab and warrant someone by clicking the warrant button
 		!!You also hunt down the Runners!!]],
-	weapons = {"arrest_stick", "unarrest_stick", "fas2_m1911", "stunstick", "door_ram", "weaponchecker"},
+	weapons = {"arrest_stick", "unarrest_stick", "cw_g4p_glock17", "stunstick", "door_ram", "weaponchecker"},
 	command = "cp",
 	max = 4,
 	salary = 30,
@@ -433,7 +433,7 @@ TEAM_CHIEF = DarkRP.createJob("Survival Protection Chief", {
 		Type /wanted <name> to alert the public to this criminal
 		Type /jailpos to set the Jail Position
 		!!You also hunt down the Runners!!]],
-	weapons = {"arrest_stick", "unarrest_stick", "fas2_m1911", "fas2_m3s90", "stunstick", "door_ram", "weaponchecker"},
+	weapons = {"arrest_stick", "unarrest_stick", "cw_g4p_glock17", "cw_mp5", "stunstick", "door_ram", "weaponchecker"},
 	command = "chief",
 	max = 1,
 	salary = 75,
@@ -465,7 +465,7 @@ TEAM_SWAT = DarkRP.createJob("Military Infantry", {
 		Follow the commands of the Military Commander or the Chief 
 		in case there is no Military Commander.
 		to enforce law in the city if the situation gets hotter.]],
-	weapons = {"arrest_stick", "fas2_m1911", "fas2_m4a1"},
+	weapons = {"arrest_stick", "cw_g4p_glock17", "cw_g4p_m4a1"},
 	command = "swat",
 	max = 2,
 	salary = 35,
@@ -489,7 +489,7 @@ TEAM_SWATMEDIC = DarkRP.createJob("Military Medic", {
 	description = [[As the Military Medic you heal your teammates and wounded people.
 		Follow the commands of the Military Commander or the Chief 
 		in case there is no Military Commander.]],
-	weapons = {"fas2_m1911", "arrest_stick", "fas2_m4a1", "fas2_ifak"},
+	weapons = {"cw_g4p_glock17", "arrest_stick", "cw_mp5", "fas2_ifak"},
 	command = "swatmedic",
 	max = 2,
 	salary = 55,
@@ -513,7 +513,7 @@ TEAM_SWATSNIPER = DarkRP.createJob("Military Sniper", {
 	description = [[As the Military Sniper you provide support for your teammated from far away.
 		Follow the commands of the Military Commander or the Chief 
 		in case there is no Military Commander.]],
-	weapons = {"arrest_stick", "fas2_m1911", "fas2_sr25"},
+	weapons = {"arrest_stick", "cw_g4p_glock17", "cw_g4p_awm"},
 	command = "swatsniper",
 	max = 2,
 	salary = 50,
@@ -537,7 +537,7 @@ TEAM_SWATSUPPORT = DarkRP.createJob("Military Juggernaut", {
 		some heavy support and breach the enemy's defence lines.
 		Follow the commands of the Military Commander or the Chief 
 		in case there is no Military Commander.]],
-	weapons = {"arrest_stick", "fas2_m1911", "swb_m249", "door_ram"},
+	weapons = {"arrest_stick", "cw_g4p_glock17", "swb_rpd", "door_ram"},
 	command = "swatjugger",
 	max = 1,
 	salary = 100,
@@ -560,7 +560,7 @@ TEAM_SWATEXPLOSIVE = DarkRP.createJob("Military Spetsnaz", {
 		anti-vehicle support for your team.
 		Follow the commands of the Military Commander or the Chief 
 		in case there is no Military Commander.]],
-	weapons = {"arrest_stick", "fas2_m1911", "weapon_slam", "rpg-7"},
+	weapons = {"arrest_stick", "cw_g4p_glock17", "weapon_slam", "rpg-7"},
 	command = "swatexplosive",
 	max = 1,
 	salary = 50,
@@ -584,7 +584,7 @@ TEAM_SWATLEADER = DarkRP.createJob("Military Commander", {
 	description = [[As a Military Commander you're the leader of the team.
 		Coordinate the Military forces to enforce law in the city.
 		Follow the commands of the Chief.]],
-	weapons = {"fas2_m1911", "arrest_stick", "unarrest_stick", "fas2_m3s90", "fas2_m4a1"},
+	weapons = {"cw_g4p_glock17", "arrest_stick", "unarrest_stick", "swb_chaser", "cw_g4p_m4a1"},
 	command = "swatleader",
 	max = 1,
 	salary = 55,
@@ -609,7 +609,7 @@ TEAM_SWATLEADER = DarkRP.createJob("Military Commander", {
 	model = {"models/player/scavenger/scavenger.mdl"},
 	description = [[You wander around the wasteland, your like
 		a normal survivor, but you get some guns to survive.]],
-	weapons = {"swb_famas"},
+	weapons = {"cw_mp5"},
 	command = "scavenger",
 	max = 2,
 	salary = 15,
@@ -637,7 +637,7 @@ TEAM_VIGILANTE = DarkRP.createJob("Vigilante", {
 	have finally found civilization in this Zombie Apocalypse.
 	With your great dual wielding skills and loads of weapons.
 	You have decided to protect these people]],
-	weapons = {"dual_weapons"},
+	weapons = {"cw_mp5"},
 	command = "quickshot",
 	max = 1,
 	salary = 45,
@@ -660,7 +660,7 @@ TEAM_ASSASSIN = DarkRP.createJob("Assassin", {
 	description = [[Assassinate for money,
 		Stealth skills are required.
 		<donator only>]],
-	weapons = {"fas2_m82", "blink_swep", "climb_swep2", "fas2_dv2"},
+	weapons = {"cw_g4p_m98b", "blink_swep", "climb_swep2", "fas2_dv2"},
 	command = "Assassin",
 	max = 1,
 	salary = 45,
@@ -792,7 +792,7 @@ TEAM_GANGSNIPER = DarkRP.createJob("Bandit Sharpshooter", {
 	model = "models/player/stalker/bandit_brown.mdl",
 	description = [[As the bandit sharpshooter, you work with the bandit leader and other bandits,
 		providing cover from a distance and picking off targets]],
-	weapons = {"fas2_p226", "swb_awp"},
+	weapons = {"cw_g4p_usp40", "swb_awp"},
 	command = "banditsniper",
 	max = 1,
 	salary = 45,
@@ -810,7 +810,7 @@ TEAM_GANGMEDIC = DarkRP.createJob("Bandit Surgeon", {
 	color = Color(75, 75, 75, 255),
 	model = "models/player/phoenix.mdl",
 	description = [[Never passed out of medical school but you picked up enough to aid and heal other bandits!]],
-	weapons = {"fas2_p226","fas2_ifak"},
+	weapons = {"cw_g4p_usp40","fas2_ifak"},
 	command = "banditmedic",
 	max = 1,
 	salary = 20,
@@ -832,7 +832,7 @@ TEAM_MOB = DarkRP.createJob("Bandit Leader", {
 		organization.
 		He has the ability to break into houses by using a lockpick.
 		The Bandit Leader also can unarrest you.]],
-	weapons = {"lockpick", "unarrest_stick", "swb_p228"},
+	weapons = {"lockpick", "unarrest_stick", "cw_g4p_usp40"},
 	command = "mobboss",
 	max = 1,
 	salary = 25,
@@ -855,7 +855,7 @@ TEAM_MONOLITH = DarkRP.createJob("Monolith", {
 	color = Color(145, 145, 145, 255),
 	model = "models/player/stalker/monolith_vet.mdl",
 	description = [[The most radical clan in the area, these nutheads have no "Morality" in their dictionary."]],
-	weapons = {"fas2_deagle","fas2_ifak", "fas2_g3"},
+	weapons = {"cw_g4p_fiveseven","fas2_ifak", "fas2_g3"},
 	command = "monolith",
 	max = 3,
 	salary = 20,
@@ -874,7 +874,7 @@ TEAM_MONOLITHLEADER = DarkRP.createJob("Monolith Reverend", {
 	color = Color(145, 145, 145, 255),
 	model = "models/player/stalker/monolith_exo.mdl",
 	description = [[The preacher of the Monolith group.]],
-	weapons = {"lockpick", "keypad_cracker", "fas2_deagle", "fas2_ifak", "fas2_g3"},
+	weapons = {"lockpick", "keypad_cracker", "cw_g4p_fiveseven", "fas2_ifak", "fas2_g3"},
 	command = "monolithleader",
 	max = 1,
 	salary = 30,
