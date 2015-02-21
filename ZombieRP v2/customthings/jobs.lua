@@ -382,7 +382,7 @@ TEAM_SECRETSERVICE = DarkRP.createJob("Secret Service", {
 //Survival Protection
 TEAM_POLICE = DarkRP.createJob("Survival Protection", {
 	color = Color(25, 25, 170, 255),
-	model = {"models/player/police.mdl"},
+	model = {"models/stalkertnb/beri_rogue_cs2.mdl"},
 	description = [[The protector of every survivor that lives in the city .
 		You have the power to arrest criminals and protect innocents.
 		Hit them with your arrest baton to put them in jail
@@ -421,7 +421,7 @@ TEAM_POLICE = DarkRP.createJob("Survival Protection", {
 //Survival Protection Chief
 TEAM_CHIEF = DarkRP.createJob("Survival Protection Chief", {
 	color = Color(20, 20, 255, 255),
-	model = "models/player/combine_soldier_prisonguard.mdl",
+	model = "models/stalkertnb/beri_rogue_cs2.mdl",
 	description = [[The Chief is the leader of the Civil Protection unit and
 		the Military department.
 		Coordinate the Police and Military units to enforce law in the city.
@@ -460,7 +460,7 @@ TEAM_CHIEF = DarkRP.createJob("Survival Protection Chief", {
 //Military Infantry
 TEAM_SWAT = DarkRP.createJob("Military Infantry", {
 	color = Color(22, 121, 191, 255),
-	model = {"models/steinman/bf4/us_01.mdl"},
+	model = {"models/stalkertnb/beri_mili.mdl"},
 	description = [[The Militairy is a very special team.
 		Follow the commands of the Military Commander or the Chief 
 		in case there is no Military Commander.
@@ -485,7 +485,7 @@ TEAM_SWAT = DarkRP.createJob("Military Infantry", {
 //Military Medic
 TEAM_SWATMEDIC = DarkRP.createJob("Military Medic", {
 	color = Color(19, 81, 124, 255),
-	model = {"models/steinman/bf4/ru_04.mdl"},
+	model = {"models/stalkertnb/beri_seva.mdl"},
 	description = [[As the Military Medic you heal your teammates and wounded people.
 		Follow the commands of the Military Commander or the Chief 
 		in case there is no Military Commander.]],
@@ -509,7 +509,7 @@ TEAM_SWATMEDIC = DarkRP.createJob("Military Medic", {
 //Military Sniper
 TEAM_SWATSNIPER = DarkRP.createJob("Military Sniper", {
 	color = Color(19, 81, 124, 255),
-	model = {"models/steinman/bf4/ru_03.mdl"},
+	model = {"models/stalkertnb/beri_rogue.mdl"},
 	description = [[As the Military Sniper you provide support for your teammated from far away.
 		Follow the commands of the Military Commander or the Chief 
 		in case there is no Military Commander.]],
@@ -523,30 +523,6 @@ TEAM_SWATSNIPER = DarkRP.createJob("Military Sniper", {
 	hasLicense = true,
 	mayorCanSetSalary = true,
 	candemote = true,
-	police = true,
-	PlayerSpawn = function(ply) ply:SetArmor(25) end,
-    customCheck = function(ply) return ply:IsUserGroup("donator") or ply:IsAdmin() or ply:IsUserGroup("VIP-trial") or ply:IsUserGroup('Moderator') end,
-    CustomCheckFailMsg = "You need to donate for this job!"
-})
-
-//Military Hacker
-TEAM_SWATHACKER = DarkRP.createJob("Military Hacker", {
-	color = Color(19, 81, 124, 255),
-	model = {"models/steinman/bf4/us_02.mdl"},
-	description = [[As the Military Hacker you help your team to breach enemy's
-		security system during raids with your hacking abilities.
-		Follow the commands of the Military Commander or the Chief 
-		in case there is no Military Commander.]],
-	weapons = {"arrest_stick", "fas2_m1911", "fas2_m4a1", "weapon_hack_phone"},
-	command = "swathacker",
-	max = 1,
-	salary = 50,
-	admin = 0,	
-	vote = false,
-	hasLicense = true,
-	mayorCanSetSalary = true,
-	candemote = true,
-	cp = true,
 	police = true,
 	PlayerSpawn = function(ply) ply:SetArmor(25) end,
     customCheck = function(ply) return ply:IsUserGroup("donator") or ply:IsAdmin() or ply:IsUserGroup("VIP-trial") or ply:IsUserGroup('Moderator') end,
@@ -577,9 +553,9 @@ TEAM_SWATSUPPORT = DarkRP.createJob("Military Juggernaut", {
 })
 
 //Military Explosives Expert
-TEAM_SWATEXPLOSIVE = DarkRP.createJob("Military Explosives Expert", {
+TEAM_SWATEXPLOSIVE = DarkRP.createJob("Military Spetsnaz", {
 	color = Color(19, 81, 124, 255),
-	model = {"models/steinman/bf4/us_04.mdl"},
+	model = {"models/stalkertnb/beri_rogue_helmet.mdl"},
 	description = [[As the Military Explosive Master you provide heavy 
 		anti-vehicle support for your team.
 		Follow the commands of the Military Commander or the Chief 
@@ -601,33 +577,10 @@ TEAM_SWATEXPLOSIVE = DarkRP.createJob("Military Explosives Expert", {
     CustomCheckFailMsg = "You need to donate for this job!"
 })
 
-//Military Tanker
-TEAM_STEAMPILOT = DarkRP.createJob("Military Tanker", {
-	color = Color(19, 81, 124, 255),
-	model = {"models/steinman/bf4/us_03.mdl"},
-	description = [[As the Military Tanker you patrol the roads
-		and defend the military base with a tank.
-		Follow the commands of the Military Commander or the Chief 
-		in case there is no Military Commander.]],
-	weapons = {"arrest_stick", "fas2_m1911"},
-	command = "steampilot",
-	max = 1,
-	salary = 50,
-	admin = 0,
-	vote = false,
-	hasLicense = true,
-	mayorCanSetSalary = true,
-	candemote = true,
-	steampilot = true,
-	PlayerSpawn = function(ply) ply:SetArmor(25) end,
-    customCheck = function(ply) return ply:IsUserGroup("donator") or ply:IsAdmin() or ply:IsUserGroup("VIP-trial") or ply:IsUserGroup('Moderator') end,
-    CustomCheckFailMsg = "You need to donate for this job!"
-})
-
 //S.W.A.T Leader
 TEAM_SWATLEADER = DarkRP.createJob("Military Commander", {
 	color = Color(19, 81, 124, 255),
-	model = {"models/steinman/bf4/ru_02.mdl"},
+	model = {"models/stalkertnb/exo_berill.mdl"},
 	description = [[As a Military Commander you're the leader of the team.
 		Coordinate the Military forces to enforce law in the city.
 		Follow the commands of the Chief.]],
@@ -684,7 +637,7 @@ TEAM_VIGILANTE = DarkRP.createJob("Vigilante", {
 	have finally found civilization in this Zombie Apocalypse.
 	With your great dual wielding skills and loads of weapons.
 	You have decided to protect these people]],
-	weapons = {"dual_weapons", "weapon_hack_phone"},
+	weapons = {"dual_weapons"},
 	command = "quickshot",
 	max = 1,
 	salary = 45,
@@ -741,7 +694,7 @@ TEAM_HITMAN = DarkRP.createJob("Bounty Hunter", {
     end
 })
 
-//Stalker
+/*//Stalker
 TEAM_STALKER = DarkRP.createJob("Stalker", {
 	color = Color(0, 50, 0, 255),
 	model = {"models/player/stalker/loner_vet.mdl", "models/player/stalker/freedom_vet.mdl"},
@@ -777,7 +730,7 @@ TEAM_STALKERVET = DarkRP.createJob("Stalker Veteran", {
 	PlayerSpawn = function(ply) ply:SetArmor(50) end,
 	customCheck = function(ply) return ply:IsUserGroup("donator") or ply:IsAdmin() or ply:IsUserGroup("VIP-trial") or ply:IsUserGroup('Moderator') end,
     CustomCheckFailMsg = "You need to donate for this job!"
-})
+})*/
 //Faith
 TEAM_RUNNER = DarkRP.createJob("Runner", {
 	color = Color(255, 0, 0, 255),
@@ -897,7 +850,7 @@ TEAM_MOB = DarkRP.createJob("Bandit Leader", {
 })
 
 
-//Monolith Member
+/*//Monolith Member
 TEAM_MONOLITH = DarkRP.createJob("Monolith", {
 	color = Color(145, 145, 145, 255),
 	model = "models/player/stalker/monolith_vet.mdl",
@@ -933,7 +886,7 @@ TEAM_MONOLITHLEADER = DarkRP.createJob("Monolith Reverend", {
 	PlayerSpawn = function(ply) ply:SetArmor(100) end,
 	customCheck = function(ply) return ply:IsUserGroup("donator") or ply:IsAdmin() or ply:IsUserGroup("VIP-trial") or ply:IsUserGroup('Moderator') end,
     CustomCheckFailMsg = "You need to donate for this job!"
-})
+})*/
 
 //Duty Member
 TEAM_DUTY = DarkRP.createJob("Duty", {
