@@ -560,7 +560,7 @@ TEAM_SWATEXPLOSIVE = DarkRP.createJob("Military Spetsnaz", {
 		anti-vehicle support for your team.
 		Follow the commands of the Military Commander or the Chief 
 		in case there is no Military Commander.]],
-	weapons = {"arrest_stick", "cw_g4p_glock17", "weapon_slam", "rpg-7"},
+	weapons = {"arrest_stick", "cw_g4p_glock17", "weapon_slam", "rpg-7", "swb_val"},
 	command = "swatexplosive",
 	max = 1,
 	salary = 50,
@@ -637,7 +637,7 @@ TEAM_VIGILANTE = DarkRP.createJob("Vigilante", {
 	have finally found civilization in this Zombie Apocalypse.
 	With your great dual wielding skills and loads of weapons.
 	You have decided to protect these people]],
-	weapons = {"cw_mp5"},
+	weapons = {"dual_weapons"},
 	command = "quickshot",
 	max = 1,
 	salary = 45,
@@ -656,7 +656,7 @@ TEAM_VIGILANTE = DarkRP.createJob("Vigilante", {
 //Assassin
 TEAM_ASSASSIN = DarkRP.createJob("Assassin", {
 	color = Color(0, 10, 0, 255),
-	model = "models/player/stalker/military_spetsnaz_green.mdl",
+	model = "models/stalkertnb/cs2_goggles.mdl",
 	description = [[Assassinate for money,
 		Stealth skills are required.
 		<donator only>]],
@@ -734,7 +734,7 @@ TEAM_STALKERVET = DarkRP.createJob("Stalker Veteran", {
 //Faith
 TEAM_RUNNER = DarkRP.createJob("Runner", {
 	color = Color(255, 0, 0, 255),
-	model = "models/player/lara_croft.mdl",
+	model = "models/stalkertnb/bandit_reager.mdl",
 	description = [[You are a parkour master that recently
 		escaped from the jail. Be carefull, the Police can arrest you on sight!]],
 	weapons = {"climb_swep2"},
@@ -771,7 +771,7 @@ TEAM_THIEF = DarkRP.createJob("Thief", {
 //Bandit
 TEAM_GANG = DarkRP.createJob("Bandit", {
 	color = Color(75, 75, 75, 255),
-	model = "models/player/stalker/bandit_backpack.mdl",
+	model = "models/stalkertnb/bandit1.mdl",
 	description = [[The lowest person of crime.
 		A bandit generally works for the Bandit Leader who runs the crime family.
 		The Bandit Leader sets your agenda and you follow it or you might be punished.]],
@@ -789,10 +789,10 @@ TEAM_GANG = DarkRP.createJob("Bandit", {
 //Bandit Sharpshooter
 TEAM_GANGSNIPER = DarkRP.createJob("Bandit Sharpshooter", {
 	color = Color(75, 75, 75, 255),
-	model = "models/player/stalker/bandit_brown.mdl",
+	model = "models/stalkertnb/bandit3.mdl",
 	description = [[As the bandit sharpshooter, you work with the bandit leader and other bandits,
 		providing cover from a distance and picking off targets]],
-	weapons = {"cw_g4p_usp40", "swb_awp"},
+	weapons = {"cw_g4p_usp40", "cw_g4p_awm"},
 	command = "banditsniper",
 	max = 1,
 	salary = 45,
@@ -826,7 +826,7 @@ TEAM_GANGMEDIC = DarkRP.createJob("Bandit Surgeon", {
 //Bandit Leader
 TEAM_MOB = DarkRP.createJob("Bandit Leader", {
 	color = Color(25, 25, 25, 255),
-	model = "models/player/stalker/bandit_black.mdl",
+	model = "models/stalkertnb/banditboss1.mdl",
 	description = [[The Bandit leader is the boss of the criminals in the wasteland.
 		With his power he coordinates the bandits and forms an efficient crime
 		organization.
@@ -891,9 +891,9 @@ TEAM_MONOLITHLEADER = DarkRP.createJob("Monolith Reverend", {
 //Duty Member
 TEAM_DUTY = DarkRP.createJob("Duty", {
 	color = Color(75, 12, 12, 255),
-	model = "models/player/stalker/duty_vet.mdl",
+	model = "models/stalkertnb/psz9d_duty2.mdl",
 	description = [[Duty is the group that keeps peace in the area by supporting the Government and innocent survivors in case of Raids and other illegal actions that criminals organise]],
-	weapons = {"fas2_ots33", "fas2_dv2"},
+	weapons = {"cw_g4p_masada_acr", "fas2_dv2"},
 	command = "duty",
 	max = 3,
 	salary = 25,
@@ -911,9 +911,9 @@ TEAM_DUTY = DarkRP.createJob("Duty", {
 //Duty medic
 TEAM_DUTYMEDIC = DarkRP.createJob("Duty Medic", {
 	color = Color(75, 12, 12, 255),
-	model = "models/player/stalker/military_spetsnaz_black.mdl",
+	model = "models/stalkertnb/psz9d_duty4.mdl",
 	description = [[A Support unit for Duty group."]],
-	weapons = {"fas2_ots33", "fas2_ifak"},
+	weapons = {"cw_g4p_masada_acr", "fas2_ifak"},
 	command = "dutymedic",
 	max = 1,
 	salary = 20,
@@ -930,9 +930,9 @@ TEAM_DUTYMEDIC = DarkRP.createJob("Duty Medic", {
 //Duty leader
 TEAM_DUTYLEADER = DarkRP.createJob("Duty Marshall", {
 	color = Color(75, 12, 12, 255),
-	model = "models/player/stalker/duty_exo.mdl",
+	model = "models/stalkertnb/exo_skat_duty.mdl",
 	description = [[The leader of the Duty group, you must command the Duty members and follow the orders of the Government.]],
-	weapons = {"keypad_cracker", "fas2_ots33", "fas2_ak74"},
+	weapons = {"keypad_cracker", "cw_g4p_masada_acr", "cw_ak74"},
 	command = "dutyleader",
 	max = 1,
 	salary = 30,
