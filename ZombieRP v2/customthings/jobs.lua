@@ -578,7 +578,7 @@ TEAM_SWATEXPLOSIVE = DarkRP.createJob("Military Spetsnaz Officer", {
 })
 
 //Military Spetsnaz Cadet
-TEAM_SWATEXPLOSIVE = DarkRP.createJob("Military Spetsnaz Cadet", {
+TEAM_SWATCADET = DarkRP.createJob("Military Spetsnaz Cadet", {
 	color = Color(19, 81, 124, 255),
 	model = {"models/stalkertnb/beri_rogue.mdl"},
 	description = [[As the Military Spetsnaz Cadet you are
