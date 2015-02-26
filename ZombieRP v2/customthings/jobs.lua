@@ -552,16 +552,15 @@ TEAM_SWATSUPPORT = DarkRP.createJob("Military Juggernaut", {
     CustomCheckFailMsg = "You need to donate for this job!"
 })
 
-//Military Explosives Expert
-TEAM_SWATEXPLOSIVE = DarkRP.createJob("Military Spetsnaz", {
+//Military Spetsnaz Officer
+TEAM_SWATSPETSNAZLEADER = DarkRP.createJob("Military Spetsnaz Officer", {
 	color = Color(19, 81, 124, 255),
 	model = {"models/stalkertnb/beri_rogue_helmet.mdl"},
-	description = [[As the Military Explosive Master you provide heavy 
-		anti-vehicle support for your team.
+	description = [[As a Millitary Spetsnaz Officer you a vital asset in taking.
 		Follow the commands of the Military Commander or the Chief 
 		in case there is no Military Commander.]],
 	weapons = {"arrest_stick", "cw_g4p_glock17", "weapon_slam", "rpg-7", "swb_val"},
-	command = "swatexplosive",
+	command = "swatspetsnaz",
 	max = 1,
 	salary = 50,
 	admin = 0,
@@ -575,6 +574,32 @@ TEAM_SWATEXPLOSIVE = DarkRP.createJob("Military Spetsnaz", {
 	PlayerSpawn = function(ply) ply:SetArmor(25) end,
     customCheck = function(ply) return ply:IsUserGroup("donator") or ply:IsAdmin() or ply:IsUserGroup("VIP-trial") or ply:IsUserGroup('Moderator') end,
     CustomCheckFailMsg = "You need to donate for this job!"
+})
+
+//Military Spetsnaz Cadet
+TEAM_SWATSPETSNAZLEADER = DarkRP.createJob("Military Spetsnaz Cadet", {
+	color = Color(19, 81, 124, 255),
+	model = {"models/stalkertnb/beri_rogue_helmet.mdl"},
+	description = [[As the Military Explosive Master you provide heavy 
+		anti-vehicle support for your team.
+		Follow the commands of the Military Commander or the Chief 
+		in case there is no Military Commander.]],
+	weapons = {"arrest_stick", "cw_g4p_mp412_rex", "climb_swep2", "cw_g4p_ump45"},
+	command = "swatspetsnazcadet",
+	max = 1,
+	salary = 50,
+	admin = 0,
+	cp = true,
+	police = true,
+	vote = false,
+	hasLicense = true,
+	mayorCanSetSalary = true,
+	candemote = true,
+	police = true,
+	PlayerSpawn = function(ply) ply:SetArmor(25) end,
+	customCheck = function(ply)
+    return ply:GetUserGroup() == "Member" or ply:GetUserGroup() == "donator" or ply:GetUserGroup() == "VIP-trial" or ply:GetUserGroup() == "Trusted" or ply:IsAdmin() or ply:IsUserGroup('Moderator')
+
 })
 
 //S.W.A.T Leader
