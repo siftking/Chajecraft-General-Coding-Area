@@ -763,7 +763,6 @@ TEAM_THIEF = DarkRP.createJob("Thief", {
 	hasLicense = false,
 	mayorCanSetSalary = false,
 	candemote = true,
-	PlayerSpawn = function(ply) ply:SetLockpickCount(4) end,
 	thief = true
 })
 
@@ -963,7 +962,6 @@ GAMEMODE.CivilProtection = {
 	[TEAM_SWATMEDIC] = true,
 	[TEAM_SWATSNIPER] = true,
 	[TEAM_SWATEXPLOSIVE] = true,
-	[TEAM_SWATHACKER] = true,
 	[TEAM_SWATSUPPORT] = true
 }
 /*---------------------------------------------------------------------------
