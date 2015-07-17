@@ -226,6 +226,20 @@ TEAM_CHIEF = DarkRP.createJob("Survival Protection Chief", {
 	}
 })
 
+TEAM_SF = DarkRP.createJob("Special Forces", {
+    color = Color(80, 45, 0, 255),
+    model = "models/player/csgo_sas3",
+    description = [[You gotta shoot em,
+    	shoot em till they die]],
+        weapons = {"arrest_stick", "unarrest_stick", "door_ram", "fas2_machete", "fas_mp5sd6", "fas2_ots33"},
+        command = "sf",
+        max = 2,
+        salary = 200,
+        admin = 0,
+        vote = true,
+        hasLicense = true,
+     })
+
 TEAM_MAYOR = DarkRP.createJob("Governor", {
 	color = Color(150, 20, 20, 255),
 	model = "models/player/breen.mdl",
