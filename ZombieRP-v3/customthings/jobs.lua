@@ -17,6 +17,7 @@ http://wiki.darkrp.com/index.php/DarkRP:CustomJobFields
 
 Add jobs under the following line:
 ---------------------------------------------------------------------------]]
+
 TEAM_CITIZEN = DarkRP.createJob("Survivor", {
 	color = Color(20, 150, 20, 255),
 	model = {
@@ -93,7 +94,7 @@ TEAM_POLICE = DarkRP.createJob("Survival Protection", {
 	}
 })
 
-TEAM_BANDIT = DarkRP.createJob("Bandit", {
+TEAM_GANG = DarkRP.createJob("Bandit", {
 	color = Color(75, 75, 75, 255),
 	model = {
 		"models/player/Group03/Female_01.mdl",
@@ -124,7 +125,7 @@ TEAM_BANDIT = DarkRP.createJob("Bandit", {
 	candemote = true
 })
 
-TEAM_BANDITLEADER = DarkRP.createJob("Bandit Leader", {
+TEAM_MOB = DarkRP.createJob("Bandit Leader", {
 	color = Color(25, 25, 25, 255),
 	model = "models/player/gman_high.mdl",
 	description = [[The Bandit leader is the boss of the criminals in the wasteland.
@@ -277,6 +278,25 @@ TEAM_HOBO = DarkRP.createJob("Hobo", {
 	candemote = false
 })
 
+//Assassin
+TEAM_ASSASSIN = DarkRP.createJob("Assassin", {
+	color = Color(0, 10, 0, 255),
+	model = "models/nikout/dishonored/assassin1.mdl",
+	description = [[Assassinate for money,
+		Stealth skills are required.
+		<donator only>]],
+	weapons = {"weapon_crossbow", "blink_swep", "climb_swep2", "fas2_dv2", "vortigaunt_beam"},
+	command = "Assassin",
+	max = 1,
+	salary = 45,
+	admin = 0,
+	vote = false,
+	hasLicense = false,
+	mayorCanSetSalary = false,
+	candemote = true,
+	assassin = true,
+	VIPOnly = true
+})
 
 
 
@@ -303,3 +323,12 @@ GAMEMODE.CivilProtection = {
 Jobs that are hitmen (enables the hitman menu)
 ---------------------------------------------------------------------------]]
 DarkRP.addHitmanTeam(TEAM_MOB)
+DarkRP.addHitmanTeam(TEAM_ASSASSIN)
+
+--[[---------------------------------------------------------------------------
+Team Agendas
+---------------------------------------------------------------------------]]
+DarkRP.createAgenda("Police agenda", {TEAM_MAYOR, TEAM_CHIEF}, {TEAM_POLICE})
+DarkRP.createAgenda("Gangster's agenda", TEAM_MOB, {TEAM_GANG})
+	
+	
