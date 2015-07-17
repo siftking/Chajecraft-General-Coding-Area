@@ -285,7 +285,7 @@ TEAM_ASSASSIN = DarkRP.createJob("Assassin", {
 	description = [[Assassinate for money,
 		Stealth skills are required.
 		<donator only>]],
-	weapons = {"weapon_crossbow", "blink_swep", "climb_swep2", "fas2_dv2", "vortigaunt_beam"},
+	weapons = {"weapon_crossbow", "blink_swep", "climb_swep2", "fas2_dv2", "fas2_sks"},
 	command = "Assassin",
 	max = 1,
 	salary = 45,
@@ -325,10 +325,6 @@ Jobs that are hitmen (enables the hitman menu)
 DarkRP.addHitmanTeam(TEAM_MOB)
 DarkRP.addHitmanTeam(TEAM_ASSASSIN)
 
---[[---------------------------------------------------------------------------
-Team Agendas
----------------------------------------------------------------------------]]
-DarkRP.createAgenda("Police agenda", {TEAM_MAYOR, TEAM_CHIEF}, {TEAM_POLICE})
-DarkRP.createAgenda("Gangster's agenda", TEAM_MOB, {TEAM_GANG})
+
 	
 	
