@@ -228,7 +228,7 @@ TEAM_CHIEF = DarkRP.createJob("Survival Protection Chief", {
 
 TEAM_SF = DarkRP.createJob("Special Forces", {
     color = Color(80, 45, 0, 255),
-    model = "models/player/csgo_sas3",
+    model = "models/csgosas3pm.mdl",
     description = [[You gotta shoot em,
     	shoot em till they die]],
         weapons = {"arrest_stick", "unarrest_stick", "door_ram", "fas2_machete", "fas_mp5sd6", "fas2_ots33"},
