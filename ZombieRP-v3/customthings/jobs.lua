@@ -17,12 +17,23 @@ http://wiki.darkrp.com/index.php/DarkRP:CustomJobFields
 
 Add jobs under the following line:
 ---------------------------------------------------------------------------]]
-
-
-
-
-
-
+TEAM_HOBO = DarkRP.createJob("Shrek", {
+	color = Color(80, 45, 0, 255),
+	model = "models/player/corpse1.mdl",
+	description = [[The lowest member of society. All people see you laugh.
+		You have no home.
+		Beg for your food and money
+		Sing for everyone who passes to get money
+		Make your own wooden home]],
+	weapons = {"weapon_bugbait"},
+	command = "shrek",
+	max = 100,
+	salary = 0,
+	admin = 0,
+	vote = false,
+	hasLicense = false,
+})
+ 
 
 
 --[[---------------------------------------------------------------------------
