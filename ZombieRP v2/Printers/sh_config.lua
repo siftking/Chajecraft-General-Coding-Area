@@ -93,6 +93,8 @@ rPrint.RegisterPrinterType( "Bronze", {
 	PrinterHealth = 150,
 	PowerConsumptionRate = 1 / 80,
 	PowerConsumptionRateCooler = 1 / 1000
+	HeatRate = 1 / 25,
+	CoolRate = 1 / 7
 }, "rprint_bronzeprinter" )
 
 rPrint.RegisterPrinterType( "Silver", {
@@ -104,6 +106,8 @@ rPrint.RegisterPrinterType( "Silver", {
 	PrinterHealth = 350,
 	PowerConsumptionRate = 1 / 80,
 	PowerConsumptionRateCooler = 1 / 500
+	HeatRate = 1 / 20,
+	CoolRate = 1 / 7
 }, "rprint_silverprinter" )
 
 rPrint.RegisterPrinterType( "Gold", {
@@ -115,6 +119,8 @@ rPrint.RegisterPrinterType( "Gold", {
 	PrinterHealth = 500,
 	PowerConsumptionRate = 1 / 80,
 	PowerConsumptionRateCooler = 1 / 500
+	HeatRate = 1 / 15,
+	CoolRate = 1 / 7
 }, "rprint_goldprinter" )
 
 rPrint.RegisterPrinterType( "Platinum", {
@@ -126,6 +132,8 @@ rPrint.RegisterPrinterType( "Platinum", {
 	PrinterHealth = 750,
 	PowerConsumptionRate = 1 / 80,
 	PowerConsumptionRateCooler = 1 / 500
+	HeatRate = 1 / 10,
+	CoolRate = 1 / 7
 }, "rprint_platinum" )
 
 rPrint.RegisterPrinterType( "Quantum", {
@@ -137,6 +145,6 @@ rPrint.RegisterPrinterType( "Quantum", {
 	PrinterHealth = 1250,
 	PowerConsumptionRate = 1 / 80,
 	PowerConsumptionRateCooler = 1 / 500,
-	HeatRate = 1 / 25,
+	HeatRate = 1 / 5,
 	CoolRate = 1 / 7
 }, "rprint_quantum" )
