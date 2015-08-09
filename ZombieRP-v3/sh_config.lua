@@ -104,7 +104,7 @@ rPrint.RegisterPrinterType( "Silver", {
 	CoolerCost = 300,
 	PrinterHealth = 350,
 	PowerConsumptionRate = 1 / 80,
-	PowerConsumptionRateCooler = 1 / 500
+	PowerConsumptionRateCooler = 1 / 500,
 	HeatRate = 1 / 20,
 	CoolRate = 1 / 7
 }, "rprint_silverprinter" )
@@ -117,7 +117,7 @@ rPrint.RegisterPrinterType( "Gold", {
 	CoolerCost = 400,
 	PrinterHealth = 500,
 	PowerConsumptionRate = 1 / 80,
-	PowerConsumptionRateCooler = 1 / 500
+	PowerConsumptionRateCooler = 1 / 500,
 	HeatRate = 1 / 15,
 	CoolRate = 1 / 7
 }, "rprint_goldprinter" )
@@ -130,7 +130,7 @@ rPrint.RegisterPrinterType( "Platinum", {
 	CoolerCost = 500,
 	PrinterHealth = 750,
 	PowerConsumptionRate = 1 / 80,
-	PowerConsumptionRateCooler = 1 / 500
+	PowerConsumptionRateCooler = 1 / 500,
 	HeatRate = 1 / 10,
 	CoolRate = 1 / 7
 }, "rprint_platinum" )
