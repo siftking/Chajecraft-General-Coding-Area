@@ -113,7 +113,7 @@ TEAM_THIEF = DarkRP.createJob("Thief", {
 	color = Color(25, 25, 25, 255),
 	model = "models/player/arctic.mdl",
 	description = [[Steal, mug people is your priority]],
-	weapons = {"lockpick", "keypad_cracker"},
+	weapons = {"ensw_bobby_case", "keypad_cracker"},
 	command = "thief",
 	max = 2,
 	salary = 15,
@@ -157,7 +157,57 @@ TEAM_GANG = DarkRP.createJob("Bandit", {
 	mayorCanSetSalary = false,
 	candemote = true
 })
+TEAM_GANGMEDIC = DarkRP.createJob("Bandit Medic", {
+	color = Color(75, 75, 75, 255),
+	model =	"models/csgoleet4pm.mdl",
+	description = [[The medic is an important part of the group.  
+	He can assist you with healing and spare bandages.]],
+	weapons = {"fas2_glock20", "fas2_ifak", "fas2_mac11"},
+	command = "banditmedic",
+	max = 2,
+	salary = 150,
+	admin = 0,
+	vote = false,
+	hasLicense = false,
+	mayorCanSetSalary = false,
+	candemote = true,
+	customCheck = function(ply) return table.HasValue(VIPRanks, ply:GetUserGroup()) end,
+	CustomCheckFailMsg = "You need to donate in order to become this job!"
+})
+TEAM_GANGSNIPER = DarkRP.createJob("Bandit Sniper", {
+	color = Color(75, 75, 75, 255),
+	model =	"models/csgoseparatist4pm.mdl",
+	description = [[Long distance engagement is always good for backing up your teammates from a far.]],
+	weapons = {"fas2_m14", "fas2_glock20"},
+	command = "banditsniper",
+	max = 2,
+	salary = 150,
+	admin = 0,
+	vote = false,
+	hasLicense = false,
+	mayorCanSetSalary = false,
+	candemote = true,
+	customCheck = function(ply) return table.HasValue(VIPRanks, ply:GetUserGroup()) end,
+	CustomCheckFailMsg = "You need to donate in order to become this job!"
+})
+TEAM_GANGHEAVY = DarkRP.createJob("Bandit Heavy", {
+	color = Color(75, 75, 75, 255),
+	model =	"models/csgobalkan4pm.mdl",
+	description = [[Heavy promvides ammunation and suppressive fire for his team.]],
+	weapons = {"fas2_rpk", "fas2_glock20", "fas2_ammobox"},
+	command = "banditheavy",
+	max = 1,
+	salary = 150,
+	admin = 0,
+	vote = false,
+	hasLicense = false,
+	mayorCanSetSalary = false,
+	candemote = true,
+	customCheck = function(ply) return table.HasValue(VIPRanks, ply:GetUserGroup()) end,
+	CustomCheckFailMsg = "You need to donate in order to become this job!",
+	PlayerSpawn = function(ply) ply:SetArmor(100) end
 
+})
 TEAM_MOB = DarkRP.createJob("Bandit Leader", {
 	color = Color(25, 25, 25, 255),
 	model = "models/player/gman_high.mdl",
@@ -311,7 +361,7 @@ TEAM_MAYOR = DarkRP.createJob("Governor", {
 	model = "models/player/breen.mdl",
 	description = [[The governor is the one who took the lead in the civilization.
 		He said that with order, we can survive for decades.
-		With his police force under him, he is ready to lead this.]]
+		With his police force under him, he is ready to lead this.]],
 	weapons = {},
 	command = "mayor",
 	max = 1,
