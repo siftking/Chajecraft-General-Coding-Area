@@ -549,6 +549,23 @@ TEAM_HITMAN = DarkRP.createJob("Hitman", {
 	hitman = true,
    	customCheck = function(ply) return table.HasValue(TrustedRanks, ply:GetUserGroup()) end
 })
+
+//Admin on Duty
+TEAM_ADMIN = DarkRP.createJob("Admin on Duty", {
+	color = Color(210, 210, 210, 153),
+	model = "models/nikout/dishonored/assassin1.mdl",
+	description = [[Don't rp as this job.]],
+	weapons = {"weapon_electron"},
+	command = "admin",
+	max = 64,
+	salary = 45,
+	admin = 1,
+	cp = true,
+	vote = false,
+	hasLicense = false,
+	mayorCanSetSalary = false,
+	candemote = false
+})
 --[[---------------------------------------------------------------------------
 Define which team joining players spawn into and what team you change to if demoted
 ---------------------------------------------------------------------------]]
