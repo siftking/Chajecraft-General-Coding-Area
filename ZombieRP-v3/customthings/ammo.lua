@@ -65,3 +65,129 @@ DarkRP.createAmmoType("smg1", {
 
 Add new ammo types under the next line!
 ---------------------------------------------------------------------------]]
+// #NoSimplerr#
+-- Pistol Ammo Types
+DarkRP.createAmmoType("10x25MM", {
+    name = "10x25MM Ammo",
+    model = "models/Items/BoxSRounds.mdl",
+    price = 37,
+    amountGiven = 30,
+	category = "Pistol Ammo Types"
+})
+
+DarkRP.createAmmoType(".45 ACP", {
+    name = ".45 ACP Ammo",
+    model = "models/Items/BoxSRounds.mdl",
+    price = 37,
+    amountGiven = 30,
+	category = "Pistol Ammo Types"
+})
+
+DarkRP.createAmmoType(".357 SIG", {
+    name = ".357 SIG Ammo",
+    model = "models/Items/BoxSRounds.mdl",
+    price = 37,
+    amountGiven = 30,
+	category = "Pistol Ammo Types"
+})
+
+DarkRP.createAmmoType("9x18MM", {
+    name = "9x18MM Ammo",
+    model = "models/Items/BoxSRounds.mdl",
+    price = 37,
+    amountGiven = 30,
+	category = "Pistol Ammo Types"
+})
+-- Heavy Pistol Ammo Types)
+DarkRP.createAmmoType(".50 AE", {
+    name = ".50 AE Ammo",
+    model = "models/Items/357ammo.mdl",
+    price = 50,
+    amountGiven = 28,
+	category = "Heavy Pistol Ammo Types"
+})
+
+DarkRP.createAmmoType(".454 Casull", {
+    name = ".454 Casull Ammo",
+    model = "models/Items/357ammo.mdl",
+    price = 50,
+    amountGiven = 28,
+	category = "Heavy Pistol Ammo Types"
+})
+
+-- Submachine Gun Ammo Tpyes
+DarkRP.createAmmoType("9x19MM", {
+    name = "9x19MM Ammo",
+    model = "models/Items/BoxMRounds.mdl",
+    price = 80,
+    amountGiven = 40,
+	category = "Submachine Ammo Types"
+})
+
+DarkRP.createAmmoType(".380 ACP", {
+    name = ".380 ACP Ammo",
+    model = "models/Items/BoxMRounds.mdl",
+    price = 120,
+    amountGiven = 60,
+	category = "Submachine Ammo Types"
+})
+
+-- Assault Ammo Types
+DarkRP.createAmmoType("5.45x39MM", {
+    name = "5.45x39MM Ammo",
+    model = "models/Items/combine_rifle_cartridge01.mdl",
+    price = 160,
+    amountGiven = 60,
+	category = "Assault Rifle Ammo Types"
+})
+
+DarkRP.createAmmoType("7.62x39MM", {
+    name = "7.62x39MM Ammo",
+    model = "models/Items/combine_rifle_cartridge01.mdl",
+    price = 160,
+    amountGiven = 60,
+	category = "Assault Rifle Ammo Types"
+})
+
+DarkRP.createAmmoType("5.56x45MM", {
+    name = "5.56x45MM Ammo",
+    model = "models/Items/combine_rifle_cartridge01.mdl",
+    price = 160,
+    amountGiven = 60,
+	category = "Assault Rifle Ammo Types"
+})
+
+-- Shotgun Ammo Types
+DarkRP.createAmmoType("12 Gauge", {
+    name = "12 Gauge Ammo",
+    model = "models/Items/BoxBuckshot.mdl",
+    price = 180,
+    amountGiven = 32,
+	category = "Shotgun Ammo Types"
+})
+
+-- Shotgun With Slug Ammo Type
+DarkRP.createAmmoType("23x75MMR", {
+    name = "23x75MMR Ammo",
+    model = "models/Items/BoxBuckshot.mdl",
+    price = 180,
+    amountGiven = 20,
+	category = "Shotgun Ammo Types"
+})
+
+-- Sniper Rifle Ammo Types
+DarkRP.createAmmoType("7.62x51MM", {
+    name = "7.62x51MM Ammo",
+    model = "models/Items/BoxMRounds.mdl",
+    price = 200,
+    amountGiven = 40,
+	category = "Sniper Rifle Ammo Types"
+})
+
+DarkRP.createAmmoType(".50 BMG", {
+    name = ".50 BMG Ammo",
+    model = "models/Items/BoxMRounds.mdl",
+    price = 200,
+    amountGiven = 40,
+	category = "Sniper Rifle Ammo Types"
+})
