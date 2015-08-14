@@ -324,5 +324,5 @@ AddEntity("LockPick", {
 	category = "Tools",
 	max = 9999,
 	cmd = "/lockpickz",
-	allowed = TEAM_BMD
+	allowed = TEAM_BMDEALER
 })
