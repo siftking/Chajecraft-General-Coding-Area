@@ -297,7 +297,7 @@ DarkRP.createShipment("M67 Grenade", {
 	price = 6000,
 	category = "Illegal",
 	amount = 5,
-	allowed = {TEAM_BMD}
+	allowed = {TEAM_BMDEALER}
 })
 
 DarkRP.createShipment("Machete", {
@@ -306,7 +306,7 @@ DarkRP.createShipment("Machete", {
 	price = 2000,
 	category = "Illegal",
 	amount = 5,
-	allowed = {TEAM_BMD}
+	allowed = {TEAM_BMDEALER}
 })
 
 DarkRP.createShipment("Knife", {
@@ -315,5 +315,5 @@ DarkRP.createShipment("Knife", {
 	price = 1000,
 	category = "Illegal",
 	amount = 5,
-	allowed = {TEAM_BMD}
+	allowed = {TEAM_BMDEALER}
 })
