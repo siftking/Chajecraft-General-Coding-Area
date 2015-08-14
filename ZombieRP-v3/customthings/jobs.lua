@@ -561,7 +561,7 @@ TEAM_HITMAN = DarkRP.createJob("Hitman", {
 })
 
 //Admin on Duty
-TEAM_ADMIN = DarkRP.createJob("Admin on Duty", {
+TEAM_ADMIN = DarkRP.createJob("Staff on Duty", {
 	color = Color(210, 210, 210, 153),
 	model = "models/nikout/dishonored/assassin1.mdl",
 	description = [[Don't rp as this job.]],
