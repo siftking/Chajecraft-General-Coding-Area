@@ -7,8 +7,9 @@ Agenda's can be set by the agenda manager and read by both the agenda manager an
 HOW TO MAKE AN AGENDA:
 AddAgenda(Title of the agenda, Manager (who edits it), {Listeners (the ones who just see and follow the agenda)})
 ---------------------------------------------------------------------------]]
+// #NoSimplerr#
 -- Example: AddAgenda("Gangster's agenda", TEAM_MOB, {TEAM_GANG})
 -- Example: AddAgenda("Police agenda", TEAM_MAYOR, {TEAM_CHIEF, TEAM_POLICE})
-
-DarkRP.createAgenda("Police agenda", {TEAM_MAYOR, TEAM_CHIEF}, {TEAM_POLICE})
-DarkRP.createAgenda("Gangster's agenda", TEAM_MOB, {TEAM_GANG})
+AddAgenda("Military Agenda", TEAM_MILITARYCOMMANDER, {TEAM_MILITARY, TEAM_MILITARYJUG, TEAM_MILITARYMEDIC, TEAM_MILITARYSNIPER})
+AddAgenda("Police Agenda", TEAM_MAYOR, {TEAM_CHIEF, TEAM_POLICE})
+AddAgenda("Bandit Agenda", TEAM_MOB, {TEAM_GANG, TEAM_GANGSNIPER, TEAM_GANGMEDIC, TEAM_GANGHEAVY})
