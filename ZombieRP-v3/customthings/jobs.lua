@@ -25,16 +25,16 @@ VIPRanks = {"donator", "Owner", "superadmin", "admin"}
 TEAM_CITIZEN = DarkRP.createJob("Survivor", {
 	color = Color(20, 150, 20, 255),
 	model = {
-		"models/player/Group01/Female_01.mdl",
-		"models/player/Group01/Female_02.mdl",
-		"models/player/Group01/Female_03.mdl",
-		"models/player/Group01/Female_04.mdl",
-		"models/player/Group01/Female_06.mdl",
-		"models/player/group01/male_01.mdl",
-		"models/player/Group01/Male_02.mdl",
-		"models/player/Group01/male_03.mdl",
-		"models/player/Group01/Male_04.mdl",
-		"models/player/Group01/Male_05.mdl",
+		"models/humans/group02/player/tale_01.mdl",
+		"models/humans/group02/player/tale_03.mdl",
+		"models/humans/group02/player/tale_04.mdl",
+		"models/humans/group02/player/tale_05.mdl",
+		"models/humans/group02/player/tale_07.mdl",
+		"models/humans/group02/player/tale_08.mdl",
+		"models/humans/group02/player/tale_09.mdl",
+		"models/humans/group02/player/temale_01.mdl",
+		"models/humans/group02/player/temale_02.mdl",
+		"models/humans/group02/player/temale_07.mdl",
 		"models/player/Group01/Male_06.mdl",
 		"models/player/Group01/Male_07.mdl",
 		"models/player/Group01/Male_08.mdl",
@@ -47,6 +47,7 @@ TEAM_CITIZEN = DarkRP.createJob("Survivor", {
 	command = "Survivor",
 	max = 0,
 	salary = 20,
+	category = "Normal",
 	admin = 0,
 	vote = false,
 	hasLicense = false,
@@ -58,7 +59,7 @@ TEAM_CITIZEN = DarkRP.createJob("Survivor", {
 // Engineer
 TEAM_ENGINEER = DarkRP.createJob("Engineer", {
 	color = Color(255, 161, 0, 255),
-	model = {"models/odessa.mdl"},
+	model = {"models/player/hostage/hostage_03.mdl"},
 	description = [[You're an engineer.
 		With your crazy craftsmanship.
 		You've learned to make perfect quality vehicles
@@ -68,6 +69,7 @@ TEAM_ENGINEER = DarkRP.createJob("Engineer", {
 	command = "engineer",
 	max = 2,
 	salary = 30,
+	category = "Normal",
 	admin = 0,
 	vote = false,
 	hasLicense = false,
@@ -84,28 +86,44 @@ TEAM_POLICE = DarkRP.createJob("Survival Protection", {
 	description = [[You're part of the Survival Protection Program.
 		You defend the mojave from criminal activity.
 		!!You also hunt down the Runners!!]],
-	weapons = {"arrest_stick", "unarrest_stick", "fas2_m1911", "stunstick", "door_ram", "weaponchecker"},
+	weapons = {"arrest_stick", "unarrest_stick", "fas2_m1911", "weapon_cuff_police", "stunstick", "door_ram", "weaponchecker"},
 	command = "cp",
 	max = 4,
 	salary = 30,
 	admin = 0,
 	vote = true,
+	category = "Government",
 	hasLicense = true,
 	mayorCanSetSalary = true,
 	candemote = true,
 	cp = true,
-	police = true,
-	help = {
-		"Please don't abuse your job",
-		"Hunt down the runners arrest them!",
-		"Keep an eye on bandits and thiefs!",
-		"When you arrest someone they are auto transported to jail.",
-		"They are auto let out of jail after some time",
-		"Type /warrant [Nick|SteamID|Status ID] to set a search warrant for a player.",
-		"Type /wanted [Nick|SteamID|Status ID] to alert everyone to a wanted suspect",
-		"Type /unwanted [Nick|SteamID|Status ID] to clear the suspect",
-		"Type /jailpos to set the jail position"
-	}
+	police = true
+})
+
+TEAM_CHIEF = DarkRP.createJob("Survival Protection Chief", {
+	color = Color(20, 20, 255, 255),
+	model = {"models/csgoswat1pm.mdl", 
+	"models/csgoswat2pm.mdl", 
+	"models/csgoswat3pm.mdl", 
+	"models/csgoswat4pm.mdl"},
+	description = [[The chief, the leader or commander of the Survival Protection Program.
+		You coordinate your forces, give them things to do.
+		Protect your people from criminal activity.
+		The 
+
+		!!You also hunt down the Runners!!]],
+	weapons = {"arrest_stick", "unarrest_stick", "weapon_cuff_police", "fas2_ragingbull", "stunstick", "door_ram", "weaponchecker"},
+	command = "chief",
+	max = 1,
+	salary = 75,
+	admin = 0,
+	NeedToChangeFrom = TEAM_POLICE,
+	vote = false,
+	hasLicense = true,
+	mayorCanSetSalary = true,
+	candemote = true,
+	cp = true,
+	category = "Government"
 })
 
 //Thief
@@ -113,36 +131,28 @@ TEAM_THIEF = DarkRP.createJob("Thief", {
 	color = Color(25, 25, 25, 255),
 	model = "models/player/arctic.mdl",
 	description = [[Steal, mug people is your priority]],
-	weapons = {"ensw_bobby_case", "keypad_cracker"},
+	weapons = {"keypad_cracker"},
 	command = "thief",
 	max = 2,
-	salary = 15,
+	salary = 20,
 	admin = 0,
 	vote = false,
+	category = "Outlaw",
 	hasLicense = false,
 	mayorCanSetSalary = false,
 	candemote = true,
+	PlayerSpawn = function(ply) ply:SetLockpickCount(5) end,
 	thief = true
 })
 
 
 TEAM_GANG = DarkRP.createJob("Bandit", {
 	color = Color(75, 75, 75, 255),
-	model = {
-		"models/player/Group03/Female_01.mdl",
-		"models/player/Group03/Female_02.mdl",
-		"models/player/Group03/Female_03.mdl",
-		"models/player/Group03/Female_04.mdl",
-		"models/player/Group03/Female_06.mdl",
-		"models/player/group03/male_01.mdl",
-		"models/player/Group03/Male_02.mdl",
-		"models/player/Group03/male_03.mdl",
-		"models/player/Group03/Male_04.mdl",
-		"models/player/Group03/Male_05.mdl",
-		"models/player/Group03/Male_06.mdl",
-		"models/player/Group03/Male_07.mdl",
-		"models/player/Group03/Male_08.mdl",
-		"models/player/Group03/Male_09.mdl"},
+	model = {"models/csgoanarchist1pm.mdl",
+	"models/csgoanarchist2pm.mdl",
+	"models/csgoanarchist3pm.mdl",
+	"models/csgoanarchist4pm.mdl"
+	},
 	description = [[The most feared group of people in this new civilization.
 		You're reputation is low yet neutral.
 		You're known for mugging and stealing things from people,
@@ -152,6 +162,26 @@ TEAM_GANG = DarkRP.createJob("Bandit", {
 	max = 5,
 	salary = 20,
 	admin = 0,
+	category = "Outlaw",
+	vote = false,
+	hasLicense = false,
+	mayorCanSetSalary = false,
+	candemote = true
+})
+TEAM_MOB = DarkRP.createJob("Bandit Leader", {
+	color = Color(25, 25, 25, 255),
+	model = "models/csgoleet4pm.mdl",
+	description = [[With the most feared group of people stands a leader.
+		Someone which brings fear to town.
+		A true gangster before the apocalypse,
+		now leader of the bandits of mojave.]],
+	weapons = {"lockpick", "unarrest_stick", "fas2_p226"},
+	command = "banditleader",
+	max = 1,
+	category = "Outlaw",
+	salary = 25,
+	admin = 0,
+	NeedToChangeFrom = TEAM_BANDIT,
 	vote = false,
 	hasLicense = false,
 	mayorCanSetSalary = false,
@@ -159,13 +189,14 @@ TEAM_GANG = DarkRP.createJob("Bandit", {
 })
 TEAM_GANGMEDIC = DarkRP.createJob("Bandit Medic", {
 	color = Color(75, 75, 75, 255),
-	model =	"models/csgoleet4pm.mdl",
+	model =	"models/csgoleet2pm.mdl",
 	description = [[The medic is an important part of the group.  
 	He can assist you with healing and spare bandages.]],
 	weapons = {"fas2_glock20", "fas2_ifak", "fas2_mac11"},
 	command = "banditmedic",
 	max = 2,
 	salary = 150,
+	category = "Outlaw",
 	admin = 0,
 	vote = false,
 	hasLicense = false,
@@ -176,13 +207,14 @@ TEAM_GANGMEDIC = DarkRP.createJob("Bandit Medic", {
 })
 TEAM_GANGSNIPER = DarkRP.createJob("Bandit Sniper", {
 	color = Color(75, 75, 75, 255),
-	model =	"models/csgoseparatist4pm.mdl",
+	model =	"models/csgoleet1pm.mdl",
 	description = [[Long distance engagement is always good for backing up your teammates from a far.]],
 	weapons = {"fas2_m14", "fas2_glock20"},
 	command = "banditsniper",
 	max = 2,
 	salary = 150,
 	admin = 0,
+	category = "Outlaw",
 	vote = false,
 	hasLicense = false,
 	mayorCanSetSalary = false,
@@ -192,7 +224,7 @@ TEAM_GANGSNIPER = DarkRP.createJob("Bandit Sniper", {
 })
 TEAM_GANGHEAVY = DarkRP.createJob("Bandit Heavy", {
 	color = Color(75, 75, 75, 255),
-	model =	"models/csgobalkan4pm.mdl",
+	model =	"models/csgopheonix3pm.mdl",
 	description = [[Heavy promvides ammunation and suppressive fire for his team.]],
 	weapons = {"fas2_rpk", "fas2_glock20", "fas2_ammobox"},
 	command = "banditheavy",
@@ -200,6 +232,7 @@ TEAM_GANGHEAVY = DarkRP.createJob("Bandit Heavy", {
 	salary = 150,
 	admin = 0,
 	vote = false,
+	category = "Outlaw",
 	hasLicense = false,
 	mayorCanSetSalary = false,
 	candemote = true,
@@ -207,24 +240,6 @@ TEAM_GANGHEAVY = DarkRP.createJob("Bandit Heavy", {
 	CustomCheckFailMsg = "You need to donate in order to become this job!",
 	PlayerSpawn = function(ply) ply:SetArmor(100) end
 
-})
-TEAM_MOB = DarkRP.createJob("Bandit Leader", {
-	color = Color(25, 25, 25, 255),
-	model = "models/player/gman_high.mdl",
-	description = [[With the most feared group of people stands a leader.
-		Someone which brings fear to town.
-		A true gangster before the apocalypse,
-		now leader of the bandits of mojave.]],
-	weapons = {"lockpick", "unarrest_stick", "fas2_p226"},
-	command = "banditleader",
-	max = 1,
-	salary = 25,
-	admin = 0,
-	NeedToChangeFrom = TEAM_BANDIT,
-	vote = false,
-	hasLicense = false,
-	mayorCanSetSalary = false,
-	candemote = true
 })
 
 //Guard
@@ -238,6 +253,7 @@ TEAM_PGUARD = DarkRP.createJob("Personal Guard", {
 	command = "pguard",
 	max = 2,
 	salary = 25,
+	category = "Normal",
 	admin = 0,
 	vote = true,
 	hasLicense = true,
@@ -249,7 +265,7 @@ TEAM_PGUARD = DarkRP.createJob("Personal Guard", {
 //Black Market Dealer
 TEAM_BMDEALER = DarkRP.createJob("Black Market Dealer", {
 	color = Color(0, 0, 0, 255),
-	model = "models/player/eli.mdl",
+	model = "models/csgopirate3pm.mdl",
 	description = [[As a Black Market Dealer you sell illegal explosive weaponry,
 		so be careful, you can be arrested by the police on sight!]],
 	weapons = {},
@@ -257,6 +273,7 @@ TEAM_BMDEALER = DarkRP.createJob("Black Market Dealer", {
 	max = 2,
 	salary = 25,
 	admin = 0,
+	category = "Outlaw",
 	vote = false,
 	hasLicense = false,
 	mayorCanSetSalary = false,
@@ -275,6 +292,7 @@ TEAM_RUNNER = DarkRP.createJob("Contrabandist", {
 	weapons = {"climb_swep2"},
 	command = "runner",
 	max = 0,
+	category = "Outlaw",
 	salary = 30,
 	admin = 0,
 	hasLicense = false,
@@ -284,7 +302,7 @@ TEAM_RUNNER = DarkRP.createJob("Contrabandist", {
 
 TEAM_GUN = DarkRP.createJob("Arms Dealer", {
 	color = Color(255, 140, 0, 255),
-	model = "models/player/monk.mdl",
+	model = "models/csgobalkan1pm.mdl",
 	description = [[A gundealer is the person who can sell guns to other
 		people. This member of the clan is crucial to survival.]],
 	weapons = {},
@@ -293,6 +311,7 @@ TEAM_GUN = DarkRP.createJob("Arms Dealer", {
 	salary = 20,
 	admin = 0,
 	vote = false,
+	category = "Normal",
 	hasLicense = false,
 	mayorCanSetSalary = true,
 	candemote = true
@@ -300,7 +319,7 @@ TEAM_GUN = DarkRP.createJob("Arms Dealer", {
 
 TEAM_MEDIC = DarkRP.createJob("Medic", {
 	color = Color(47, 79, 79, 255),
-	model = "models/player/kleiner.mdl",
+	model = "models/player/hostage/hostage_04.mdl",
 	description = [[After the apocalypse these became one of the most
 		important persons in this civilization.
 		You take care of those who are in need of medical attention.]],
@@ -309,35 +328,11 @@ TEAM_MEDIC = DarkRP.createJob("Medic", {
 	max = 3,
 	salary = 30,
 	admin = 0,
+	category = "Normal",
 	vote = false,
 	hasLicense = false,
 	mayorCanSetSalary = true,
 	candemote = true
-})
-
-TEAM_CHIEF = DarkRP.createJob("Survival Protection Chief", {
-	color = Color(20, 20, 255, 255),
-	model = {"models/csgoswat1pm.mdl", 
-	"models/csgoswat2pm.mdl", 
-	"models/csgoswat3pm.mdl", 
-	"models/csgoswat4pm.mdl"},
-	description = [[The chief, the leader or commander of the Survival Protection Program.
-		You coordinate your forces, give them things to do.
-		Protect your people from criminal activity.
-		The 
-
-		!!You also hunt down the Runners!!]],
-	weapons = {"arrest_stick", "unarrest_stick", "fas2_ragingbull", "stunstick", "door_ram", "weaponchecker"},
-	command = "chief",
-	max = 1,
-	salary = 75,
-	admin = 0,
-	NeedToChangeFrom = TEAM_POLICE,
-	vote = false,
-	hasLicense = true,
-	mayorCanSetSalary = true,
-	candemote = true,
-	cp = true,
 })
 
 TEAM_SF = DarkRP.createJob("Special Forces", {
@@ -345,10 +340,11 @@ TEAM_SF = DarkRP.createJob("Special Forces", {
     model = "models/csgosas3pm.mdl",
     description = [[A special force from the outside world
 	helping the civilization on special cases.]],
-	weapons = {"arrest_stick", "unarrest_stick", "door_ram", "fas2_machete", "fas2_mp5sd6", "fas2_ots33"},
+	weapons = {"arrest_stick", "unarrest_stick", "weapon_cuff_police", "door_ram", "fas2_machete", "fas2_mp5sd6", "fas2_ots33"},
 	command = "sf",
 	max = 2,
 	salary = 200,
+	category = "Government",
 	admin = 0,
 	vote = true,
 	hasLicense = true,
@@ -366,6 +362,7 @@ TEAM_MAYOR = DarkRP.createJob("Governor", {
 	command = "mayor",
 	max = 1,
 	salary = 50,
+	category = "Government",
 	admin = 0,
 	vote = true,
 	hasLicense = true,
@@ -376,7 +373,12 @@ TEAM_MAYOR = DarkRP.createJob("Governor", {
 
 TEAM_HOBO = DarkRP.createJob("Hobo", {
 	color = Color(80, 45, 0, 255),
-	model = "models/player/corpse1.mdl",
+	model = {
+		"models/player/group02/male_02.mdl",
+		"models/player/group02/male_04.mdl",
+		"models/player/group02/male_06.mdl",
+		"models/player/group02/male_08.mdl"
+	},
 	description = [[The lowest member of society. All people see you laugh.
 		Beg for your food and money, and if people refuse to do so
 		spam their face with bugbait!
@@ -387,6 +389,7 @@ TEAM_HOBO = DarkRP.createJob("Hobo", {
 	max = 3,
 	salary = 0,
 	admin = 0,
+	category = "Normal",
 	vote = false,
 	hasLicense = false,
 	mayorCanSetSalary = false,
@@ -406,6 +409,7 @@ TEAM_ASSASSIN = DarkRP.createJob("Assassin", {
 	salary = 45,
 	admin = 0,
 	vote = false,
+	category = "Normal",
 	hasLicense = false,
 	mayorCanSetSalary = false,
 	candemote = true,
@@ -421,11 +425,12 @@ TEAM_MILITARY = DarkRP.createJob("Military Infantry", {
 	description = [[As you were left to rot from the ordinary military,
 		the civilization started their own.
 		Your job is to defend the people from threats.]],
-	weapons = {"arrest_stick", "unarrest_stick", "fas2_m4a1", "fas2_m1911", "stunstick"},
+	weapons = {"arrest_stick", "unarrest_stick", "weapon_cuff_police", "fas2_m4a1", "fas2_m1911", "stunstick"},
 	command = "military",
 	max = 4,
 	salary = 40,
 	admin = 0,
+	category = "Government",
 	vote = true,
 	hasLicense = true,
 	mayorCanSetSalary = true,
@@ -442,12 +447,13 @@ TEAM_MILITARYCOMMANDER = DarkRP.createJob("Military Commander", {
 		the civilization started their own.
 		You are the leader of this military group.
 		You command the group and give orders.]],
-	weapons = {"arrest_stick", "unarrest_stick", "fas2_rem870", "fas2_deagle", "stunstick"},
+	weapons = {"arrest_stick", "unarrest_stick", "weapon_cuff_police", "fas2_rem870", "fas2_deagle", "stunstick"},
 	command = "militarycommander",
 	max = 1,
 	salary = 50,
 	NeedToChangeFrom = TEAM_MILITARY,
 	admin = 0,
+	category = "Government",
 	vote = false,
 	hasLicense = true,
 	mayorCanSetSalary = true,
@@ -466,12 +472,13 @@ TEAM_MILITARYSNIPER = DarkRP.createJob("Military Sniper", {
 		You are the sniper of these forces.
 		With your trusty sniper rifle you take people down
 		from a distant location.]],
-	weapons = {"arrest_stick", "unarrest_stick", "fas2_m24", "fas2_m1911", "stunstick"},
+	weapons = {"arrest_stick", "unarrest_stick", "weapon_cuff_police", "fas2_m24", "fas2_m1911", "stunstick"},
 	command = "militarysniper",
 	max = 2,
 	salary = 45,
 	admin = 0,
 	vote = false,
+	category = "Government",
 	hasLicense = true,
 	mayorCanSetSalary = true,
 	candemote = true,
@@ -489,12 +496,13 @@ TEAM_MILITARYJUG = DarkRP.createJob("Military Juggernaut", {
 		You are the juggernaut in this forces.
 		This suit reduces the damage extremely much.
 		The weight however slows you down.]],
-	weapons = {"arrest_stick", "unarrest_stick", "fas2_rpk", "fas2_m1911", "stunstick"},
+	weapons = {"arrest_stick", "unarrest_stick", "weapon_cuff_police", "fas2_rpk", "fas2_m1911", "stunstick"},
 	command = "militaryjuggernaut",
 	max = 1,
 	salary = 45,
 	admin = 0,
 	vote = false,
+	category = "Government",
 	hasLicense = true,
 	mayorCanSetSalary = true,
 	candemote = true,
@@ -518,12 +526,13 @@ TEAM_MILITARYMEDIC = DarkRP.createJob("Military Medic", {
 		You are the medic of these forces.
 		Heal the ones of your forces from wounds.
 		Take care.]],
-	weapons = {"arrest_stick", "unarrest_stick", "fas2_mp5k", "fas2_m1911", "fas2_ifak"},
+	weapons = {"arrest_stick", "unarrest_stick", "weapon_cuff_police", "fas2_mp5k", "fas2_m1911", "fas2_ifak"},
 	command = "militarymedic",
 	max = 2,
 	salary = 45,
 	admin = 0,
 	vote = false,
+	category = "Government",
 	hasLicense = true,
 	mayorCanSetSalary = true,
 	candemote = true,
@@ -543,6 +552,7 @@ TEAM_HITMAN = DarkRP.createJob("Hitman", {
 	salary = 25,
 	admin = 0,
 	vote = false,
+	category = "Normal",
 	hasLicense = false,
 	mayorCanSetSalary = false,
 	candemote = true,
