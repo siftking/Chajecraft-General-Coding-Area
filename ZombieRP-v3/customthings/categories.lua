@@ -20,4 +20,169 @@ DarkRP.createCategory{
 
 Add new categories under the next line!
 ---------------------------------------------------------------------------]]
+// #NoSimplerr#
 
+// Jobs
+DarkRP.createCategory{
+	name = "Government",
+	categorises = "jobs",
+	startExpanded = true,
+	color = Color(0,140,255,255),
+	sortOrder = 2
+}
+
+DarkRP.createCategory{
+	name = "Normal",
+	categorises = "jobs",
+	startExpanded = true,
+	color = Color(0,140,255,255),
+	sortOrder = 1
+}
+
+DarkRP.createCategory{
+	name = "Outlaw",
+	categorises = "jobs",
+	startExpanded = true,
+	color = Color(94,94,94,255),
+	sortOrder = 3
+}
+
+// Ammo
+DarkRP.createCategory{
+	name = "Pistol Ammo Types",
+	categorises = "ammo",
+	startExpanded = true,
+	color = Color(94,94,94,255),
+	sortOrder = 1
+}
+
+DarkRP.createCategory{
+	name = "Heavy Pistol Ammo Types",
+	categorises = "ammo",
+	startExpanded = true,
+	color = Color(94,94,94,255),
+	sortOrder = 2
+}
+
+DarkRP.createCategory{
+	name = "Submachine Ammo Types",
+	categorises = "ammo",
+	startExpanded = true,
+	color = Color(94,94,94,255),
+	sortOrder = 3
+}
+
+DarkRP.createCategory{
+	name = "Assault Rifle Ammo Types",
+	categorises = "ammo",
+	startExpanded = true,
+	color = Color(94,94,94,255),
+	sortOrder = 4
+}
+
+DarkRP.createCategory{
+	name = "Shotgun Ammo Types",
+	categorises = "ammo",
+	startExpanded = true,
+	color = Color(94,94,94,255),
+	sortOrder = 5
+}
+
+DarkRP.createCategory{
+	name = "Sniper Rifle Ammo Types",
+	categorises = "ammo",
+	startExpanded = true,
+	color = Color(94,94,94,255),
+	sortOrder = 6
+}
+
+// Guns
+DarkRP.createCategory{
+	name = "Pistol & Heavy Pistols",
+	categorises = "shipments",
+	startExpanded = true,
+	color = Color(94,94,94,255),
+	sortOrder = 6
+}
+
+DarkRP.createCategory{
+	name = "Rifles",
+	categorises = "shipments",
+	startExpanded = true,
+	color = Color(94,94,94,255),
+	sortOrder = 6
+}
+
+DarkRP.createCategory{
+	name = "Shotguns",
+	categorises = "shipments",
+	startExpanded = true,
+	color = Color(94,94,94,255),
+	sortOrder = 6
+}
+
+DarkRP.createCategory{
+	name = "SMGs",
+	categorises = "shipments",
+	startExpanded = true,
+	color = Color(94,94,94,255),
+	sortOrder = 6
+}
+
+DarkRP.createCategory{
+	name = "Sniper Rifles",
+	categorises = "shipments",
+	startExpanded = true,
+	color = Color(94,94,94,255),
+	sortOrder = 6
+}
+
+// Black Market Dealer
+DarkRP.createCategory{
+	name = "Illegal",
+	categorises = "shipments",
+	startExpanded = true,
+	color = Color(94,94,94,255),
+	sortOrder = 6
+}
+
+// Entities
+DarkRP.createCategory{
+	name = "Drugs",
+	categorises = "entities",
+	startExpanded = true,
+	color = Color(94,94,94,255),
+	sortOrder = 6
+}
+
+DarkRP.createCategory{
+	name = "Money Printers",
+	categorises = "entities",
+	startExpanded = true,
+	color = Color(94,94,94,255),
+	sortOrder = 6
+}
+
+DarkRP.createCategory{
+	name = "Medical",
+	categorises = "entities",
+	startExpanded = true,
+	color = Color(94,94,94,255),
+	sortOrder = 6
+}
+
+DarkRP.createCategory{
+	name = "Turrets",
+	categorises = "entities",
+	startExpanded = true,
+	color = Color(94,94,94,255),
+	sortOrder = 6
+}
+
+DarkRP.createCategory{
+	name = "Tools",
+	categorises = "entities",
+	startExpanded = true,
+	color = Color(94,94,94,255),
+	sortOrder = 6
+}
