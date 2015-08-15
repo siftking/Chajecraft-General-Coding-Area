@@ -336,14 +336,14 @@ TEAM_MEDIC = DarkRP.createJob("Medic", {
 })
 
 TEAM_SF = DarkRP.createJob("Special Forces", {
-    color = Color(80, 45, 0, 255),
+    color = Color(0, 170, 230, 255),
     model = "models/csgosas3pm.mdl",
     description = [[A special force from the outside world
 	helping the civilization on special cases.]],
 	weapons = {"arrest_stick", "unarrest_stick", "weapon_cuff_police", "door_ram", "fas2_machete", "fas2_mp5sd6", "fas2_ots33"},
 	command = "sf",
 	max = 2,
-	salary = 200,
+	salary = 180,
 	category = "Government",
 	admin = 0,
 	vote = true,
@@ -439,7 +439,7 @@ TEAM_MILITARY = DarkRP.createJob("Military Infantry", {
 	CustomCheckFailMsg = "You need to be Trusted to play this job! (Play 4h)"
 })
 
-// Military Infantry
+// Military Commander
 TEAM_MILITARYCOMMANDER = DarkRP.createJob("Military Commander", {
 	color = Color(0, 190, 246, 255),
 	model = {"models/csgost63pm.mdl"},
@@ -475,7 +475,7 @@ TEAM_MILITARYSNIPER = DarkRP.createJob("Military Sniper", {
 	weapons = {"arrest_stick", "unarrest_stick", "weapon_cuff_police", "fas2_m24", "fas2_m1911", "stunstick"},
 	command = "militarysniper",
 	max = 2,
-	salary = 45,
+	salary = 180,
 	admin = 0,
 	vote = false,
 	category = "Government",
@@ -499,7 +499,7 @@ TEAM_MILITARYJUG = DarkRP.createJob("Military Juggernaut", {
 	weapons = {"arrest_stick", "unarrest_stick", "weapon_cuff_police", "fas2_rpk", "fas2_m1911", "stunstick"},
 	command = "militaryjuggernaut",
 	max = 1,
-	salary = 45,
+	salary = 180,
 	admin = 0,
 	vote = false,
 	category = "Government",
@@ -529,7 +529,7 @@ TEAM_MILITARYMEDIC = DarkRP.createJob("Military Medic", {
 	weapons = {"arrest_stick", "unarrest_stick", "weapon_cuff_police", "fas2_mp5k", "fas2_m1911", "fas2_ifak"},
 	command = "militarymedic",
 	max = 2,
-	salary = 45,
+	salary = 180,
 	admin = 0,
 	vote = false,
 	category = "Government",
