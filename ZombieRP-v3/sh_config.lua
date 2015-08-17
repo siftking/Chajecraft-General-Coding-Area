@@ -27,8 +27,8 @@ rPrint.DefaultPrinterParams = {
 	RechargeCost = 1000,  --cost to recharge
 	RechargeMax = 30,  --the value at which the recharge button becomes pressable
 
-	FadeDistance = 125,  --maximum distance that the printers render the GUI
-	UseDistance = 100,  --maximum distance a player can use the buttons
+	FadeDistance = 200,  --maximum distance that the printers render the GUI
+	UseDistance = 150,  --maximum distance a player can use the buttons
 
 	AlertOwnerOnDestroyed = true,  --alert the owner when someone blows up their printer
 	AlertOwnerOnOverheated = true,  --alert the owner when the printer overheats and blows up
@@ -84,7 +84,7 @@ rPrint.RegisterPrinterType( "VIP", {
 
 ]]
 rPrint.RegisterPrinterType( "Bronze", {
-	PrintRate = 5, 
+	PrintRate = 15, 
 	DestroyPayout = 250, 
 	Color = Color( 205, 135, 65, 255 ), 
 	RechargeCost = 1500, 
@@ -92,12 +92,12 @@ rPrint.RegisterPrinterType( "Bronze", {
 	PrinterHealth = 150,
 	PowerConsumptionRate = 1 / 80,
 	PowerConsumptionRateCooler = 1 / 1000,
-	HeatRate = 1 / 25,
+	HeatRate = 1 / 30,
 	CoolRate = 1 / 7
 }, "rprint_bronzeprinter" )
 
 rPrint.RegisterPrinterType( "Silver", {
-	PrintRate = 20, 
+	PrintRate = 30, 
 	DestroyPayout = 500, 
 	Color = Color( 150, 150, 150, 255 ), 
 	RechargeCost = 2500, 
@@ -105,12 +105,12 @@ rPrint.RegisterPrinterType( "Silver", {
 	PrinterHealth = 350,
 	PowerConsumptionRate = 1 / 80,
 	PowerConsumptionRateCooler = 1 / 500,
-	HeatRate = 1 / 20,
+	HeatRate = 1 / 30,
 	CoolRate = 1 / 7
 }, "rprint_silverprinter" )
 
 rPrint.RegisterPrinterType( "Gold", {
-	PrintRate = 30, 
+	PrintRate = 60, 
 	DestroyPayout = 750, 
 	Color = Color( 255, 255, 135, 255 ), 
 	RechargeCost = 2800, 
@@ -118,12 +118,12 @@ rPrint.RegisterPrinterType( "Gold", {
 	PrinterHealth = 500,
 	PowerConsumptionRate = 1 / 80,
 	PowerConsumptionRateCooler = 1 / 500,
-	HeatRate = 1 / 15,
+	HeatRate = 1 / 20,
 	CoolRate = 1 / 7
 }, "rprint_goldprinter" )
 
 rPrint.RegisterPrinterType( "Platinum", {
-	PrintRate = 50, 
+	PrintRate = 100, 
 	DestroyPayout = 1750, 
 	Color = Color( 203, 204, 255 ), 
 	RechargeCost = 2200, 
@@ -131,12 +131,12 @@ rPrint.RegisterPrinterType( "Platinum", {
 	PrinterHealth = 750,
 	PowerConsumptionRate = 1 / 80,
 	PowerConsumptionRateCooler = 1 / 500,
-	HeatRate = 1 / 10,
+	HeatRate = 1 / 15,
 	CoolRate = 1 / 7
 }, "rprint_platinum" )
 
 rPrint.RegisterPrinterType( "Quantum", {
-	PrintRate = 80, 
+	PrintRate = 150, 
 	DestroyPayout = 2510, 
 	Color = Color( 255, 255, 255 ), 
 	RechargeCost = 2500, 
@@ -144,6 +144,6 @@ rPrint.RegisterPrinterType( "Quantum", {
 	PrinterHealth = 1250,
 	PowerConsumptionRate = 1 / 80,
 	PowerConsumptionRateCooler = 1 / 500,
-	HeatRate = 1 / 5,
+	HeatRate = 1 / 15,
 	CoolRate = 1 / 7
 }, "rprint_quantum" )
