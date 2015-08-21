@@ -245,7 +245,7 @@ TEAM_GANGHEAVY = DarkRP.createJob("Bandit Heavy", {
 //Guard
 TEAM_PGUARD = DarkRP.createJob("Personal Guard", {
 	color = Color(27, 209, 48, 120),
-	model = "models/player/riot.mdl",
+	model = "models/csgogign1pm.mdl",
 	description = [[As a Personal Guard you can be hired to protect people or their shop.
 		If they hire you as their personal guard, you NEED to protect them.
 		If you don't, that's breaking the rules, good luck!]],
@@ -335,21 +335,25 @@ TEAM_MEDIC = DarkRP.createJob("Medic", {
 	candemote = true
 })
 
-TEAM_SF = DarkRP.createJob("Special Forces", {
-    color = Color(80, 45, 0, 255),
-    model = "models/csgosas3pm.mdl",
+TEAM_SS = DarkRP.createJob("Secret Service", {
+    color = Color(105, 225, 220, 255),
+    model = {"models/csgoprofessional1pm.mdl",
+    "models/csgoprofessional2pm.mdl",
+    "models/csgoprofessional3pm.mdl",
+    "models/csgoprofessional4pm.mdl"
+    },
     description = [[A special force from the outside world
 	helping the civilization on special cases.]],
-	weapons = {"arrest_stick", "unarrest_stick", "weapon_cuff_police", "door_ram", "fas2_machete", "fas2_mp5sd6", "fas2_ots33"},
-	command = "sf",
+	weapons = {"arrest_stick", "unarrest_stick", "weapon_cuff_police", "door_ram", "fas2_machete", "fas2_ots33"},
+	command = "secretservice",
 	max = 2,
-	salary = 200,
+	salary = 80,
 	category = "Government",
 	admin = 0,
 	vote = true,
 	hasLicense = true,
-	customCheck = function(ply) return table.HasValue(VIPRanks, ply:GetUserGroup()) end,
-	CustomCheckFailMsg = "You need to donate in order to become this job!"
+	customCheck = function(ply) return table.HasValue(MemberRanks, ply:GetUserGroup()) end,
+	CustomCheckFailMsg = "You need to be Member to play this job! (Play 24h)"
  })
 
 TEAM_MAYOR = DarkRP.createJob("Governor", {
@@ -368,7 +372,9 @@ TEAM_MAYOR = DarkRP.createJob("Governor", {
 	hasLicense = true,
 	mayorCanSetSalary = false,
 	candemote = true,
-    mayor = true,
+    	mayor = true,
+    	customCheck = function(ply) return table.HasValue(MemberRanks, ply:GetUserGroup()) end,
+	CustomCheckFailMsg = "You need to be Member to play this job! (Play 24h)"
 })
 
 TEAM_HOBO = DarkRP.createJob("Hobo", {
@@ -439,7 +445,7 @@ TEAM_MILITARY = DarkRP.createJob("Military Infantry", {
 	CustomCheckFailMsg = "You need to be Trusted to play this job! (Play 4h)"
 })
 
-// Military Infantry
+// Military Commander
 TEAM_MILITARYCOMMANDER = DarkRP.createJob("Military Commander", {
 	color = Color(0, 190, 246, 255),
 	model = {"models/csgost63pm.mdl"},
@@ -447,7 +453,7 @@ TEAM_MILITARYCOMMANDER = DarkRP.createJob("Military Commander", {
 		the civilization started their own.
 		You are the leader of this military group.
 		You command the group and give orders.]],
-	weapons = {"arrest_stick", "unarrest_stick", "weapon_cuff_police", "fas2_rem870", "fas2_deagle", "stunstick"},
+	weapons = {"arrest_stick", "unarrest_stick", "weapon_cuff_police", "fas2_m3s90", "fas2_deagle", "stunstick"},
 	command = "militarycommander",
 	max = 1,
 	salary = 50,
@@ -465,7 +471,7 @@ TEAM_MILITARYCOMMANDER = DarkRP.createJob("Military Commander", {
 // Military Sniper
 TEAM_MILITARYSNIPER = DarkRP.createJob("Military Sniper", {
 	color = Color(0, 199, 255, 255),
-	model = {"models/csgoidf3pm.mdl"},
+	model = {"models/csgoidf4pm.mdl"},
 	description = [[As you were left to rot from the ordinary military,
 		the civilization started their own.
 		Your job is to defend the people from threats.
@@ -475,7 +481,7 @@ TEAM_MILITARYSNIPER = DarkRP.createJob("Military Sniper", {
 	weapons = {"arrest_stick", "unarrest_stick", "weapon_cuff_police", "fas2_m24", "fas2_m1911", "stunstick"},
 	command = "militarysniper",
 	max = 2,
-	salary = 45,
+	salary = 150,
 	admin = 0,
 	vote = false,
 	category = "Government",
@@ -499,7 +505,7 @@ TEAM_MILITARYJUG = DarkRP.createJob("Military Juggernaut", {
 	weapons = {"arrest_stick", "unarrest_stick", "weapon_cuff_police", "fas2_rpk", "fas2_m1911", "stunstick"},
 	command = "militaryjuggernaut",
 	max = 1,
-	salary = 45,
+	salary = 150,
 	admin = 0,
 	vote = false,
 	category = "Government",
@@ -529,7 +535,7 @@ TEAM_MILITARYMEDIC = DarkRP.createJob("Military Medic", {
 	weapons = {"arrest_stick", "unarrest_stick", "weapon_cuff_police", "fas2_mp5k", "fas2_m1911", "fas2_ifak"},
 	command = "militarymedic",
 	max = 2,
-	salary = 45,
+	salary = 150,
 	admin = 0,
 	vote = false,
 	category = "Government",
