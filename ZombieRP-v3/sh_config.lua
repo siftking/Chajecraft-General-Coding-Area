@@ -90,10 +90,10 @@ rPrint.RegisterPrinterType( "Bronze", {
 	RechargeCost = 1500, 
 	CoolerCost = 200,
 	PrinterHealth = 150,
-	PowerConsumptionRate = 1 / 80,
-	PowerConsumptionRateCooler = 1 / 1000,
+	PowerConsumptionRate = 1 / 100,
+	PowerConsumptionRateCooler = 1 / 800,
 	HeatRate = 1 / 30,
-	CoolRate = 1 / 7
+	CoolRate = 1 / 20
 }, "rprint_bronzeprinter" )
 
 rPrint.RegisterPrinterType( "Silver", {
@@ -103,10 +103,10 @@ rPrint.RegisterPrinterType( "Silver", {
 	RechargeCost = 2500, 
 	CoolerCost = 300,
 	PrinterHealth = 350,
-	PowerConsumptionRate = 1 / 80,
-	PowerConsumptionRateCooler = 1 / 500,
+	PowerConsumptionRate = 1 / 130,
+	PowerConsumptionRateCooler = 1 / 800,
 	HeatRate = 1 / 30,
-	CoolRate = 1 / 7
+	CoolRate = 1 / 20
 }, "rprint_silverprinter" )
 
 rPrint.RegisterPrinterType( "Gold", {
@@ -116,34 +116,34 @@ rPrint.RegisterPrinterType( "Gold", {
 	RechargeCost = 2800, 
 	CoolerCost = 400,
 	PrinterHealth = 500,
-	PowerConsumptionRate = 1 / 80,
-	PowerConsumptionRateCooler = 1 / 500,
+	PowerConsumptionRate = 1 / 140,
+	PowerConsumptionRateCooler = 1 / 800,
 	HeatRate = 1 / 30,
-	CoolRate = 1 / 7
+	CoolRate = 1 / 20
 }, "rprint_goldprinter" )
 
 rPrint.RegisterPrinterType( "Platinum", {
-	PrintRate = 100, 
+	PrintRate = 90, 
 	DestroyPayout = 1750, 
 	Color = Color( 203, 204, 255 ), 
 	RechargeCost = 2200, 
 	CoolerCost = 500,
 	PrinterHealth = 750,
-	PowerConsumptionRate = 1 / 80,
-	PowerConsumptionRateCooler = 1 / 500,
-	HeatRate = 1 / 30,
-	CoolRate = 1 / 7
+	PowerConsumptionRate = 1 / 150,
+	PowerConsumptionRateCooler = 1 / 800,
+	HeatRate = 1 / 50,
+	CoolRate = 1 / 30
 }, "rprint_platinum" )
 
 rPrint.RegisterPrinterType( "Quantum", {
-	PrintRate = 150, 
+	PrintRate = 120, 
 	DestroyPayout = 2510, 
 	Color = Color( 255, 255, 255 ), 
 	RechargeCost = 2500, 
 	CoolerCost = 600,
 	PrinterHealth = 1250,
-	PowerConsumptionRate = 1 / 80,
-	PowerConsumptionRateCooler = 1 / 500,
-	HeatRate = 1 / 30,
-	CoolRate = 1 / 7
+	PowerConsumptionRate = 1 / 180,
+	PowerConsumptionRateCooler = 1 / 800,
+	HeatRate = 1 / 50,
+	CoolRate = 1 / 30
 }, "rprint_quantum" )
