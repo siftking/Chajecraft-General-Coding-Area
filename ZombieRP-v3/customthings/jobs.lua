@@ -291,7 +291,7 @@ TEAM_RUNNER = DarkRP.createJob("Contrabandist", {
 		(AOS)]],
 	weapons = {"climb_swep2"},
 	command = "runner",
-	max = 0,
+	max = 2,
 	category = "Outlaw",
 	salary = 30,
 	admin = 0,
@@ -342,9 +342,9 @@ TEAM_SS = DarkRP.createJob("Secret Service", {
     "models/csgoprofessional3pm.mdl",
     "models/csgoprofessional4pm.mdl"
     },
-    description = [[A special force from the outside world
-	helping the civilization on special cases.]],
-	weapons = {"arrest_stick", "unarrest_stick", "weapon_cuff_police", "door_ram", "fas2_machete", "fas2_ots33"},
+    description = [[The governer's personal bodyguards
+    	only to be used when a governer is present]],
+	weapons = {"arrest_stick", "unarrest_stick", "weapon_cuff_police", "door_ram", "fas2_mp5k"},
 	command = "secretservice",
 	max = 2,
 	salary = 80,
