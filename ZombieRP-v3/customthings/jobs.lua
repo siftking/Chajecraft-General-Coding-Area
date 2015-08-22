@@ -18,8 +18,8 @@ http://wiki.darkrp.com/index.php/DarkRP:CustomJobFields
 Add jobs under the following line:
 ---------------------------------------------------------------------------]]
 // #NoSimplerr#
-MemberRanks = {"Member", "Trusted", "donator", "Owner", "superadmin", "admin"}
-TrustedRanks = {"Trusted", "donator", "Owner", "superadmin", "admin"}
+MemberRanks = {"Member", "donator", "Owner", "superadmin", "admin"}
+TrustedRanks = {"Trusted", "Member", "donator", "Owner", "superadmin", "admin"}
 VIPRanks = {"donator", "Owner", "superadmin", "admin"}
 
 TEAM_CITIZEN = DarkRP.createJob("Survivor", {
@@ -608,4 +608,3 @@ Jobs that are hitmen (enables the hitman menu)
 ---------------------------------------------------------------------------]]
 DarkRP.addHitmanTeam(TEAM_HITMAN)
 DarkRP.addHitmanTeam(TEAM_ASSASSIN)
-
