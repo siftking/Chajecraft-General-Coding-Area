@@ -84,7 +84,7 @@ rPrint.RegisterPrinterType( "VIP", {
 
 ]]
 rPrint.RegisterPrinterType( "Bronze", {
-	PrintRate = 15, 
+	PrintRate = 12, 
 	DestroyPayout = 250, 
 	Color = Color( 205, 135, 65, 255 ), 
 	RechargeCost = 1500, 
@@ -110,7 +110,7 @@ rPrint.RegisterPrinterType( "Silver", {
 }, "rprint_silverprinter" )
 
 rPrint.RegisterPrinterType( "Gold", {
-	PrintRate = 60, 
+	PrintRate = 50, 
 	DestroyPayout = 750, 
 	Color = Color( 255, 255, 135, 255 ), 
 	RechargeCost = 2800, 
@@ -123,7 +123,7 @@ rPrint.RegisterPrinterType( "Gold", {
 }, "rprint_goldprinter" )
 
 rPrint.RegisterPrinterType( "Platinum", {
-	PrintRate = 90, 
+	PrintRate = 80, 
 	DestroyPayout = 1750, 
 	Color = Color( 203, 204, 255 ), 
 	RechargeCost = 2200, 
