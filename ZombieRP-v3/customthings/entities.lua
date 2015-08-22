@@ -20,7 +20,7 @@ Add entities under the following line:
 AddEntity("Bronze Printer", {
 	ent = "rprint_bronzeprinter",
 	model = "models/props_c17/consolebox01a.mdl",
-	price = 1000,
+	price = 2000,
 	category = "Money Printers",
 	max = 3,
 	cmd = "/buybronzeprint",
@@ -29,7 +29,7 @@ AddEntity("Bronze Printer", {
 AddEntity("Silver Printer", {
 	ent = "rprint_silverprinter",
 	model = "models/props_c17/consolebox01a.mdl",
-	price = 3250,
+	price = 4000,
 	category = "Money Printers",
 	max = 2,
 	cmd = "/buysilverprint",
@@ -38,7 +38,7 @@ AddEntity("Silver Printer", {
 AddEntity("Gold Printer", {
 	ent = "rprint_goldprinter",
 	model = "models/props_c17/consolebox01a.mdl",
-	price = 6500,
+	price = 8000,
 	category = "Money Printers",
 	max = 2,
 	cmd = "/buygoldprint",
@@ -47,7 +47,7 @@ AddEntity("Gold Printer", {
 AddEntity("Platinum Printer", {
 	ent = "rprint_platinum",
 	model = "models/props_c17/consolebox01a.mdl",
-	price = 9750,
+	price = 10000,
 	category = "Money Printers",
 	max = 1,
 	cmd = "/buyplatinumprint",
@@ -56,7 +56,7 @@ AddEntity("Platinum Printer", {
 AddEntity("Quantum Printer", {
 	ent = "rprint_quantum",
 	model = "models/props_c17/consolebox01a.mdl",
-	price = 16500,
+	price = 20000,
 	category = "Money Printers",
 	max = 1,
 	cmd = "/buyquantumprint",
