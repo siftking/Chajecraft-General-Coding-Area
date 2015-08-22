@@ -132,7 +132,7 @@ rPrint.RegisterPrinterType( "Platinum", {
 	PowerConsumptionRate = 1 / 150,
 	PowerConsumptionRateCooler = 1 / 800,
 	HeatRate = 1 / 50,
-	CoolRate = 1 / 30
+	CoolRate = 1 / 15
 }, "rprint_platinum" )
 
 rPrint.RegisterPrinterType( "Quantum", {
@@ -145,5 +145,5 @@ rPrint.RegisterPrinterType( "Quantum", {
 	PowerConsumptionRate = 1 / 180,
 	PowerConsumptionRateCooler = 1 / 800,
 	HeatRate = 1 / 50,
-	CoolRate = 1 / 45
+	CoolRate = 1 / 15
 }, "rprint_quantum" )
